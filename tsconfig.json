@@ -1,12 +1,12 @@
 {
 	"compilerOptions": {
+		"strictPropertyInitialization": false,
 		"target": "es5",
 		"module": "commonjs",
 		"lib": [
 			"es6"
 		],
-		"types": [
-		],
+		"types": [],
 		"allowJs": true,
 		"outDir": "build",
 		"rootDir": "src",
@@ -16,5 +16,9 @@
 		"resolveJsonModule": true,
 		"declaration": true,
 		"sourceMap": true
-	}
+	},
+	"exclude": [
+		"node_modules",
+		"docs"
+	]
 }

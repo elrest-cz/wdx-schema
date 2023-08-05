@@ -1,5 +1,9 @@
-Adapter eWeb
+eDesign Application Library Messages v.1.0.1
+============================================
 
-Elrest eDesign node adapter for eWeb
 
-Usage:
+(C) 2023 Elrest AutomationsSysteme GMBH
+
+
+Web Socket Messages
+-------------------
