@@ -2,14 +2,14 @@
 	"name": "@elrest/edesign-library-messages",
 	"description": "Elrest - eDesign - Library Messages",
 	"license": "2023 Elrest AutomationsSysteme GMBH",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"main": "build/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start:dev": "npx nodemon --config ./nodemon.json",
-		"docs": "./node_modules/.bin/rimraf ./docs && npx typedoc ./src",
+		"docs": "./node_modules/.bin/rimraf ./docs/typedoc && npx typedoc --exclude ./build ./mode_modules --out ./docs  --cleanOutputDir --entryPointStrategy expand ./",
 		"build": "./node_modules/.bin/rimraf ./build && ./node_modules/.bin/tsc",
-		"clean": "./node_modules/.bin/rimraf ./build ./docs"
+		"clean": "./node_modules/.bin/rimraf ./build ./docs/typedoc"
 	},
 	"dependencies": {
 		"uuid": "^9.0.0"
