@@ -7,7 +7,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start:dev": "npx nodemon --config ./nodemon.json",
-		"api": "./node_modules/.bin/rimraf ./docs && npx typedoc ./src",
+		"docs": "./node_modules/.bin/rimraf ./docs && npx typedoc ./src",
 		"build": "./node_modules/.bin/rimraf ./build && ./node_modules/.bin/tsc",
 		"clean": "./node_modules/.bin/rimraf ./build ./docs"
 	},

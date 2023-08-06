@@ -1,17 +1,10 @@
 'use strict';
 
-import * as Connection from './connection';
-import * as Data from './data';
-import * as Module from './module';
-import { Type } from './type';
-import { AbstractMessage } from './abstract';
-import { MessageError } from './abstract';
+
+import * as Message from './message';
+import * as Model from './model';
 
 export {
-	AbstractMessage,
-	Connection,
-	Data,
-	MessageError,
-	Module,
-	Type
-};
+	Message,
+	Model
+}
