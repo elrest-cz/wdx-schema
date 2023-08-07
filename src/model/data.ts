@@ -4,6 +4,9 @@ export class BrowseRequestBody {
 
 	public static UNLIMITED_LEVEL = -1;
 
+	/**
+	 * Full data path
+	 */
 	public path: string;
 
 	public level: number;
@@ -15,13 +18,23 @@ export class BrowseRequestBody {
 }
 
 export class Data {
+
+	/**
+	 * Full data path
+	 */
+	public path?: string;
 	public node_class?: number;
 	public type_class?: string;
 	public children?: Array<Data>;
+
 }
 
 export class RegisterRequestBody {
-	public paths: Array<string>;
+
+	/**
+	 * Full data paths
+	 */
+	public paths?: Array<string>;
 	public refreshMin?: number;
 	public refreshMax?: number;
 	public delta?: number;
