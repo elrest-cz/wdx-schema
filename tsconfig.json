@@ -6,7 +6,6 @@
 		"lib": [
 			"es6"
 		],
-		"types": [],
 		"allowJs": true,
 		"outDir": "build",
 		"rootDir": "src",

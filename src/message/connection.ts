@@ -9,7 +9,7 @@ import {
 	RestartRequestBody,
 	StartRequestBody,
 	StopRequestBody
-	
+
 } from "../model/connection";
 
 
@@ -40,7 +40,7 @@ export class DisconnectResponse extends AbstractMessage {
 
 export class ListRequest extends AbstractMessage {
 	public type: Type = Type.ConnectionListRequest;
-	public body: ListRequestBody;
+	public body: ListRequestBody = new ListRequestBody();
 }
 
 

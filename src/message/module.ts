@@ -36,7 +36,7 @@ export class ListRequest extends AbstractMessage {
 
 export class ListResponse extends AbstractMessage {
 	public type: Type = Type.ModuleListResponse;
-	body: Array<Module> = new Array<Module>();
+	public body: Array<Module>;
 }
 
 export class UninstallRequest extends AbstractMessage {
