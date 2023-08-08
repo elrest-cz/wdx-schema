@@ -1,3 +1,7 @@
 'use strict';
 
-import {};
+import { Repository } from './repository';
+
+export {
+	Repository
+}

@@ -23,6 +23,8 @@ export enum Type {
 	 */
 	DataBrowseRequest = "DataBrowseRequest",
 	DataBrowseResponse = "DataBrowseResponse",
+	DataGetRequest = "DataGetRequest",
+	DataGetResponse = "DataGetResponse",
 	DataRegisterRequest = "DataRegisterRequest",
 	DataRegisterResponse = "DataRegisterResponse",
 	DataUnregisterRequest = "DataUnregisterRequest",

@@ -7,24 +7,56 @@ export enum Status {
 }
 
 export class ConnectRequestBody {
+
 	public connectionId: number;
+
+	constructor(connectionId: number) {
+		this.connectionId = connectionId;
+	}
+}
+export class DisconnectRequestBody {
+
+	public connectionId: number;
+
+	constructor(connectionId: number) {
+		this.connectionId = connectionId;
+	}
 }
 
 
 export class ListRequestBody {
 	public status: Status;
+
+	constructor(status: Status) {
+		this.status = status;
+	}
 }
 
 export class RestartRequestBody {
+
 	public connectionId: number;
+
+	constructor(connectionId: number) {
+		this.connectionId = connectionId;
+	}
 }
 
 export class StartRequestBody {
+
 	public connectionId: number;
+
+	constructor(connectionId: number) {
+		this.connectionId = connectionId;
+	}
 }
 
 export class StopRequestBody {
+
 	public connectionId: number;
+
+	constructor(connectionId: number) {
+		this.connectionId = connectionId;
+	}
 }
 
 export class Connection {
@@ -47,4 +79,5 @@ export class Connection {
 	public main: boolean;
 	public modbus_desc: string;
 	public type_id: number;
+	public status: Status;
 }

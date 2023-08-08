@@ -1,6 +1,6 @@
 `use strict`
 
-import { AbstractMessage } from "./abstract";
+import { AbstractMessage, MessageError } from "./abstract";
 import { Type } from './type';
 import {
 	ConnectRequestBody,
@@ -8,6 +8,7 @@ import {
 	Connection,
 	RestartRequestBody,
 	StartRequestBody,
+	Status,
 	StopRequestBody
 
 } from "../model/connection";
@@ -40,9 +41,13 @@ export class DisconnectResponse extends AbstractMessage {
 
 export class ListRequest extends AbstractMessage {
 	public type: Type = Type.ConnectionListRequest;
-	public body: ListRequestBody = new ListRequestBody();
-}
+	public body: ListRequestBody;
 
+	constructor(status: Status = Status.Any, uuid?: string, error?: MessageError) {
+		super(undefined, uuid, error);
+		this.body = new ListRequestBody(status);
+	}
+}
 
 export class ListResponse extends AbstractMessage {
 	public type: Type = Type.ConnectionListResponse;
@@ -53,29 +58,45 @@ export class ListResponse extends AbstractMessage {
 export class RestartRequest extends AbstractMessage {
 	public type: Type = Type.ConnectionRestartRequest;
 	public body: RestartRequestBody;
+
+	constructor(connectionId: number) {
+		super(undefined, undefined, undefined);
+		this.body = new StopRequestBody(connectionId);
+	}
 }
 
 export class RestartResponse extends AbstractMessage {
 	public type: Type = Type.ConnectionRestartResponse;
-	public body: null
+	public body: Connection;
 }
 
 export class StartRequest extends AbstractMessage {
 	public type: Type = Type.ConnectionStartRequest;
 	public body: StartRequestBody;
+
+	constructor(connectionId: number) {
+		super(undefined, undefined, undefined);
+		this.body = new StartRequestBody(connectionId);
+	}
 }
 
 export class StartResponse extends AbstractMessage {
 	public type: Type = Type.ConnectionStartResponse;
-	public body: null;
+	public body: Connection;
 }
 
 export class StopRequest extends AbstractMessage {
 	public type: Type = Type.ConnectionStopRequest;
 	public body: StopRequestBody;
+
+	constructor(connectionId: number) {
+		super(undefined, undefined, undefined);
+		this.body = new StopRequestBody(connectionId);
+	}
+
 }
 
 export class StopResponse extends AbstractMessage {
 	public type: Type = Type.ConnectionStopResponse;
-	public body: null;
+	public body: Connection;
 }
