@@ -16,8 +16,7 @@ export class BrowseRequest extends AbstractMessage {
 	public body: BrowseRequestBody;
 
 	constructor(path: string, level: number = BrowseRequestBody.UNLIMITED_LEVEL) {
-		super(undefined, undefined, undefined);
-		this.body = new BrowseRequestBody(path, level);
+		super( new BrowseRequestBody(path, level), undefined, undefined);
 	}
 }
 
@@ -31,14 +30,13 @@ export class RegisterRequest extends AbstractMessage {
 	public body: RegisterRequestBody;
 
 	constructor(paths: Array<string>, refreshMin?: number, refreshMax?: number, delta?: number) {
-		super(undefined, undefined, undefined);
-		this.body = new RegisterRequestBody(paths, refreshMin, refreshMax, delta);
+		super(new RegisterRequestBody(paths, refreshMin, refreshMax, delta), undefined, undefined);
 	}
 }
 
 export class RegisterResponse extends AbstractMessage {
 	public type: Type = Type.DataRegisterResponse;
-	public body: null;
+	public body: Data;
 }
 
 export class UnregisterRequest extends AbstractMessage {
@@ -46,8 +44,7 @@ export class UnregisterRequest extends AbstractMessage {
 	public body: UnregisterRequestBody;
 
 	constructor(paths: Array<string>) {
-		super(undefined, undefined, undefined);
-		this.body = new UnregisterRequestBody(paths);
+		super(new UnregisterRequestBody(paths), undefined, undefined);
 	}
 }
 
@@ -61,8 +58,7 @@ export class GetRequest extends AbstractMessage {
 	public body: GetRequestBody;
 
 	constructor(path: string) {
-		super(undefined, undefined, undefined);
-		this.body = new GetRequestBody(path);
+		super(new GetRequestBody(path), undefined, undefined);
 	}
 }
 
@@ -76,8 +72,7 @@ export class SetRequest extends AbstractMessage {
 	public body: SetRequestBody;
 
 	constructor(path: string, value: Data) {
-		super(undefined, undefined, undefined);
-		this.body = new SetRequestBody(path, value);
+		super(new SetRequestBody(path, value), undefined, undefined);
 	}
 }
 

@@ -2,7 +2,7 @@
 
 export class BrowseRequestBody {
 
-	public static UNLIMITED_LEVEL:number = -1;
+	public static UNLIMITED_LEVEL: number = -1;
 
 	/**
 	 * Full data path
@@ -23,6 +23,8 @@ export class Data {
 	 * Full data path
 	 */
 	public path?: string;
+	public name?: string;
+	public value?: any;
 	public node_class?: number;
 	public type_class?: string;
 	public children?: Array<Data>;
