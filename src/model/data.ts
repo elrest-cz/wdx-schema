@@ -24,7 +24,6 @@ export class Data {
 	 */
 	public path: string;
 	public name: string;
-	public value?: any;
 	public node_class?: string;
 	public type_class?: string;
 	public children: Array<Data>=new Array<Data>();
@@ -39,7 +38,6 @@ export class Data {
 	) {
 		this.path = path;
 		this.name = name;
-		if (value) this.value = value;
 		if (children) this.children = children;
 		if (type_class) this.type_class = type_class;
 		if (type_class) this.type_class = type_class;

@@ -23,7 +23,7 @@ export class InstallRequest extends AbstractMessage {
 
 export class InstallResponse extends AbstractMessage {
 	public type: Type = Type.ModuleInstallResponse;
-	public body: null;
+	public body: Module;
 }
 
 
@@ -53,5 +53,5 @@ export class UninstallRequest extends AbstractMessage {
 
 export class UninstallResponse extends AbstractMessage {
 	public type: Type = Type.ModuleUninstallResponse;
-	public body: null;
+	public body: Module;
 }

@@ -1,6 +1,7 @@
 `use strict`
 
 export class InstallRequestBody {
+
 	public moduleId: number;
 
 	constructor(moduleId: number) {
@@ -9,16 +10,16 @@ export class InstallRequestBody {
 }
 
 export class ListRequestBody {
+
 	public status: Status = Status.Any;
 
-	constructor(status?: Status) {
-		if (status) {
-			this.status = status;
-		}
+	constructor(status: Status = Status.Any) {
+		this.status = status;
 	}
 }
 
 export class UninstallRequestBody {
+
 	public moduleId: number;
 
 	constructor(moduleId: number) {
@@ -39,4 +40,5 @@ export class Module {
 	public image: string;
 	public licence: boolean;
 	public price: number;
+	public status: Status;
 }
