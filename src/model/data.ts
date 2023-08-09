@@ -22,13 +22,28 @@ export class Data {
 	/**
 	 * Full data path
 	 */
-	public path?: string;
-	public name?: string;
+	public path: string;
+	public name: string;
 	public value?: any;
-	public node_class?: number;
+	public node_class?: string;
 	public type_class?: string;
-	public children?: Array<Data>;
+	public children: Array<Data>=new Array<Data>();
 
+	constructor(
+		path: string,
+		name: string,
+		value: any = undefined,
+		children: Array<Data> = [],
+		node_class?: string,
+		type_class?: string
+	) {
+		this.path = path;
+		this.name = name;
+		if (value) this.value = value;
+		if (children) this.children = children;
+		if (type_class) this.type_class = type_class;
+		if (type_class) this.type_class = type_class;
+	}
 }
 
 export class RegisterRequestBody {
@@ -41,7 +56,12 @@ export class RegisterRequestBody {
 	public refreshMax?: number;
 	public delta?: number;
 
-	constructor(paths: Array<string>, refreshMin?: number, refreshMax?: number, delta?: number) {
+	constructor(
+		paths: Array<string>,
+		refreshMin?: number,
+		refreshMax?: number,
+		delta?: number
+	) {
 		this.paths = paths;
 		if (refreshMin) this.refreshMin = refreshMin;
 		if (refreshMax) this.refreshMax = refreshMax;
