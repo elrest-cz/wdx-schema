@@ -2,6 +2,10 @@
 
 export class InstallRequestBody {
 	public moduleId: number;
+
+	constructor(moduleId: number) {
+		this.moduleId = moduleId;
+	}
 }
 
 export class ListRequestBody {
@@ -16,6 +20,10 @@ export class ListRequestBody {
 
 export class UninstallRequestBody {
 	public moduleId: number;
+
+	constructor(moduleId: number) {
+		this.moduleId = moduleId;
+	}
 }
 
 export enum Status {

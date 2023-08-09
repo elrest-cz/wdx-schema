@@ -14,11 +14,10 @@ import {
 
 export class InstallRequest extends AbstractMessage {
 	public type: Type = Type.ModuleInstallRequest;
-	public body: InstallRequestBody = new InstallRequestBody();
+	public body: InstallRequestBody;
 
 	constructor(moduleId: number, uuid?: string, error?: MessageError) {
-		super(null, uuid, error);
-		this.body.moduleId = moduleId;
+		super(new InstallRequestBody(moduleId), uuid, error);
 	}
 }
 
@@ -30,9 +29,12 @@ export class InstallResponse extends AbstractMessage {
 
 export class ListRequest extends AbstractMessage {
 	public type: Type = Type.ModuleListRequest;
-	public body: ListRequestBody = new ListRequestBody();
-}
+	public body: ListRequestBody;
 
+	constructor(status: Status = Status.Any, uuid?: string, error?: MessageError) {
+		super(new ListRequestBody(status), uuid, error);
+	}
+}
 
 export class ListResponse extends AbstractMessage {
 	public type: Type = Type.ModuleListResponse;
@@ -42,6 +44,10 @@ export class ListResponse extends AbstractMessage {
 export class UninstallRequest extends AbstractMessage {
 	public type: Type = Type.ModuleUninstallRequest;
 	public body: UninstallRequestBody;
+
+	constructor(moduleId: number, uuid?: string, error?: MessageError) {
+		super(new UninstallRequestBody(moduleId), uuid, error);
+	}
 }
 
 
