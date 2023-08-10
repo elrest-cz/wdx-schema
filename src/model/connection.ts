@@ -87,3 +87,11 @@ export class Connection {
 	public type_id: number;
 	public status: Status;
 }
+
+export class ConnectionConfiguration {
+	
+}
+
+export class ConnectionInstance {
+	
+}

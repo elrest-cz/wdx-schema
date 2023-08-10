@@ -17,6 +17,22 @@ export enum Type {
 	ConnectionStartResponse = "ConnectionStartResponse",
 	ConnectionStopRequest = "ConnectionStopRequest",
 	ConnectionStopResponse = "ConnectionStopResponse",
+	
+	/**
+	 * Instance
+	 */
+	InstanceConnectRequest = "InstanceConnectRequest",
+	InstanceConnectResponse = "InstanceConnectResponse",
+	InstanceDisconnectRequest = "InstanceDisconnectRequest",
+	InstanceDisconnectResponse = "InstanceDisconnectResponse",
+	InstanceListRequest = "InstanceListRequest",
+	InstanceListResponse = "InstanceListResponse",
+	InstanceRestartRequest = "InstanceRestartRequest",
+	InstanceRestartResponse = "InstanceRestartResponse",
+	InstanceStartRequest = "InstanceStartRequest",
+	InstanceStartResponse = "InstanceStartResponse",
+	InstanceStopRequest = "InstanceStopRequest",
+	InstanceStopResponse = "InstanceStopResponse",
 
 	/**
 	 * Data
