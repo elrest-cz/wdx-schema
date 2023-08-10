@@ -4,6 +4,7 @@ import { Type } from "./type";
 import {
 	BrowseRequestBody,
 	Data,
+	DataSchema,
 	GetRequestBody,
 	RegisterRequestBody,
 	SetRequestBody,
@@ -16,13 +17,13 @@ export class BrowseRequest extends AbstractMessage {
 	public body: BrowseRequestBody;
 
 	constructor(path: string, level: number = BrowseRequestBody.UNLIMITED_LEVEL) {
-		super( new BrowseRequestBody(path, level), undefined, undefined);
+		super(new BrowseRequestBody(path, level), undefined, undefined);
 	}
 }
 
 export class BrowseResponse extends AbstractMessage {
 	public type: Type = Type.DataBrowseResponse;
-	public body: Data;
+	public body: DataSchema;
 }
 
 export class RegisterRequest extends AbstractMessage {

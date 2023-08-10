@@ -17,7 +17,7 @@ export class BrowseRequestBody {
 	}
 }
 
-export class Data {
+export class DataSchema {
 
 	/**
 	 * Full data path
@@ -26,21 +26,28 @@ export class Data {
 	public name: string;
 	public node_class?: string;
 	public type_class?: string;
-	public children: Array<Data>=new Array<Data>();
+	public children: Array<DataSchema> = new Array<DataSchema>();
 
 	constructor(
 		path: string,
 		name: string,
-		value: any = undefined,
-		children: Array<Data> = [],
+		children: Array<DataSchema> = [],
 		node_class?: string,
 		type_class?: string
 	) {
 		this.path = path;
 		this.name = name;
 		if (children) this.children = children;
+		if (node_class) this.node_class = node_class;
 		if (type_class) this.type_class = type_class;
-		if (type_class) this.type_class = type_class;
+	}
+}
+
+export class Data {
+
+
+	constructor(
+	) {
 	}
 }
 

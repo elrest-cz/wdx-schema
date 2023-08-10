@@ -1,9 +1,15 @@
 `use strict`
 
 export enum Status {
-	Offline = "offline",
+	Any = "any",
 	Online = "online",
-	Any = "any"
+	Offline = "offline",
+	Starting = "Starting",
+	Started = "Started",
+	Stopping = "Stopping",
+	Stopppedg = "Stopppedg",
+	Restarting = "Restarting",
+	Restarted = "Restarted",
 }
 
 export class ConnectRequestBody {
