@@ -54,20 +54,20 @@ export class Data {
 export class RegisterRequestBody {
 
 	/**
-	 * Full data paths
+	 * Full data path
 	 */
-	public paths?: Array<string>;
+	public path: string;
 	public refreshMin?: number;
 	public refreshMax?: number;
 	public delta?: number;
 
 	constructor(
-		paths: Array<string>,
+		path: string,
 		refreshMin?: number,
 		refreshMax?: number,
 		delta?: number
 	) {
-		this.paths = paths;
+		this.path = path;
 		if (refreshMin) this.refreshMin = refreshMin;
 		if (refreshMax) this.refreshMax = refreshMax;
 		if (delta) this.delta = delta;
@@ -77,12 +77,12 @@ export class RegisterRequestBody {
 
 export class UnregisterRequestBody {
 	/**
-	 * Full data paths
+	 * Full data path
 	 */
-	public paths: Array<string>;
+	public path: string;
 
-	constructor(paths: Array<string>) {
-		this.paths = paths;
+	constructor(path: string) {
+		this.path = path;
 	}
 }
 

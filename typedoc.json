@@ -3,5 +3,9 @@
 	"entryPoints": [
 		"src/index.ts"
 	],
-	"out": "./docs"
+	"cleanOutputDir": true,
+	"out": "./docs",
+	"exclude": [
+		"./build/**"
+	]
 }

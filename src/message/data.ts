@@ -1,5 +1,5 @@
 `use strict`
-import { AbstractMessage } from "./abstract";
+import { AbstractMessage, MessageError } from "./abstract";
 import { Type } from "./type";
 import {
 	BrowseRequestBody,
@@ -30,8 +30,8 @@ export class RegisterRequest extends AbstractMessage {
 	public type: Type = Type.DataRegisterRequest;
 	public body: RegisterRequestBody;
 
-	constructor(paths: Array<string>, refreshMin?: number, refreshMax?: number, delta?: number) {
-		super(new RegisterRequestBody(paths, refreshMin, refreshMax, delta), undefined, undefined);
+	constructor(path: string, refreshMin?: number, refreshMax?: number, delta?: number) {
+		super(new RegisterRequestBody(path, refreshMin, refreshMax, delta), undefined, undefined);
 	}
 }
 
@@ -44,8 +44,8 @@ export class UnregisterRequest extends AbstractMessage {
 	public type: Type = Type.DataUnregisterRequest;
 	public body: UnregisterRequestBody;
 
-	constructor(paths: Array<string>) {
-		super(new UnregisterRequestBody(paths), undefined, undefined);
+	constructor(path: string, uuid?: string, error?: MessageError) {
+		super(new UnregisterRequestBody(path), uuid, error);
 	}
 }
 
