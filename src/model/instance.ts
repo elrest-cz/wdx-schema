@@ -1,6 +1,5 @@
 'use strict';
 
-
 export class ListRequestBody {
 
 	public status: Status;
@@ -19,8 +18,8 @@ export enum Status {
 export class Monit {
 
 	constructor(
-		memory: number,
-		cpu: number
+		public memory: number,
+		public cpu: number
 	) { }
 }
 
