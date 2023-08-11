@@ -1,5 +1,10 @@
 'use strict';
 
+
+export class Configuration {
+
+}
+
 export class ListRequestBody {
 
 	public status: Status;
@@ -21,6 +26,10 @@ export class Monit {
 		public memory: number,
 		public cpu: number
 	) { }
+}
+
+export class Log {
+
 }
 
 export class Instance {

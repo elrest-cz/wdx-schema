@@ -1,3 +1,4 @@
 src/
 nodemon.json
 tsconfig.json
+typedoc.json
