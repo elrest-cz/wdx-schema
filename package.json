@@ -2,18 +2,18 @@
 	"name": "@elrest/edesign-library-messages",
 	"description": "Elrest - eDesign - Library Messages",
 	"license": "2023 Elrest AutomationsSysteme GMBH",
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"main": "build/index.js",
-	"types": "build/index.d.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start:dev": "npx nodemon --config ./nodemon.json",
-		"docs": "./node_modules/.bin/rimraf ./build ./docs/typedoc && npx typedoc --options ./typedoc.json",
-		"build": "./node_modules/.bin/rimraf ./build && ./node_modules/.bin/tsc",
-		"clean": "./node_modules/.bin/rimraf ./build ./docs/typedoc"
+		"docs": "./node_modules/.bin/rimraf ./build ./docs && npx typedoc --options ./typedoc.json",
+		"build": "npx rimraf ./build && ./node_modules/.bin/tsc",
+		"clean": "./node_modules/.bin/rimraf ./build ./docs"
 	},
 	"dependencies": {
 		"@node-ts/bus-messages": "^1.0.6",
+		"pm2": "^5.3.0",
 		"uuid": "^9.0.0"
 	},
 	"devDependencies": {
