@@ -17,7 +17,9 @@
 		"sourceMap": true
 	},
 	"exclude": [
-		"node_modules",
-		"docs"
+		"build",
+		"docs",
+		"logs",
+		"node_modules"
 	]
 }
