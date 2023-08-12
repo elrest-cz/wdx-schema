@@ -3,6 +3,8 @@
 import { v4 as uuidv4 } from 'uuid';
 import { Type } from './type';
 
+import { Command } from '@node-ts/bus-messages';
+
 export class MessageError {
 
 	public code: number;
@@ -14,6 +16,8 @@ export class MessageError {
 		this.message = message;
 	}
 }
+
+export class BUSMessage {}
 
 export abstract class AbstractMessage {
 

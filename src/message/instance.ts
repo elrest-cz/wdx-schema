@@ -1,8 +1,11 @@
 `use strict`
 
 import { AbstractMessage, MessageError } from "./abstract";
-import { Type } from './type';
 
+import { Type } from './type';
+import * as PM2 from 'pm2';
+
+console.log(PM2);
 
 import {
 	ListRequestBody,

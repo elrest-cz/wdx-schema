@@ -6,7 +6,7 @@
 	"main": "build/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start:dev": "npx nodemon --config ./nodemon.json",
+		"start:dev": "npx nodemon --legacy-watch --config ./nodemon.json",
 		"build": "npx typedoc --options ./typedoc.json && npx tsc",
 		"build:pm2": "typedoc --options ./typedoc.json && tsc"
 	},

@@ -1,8 +1,11 @@
 {
+	"verbose": true,
+	"legacyWatch":true,
 	"watch": [
-		"src"
+		"./src"
 	],
 	"ext": ".ts,.js,.json",
-	"ignore": [],
-	"exec": "ts-node ./src/index.ts"
+	"ignore": [
+	],
+	"exec": "tsc"
 }
