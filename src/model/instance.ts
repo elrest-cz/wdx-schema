@@ -1,7 +1,11 @@
 'use strict';
-
+// import * as PM2LIB from 'pm2';
 
 export class Configuration {
+
+}
+
+export class ConfigurationLogs {
 
 }
 
@@ -41,7 +45,8 @@ export class Instance {
 		public pm2_env: any,
 		public pm_id: number,
 		public status: Status,
-		public monit: Monit
+		public monit: Monit,
+
 	) { }
 
 }

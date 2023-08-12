@@ -7,8 +7,8 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start:dev": "npx nodemon --config ./nodemon.json",
-		"docs": "npx typedoc --options ./typedoc.json",
-		"build": "npx typedoc --options ./typedoc.json && npx tsc --build --clean"
+		"build": "npx typedoc --options ./typedoc.json && npx tsc",
+		"build:pm2": "typedoc --options ./typedoc.json && tsc"
 	},
 	"dependencies": {
 		"@node-ts/bus-messages": "^1.0.6",
