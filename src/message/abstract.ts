@@ -32,7 +32,6 @@ export abstract class AbstractMessage {
 	public error?: MessageError | null;
 
 	constructor(body?: any, uuid?: string, error?: MessageError) {
-		//console.log(body, uuid, error);
 		if (body) this.body = body;
 		this.uuid = uuid ? uuid : uuidv4();
 		if (error) this.error = error;
