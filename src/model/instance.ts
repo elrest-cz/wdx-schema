@@ -2,12 +2,14 @@
 // import * as PM2LIB from 'pm2';
 
 export class Configuration {
-
+	
 }
 
 export class ConfigurationLogs {
 
 }
+
+export class MetaData extends Map<string,any>{}
 
 export class ListRequestBody {
 
@@ -33,17 +35,20 @@ export class Monit {
 }
 
 export class Log {
-
+	
 }
 
 export class Instance {
 
-	constructor(
+	public logs:any;
 
+	constructor(
+		public id: number,
 		public pid: number,
 		public name: string,
+		public namespace: string,
+		public mode: string,
 		public pm2_env: any,
-		public pm_id: number,
 		public status: Status,
 		public monit: Monit,
 

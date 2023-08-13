@@ -13,6 +13,15 @@ import {
 } from "../model/instance";
 
 
+export class InfoRequest extends AbstractMessage {
+	public type: Type = Type.InstanceListRequest;
+	public body: ListRequestBody;
+
+	constructor(pack: Status = Status.Any, uuid?: string, error?: MessageError) {
+		super(undefined, uuid, error);
+		console.log(pack);
+	}
+}
 export class ListRequest extends AbstractMessage {
 	public type: Type = Type.InstanceListRequest;
 	public body: ListRequestBody;

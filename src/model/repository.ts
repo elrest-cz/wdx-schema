@@ -5,6 +5,7 @@ export class Package {
 	name: string;
 	description: string;
 	authors:Array<any>;
+	versions:[]
 }
 
 export class Repository {

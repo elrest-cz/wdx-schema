@@ -7,5 +7,5 @@
 	"ext": ".ts,.js,.json",
 	"ignore": [
 	],
-	"exec": "tsc"
+	"exec": "tsc && echo > .build"
 }
