@@ -41,4 +41,5 @@ export class Module {
 	public licence: boolean;
 	public price: number;
 	public status: Status;
+	public authors: Array<any>;
 }

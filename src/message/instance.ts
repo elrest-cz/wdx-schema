@@ -19,7 +19,6 @@ export class InfoRequest extends AbstractMessage {
 
 	constructor(pack: Status = Status.Any, uuid?: string, error?: MessageError) {
 		super(undefined, uuid, error);
-		console.log(pack);
 	}
 }
 export class ListRequest extends AbstractMessage {
