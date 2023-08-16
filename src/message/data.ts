@@ -92,10 +92,11 @@ export class GetSchemaRequest extends AbstractMessage {
 }
 
 export class GetSchemaResponse extends AbstractMessage {
-	public type: Type = Type.DataGetSchemaResponse;
-	public body: DataSchema;
 
-	constructor(body: DataSchema, uuid?: string, error?: MessageError) {
+	public type: Type = Type.DataGetSchemaResponse;
+	public body?: DataSchema;
+
+	constructor(body?: DataSchema, uuid?: string, error?: MessageError) {
 		super(body, uuid, error);
 	}
 }

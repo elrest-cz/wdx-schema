@@ -37,11 +37,10 @@ export enum Type {
 	/**
 	 * Data
 	 */
-	DataBrowseRequest = "DataBrowseRequest",
-	DataBrowseResponse = "DataBrowseResponse",
 
 	DataRegisterRequest = "DataRegisterRequest",
 	DataRegisterResponse = "DataRegisterResponse",
+
 	DataUnregisterRequest = "DataUnregisterRequest",
 	DataUnregisterResponse = "DataUnregisterResponse",
 
@@ -54,7 +53,7 @@ export enum Type {
 	DataSetSchemaRequest = "DataSetSchemaRequest",
 	DataSetSchemaResponse = "DataSetSchemaResponse",
 
-	DataGetSchemaRequest = "DataSetSchemaRequest",
+	DataGetSchemaRequest = "DataGetSchemaRequest",
 	DataGetSchemaResponse = "DataGetSchemaResponse",
 
 	/**
