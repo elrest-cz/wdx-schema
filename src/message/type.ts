@@ -17,7 +17,7 @@ export enum Type {
 	ConnectionStartResponse = "ConnectionStartResponse",
 	ConnectionStopRequest = "ConnectionStopRequest",
 	ConnectionStopResponse = "ConnectionStopResponse",
-	
+
 	/**
 	 * Instance
 	 */
@@ -39,14 +39,23 @@ export enum Type {
 	 */
 	DataBrowseRequest = "DataBrowseRequest",
 	DataBrowseResponse = "DataBrowseResponse",
-	DataGetRequest = "DataGetRequest",
-	DataGetResponse = "DataGetResponse",
+
 	DataRegisterRequest = "DataRegisterRequest",
 	DataRegisterResponse = "DataRegisterResponse",
 	DataUnregisterRequest = "DataUnregisterRequest",
 	DataUnregisterResponse = "DataUnregisterResponse",
-	DataSetRequest = "DataSetRequest",
-	DataSetResponse = "DataSetResponse",
+
+	DataSetValueRequest = "DataSetValueRequest",
+	DataSetValueResponse = "DataSetValueResponse",
+
+	DataGetValueRequest = "DataGetValueRequest",
+	DataGetValueResponse = "DataGetValueResponse",
+
+	DataSetSchemaRequest = "DataSetSchemaRequest",
+	DataSetSchemaResponse = "DataSetSchemaResponse",
+
+	DataGetSchemaRequest = "DataSetSchemaRequest",
+	DataGetSchemaResponse = "DataGetSchemaResponse",
 
 	/**
 	 * Module

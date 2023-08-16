@@ -3,7 +3,6 @@
 import { AbstractMessage, MessageError } from "./abstract";
 
 import { Type } from './type';
-import * as PM2 from 'pm2';
 
 import {
 	ListRequestBody,

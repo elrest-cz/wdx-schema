@@ -3,6 +3,7 @@ import { AbstractMessage, MessageError } from "./abstract";
 import { Type } from "./type";
 import {
 	BrowseRequestBody,
+	GetSchemaRequestBody,
 	Data,
 	DataSchema,
 	GetRequestBody,
@@ -10,21 +11,6 @@ import {
 	SetRequestBody,
 	UnregisterRequestBody
 } from "../model/data";
-
-
-export class BrowseRequest extends AbstractMessage {
-	public type: Type = Type.DataBrowseRequest;
-	public body: BrowseRequestBody;
-
-	constructor(path: string, level: number = BrowseRequestBody.UNLIMITED_LEVEL) {
-		super(new BrowseRequestBody(path, level), undefined, undefined);
-	}
-}
-
-export class BrowseResponse extends AbstractMessage {
-	public type: Type = Type.DataBrowseResponse;
-	public body: DataSchema;
-}
 
 export class RegisterRequest extends AbstractMessage {
 	public type: Type = Type.DataRegisterRequest;
@@ -54,8 +40,8 @@ export class UnregisterResponse extends AbstractMessage {
 	public body: null;
 }
 
-export class GetRequest extends AbstractMessage {
-	public type: Type = Type.DataGetRequest;
+export class GetValueRequest extends AbstractMessage {
+	public type: Type = Type.DataGetValueRequest;
 	public body: GetRequestBody;
 
 	constructor(path: string) {
@@ -63,13 +49,13 @@ export class GetRequest extends AbstractMessage {
 	}
 }
 
-export class GetResponse extends AbstractMessage {
-	public type: Type = Type.DataSetResponse;
+export class GetValueResponse extends AbstractMessage {
+	public type: Type = Type.DataGetValueResponse;
 	public body: Data;
 }
 
-export class SetRequest extends AbstractMessage {
-	public type: Type = Type.DataSetRequest;
+export class SetValueRequest extends AbstractMessage {
+	public type: Type = Type.DataSetValueRequest;
 	public body: SetRequestBody;
 
 	constructor(path: string, value: Data) {
@@ -77,7 +63,40 @@ export class SetRequest extends AbstractMessage {
 	}
 }
 
-export class SetResponse extends AbstractMessage {
-	public type: Type = Type.DataSetResponse;
+export class SetValueResponse extends AbstractMessage {
+	public type: Type = Type.DataSetValueResponse;
 	public body: Data;
 }
+
+export class SetSchemaRequest extends AbstractMessage {
+	public type: Type = Type.DataSetSchemaRequest;
+	public body: DataSchema;
+}
+
+export class SetSchemaResponse extends AbstractMessage {
+	public type: Type = Type.DataSetSchemaResponse;
+	public body: DataSchema;
+}
+
+export class GetSchemaRequest extends AbstractMessage {
+
+	public type: Type = Type.DataGetSchemaRequest;
+	public body: GetSchemaRequestBody;
+
+	constructor(
+		path: string,
+		level: number = GetSchemaRequestBody.UNLIMITED_LEVEL
+	) {
+		super(new GetSchemaRequestBody(path, level), undefined, undefined);
+	}
+}
+
+export class GetSchemaResponse extends AbstractMessage {
+	public type: Type = Type.DataGetSchemaResponse;
+	public body: DataSchema;
+
+	constructor(body: DataSchema, uuid?: string, error?: MessageError) {
+		super(body, uuid, error);
+	}
+}
+

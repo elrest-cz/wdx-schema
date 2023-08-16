@@ -2,7 +2,7 @@
 	"name": "@elrest/edesign-library-messages",
 	"description": "Elrest - eDesign - Library Messages",
 	"license": "2023 Elrest AutomationsSysteme GMBH",
-	"version": "1.0.18",
+	"version": "1.0.19",
 	"main": "build/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -11,8 +11,6 @@
 		"build:pm2": "typedoc --options ./typedoc.json && tsc"
 	},
 	"dependencies": {
-		"@node-ts/bus-messages": "^1.0.6",
-		"pm2": "^5.3.0",
 		"uuid": "^9.0.0"
 	},
 	"devDependencies": {

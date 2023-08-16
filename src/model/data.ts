@@ -16,36 +16,38 @@ export class BrowseRequestBody {
 		this.level = level;
 	}
 }
+export class GetSchemaRequestBody {
 
-export class DataSchema {
+	public static UNLIMITED_LEVEL: number = -1;
 
 	/**
 	 * Full data path
 	 */
 	public path: string;
-	public name: string;
-	public node_class?: string;
-	public type_class?: string;
-	public children: Array<DataSchema> = new Array<DataSchema>();
+
+	public level: number;
+
+	constructor(path: string, level: number = GetSchemaRequestBody.UNLIMITED_LEVEL) {
+		this.path = path;
+		this.level = level;
+	}
+}
+
+
+export class DataSchema {
 
 	constructor(
-		path: string,
-		name: string,
-		children: Array<DataSchema> = [],
-		node_class?: string,
-		type_class?: string
+		public path: string,
+		public relativePath:string,
+		public name: string,
+		public children?: Array<DataSchema>,
+		public node_class?: string,
+		public type_class?: string
 	) {
-		this.path = path;
-		this.name = name;
-		if (children) this.children = children;
-		if (node_class) this.node_class = node_class;
-		if (type_class) this.type_class = type_class;
 	}
 }
 
 export class Data {
-
-
 	constructor(
 	) {
 	}

@@ -3,6 +3,7 @@
 		"strictPropertyInitialization": false,
 		"target": "es5",
 		"module": "commonjs",
+		"moduleResolution": "Node16",
 		"lib": [
 			"es6"
 		],
@@ -14,27 +15,31 @@
 		"esModuleInterop": true,
 		"resolveJsonModule": true,
 		"declaration": true,
-		"sourceMap": true
+		"sourceMap": true,
+		"composite": true,
+		"tsBuildInfoFile": ".build.json"
 	},
 	"exclude": [
+		"logs",
 		"build",
 		"docs",
-		"logs",
 		"node_modules"
+	],
+	"include": [
+		"src/**/*"
 	],
 	"watchOptions": {
 		"watchFile": "useFsEvents",
 		"watchDirectory": "useFsEvents",
 		"fallbackPolling": "dynamicPriority",
+		"synchronousWatchDirectory": true,
 		"excludeDirectories": [
 			"**/node_modules",
-			"build",
-			"docs",
-			".logs",
-			".git"
-			
+			"**/build",
+			"**/logs"
 		],
 		"excludeFiles": [
+			".tsbuildinfo"
 		]
 	}
 }
