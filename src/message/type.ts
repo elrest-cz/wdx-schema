@@ -3,26 +3,12 @@
 export enum Type {
 
 	/**
-	 * Connection
-	 */
-	ConnectionConnectRequest = "ConnectionConnectRequest",
-	ConnectionConnectResponse = "ConnectionConnectResponse",
-	ConnectionDisconnectRequest = "ConnectionDisconnectRequest",
-	ConnectionDisconnectResponse = "ConnectionDisconnectResponse",
-	ConnectionListRequest = "ConnectionListRequest",
-	ConnectionListResponse = "ConnectionListResponse",
-	ConnectionRestartRequest = "ConnectionRestartRequest",
-	ConnectionRestartResponse = "ConnectionRestartResponse",
-	ConnectionStartRequest = "ConnectionStartRequest",
-	ConnectionStartResponse = "ConnectionStartResponse",
-	ConnectionStopRequest = "ConnectionStopRequest",
-	ConnectionStopResponse = "ConnectionStopResponse",
-
-	/**
 	 * Instance
 	 */
 	InstanceConnectRequest = "InstanceConnectRequest",
 	InstanceConnectResponse = "InstanceConnectResponse",
+	InstanceDeleteRequest = "InstanceDeleteRequest",
+	InstanceDeleteResponse = "InstanceDeleteResponse",
 	InstanceDisconnectRequest = "InstanceDisconnectRequest",
 	InstanceDisconnectResponse = "InstanceDisconnectResponse",
 	InstanceListRequest = "InstanceListRequest",
@@ -33,10 +19,17 @@ export enum Type {
 	InstanceStartResponse = "InstanceStartResponse",
 	InstanceStopRequest = "InstanceStopRequest",
 	InstanceStopResponse = "InstanceStopResponse",
+	
 
 	/**
 	 * Data
 	 */
+
+	DataRegisterProviderRequest = "DataRegisterProviderRequest",
+	DataRegisterProviderResponse = "DataRegisterProviderResponse",
+
+	DataProviderRequest = "DataProviderRequest",
+	DataProviderResponse = "DataProviderResponse",
 
 	DataRegisterRequest = "DataRegisterRequest",
 	DataRegisterResponse = "DataRegisterResponse",
@@ -57,12 +50,16 @@ export enum Type {
 	DataGetSchemaResponse = "DataGetSchemaResponse",
 
 	/**
-	 * Module
+	 * Package
 	 */
-	ModuleInstallRequest = "ModuleInstallRequest",
-	ModuleInstallResponse = "ModuleInstallResponse",
-	ModuleListRequest = "ModuleListRequest",
-	ModuleListResponse = "ModuleListResponse",
-	ModuleUninstallRequest = "ModuleUninstallRequest",
-	ModuleUninstallResponse = "ModuleUninstallResponse"
+	PackageInstallRequest = "PackageInstallRequest",
+	PackageInstallResponse = "PackageInstallResponse",
+	PackageUninstallRequest = "PackageUninstallRequest",
+	PackageUninstallResponse = "PackageUninstallResponse",
+
+	/**
+	 * Repository
+	 */
+	RepositoryListRequest = "RepositoryListRequest",
+	RepositoryListResponse = "RepositoryListResponse"
 }

@@ -11,15 +11,6 @@ import {
 
 } from "../model/instance";
 
-
-export class InfoRequest extends AbstractMessage {
-	public type: Type = Type.InstanceListRequest;
-	public body: ListRequestBody;
-
-	constructor(pack: Status = Status.Any, uuid?: string, error?: MessageError) {
-		super(undefined, uuid, error);
-	}
-}
 export class ListRequest extends AbstractMessage {
 	public type: Type = Type.InstanceListRequest;
 	public body: ListRequestBody;
@@ -37,32 +28,43 @@ export class ListResponse extends AbstractMessage {
 
 
 export class RestartRequest extends AbstractMessage {
-	public type: Type = Type.ConnectionRestartRequest;
+	public type: Type = Type.InstanceRestartRequest;
 	public body: Instance;
 }
 
 export class RestartResponse extends AbstractMessage {
-	public type: Type = Type.ConnectionRestartResponse;
+	public type: Type = Type.InstanceRestartResponse;
 	public body: Instance;
 }
 
 export class StartRequest extends AbstractMessage {
-	public type: Type = Type.ConnectionStartRequest;
+	public type: Type = Type.InstanceStartRequest;
 	public body: Instance;
 }
 
 export class StartResponse extends AbstractMessage {
-	public type: Type = Type.ConnectionStartResponse;
+	public type: Type = Type.InstanceStartResponse;
+	public body: Instance;
+}
+
+export class DeleteRequest extends AbstractMessage {
+	public type: Type = Type.InstanceDeleteRequest;
+	public body: Instance;
+
+}
+
+export class DeleteResponse extends AbstractMessage {
+	public type: Type = Type.InstanceDeleteResponse;
 	public body: Instance;
 }
 
 export class StopRequest extends AbstractMessage {
-	public type: Type = Type.ConnectionStopRequest;
+	public type: Type = Type.InstanceStopRequest;
 	public body: Instance;
 
 }
 
 export class StopResponse extends AbstractMessage {
-	public type: Type = Type.ConnectionStopResponse;
+	public type: Type = Type.InstanceStopResponse;
 	public body: Instance;
 }

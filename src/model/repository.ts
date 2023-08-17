@@ -1,16 +1,19 @@
 'use strict';
 
+import { Package, Status } from "./package";
 
-export class Package {
-	name: string;
-	description: string;
-	authors:Array<any>;
-	versions:[]
+
+export class ListRequestBody {
+
+	constructor(public status: Status = Status.Any) {
+	}
 }
 
 export class Repository {
-	public id?: number;
-	public name: string;
-	public url: string;
-	public packages:Array<Package>;
+
+	constructor(
+		public id: number,
+		public name: string,
+		public url: string,
+		public packages: Array<Package>) { };
 }

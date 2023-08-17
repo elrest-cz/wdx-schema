@@ -2,15 +2,49 @@
 import { AbstractMessage, MessageError } from "./abstract";
 import { Type } from "./type";
 import {
-	BrowseRequestBody,
 	GetSchemaRequestBody,
 	Data,
 	DataSchema,
 	GetRequestBody,
 	RegisterRequestBody,
-	SetRequestBody,
-	UnregisterRequestBody
+	UnregisterRequestBody,
+	SetValueRequestBody,
+	RegisterProviderRequestBody
 } from "../model/data";
+
+
+export class RegisterProviderRequest extends AbstractMessage {
+
+	public type: Type = Type.DataRegisterProviderRequest;
+
+	public body: RegisterProviderRequestBody;
+
+	constructor(
+		provider: string,
+		path: string,
+		uuid?: string,
+		error?: MessageError
+	) {
+		super(new RegisterProviderRequestBody(provider, path), uuid, error);
+	}
+}
+
+export class RegisterProviderResponse extends AbstractMessage {
+
+	public type: Type = Type.DataRegisterProviderResponse;
+
+	public body: undefined;
+}
+
+export class ProviderRequest extends AbstractMessage {
+	public type: Type = Type.DataProviderRequest;
+	public body: any;
+}
+
+export class ProviderResponse extends AbstractMessage {
+	public type: Type = Type.DataProviderResponse;
+	public body: any;
+}
 
 export class RegisterRequest extends AbstractMessage {
 	public type: Type = Type.DataRegisterRequest;
@@ -56,10 +90,10 @@ export class GetValueResponse extends AbstractMessage {
 
 export class SetValueRequest extends AbstractMessage {
 	public type: Type = Type.DataSetValueRequest;
-	public body: SetRequestBody;
+	public body: SetValueRequestBody;
 
 	constructor(path: string, value: Data) {
-		super(new SetRequestBody(path, value), undefined, undefined);
+		super(new SetValueRequestBody(path, value), undefined, undefined);
 	}
 }
 

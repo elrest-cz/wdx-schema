@@ -22,7 +22,7 @@ export class ListRequestBody {
 
 export enum Status {
 	Online = "online",
-	Offline = "offline",
+	Offline = "stopped",
 	Any = "any"
 }
 
@@ -39,21 +39,15 @@ export class Log {
 }
 
 export class Instance {
-
-	public logs: any;
-
-	public config: any;
-
 	constructor(
-		public id: number,
-		public pid: number,
-		public name: string,
-		public namespace: string,
-		public mode: string,
-		public pm2_env: any,
-		public status: Status,
-		public monit: Monit,
-
+		public pm_id?: number | undefined,
+		public pid?: number | undefined,
+		public name?: string | undefined,
+		public namespace?: string | undefined,
+		public mode?: string | undefined,
+		public pm2_env?: any | undefined,
+		public status?: Status | undefined,
+		public monit?: Monit | undefined
 	) { }
 
 }
