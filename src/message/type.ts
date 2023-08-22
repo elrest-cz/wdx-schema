@@ -5,12 +5,17 @@ export enum Type {
 	/**
 	 * Instance
 	 */
+
 	InstanceConnectRequest = "InstanceConnectRequest",
 	InstanceConnectResponse = "InstanceConnectResponse",
 	InstanceDeleteRequest = "InstanceDeleteRequest",
 	InstanceDeleteResponse = "InstanceDeleteResponse",
 	InstanceDisconnectRequest = "InstanceDisconnectRequest",
 	InstanceDisconnectResponse = "InstanceDisconnectResponse",
+
+	InstanceInfoRequest = "InstanceInfoRequest",
+	InstanceInfoResponse = "InstanceInfoResponse",
+
 	InstanceListRequest = "InstanceListRequest",
 	InstanceListResponse = "InstanceListResponse",
 	InstanceRestartRequest = "InstanceRestartRequest",
@@ -19,7 +24,7 @@ export enum Type {
 	InstanceStartResponse = "InstanceStartResponse",
 	InstanceStopRequest = "InstanceStopRequest",
 	InstanceStopResponse = "InstanceStopResponse",
-	
+
 
 	/**
 	 * Data
@@ -61,5 +66,8 @@ export enum Type {
 	 * Repository
 	 */
 	RepositoryListRequest = "RepositoryListRequest",
-	RepositoryListResponse = "RepositoryListResponse"
+	RepositoryListResponse = "RepositoryListResponse",
+	RepositoryInfoRequest = "RepositoryInfoRequest",
+	RepositoryInfoResponse = "RepositoryInfoResponse"
+
 }

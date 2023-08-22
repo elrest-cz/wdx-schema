@@ -22,7 +22,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">Package</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in src/model/package.ts:21</li></ul></aside>
+<li>Defined in src/model/package.ts:50</li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -34,14 +34,13 @@
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="Model.Package.Package.html#authors" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>authors</span></a>
-<a href="Model.Package.Package.html#description" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>description</span></a>
-<a href="Model.Package.Package.html#id" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>id</span></a>
-<a href="Model.Package.Package.html#image" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>image</span></a>
+<div class="tsd-index-list"><a href="Model.Package.Package.html#description" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>description</span></a>
+<a href="Model.Package.Package.html#distTags" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>dist<wbr/>Tags</span></a>
 <a href="Model.Package.Package.html#licence" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>licence</span></a>
+<a href="Model.Package.Package.html#maintainers" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>maintainers</span></a>
 <a href="Model.Package.Package.html#name" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>name</span></a>
-<a href="Model.Package.Package.html#price" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>price</span></a>
-<a href="Model.Package.Package.html#status" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>status</span></a>
+<a href="Model.Package.Package.html#readmeFilename" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>readme<wbr/>Filename</span></a>
+<a href="Model.Package.Package.html#time" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>time</span></a>
 <a href="Model.Package.Package.html#versions" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>versions</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
@@ -49,56 +48,72 @@
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_Package"><span class="tsd-kind-constructor-signature">new <wbr/>Package</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Model.Package.Package.html" class="tsd-signature-type tsd-kind-class">Package</a><a href="#constructor.new_Package" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_Package"><span class="tsd-kind-constructor-signature">new <wbr/>Package</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">name</span>, <span class="tsd-kind-parameter">description</span>, <span class="tsd-kind-parameter">distTags</span>, <span class="tsd-kind-parameter">maintainers</span>, <span class="tsd-kind-parameter">readmeFilename</span>, <span class="tsd-kind-parameter">time</span>, <span class="tsd-kind-parameter">licence</span>, <span class="tsd-kind-parameter">versions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Model.Package.Package.html" class="tsd-signature-type tsd-kind-class">Package</a><a href="#constructor.new_Package" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <a href="Model.Package.Package.html" class="tsd-signature-type tsd-kind-class">Package</a></h4></li></ul></section></section>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">name</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">description</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">distTags</span>: <a href="Model.Package.PackageDistTags.html" class="tsd-signature-type tsd-kind-class">PackageDistTags</a></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">maintainers</span>: <a href="Model.Package.PackageMaintainer.html" class="tsd-signature-type tsd-kind-class">PackageMaintainer</a><span class="tsd-signature-symbol">[]</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">readmeFilename</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">time</span>: <span class="tsd-signature-type">any</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">licence</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">versions</span>: <a href="Model.Package.PackageVersions.html" class="tsd-signature-type tsd-kind-class">PackageVersions</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="Model.Package.Package.html" class="tsd-signature-type tsd-kind-class">Package</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in src/model/package.ts:51</li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member"><a id="authors" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>authors</span><a href="#authors" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">authors</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in src/model/package.ts:29</li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="description" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>description</span><a href="#description" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">description</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in src/model/package.ts:24</li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="id" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>id</span><a href="#id" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">id</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
+<li>Defined in src/model/package.ts:53</li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="distTags" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>dist<wbr/>Tags</span><a href="#distTags" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">dist<wbr/>Tags</span><span class="tsd-signature-symbol">:</span> <a href="Model.Package.PackageDistTags.html" class="tsd-signature-type tsd-kind-class">PackageDistTags</a></div><aside class="tsd-sources">
 <ul>
-<li>Defined in src/model/package.ts:22</li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="image" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>image</span><a href="#image" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">image</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in src/model/package.ts:25</li></ul></aside></section>
+<li>Defined in src/model/package.ts:54</li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="licence" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>licence</span><a href="#licence" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">licence</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-property">licence</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in src/model/package.ts:26</li></ul></aside></section>
+<li>Defined in src/model/package.ts:58</li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="maintainers" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>maintainers</span><a href="#maintainers" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">maintainers</span><span class="tsd-signature-symbol">:</span> <a href="Model.Package.PackageMaintainer.html" class="tsd-signature-type tsd-kind-class">PackageMaintainer</a><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in src/model/package.ts:55</li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="name" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>name</span><a href="#name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">name</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in src/model/package.ts:23</li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="price" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>price</span><a href="#price" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">price</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
+<li>Defined in src/model/package.ts:52</li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="readmeFilename" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>readme<wbr/>Filename</span><a href="#readmeFilename" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">readme<wbr/>Filename</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in src/model/package.ts:27</li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="status" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>status</span><a href="#status" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">status</span><span class="tsd-signature-symbol">:</span> <a href="../modules/Model.html" class="tsd-signature-type tsd-kind-namespace">Model</a><span class="tsd-signature-symbol">.</span><a href="../modules/Model.Package.html" class="tsd-signature-type tsd-kind-namespace">Package</a><span class="tsd-signature-symbol">.</span><a href="../enums/Model.Package.Status.html" class="tsd-signature-type tsd-kind-enum">Status</a></div><aside class="tsd-sources">
+<li>Defined in src/model/package.ts:56</li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="time" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>time</span><a href="#time" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">time</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in src/model/package.ts:28</li></ul></aside></section>
+<li>Defined in src/model/package.ts:57</li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="versions" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>versions</span><a href="#versions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">versions</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-kind-property">versions</span><span class="tsd-signature-symbol">:</span> <a href="Model.Package.PackageVersions.html" class="tsd-signature-type tsd-kind-class">PackageVersions</a></div><aside class="tsd-sources">
 <ul>
-<li>Defined in src/model/package.ts:30</li></ul></aside></section></section></div>
+<li>Defined in src/model/package.ts:59</li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -119,14 +134,13 @@
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
-<li><a href="#authors" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>authors</span></a></li>
 <li><a href="#description" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>description</span></a></li>
-<li><a href="#id" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>id</span></a></li>
-<li><a href="#image" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>image</span></a></li>
+<li><a href="#distTags" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>dist<wbr/>Tags</span></a></li>
 <li><a href="#licence" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>licence</span></a></li>
+<li><a href="#maintainers" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>maintainers</span></a></li>
 <li><a href="#name" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>name</span></a></li>
-<li><a href="#price" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>price</span></a></li>
-<li><a href="#status" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>status</span></a></li>
+<li><a href="#readmeFilename" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>readme<wbr/>Filename</span></a></li>
+<li><a href="#time" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>time</span></a></li>
 <li><a href="#versions" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>versions</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>@elrest/edesign-<wbr/>library-<wbr/>messages</span></a>
@@ -145,6 +159,10 @@
 <li><a href="../enums/Model.Package.Status.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-8"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-enum)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.45 16V7.24H14.49V8.224H10.518V10.936H14.07V11.908H10.518V15.016H14.49V16H9.45Z" fill="var(--color-text)"></path></g></svg><span>Status</span></a></li>
 <li><a href="Model.Package.InstallRequestBody.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-128"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>Install<wbr/>Request<wbr/>Body</span></a></li>
 <li><a href="Model.Package.Package.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Package</span></a></li>
+<li><a href="Model.Package.PackageDistTags.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Package<wbr/>Dist<wbr/>Tags</span></a></li>
+<li><a href="Model.Package.PackageMaintainer.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Package<wbr/>Maintainer</span></a></li>
+<li><a href="Model.Package.PackageVersion.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Package<wbr/>Version</span></a></li>
+<li><a href="Model.Package.PackageVersions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Package<wbr/>Versions</span></a></li>
 <li><a href="Model.Package.UninstallRequestBody.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>Uninstall<wbr/>Request<wbr/>Body</span></a></li></ul></div></details></li>
 <li><a href="../modules/Model.Repository.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>Repository</span></a></li></ul></div></details></li></ul></nav></div></div></div>
 <div class="tsd-generator">

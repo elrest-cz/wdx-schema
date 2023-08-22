@@ -8,8 +8,24 @@ import {
 	ListRequestBody,
 	Instance,
 	Status,
+	InfoRequestBody,
 
 } from "../model/instance";
+
+export class InfoRequest extends AbstractMessage {
+	public type: Type = Type.InstanceInfoRequest;
+	public body: InfoRequestBody;
+
+	constructor(id: number, uuid?: string, error?: MessageError) {
+		super(new InfoRequestBody(id), uuid, error);
+	}
+}
+
+export class InfoResponse extends AbstractMessage {
+	public type: Type = Type.InstanceInfoResponse;
+	public body: Instance;
+}
+
 
 export class ListRequest extends AbstractMessage {
 	public type: Type = Type.InstanceListRequest;

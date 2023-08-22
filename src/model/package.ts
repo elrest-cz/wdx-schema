@@ -18,14 +18,61 @@ export enum Status {
 	Any = "Any"
 }
 
-export class Package {
-	public id: number;
-	public name: string;
-	public description: string;
-	public image: string;
-	public licence: boolean;
-	public price: number;
-	public status: Status;
-	public authors: Array<any>;
-	public versions: Array<any>;
+
+export class PackageVersions {
+	[version: string]: PackageVersion
 }
+
+/**
+ * eDesign Runtime Model Package Distributions
+ */
+export class PackageDistTags {
+	[version: string]: string;
+}
+
+/**
+ * eDesign Runtime Model Package Maintainer
+ */
+export class PackageUser {
+	constructor(name?: string) { }
+}
+
+/**
+ * eDesign Runtime Model Package Maintainer
+ */
+export class PackageMaintainer extends PackageUser {
+}
+
+/**
+ * eDesign Runtime Model Package Author
+ */
+export class PackageAuthor extends PackageUser {
+}
+
+
+
+/**
+ * eDesign Runtime Model Package Version
+ */
+export class PackageVersion {
+
+}
+
+
+
+export class Package {
+	constructor(
+		public author?:Array<PackageAuthor>,
+		public name?: string,
+		public description?: string,
+		public distTags?: PackageDistTags,
+		public maintainers?: Array<PackageMaintainer>,
+		public readmeFilename?: string,
+		public time?: any,
+		public license?: string,
+		public versions?: PackageVersions,
+		public status?:Status,
+		public installedVersion?:string
+	) { }
+}
+

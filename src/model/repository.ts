@@ -1,7 +1,15 @@
 'use strict';
 
-import { Package, Status } from "./package";
+import {
+	Package,
+	Status
+} from "./package";
 
+
+export class InfoRequestBody {
+	constructor(public name: string, public version?: string) {
+	}
+}
 
 export class ListRequestBody {
 
@@ -10,10 +18,10 @@ export class ListRequestBody {
 }
 
 export class Repository {
-
 	constructor(
 		public id: number,
 		public name: string,
 		public url: string,
-		public packages: Array<Package>) { };
+		public packages: Array<Package>
+	) { };
 }

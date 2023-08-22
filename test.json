@@ -1,0 +1,70 @@
+{
+    "name": "@elrest/edesign-adapter-eweb",
+    "versions": {
+        "1.0.5": {
+            "name": "@elrest/edesign-adapter-eweb",
+            "description": "Elrest - eDesign - Adapter - eWeb",
+            "license": "elrest automationssysteme gmbh",
+            "version": "1.0.5",
+            "bin": {
+                "ed-eweb": "bin/ed-eweb"
+            },
+            "scripts": {
+                "test": "echo \"Error: no test specified\" && exit 1",
+                "start:dev": "npx nodemon --config ./nodemon.json",
+                "build": "rimraf ./build && ./node_modules/.bin/tsc",
+                "clean": "rimraf ./docs ./build",
+                "clean-all": "rimraf ./docs ./build ./node-modules ./yarn.lock",
+                "docs": "rimraf  ./docs && npx typedoc ./src"
+            },
+            "dependencies": {
+                "@elrest/edesign-library": "~1.0.x",
+                "ws": "^8.13.1"
+            },
+            "devDependencies": {
+                "@types/node": "^20.4.4",
+                "@types/node-ipc": "^9.2.0",
+                "@types/sqlite3": "^3.1.8",
+                "@types/uuid": "^9.0.2",
+                "@types/ws": "^8.5.5",
+                "nodemon": "^3.0.1",
+                "rimraf": "^5.0.1",
+                "ts-node": "^10.9.1",
+                "typedoc": "^0.24.8",
+                "typescript": "^5.1.6"
+            },
+            "args": {
+                "ed-eweb": [
+                    "host",
+                    "port",
+                    "username",
+                    "password"
+                ]
+            },
+            "readmeFilename": "README.md",
+            "gitHead": "6f23089c21266620be8681a4ee619f312dab7a43",
+            "_id": "@elrest/edesign-adapter-eweb@1.0.5",
+            "_nodeVersion": "18.16.1",
+            "_npmVersion": "9.5.1",
+            "dist": {
+                "integrity": "sha512-+F06H5vQtRZzATFK5Kf2m2UoXpmpbir57EV2LAUTghUxQFrs2XCvV24kiI+nVnllEPsPqn71bBGLpcaygvB8ag==",
+                "shasum": "e437525506105ffaef88c737d23a0db282a4129b",
+                "tarball": "http://localhost:4873/@elrest/edesign-adapter-eweb/-/edesign-adapter-eweb-1.0.5.tgz"
+            },
+            "contributors": []
+        }
+    },
+    "time": {
+        "modified": "2023-08-19T10:17:48.369Z",
+        "created": "2023-08-19T10:17:48.369Z",
+        "1.0.5": "2023-08-19T10:17:48.369Z"
+    },
+    "users": {},
+    "dist-tags": {
+        "latest": "1.0.5"
+    },
+    "_rev": "3-450b7b35d169cf67",
+    "_id": "@elrest/edesign-adapter-eweb",
+    "readme": "eDesign eWeb Adapter Application v.1.0.1\n(C) 2023 Elrest AutomationsSysteme GMBH\n\nUsage: ed-eweb [options]\n\nAvaiable Options:\n\n    --h --help        Print this help\n    --v --verbose     Increase verbosity in log\n    --id              eDesign eWeb Connection ID\n    --host            eDesign eWeb host\n    --port            eDesign eWeb port\n    --username        eDesign eWeb username\n    --password        eDesign eWeb password",
+    "_attachments": {}
+}

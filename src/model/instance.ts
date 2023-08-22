@@ -11,12 +11,15 @@ export class ConfigurationLogs {
 
 export class MetaData extends Map<string, any>{ }
 
+export class InfoRequestBody {
+
+	constructor(public id: number) {
+	}
+}
+
 export class ListRequestBody {
 
-	public status: Status;
-
-	constructor(status: Status) {
-		this.status = status;
+	constructor(public status: Status) {
 	}
 }
 
@@ -51,3 +54,4 @@ export class Instance {
 	) { }
 
 }
+

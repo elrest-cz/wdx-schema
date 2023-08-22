@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
 		"strictPropertyInitialization": false,
+		"alwaysStrict": false,
 		"target": "es5",
 		"module": "commonjs",
 		"moduleResolution": "Node16",
