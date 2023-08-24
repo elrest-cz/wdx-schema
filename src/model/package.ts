@@ -72,7 +72,7 @@ export class Package {
 		public license?: string,
 		public versions?: PackageVersions,
 		public status?:Status,
-		public installedVersion?:string
+		public currentVersion?:string
 	) { }
 }
 

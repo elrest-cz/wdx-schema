@@ -1,4 +1,14 @@
-`use strict`
+`use strict`;
+
+
+/**
+ * @abstract
+ * eDeesign Runtime Model Data PATH_SEPARATOR 
+ * 
+ * default .
+ * 
+ */
+export const PATH_SEPARATOR = ".";
 
 export class GetSchemaRequestBody {
 

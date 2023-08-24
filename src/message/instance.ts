@@ -42,6 +42,16 @@ export class ListResponse extends AbstractMessage {
 	public body: Array<Instance>;
 }
 
+export class MonitorRequest extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorRequest;
+	public body: null;
+}
+
+export class MonitorResponse extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorResponse;
+	public body: Array<Instance>;
+}
+
 
 export class RestartRequest extends AbstractMessage {
 	public type: Type = Type.InstanceRestartRequest;

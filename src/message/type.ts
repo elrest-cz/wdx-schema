@@ -18,6 +18,11 @@ export enum Type {
 
 	InstanceListRequest = "InstanceListRequest",
 	InstanceListResponse = "InstanceListResponse",
+	
+	
+	InstanceMonitorRequest = "InstanceMonitorRequest",
+	InstanceMonitorResponse = "InstanceMonitorResponse",
+	
 	InstanceRestartRequest = "InstanceRestartRequest",
 	InstanceRestartResponse = "InstanceRestartResponse",
 	InstanceStartRequest = "InstanceStartRequest",
