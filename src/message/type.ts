@@ -18,11 +18,15 @@ export enum Type {
 
 	InstanceListRequest = "InstanceListRequest",
 	InstanceListResponse = "InstanceListResponse",
+
+	InstanceMonitor = "InstanceMonitor",
 	
-	
-	InstanceMonitorRequest = "InstanceMonitorRequest",
-	InstanceMonitorResponse = "InstanceMonitorResponse",
-	
+	InstanceMonitorSubscribeRequest = "InstanceMonitorSubscribeRequest",
+	InstanceMonitorSubscribeResponse = "InstanceMonitorSubscribeResponse",
+
+	InstanceMonitorUnsubscribeRequest = "InstanceMonitorUnsubscribeRequest",
+	InstanceMonitorUnsubscribeResponse = "InstanceMonitorUnsubscribeResponse",
+
 	InstanceRestartRequest = "InstanceRestartRequest",
 	InstanceRestartResponse = "InstanceRestartResponse",
 	InstanceStartRequest = "InstanceStartRequest",

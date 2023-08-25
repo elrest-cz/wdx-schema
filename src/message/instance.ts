@@ -27,6 +27,23 @@ export class InfoResponse extends AbstractMessage {
 }
 
 
+export class SubscribeRequest extends AbstractMessage {
+
+	public type: Type = Type.InstanceInfoRequest;
+	public body: InfoRequestBody;
+
+	constructor(id: number, uuid?: string, error?: MessageError) {
+		super(new InfoRequestBody(id), uuid, error);
+	}
+}
+
+export class SubscribeResponse extends AbstractMessage {
+	public type: Type = Type.InstanceInfoResponse;
+	public body: Instance;
+}
+
+
+
 export class ListRequest extends AbstractMessage {
 	public type: Type = Type.InstanceListRequest;
 	public body: ListRequestBody;
@@ -42,16 +59,31 @@ export class ListResponse extends AbstractMessage {
 	public body: Array<Instance>;
 }
 
-export class MonitorRequest extends AbstractMessage {
-	public type: Type = Type.InstanceMonitorRequest;
-	public body: null;
-}
-
-export class MonitorResponse extends AbstractMessage {
-	public type: Type = Type.InstanceMonitorResponse;
+export class Monitor extends AbstractMessage {
+	public type: Type = Type.InstanceMonitor;
 	public body: Array<Instance>;
 }
 
+export class MonitorSubscribeRequest extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorSubscribeRequest;
+	public body: null;
+}
+
+
+export class MonitorSubscribeResponse extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorSubscribeResponse;
+	public body: null;
+}
+
+export class MonitorUnsubscribeRequest extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorSubscribeRequest;
+	public body: null;
+}
+
+export class MonitorUnsubscribeResponse extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorUnsubscribeResponse;
+	public body: null;
+}
 
 export class RestartRequest extends AbstractMessage {
 	public type: Type = Type.InstanceRestartRequest;
