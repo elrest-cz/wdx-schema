@@ -22,9 +22,9 @@ export class InstallRequest extends AbstractMessage {
 
 export class InstallResponse extends AbstractMessage {
 	public type: Type = Type.PackageInstallResponse;
-	public body: Package;
+	public body?: Package;
 
-	constructor(body: Package, uuid?: string, error?: MessageError) {
+	constructor(body?: Package, uuid?: string, error?: MessageError) {
 		super(body, uuid, error);
 	}
 }
@@ -41,9 +41,9 @@ export class UninstallRequest extends AbstractMessage {
 
 export class UninstallResponse extends AbstractMessage {
 	public type: Type = Type.PackageUninstallResponse;
-	public body: Package;
+	public body?: Package;
 
-	constructor(body: Package, uuid?: string, error?: MessageError) {
+	constructor(body?: Package, uuid?: string, error?: MessageError) {
 		super(body, uuid, error);
 	}
 }

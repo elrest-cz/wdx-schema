@@ -76,7 +76,7 @@ export class MonitorSubscribeResponse extends AbstractMessage {
 }
 
 export class MonitorUnsubscribeRequest extends AbstractMessage {
-	public type: Type = Type.InstanceMonitorSubscribeRequest;
+	public type: Type = Type.InstanceMonitorUnsubscribeRequest;
 	public body: null;
 }
 
