@@ -31,9 +31,9 @@ export class RegisterProviderRequestBody {
 export class DataSchema {
 
 	constructor(
-		public path?: string | undefined,
-		public relativePath?: string | undefined,
-		public name?: string | undefined,
+		public path: string | undefined,
+		public relativePath: string | undefined,
+		public name: string | undefined,
 		public children?: Array<DataSchema> | undefined,
 		public node_class?: string | undefined,
 		public type_class?: string | undefined

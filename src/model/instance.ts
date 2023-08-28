@@ -26,9 +26,12 @@ export class ListRequestBody {
 export enum Status {
 	Online = "online",
 	Offline = "stopped",
+	Error = "errored",
 	Any = "any"
 }
-
+/**
+ * 
+ */
 export class Monit {
 
 	constructor(
@@ -50,7 +53,8 @@ export class Instance {
 		public mode?: string | undefined,
 		public pm2_env?: any | undefined,
 		public status?: Status | undefined,
-		public monit?: Monit | undefined
+		public monit?: Monit | undefined,
+		public uptime?:number
 	) { }
 
 }

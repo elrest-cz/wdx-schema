@@ -2,9 +2,8 @@
 	"compilerOptions": {
 		"strictPropertyInitialization": false,
 		"alwaysStrict": false,
-		"target": "es5",
+		"target": "ES2015",
 		"module": "commonjs",
-		"moduleResolution": "Node16",
 		"lib": [
 			"es6"
 		],

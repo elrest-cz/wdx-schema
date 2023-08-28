@@ -5,11 +5,9 @@ module.exports = {
 		 * eDesign Runtime Messages
 		 */
 		{
-			name: "messages-build",
+			name: "Library Messages - Build",
 
-			namespace: "build",
-			
-			instance_var: "@elrest/edesign-runtime-messages",
+			namespace: "runtime",
 
 			cwd: "./messages",
 
@@ -40,12 +38,12 @@ module.exports = {
 
 			interpreter: "none",
 
-			out_file: 'logs/out.log',
-			error_file: 'logs/error.log',
-			log_file: 'logs/log.log',
-			merge_logs: true,
+			//out_file: 'logs/out.log',
+			//error_file: 'logs/error.log',
+			//log_file: 'logs/log.log',
+			//merge_logs: true,
 
-			log_date_format: 'DD/MM/YYYY HH:mm:ss'
+			log_date_format: 'DD/MM/YYYY HH:mm:ss',
 			//			log_date_format	(string)	“YYYY-MM-DD HH:mm Z”	log date format (see log section)
 			//			error_file	(string)	 	error file path (default to $HOME/.pm2/logs/<app name>-error-<pid>.log)
 			//			out_file	(string)	 	output file path (default to $HOME/.pm2/logs/<app name>-out-<pid>.log)
