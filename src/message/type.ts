@@ -5,7 +5,6 @@ export enum Type {
 	/**
 	 * Instance
 	 */
-
 	InstanceConnectRequest = "InstanceConnectRequest",
 	InstanceConnectResponse = "InstanceConnectResponse",
 	InstanceDeleteRequest = "InstanceDeleteRequest",
@@ -38,6 +37,7 @@ export enum Type {
 	/**
 	 * Data
 	 */
+	DataUpdate = "DataUpdate",
 
 	DataRegisterProviderRequest = "DataRegisterProviderRequest",
 	DataRegisterProviderResponse = "DataRegisterProviderResponse",
