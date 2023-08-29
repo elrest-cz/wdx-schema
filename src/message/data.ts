@@ -92,14 +92,18 @@ export class SetValueRequest extends AbstractMessage {
 	public type: Type = Type.DataSetValueRequest;
 	public body: SetValueRequestBody;
 
-	constructor(path: string, value: Data) {
-		super(new SetValueRequestBody(path, value), undefined, undefined);
+	constructor(path: string, value: Data, uuid?: string, error?: MessageError) {
+		super(new SetValueRequestBody(path, value), uuid, error);
 	}
 }
 
 export class SetValueResponse extends AbstractMessage {
 	public type: Type = Type.DataSetValueResponse;
 	public body: Data;
+
+	constructor(path?: string, value?: any, uuid?: string, error?: MessageError) {
+		super(path ? new Data(path, value) : undefined, uuid, error);
+	}
 }
 
 export class SetSchemaRequest extends AbstractMessage {
