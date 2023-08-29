@@ -5,5 +5,4 @@
 .project
 **yarn-error.log
 **yarn.lock
-**yarn.lock
-build.json
+.build.json
