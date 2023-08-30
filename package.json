@@ -2,9 +2,8 @@
 	"name": "@elrest/edesign-library-messages",
 	"description": "Elrest - eDesign - Library Messages",
 	"license": "2023 Elrest AutomationsSysteme GMBH",
-	"version": "1.0.33",
+	"version": "1.0.34",
 	"main": "build/index.js",
-	"private":"true",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start:dev": "npx nodemon --legacy-watch --config ./nodemon.json",
