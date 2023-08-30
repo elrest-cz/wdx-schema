@@ -1,11 +1,14 @@
+/**
+ * Elrest eDesign Runtime Library Messages Models
+ * 
+ * @copyright 2023 Elrest AutomationsSysteme GMBH
+ * @package Model
+ */
 `use strict`;
 
 
 /**
- * @abstract
- * eDeesign Runtime Model Data PATH_SEPARATOR 
- * 
- * default .
+ * eDeesign Runtime Model Data PATH_SEPARATOR = '.'
  * 
  */
 export const PATH_SEPARATOR = ".";

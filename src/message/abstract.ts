@@ -1,3 +1,9 @@
+/**
+ * Elrest eDesign Runtime Library Messages Models
+ * 
+ * @copyright 2023 Elrest AutomationsSysteme GMBH
+ * @package Message
+ */
 'use strict';
 
 import { v4 as uuidv4 } from 'uuid';

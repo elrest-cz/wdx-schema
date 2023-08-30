@@ -1,4 +1,11 @@
-'use strict'
+/**
+ * Elrest eDesign Runtime Library Messages
+ * 
+ * @copyright 2023 Elrest AutomationsSysteme GMBH
+ * @package Message
+ */
+
+'use strict';
 
 import { AbstractMessage, MessageError } from "./abstract";
 import { Type } from "./type";

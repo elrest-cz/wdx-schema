@@ -7,3 +7,5 @@ eDesign Application Library Messages v.1.0.1
 
 Web Socket Messages
 -------------------
+
+See [docs/index.html](docs/index.html) for more informations.
