@@ -2,27 +2,30 @@
  * Elrest eDesign Runtime Library Messages Models
  * 
  * @copyright 2023 Elrest AutomationsSysteme GMBH
- * @package Message
  */
 'use strict';
 
 import { v4 as uuidv4 } from 'uuid';
+
 import { Type } from './type';
 
+/**
+ * Elrest eDesign Runtime Library Messages  - Message Error
+ * 
+ * @todo Move to the model
+ */
 export class MessageError {
-
-	public code: number;
-
-	public message: string;
-
-	constructor(code: number, message: string) {
-		this.code = code;
-		this.message = message;
+	constructor(
+		public code: number,
+		public message: string
+	) {
 	}
 }
 
-export class BUSMessage {}
-
+/**
+ * Elrest eDesign Runtime Library Messages  - Abstract Message
+ * 
+ */
 export abstract class AbstractMessage {
 
 	public abstract type: Type;

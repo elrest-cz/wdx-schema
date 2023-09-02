@@ -2,7 +2,6 @@
  * Elrest eDesign Runtime Library Messages Models
  * 
  * @copyright 2023 Elrest AutomationsSysteme GMBH
- * @package Message
  */
 `use strict`
 
@@ -145,7 +144,7 @@ export class GetSchemaRequest extends AbstractMessage {
 export class GetSchemaResponse extends AbstractMessage {
 
 	public type: Type = Type.DataGetSchemaResponse;
-	public body?: DataSchema;
+	public body: DataSchema | undefined;
 
 	constructor(body?: DataSchema, uuid?: string, error?: MessageError) {
 		super(body, uuid, error);

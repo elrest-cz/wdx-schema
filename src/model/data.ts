@@ -2,14 +2,12 @@
  * Elrest eDesign Runtime Library Messages Models
  * 
  * @copyright 2023 Elrest AutomationsSysteme GMBH
- * @package Model
  */
 `use strict`;
 
 
 /**
  * eDeesign Runtime Model Data PATH_SEPARATOR = '.'
- * 
  */
 export const PATH_SEPARATOR = ".";
 
@@ -40,6 +38,14 @@ export class DataSchema {
 		public children?: Array<DataSchema> | undefined,
 		public node_class?: string | undefined,
 		public type_class?: string | undefined
+	) {
+	}
+}
+
+export class DataValue {
+	constructor(
+		public path: string,
+		public value: any
 	) {
 	}
 }

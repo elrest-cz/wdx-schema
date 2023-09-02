@@ -2,8 +2,8 @@
  * Elrest eDesign Runtime Library Messages Models
  * 
  * @copyright 2023 Elrest AutomationsSysteme GMBH
- * @package Model
  */
+
 `use strict`
 
 export class InstallRequestBody {
@@ -68,7 +68,7 @@ export class PackageVersion {
 
 export class Package {
 	constructor(
-		public author?:Array<PackageAuthor>,
+		public author?: Array<PackageAuthor>,
 		public name?: string,
 		public description?: string,
 		public distTags?: PackageDistTags,
@@ -77,8 +77,8 @@ export class Package {
 		public time?: any,
 		public license?: string,
 		public versions?: PackageVersions,
-		public status?:Status,
-		public currentVersion?:string
+		public status?: Status,
+		public currentVersion?: string
 	) { }
 }
 

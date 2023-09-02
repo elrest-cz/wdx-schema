@@ -1,21 +1,17 @@
 /**
- * Elrest eDesign Runtime Library Messages Models
+ * Elrest eDesign Runtime Library Messages Model Instance
  * 
  * @copyright 2023 Elrest AutomationsSysteme GMBH
- * @package Model
  */
 'use strict';
-// import * as PM2LIB from 'pm2';
 
 export class Configuration {
-	cwd?: string;
+	directory?: string;
 }
 
 export class ConfigurationLogs {
 
 }
-
-export class MetaData extends Map<string, any>{ }
 
 export class InfoRequestBody {
 
@@ -25,7 +21,10 @@ export class InfoRequestBody {
 
 export class ListRequestBody {
 
-	constructor(public status: Status) {
+	constructor(
+		public status: Status,
+		public namespace: string = ''
+	) {
 	}
 }
 
@@ -33,13 +32,10 @@ export enum Status {
 	Online = "online",
 	Offline = "stopped",
 	Error = "errored",
-	Any = "any"
+	Any = ""
 }
-/**
- * 
- */
-export class Monit {
 
+export class Monit {
 	constructor(
 		public memory: number,
 		public cpu: number
@@ -50,17 +46,42 @@ export class Log {
 
 }
 
-export class Instance {
+export const InstanceInterpreterNode = "none";
+
+export class InstanceArgs {
+	[name: string]: string;
+}
+
+export class InstanceLogging {
 	constructor(
-		public pm_id?: number | undefined,
-		public pid?: number | undefined,
-		public name?: string | undefined,
-		public namespace?: string | undefined,
-		public mode?: string | undefined,
-		public pm2_env?: any | undefined,
+		public outFile: string,
+		public errorFile: string,
+
+	) {
+
+	}
+}
+
+export class Instance {
+
+	public interpeter: string = InstanceInterpreterNode;
+	public script: string;
+	public directory: string;
+	public args: InstanceArgs = new InstanceArgs();
+	public watch: boolean | Array<string> = false;
+	public max_restarts: number = 1;
+
+
+	constructor(
+		public pm_id: number,
+		public pid: number,
+		public name: string,
+		public namespace: string,
+		public mode: string,
+		public pm2_env: any,
 		public status?: Status | undefined,
 		public monit?: Monit | undefined,
-		public uptime?:number
+		public uptime?: number
 	) { }
 
 }

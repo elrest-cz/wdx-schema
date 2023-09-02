@@ -1,5 +1,5 @@
 /**
- * Elrest eDesign Runtime Library Messages
+ * Elrest eDesign Runtime Library - Messages
  * 
  * @copyright 2023 Elrest AutomationsSysteme GMBH
  */

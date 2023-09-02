@@ -2,7 +2,6 @@
  * Elrest eDesign Runtime Library Messages
  * 
  * @copyright 2023 Elrest AutomationsSysteme GMBH
- * @package Message
  */
 
 'use strict';
@@ -56,14 +55,18 @@ export class ListRequest extends AbstractMessage {
 	public type: Type = Type.InstanceListRequest;
 	public body: ListRequestBody;
 
-	constructor(status: Status = Status.Any, uuid?: string, error?: MessageError) {
-		super(undefined, uuid, error);
-		this.body = new ListRequestBody(status);
+	constructor(status: Status = Status.Any, namespace: string = '', uuid?: string, error?: MessageError) {
+		super(new ListRequestBody(status, namespace), uuid, error);
 	}
 }
 
 export class ListResponse extends AbstractMessage {
 	public type: Type = Type.InstanceListResponse;
+	public body: Array<Instance>;
+}
+
+export class Discovery extends AbstractMessage {
+	public type: Type = Type.InstanceDiscovery;
 	public body: Array<Instance>;
 }
 

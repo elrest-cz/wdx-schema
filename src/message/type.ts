@@ -2,7 +2,6 @@
  * Elrest eDesign Runtime Library Messages
  * 
  * @copyright 2023 Elrest AutomationsSysteme GMBH
- * @package Message
  */
 
 'use strict';
@@ -14,6 +13,9 @@ export enum Type {
 	 */
 	InstanceConnectRequest = "InstanceConnectRequest",
 	InstanceConnectResponse = "InstanceConnectResponse",
+
+	InstanceDiscovery = "InstanceDiscovery",
+
 	InstanceDeleteRequest = "InstanceDeleteRequest",
 	InstanceDeleteResponse = "InstanceDeleteResponse",
 	InstanceDisconnectRequest = "InstanceDisconnectRequest",
@@ -26,7 +28,7 @@ export enum Type {
 	InstanceListResponse = "InstanceListResponse",
 
 	InstanceMonitor = "InstanceMonitor",
-	
+
 	InstanceMonitorSubscribeRequest = "InstanceMonitorSubscribeRequest",
 	InstanceMonitorSubscribeResponse = "InstanceMonitorSubscribeResponse",
 

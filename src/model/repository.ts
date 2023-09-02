@@ -2,7 +2,6 @@
  * Elrest eDesign Runtime Library Messages Models
  * 
  * @copyright 2023 Elrest AutomationsSysteme GMBH
- * @package Model
  */
 'use strict';
 
