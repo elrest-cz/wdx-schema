@@ -87,8 +87,17 @@ export enum Type {
 	RepositoryListResponse = "RepositoryListResponse",
 	RepositoryInfoRequest = "RepositoryInfoRequest",
 	RepositoryInfoResponse = "RepositoryInfoResponse",
-	
+
+	/**
+	 * Scripts
+	 */
 	ScriptBrowseRequest = "ScriptBrowseRequest",
 	ScriptBrowseResponse = "ScriptBrowseResponse",
+
+	ScriptSaveRequest = "ScriptSaveRequest",
+	ScriptSaveResponse = "ScriptSaveResponse",
+
+	ScriptDeleteRequest = "ScriptDeleteRequest",
+	ScriptDeleteResponse = "ScriptDeleteResponse",
 
 }

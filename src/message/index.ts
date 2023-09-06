@@ -10,7 +10,9 @@ import * as Data from './data';
 import * as Instance from './instance';
 import * as Package from './package';
 import * as Repository from './repository';
+import * as Script from './script';
 import { Type } from './type';
+
 import { AbstractMessage } from './abstract';
 import { MessageError } from './abstract';
 
@@ -21,5 +23,6 @@ export {
 	Instance,
 	Type,
 	Package,
-	Repository
+	Repository,
+	Script
 };
