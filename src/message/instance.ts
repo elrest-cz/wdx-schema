@@ -132,7 +132,9 @@ export class StopRequest extends AbstractMessage {
 	public body: Instance;
 
 }
-
+/**
+ * eDesign Runtime Message Instance Stop Reposnse
+ */
 export class StopResponse extends AbstractMessage {
 	public type: Type = Type.InstanceStopResponse;
 	public body: Instance;

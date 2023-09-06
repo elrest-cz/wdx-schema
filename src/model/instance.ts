@@ -28,6 +28,13 @@ export class ListRequestBody {
 	}
 }
 
+export enum ExecutionMode {
+
+	fork_mode = "fork_mode",
+
+	cluster = "cluster"
+}
+
 export enum Status {
 	Online = "online",
 	Offline = "stopped",
@@ -46,7 +53,7 @@ export class Log {
 
 }
 
-export const InstanceInterpreterNode = "none";
+export const InstanceInterpreterNone = "none";
 
 export class InstanceArgs {
 	[name: string]: string;
@@ -64,13 +71,12 @@ export class InstanceLogging {
 
 export class Instance {
 
-	public interpeter: string = InstanceInterpreterNode;
+	public interpeter: string = InstanceInterpreterNone;
 	public script: string;
 	public directory: string;
 	public args: InstanceArgs = new InstanceArgs();
 	public watch: boolean | Array<string> = false;
 	public max_restarts: number = 1;
-
 
 	constructor(
 		public pm_id: number,

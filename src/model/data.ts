@@ -1,5 +1,5 @@
 /**
- * Elrest eDesign Runtime Library Messages Models
+ * Elrest eDesign Runtime Library Messages Model Data
  * 
  * @copyright 2023 Elrest AutomationsSysteme GMBH
  */
@@ -11,6 +11,9 @@
  */
 export const PATH_SEPARATOR = ".";
 
+/**
+ * eDeesign Runtime Model Data GetSchemaRequestBody
+ */
 export class GetSchemaRequestBody {
 
 	public static UNLIMITED_LEVEL: number = 1;
@@ -22,6 +25,9 @@ export class GetSchemaRequestBody {
 	}
 }
 
+/**
+ * eDeesign Runtime Model Data ProviderRequestBody
+ */
 export class RegisterProviderRequestBody {
 	constructor(
 		public provider: string,

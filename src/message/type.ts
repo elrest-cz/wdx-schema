@@ -86,6 +86,9 @@ export enum Type {
 	RepositoryListRequest = "RepositoryListRequest",
 	RepositoryListResponse = "RepositoryListResponse",
 	RepositoryInfoRequest = "RepositoryInfoRequest",
-	RepositoryInfoResponse = "RepositoryInfoResponse"
+	RepositoryInfoResponse = "RepositoryInfoResponse",
+	
+	ScriptBrowseRequest = "ScriptBrowseRequest",
+	ScriptBrowseResponse = "ScriptBrowseResponse",
 
 }
