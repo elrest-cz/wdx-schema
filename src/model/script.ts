@@ -14,12 +14,13 @@ export class Script extends File {
 
 	constructor(
 		public name: string,
-		public created: number,
-		public updated: number,
+		public path: string,
+		public ctime: Date,
+		public mtime: Date,
 		public content?: string,
 		public instance?: Instance,
 	) {
-		super(name, created, updated, content);
+		super(name, path, ctime, mtime, content);
 	}
 }
 

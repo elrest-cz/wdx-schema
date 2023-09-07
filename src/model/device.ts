@@ -7,4 +7,9 @@
 
 `use strict`;
 
+/**
+ * eDesign Runtime Model Device
+ * 
+ * @todo Will be implemented in discovery messages
+ */
 export class Device { }

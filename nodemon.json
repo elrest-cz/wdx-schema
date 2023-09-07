@@ -10,5 +10,5 @@
 		"build",
 		"node_modules"
 	],
-	"exec": "tsc --build --verbose"
+	"exec": "tsc --build --verbose --diagnostics"
 }

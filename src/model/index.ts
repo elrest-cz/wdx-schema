@@ -1,5 +1,7 @@
 /**
- * Elrest eDesign Runtime Library Messages Models
+ * Elrest eDesign Runtime Library Messages Model
+ * 
+ * 
  * 
  * @copyright 2023 Elrest AutomationsSysteme GMBH
  */
