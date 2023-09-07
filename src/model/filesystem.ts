@@ -9,8 +9,9 @@
 export class Entry {
 	constructor(
 		public name: string,
-		public created: number,
-		public updated: number,
+		public path:string,
+		public ctime: Date,
+		public mtime: Date,
 	) { }
 }
 
@@ -18,21 +19,23 @@ export class Directory extends Entry {
 
 	constructor(
 		public name: string,
-		public created: number,
-		public updated: number,
+		public path:string,
+		public ctime: Date,
+		public mtime: Date,
 		public children: Array<Entry> = new Array<Entry>
 	) {
-		super(name, created, updated);
+		super(name, path, ctime, mtime);
 	}
 }
 
 export class File extends Entry {
 	constructor(
 		public name: string,
-		public created: number,
-		public updated: number,
+		public path:string,
+		public ctime: Date,
+		public mtime: Date,
 		public content?: string
 	) {
-		super(name, created, updated);
+		super(name, path, ctime, mtime);
 	}
 }
