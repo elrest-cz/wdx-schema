@@ -1,3 +1,9 @@
+/**
+ * Elrest eDesign Runtime Library Messages Model Script
+ * 
+ * @copyright 2023 Elrest AutomationsSysteme GMBH
+ */
+
 'use strict'
 
 
@@ -7,10 +13,8 @@ export const BROWSE_NO_LEVEL = -1;
 import { File } from './filesystem';
 import { Instance } from './instance';
 
-export class ScriptInstance extends Instance{
-	
-}
 /**
+ * Elrest eDesign Runtime Library Messages Model Script
  * 
  */
 export class Script extends File {
@@ -27,6 +31,10 @@ export class Script extends File {
 	}
 }
 
+/**
+ * Elrest eDesign Runtime Library Messages Model Browse Request Body
+ * 
+ */
 export class BrowseRequestBody {
 
 	constructor(

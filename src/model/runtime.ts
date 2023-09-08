@@ -15,7 +15,7 @@ import { Package } from "./package";
 import { Repository } from "./repository";
 
 /**
- * eDesign Runtime Host Protocol
+ * eDesign Runtime Library Messages Model Runtime Host Protocol
  * 
  * @see https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/protocol
  */
@@ -25,7 +25,7 @@ export enum ClientProtocol {
 }
 
 /**
- * eDesign Runtime Host Client Configuration
+ * eDesign Runtime Library Messages Model Runtime Host Client Configuration
  * 
  * @see https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/protocol
  */
