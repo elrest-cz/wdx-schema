@@ -34,9 +34,24 @@ export class InfoResponse extends AbstractMessage {
 }
 
 
+export class UnsubscribeRequest extends AbstractMessage {
+
+	public type: Type = Type.InstanceUnsubscribeRequest;
+	public body: InfoRequestBody;
+
+	constructor(id: number, uuid?: string, error?: MessageError) {
+		super(new InfoRequestBody(id), uuid, error);
+	}
+}
+
+export class UsnsubscribeResponse extends AbstractMessage {
+	public type: Type = Type.InstanceUnsubscribeResponse;
+	public body: Instance;
+}
+
 export class SubscribeRequest extends AbstractMessage {
 
-	public type: Type = Type.InstanceInfoRequest;
+	public type: Type = Type.InstanceSubscribeRequest;
 	public body: InfoRequestBody;
 
 	constructor(id: number, uuid?: string, error?: MessageError) {
@@ -45,11 +60,9 @@ export class SubscribeRequest extends AbstractMessage {
 }
 
 export class SubscribeResponse extends AbstractMessage {
-	public type: Type = Type.InstanceInfoResponse;
+	public type: Type = Type.InstanceSubscribeResponse;
 	public body: Instance;
 }
-
-
 
 export class ListRequest extends AbstractMessage {
 	public type: Type = Type.InstanceListRequest;

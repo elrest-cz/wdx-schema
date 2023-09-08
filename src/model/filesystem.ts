@@ -6,10 +6,10 @@
 
 'use strict';
 
-export class Entry {
+export abstract class Entry {
 	constructor(
 		public name: string,
-		public path:string,
+		public path: string,
 		public ctime: Date,
 		public mtime: Date,
 	) { }
@@ -19,7 +19,7 @@ export class Directory extends Entry {
 
 	constructor(
 		public name: string,
-		public path:string,
+		public path: string,
 		public ctime: Date,
 		public mtime: Date,
 		public children: Array<Entry> = new Array<Entry>
@@ -31,7 +31,7 @@ export class Directory extends Entry {
 export class File extends Entry {
 	constructor(
 		public name: string,
-		public path:string,
+		public path: string,
 		public ctime: Date,
 		public mtime: Date,
 		public content?: string

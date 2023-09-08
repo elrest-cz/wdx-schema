@@ -7,6 +7,9 @@ export const BROWSE_NO_LEVEL = -1;
 import { File } from './filesystem';
 import { Instance } from './instance';
 
+export class ScriptInstance extends Instance{
+	
+}
 /**
  * 
  */

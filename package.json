@@ -4,6 +4,8 @@
 	"license": "2023 Elrest AutomationsSysteme GMBH",
 	"version": "1.0.42",
 	"main": "build/index.js",
+	"types": "build/index.d.ts",
+	"private": "true",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start:dev": "npx nodemon --legacy-watch --config ./nodemon.json",

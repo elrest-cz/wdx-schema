@@ -5,7 +5,6 @@
  */
 `use strict`;
 
-
 /**
  * eDeesign Runtime Model Data PATH_SEPARATOR = '.'
  */

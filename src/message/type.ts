@@ -42,6 +42,11 @@ export enum Type {
 	InstanceStopRequest = "InstanceStopRequest",
 	InstanceStopResponse = "InstanceStopResponse",
 
+	InstanceSubscribeRequest = "InstanceSubscribeRequest",
+	InstanceSubscribeResponse = "InstanceSubscribeResponse",
+
+	InstanceUnsubscribeRequest = "InstanceUnsubscribeRequest",
+	InstanceUnsubscribeResponse = "InstanceUnsubscribeResponse",
 
 	/**
 	 * Data
