@@ -2,10 +2,9 @@
 	"name": "@elrest/edesign-library-messages",
 	"description": "Elrest - eDesign - Library Messages",
 	"license": "2023 Elrest AutomationsSysteme GMBH",
-	"version": "1.0.47",
+	"version": "1.0.48",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
-	"private": "true",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start:dev": "npx nodemon --legacy-watch --config ./nodemon.json",
@@ -14,6 +13,10 @@
 	},
 	"dependencies": {
 		"uuid": "^9.0.0"
+	},
+	"publishConfig": {
+		"access": "restricted",
+		"registry": "http://dev-01.elrest.zz:4873/"
 	},
 	"devDependencies": {
 		"@types/node": "^20.4.8",
