@@ -11,7 +11,7 @@ export abstract class Entry {
 		public name: string,
 		public path: string,
 		public ctime: Date,
-		public mtime: Date,
+		public mtime: Date
 	) { }
 }
 

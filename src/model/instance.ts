@@ -79,8 +79,8 @@ export class Instance {
 	public max_restarts: number = 1;
 
 	constructor(
-		public pm_id: number,
-		public pid: number,
+		public pm_id: number | null = null,
+		public pid: number | null = null,
 		public name: string,
 		public namespace: string,
 		public mode: string,

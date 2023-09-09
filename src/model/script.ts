@@ -24,8 +24,8 @@ export class Script extends File {
 		public path: string,
 		public ctime: Date,
 		public mtime: Date,
-		public content?: string,
-		public instance?: Instance,
+		public content: string,
+		public instance: Instance,
 	) {
 		super(name, path, ctime, mtime, content);
 	}

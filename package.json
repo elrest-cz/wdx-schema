@@ -9,8 +9,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start:dev": "npx nodemon --legacy-watch --config ./nodemon.json",
-		"build": "npx typedoc --options ./typedoc.json && npx tsc",
-		"build:pm2": "typedoc --options ./typedoc.json && tsc",
+		"build": "tsc && yarn docs",
 		"docs": "npx typedoc --options ./typedoc.json"
 	},
 	"dependencies": {
