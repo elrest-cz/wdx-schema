@@ -8,10 +8,10 @@
 
 export abstract class Entry {
 	constructor(
-		public name: string,
 		public path: string,
-		public ctime: Date,
-		public mtime: Date
+		public name: string,
+		public ctime?: Date,
+		public mtime?: Date
 	) { }
 }
 
@@ -20,8 +20,8 @@ export class Directory extends Entry {
 	constructor(
 		public name: string,
 		public path: string,
-		public ctime: Date,
-		public mtime: Date,
+		public ctime?: Date,
+		public mtime?: Date,
 		public children: Array<Entry> = new Array<Entry>
 	) {
 		super(name, path, ctime, mtime);
