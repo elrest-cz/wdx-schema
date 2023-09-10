@@ -2,7 +2,7 @@
 	"name": "@elrest/edesign-library-messages",
 	"description": "Elrest - eDesign - Library Messages",
 	"license": "2023 Elrest AutomationsSysteme GMBH",
-	"version": "1.0.49",
+	"version": "1.0.52",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
