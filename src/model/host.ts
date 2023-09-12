@@ -13,7 +13,6 @@
  * 
  * @copyright 2023 Elrest AutomationsSysteme GMBH
  */
-import { Configuration, Instance } from "./instance";
 import { Device } from "./device";
 import { Package } from "./package";
 import { Data } from "./data";

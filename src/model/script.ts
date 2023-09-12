@@ -6,28 +6,40 @@
 
 'use strict'
 
+import * as fs from 'fs';
 
 export const BROWSE_DEFAULT_LEVEL = 1;
 export const BROWSE_NO_LEVEL = -1;
+export const INSTANCE_NAMESPACE = 'script';
 
 import { File } from './filesystem';
-import { Instance } from './instance';
+import { ExecutionMode, Instance } from './instance';
+
+
 
 /**
  * Elrest eDesign Runtime Library Messages Model Script
  * 
  */
 export class Script extends File {
-
 	constructor(
 		public name: string,
 		public path: string,
-		public ctime: Date,
-		public mtime: Date,
-		public content: string,
-		public instance: Instance,
+		public stats?: fs.Stats,
+		public content?: string,
+		public mime?: string,
+		public instance: Instance = new Instance(
+			undefined,
+			undefined,
+			path,
+			INSTANCE_NAMESPACE,
+			ExecutionMode.fork,
+			undefined,
+			undefined
+		),
+
 	) {
-		super(name, path, ctime, mtime, content);
+		super(name, path, stats, content, mime);
 	}
 }
 

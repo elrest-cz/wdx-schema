@@ -25,7 +25,7 @@
 <li><a href="Model.Filesystem.Directory.html" class="tsd-signature-type tsd-kind-class">Directory</a></li>
 <li><a href="Model.Filesystem.File.html" class="tsd-signature-type tsd-kind-class">File</a></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in model/filesystem.ts:9</li></ul></aside>
+<li>Defined in model/filesystem.ts:18</li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -37,17 +37,20 @@
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="Model.Filesystem.Entry.html#ctime" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>ctime?</span></a>
-<a href="Model.Filesystem.Entry.html#mtime" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>mtime?</span></a>
+<div class="tsd-index-list"><a href="Model.Filesystem.Entry.html#children" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>children</span></a>
+<a href="Model.Filesystem.Entry.html#content" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>content?</span></a>
+<a href="Model.Filesystem.Entry.html#mime" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>mime?</span></a>
 <a href="Model.Filesystem.Entry.html#name" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>name</span></a>
 <a href="Model.Filesystem.Entry.html#path" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>path</span></a>
+<a href="Model.Filesystem.Entry.html#stats" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>stats?</span></a>
+<a href="Model.Filesystem.Entry.html#type" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>type</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Constructors</h2>
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_Entry"><span class="tsd-kind-constructor-signature">new <wbr/>Entry</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">name</span>, <span class="tsd-kind-parameter">ctime</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">mtime</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Model.Filesystem.Entry.html" class="tsd-signature-type tsd-kind-class">Entry</a><a href="#constructor.new_Entry" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_Entry"><span class="tsd-kind-constructor-signature">new <wbr/>Entry</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">name</span>, <span class="tsd-kind-parameter">stats</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">children</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">content</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Model.Filesystem.Entry.html" class="tsd-signature-type tsd-kind-class">Entry</a><a href="#constructor.new_Entry" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -57,34 +60,51 @@
 <li>
 <h5><span class="tsd-kind-parameter">name</span>: <span class="tsd-signature-type">string</span></h5></li>
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">ctime</span>: <span class="tsd-signature-type ">Date</span></h5></li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">stats</span>: <span class="tsd-signature-type ">Stats</span></h5></li>
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">mtime</span>: <span class="tsd-signature-type ">Date</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">children</span>: <a href="Model.Filesystem.Entry.html" class="tsd-signature-type tsd-kind-class">Entry</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">content</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="Model.Filesystem.Entry.html" class="tsd-signature-type tsd-kind-class">Entry</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in model/filesystem.ts:10</li></ul></aside></li></ul></section></section>
+<li>Defined in model/filesystem.ts:24</li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member"><a id="ctime" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>ctime</span><a href="#ctime" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">ctime</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type ">Date</span></div><aside class="tsd-sources">
+<section class="tsd-panel tsd-member"><a id="children" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>children</span><a href="#children" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">children</span><span class="tsd-signature-symbol">:</span> <a href="Model.Filesystem.Entry.html" class="tsd-signature-type tsd-kind-class">Entry</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in model/filesystem.ts:13</li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="mtime" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>mtime</span><a href="#mtime" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">mtime</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type ">Date</span></div><aside class="tsd-sources">
+<li>Defined in model/filesystem.ts:28</li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="content" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>content</span><a href="#content" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">content</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in model/filesystem.ts:14</li></ul></aside></section>
+<li>Defined in model/filesystem.ts:29</li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="mime" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>mime</span><a href="#mime" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">mime</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in model/filesystem.ts:22</li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="name" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>name</span><a href="#name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">name</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in model/filesystem.ts:12</li></ul></aside></section>
+<li>Defined in model/filesystem.ts:26</li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="path" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>path</span><a href="#path" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">path</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in model/filesystem.ts:11</li></ul></aside></section></section></div>
+<li>Defined in model/filesystem.ts:25</li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="stats" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>stats</span><a href="#stats" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">stats</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type ">Stats</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in model/filesystem.ts:27</li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="type" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>type</span><a href="#type" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">type</span><span class="tsd-signature-symbol">:</span> <a href="../enums/Model.Filesystem.EntryType.html" class="tsd-signature-type tsd-kind-enum">EntryType</a></div><aside class="tsd-sources">
+<ul>
+<li>Defined in model/filesystem.ts:20</li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -105,10 +125,13 @@
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
-<li><a href="#ctime" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>ctime</span></a></li>
-<li><a href="#mtime" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>mtime</span></a></li>
+<li><a href="#children" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>children</span></a></li>
+<li><a href="#content" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>content</span></a></li>
+<li><a href="#mime" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>mime</span></a></li>
 <li><a href="#name" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>name</span></a></li>
-<li><a href="#path" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>path</span></a></li></ul></div></details></div>
+<li><a href="#path" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>path</span></a></li>
+<li><a href="#stats" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>stats</span></a></li>
+<li><a href="#type" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>type</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>@elrest/edesign-library-messages</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
