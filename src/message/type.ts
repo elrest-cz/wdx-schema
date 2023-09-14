@@ -35,6 +35,14 @@ export enum Type {
 	InstanceMonitorUnsubscribeRequest = "InstanceMonitorUnsubscribeRequest",
 	InstanceMonitorUnsubscribeResponse = "InstanceMonitorUnsubscribeResponse",
 
+	InstanceMonitorInstance = "InstanceMonitorInstance",
+
+	InstanceMonitorInstanceSubscribeRequest = "InstanceMonitorInstanceSubscribeRequest",
+	InstanceMonitorInstanceSubscribeResponse = "InstanceMonitorSubscribeResponse",
+
+	InstanceMonitorInstanceUnsubscribeRequest = "InstanceMonitorInstanceUnsubscribeRequest",
+	InstanceMonitorInstanceUnsubscribeResponse = "InstanceMonitorInstanceUnsubscribeResponse",
+
 	InstanceRestartRequest = "InstanceRestartRequest",
 	InstanceRestartResponse = "InstanceRestartResponse",
 	InstanceStartRequest = "InstanceStartRequest",

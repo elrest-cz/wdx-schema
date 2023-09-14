@@ -46,6 +46,10 @@ export class Monit {
 
 export const INTERPRETER_NONE = "none";
 
+export class InstanceMonitor{
+	
+}
+
 /**
  * Elrest eDesign Runtime Library Messages Model Instance
  * 

@@ -16,6 +16,7 @@ import {
 	Instance,
 	Status,
 	InfoRequestBody,
+    InstanceMonitor,
 
 } from "../model/instance";
 
@@ -34,34 +35,30 @@ export class InfoResponse extends AbstractMessage {
 }
 
 
-export class UnsubscribeRequest extends AbstractMessage {
-
-	public type: Type = Type.InstanceUnsubscribeRequest;
-	public body: InfoRequestBody;
-
-	constructor(id: number, uuid?: string, error?: MessageError) {
-		super(new InfoRequestBody(id), uuid, error);
-	}
+export class MonitorInstance extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorInstance;
+	public body: InstanceMonitor;
 }
 
-export class UsnsubscribeResponse extends AbstractMessage {
-	public type: Type = Type.InstanceUnsubscribeResponse;
-	public body: Instance;
+export class MonitorInstanceSubscribeRequest extends AbstractMessage {
+
+	public type: Type = Type.InstanceMonitorInstanceSubscribeRequest;
+	public body: number;
 }
 
-export class SubscribeRequest extends AbstractMessage {
+export class MonitorInstanceSubscribeResponse extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorInstanceSubscribeResponse;
+	public body: InstanceMonitor;
+}
+export class MonitorInstanceUnsubscribeRequest extends AbstractMessage {
 
-	public type: Type = Type.InstanceSubscribeRequest;
-	public body: InfoRequestBody;
-
-	constructor(id: number, uuid?: string, error?: MessageError) {
-		super(new InfoRequestBody(id), uuid, error);
-	}
+	public type: Type = Type.InstanceMonitorInstanceUnsubscribeRequest;
+	public body: number;
 }
 
-export class SubscribeResponse extends AbstractMessage {
-	public type: Type = Type.InstanceSubscribeResponse;
-	public body: Instance;
+export class MonitorInstanceUsnsubscribeResponse extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorInstanceUnsubscribeResponse;
+	public body: null;
 }
 
 export class ListRequest extends AbstractMessage {
