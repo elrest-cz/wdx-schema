@@ -9,6 +9,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start:dev": "npx nodemon --legacy-watch --config ./nodemon.json",
 		"build": "tsc && yarn docs",
+		"build:watch": "nodemon",
 		"docs": "npx typedoc --options ./typedoc.json",
 		"publish:patch": "yarn build & yarn publish --patch"
 	},

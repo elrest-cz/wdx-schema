@@ -46,8 +46,8 @@ export class Monit {
 
 export const INTERPRETER_NONE = "none";
 
-export class InstanceMonitor{
-	
+export class InstanceMonitor {
+
 }
 
 /**
@@ -60,6 +60,8 @@ export class InstanceMonitor{
  */
 
 export class Instance {
+
+	public logs: Array<string> = [];
 
 	constructor(
 
