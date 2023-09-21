@@ -105,6 +105,11 @@ export class System {
 
 export class Runtime {
 
+	/**
+	 * eDesign Runtime System
+	 */
+	public system: System
+
 	constructor(
 
 		/**
@@ -140,12 +145,7 @@ export class Runtime {
 		/**
 		 * eDesign Runtime Host Repositories
 		 */
-		public repositories: Repository[] = [],
-
-		/**
-		 * eDesign Runtime System
-		 */
-		public system?: System,
+		public repositories: Repository[] = []
 
 	) { }
 
