@@ -102,6 +102,12 @@ export enum Type {
 	RepositoryInfoResponse = "RepositoryInfoResponse",
 
 	/**
+	 * Runtime
+	 */
+	RuntimeSystemRequest = "RuntimeSystemRequest",
+	RuntimeSystemResponse = "RuntimeSystemResponse",
+	
+	/**
 	 * Scripts
 	 */
 	ScriptBrowseRequest = "ScriptBrowseRequest",
