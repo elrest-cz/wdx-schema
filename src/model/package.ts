@@ -6,6 +6,17 @@
 
 `use strict`
 
+export class InfoRequestBody {
+	constructor(public name: string, public version?: string) {
+	}
+}
+
+export class ListRequestBody {
+
+	constructor(public status: Status = Status.Any) {
+	}
+}
+
 export class InstallRequestBody {
 	constructor(moduleId: number) {
 	}
