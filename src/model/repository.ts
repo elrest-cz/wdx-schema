@@ -27,6 +27,7 @@ export class Repository {
 		public id: number,
 		public name: string,
 		public url: string,
+		public authentication: any,
 		public packages: Array<Package>
 	) { };
 }

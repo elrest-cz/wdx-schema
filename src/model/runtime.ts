@@ -13,6 +13,7 @@ import { Data } from "./data";
 import { DataSchema } from "./data";
 import { Package } from "./package";
 import { Repository } from "./repository";
+import { Directory } from "./filesystem";
 
 /**
  * eDesign Runtime Library Messages Model Runtime Host Protocol
@@ -43,6 +44,9 @@ export class Runtime {
 
 	constructor(
 
+		/**
+		 * eDesign Runtime Title
+		 */
 		public title: string,
 
 		/**
@@ -61,11 +65,6 @@ export class Runtime {
 		public data: Data[] = [],
 
 		/**
-		 * eDesign Runtime Host Logs
-		 */
-		public logs: HostLog[] = [],
-
-		/**
 		 * eDesign Runtime Host Packages
 		 */
 		public packages: Package[] = [],
@@ -73,13 +72,7 @@ export class Runtime {
 		/**
 		 * eDesign Runtime Host Monitoring
 		 */
-		public monitor: HostMonitor[] = [],
-
-		/**
-		 * eDesign Runtime Host Monitoring
-		 */
-		public scripts: HostMonitor[] = [],
-
+		public scripts: Directory = new Directory("", ""),
 
 		/**
 		 * eDesign Runtime Host Repositories
