@@ -6,7 +6,7 @@
 
 'use strict';
 
-import { Instance } from "./instance";
+import { Instance, System } from "./instance";
 import { Device } from "./device";
 import { HostLog, HostMonitor } from "./host";
 import { Data } from "./data";
@@ -77,7 +77,13 @@ export class Runtime {
 		/**
 		 * eDesign Runtime Host Repositories
 		 */
-		public repositories: Repository[] = []
+		public repositories: Repository[] = [],
+
+		/**
+		 * eDesign Runtime System
+		 */
+		public system: System,
+
 	) { }
 
 }

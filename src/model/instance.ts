@@ -44,11 +44,66 @@ export class Monitor {
 	) { }
 }
 
+export class SystemCpuTimes {
+
+	constructor(
+		/**
+		 * user <number> The number of milliseconds the CPU has spent in user mode.
+		 */
+		public user: number,
+
+		/**
+		 * nice <number> The number of milliseconds the CPU has spent in nice mode.
+		 */
+		public nice: number,
+
+		/**
+		 * sys <number> The number of milliseconds the CPU has spent in sys mode.
+		 */
+		public sys: number,
+
+		/**
+		 * idle <number> The number of milliseconds the CPU has spent in idle mode.
+		 */
+		public idle: number,
+
+		/**
+		 * irq <number> The number of milliseconds the CPU has spent in irq mode.
+		 */
+		public irq: number
+
+	) {
+
+	}
+}
+
+export class SystemCpu {
+	
+	constructor(
+
+		/**
+		 * model <string>
+		 */
+		public model: string,
+
+		/**
+		 * speed <number> (in MHz)
+		 */
+		public speed: number,
+		/**
+		 * speed <number> (in MHz)
+		 */
+		public times: SystemCpuTimes,
+
+	) { }
+
+}
+
 export class System {
 	constructor(
-		public memoryFree?: number,
-		public memoryTotal?: number,
-		public cpu?: number,
+		public memoryFree: number,
+		public memoryTotal: number,
+		public cpu: SystemCpu,
 	) { }
 }
 
