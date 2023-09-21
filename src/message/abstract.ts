@@ -38,9 +38,12 @@ export abstract class AbstractMessage {
 
 	public error?: MessageError | null;
 
-	constructor(body?: any, uuid?: string, error?: MessageError) {
+	public from?: string;
+
+	constructor(body?: any, uuid?: string, error?: MessageError, from?: string) {
 		if (body) this.body = body;
 		this.uuid = uuid ? uuid : uuidv4();
 		if (error) this.error = error;
+		if (from) this.from = from;
 	}
 }

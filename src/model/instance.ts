@@ -39,9 +39,10 @@ export enum Status {
 
 export class Monitor {
 	constructor(
-		public memory: number,
-		public cpu: number,
-		public instances:Array<Instance>
+		public memoryFree?: number,
+		public memoryTotal?: number,
+		public cpu?: number,
+		public instances?: Array<Instance>
 	) { }
 }
 

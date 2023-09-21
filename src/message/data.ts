@@ -35,9 +35,10 @@ export class RegisterProviderRequest extends AbstractMessage {
 		provider: string,
 		path: string,
 		uuid?: string,
-		error?: MessageError
+		error?: MessageError,
+		from?: string
 	) {
-		super(new RegisterProviderRequestBody(provider, path), uuid, error);
+		super(new RegisterProviderRequestBody(provider, path), uuid, error, from);
 	}
 }
 
@@ -62,8 +63,8 @@ export class RegisterRequest extends AbstractMessage {
 	public type: Type = Type.DataRegisterRequest;
 	public body: RegisterRequestBody;
 
-	constructor(path: string, refreshMin?: number, refreshMax?: number, delta?: number) {
-		super(new RegisterRequestBody(path, refreshMin, refreshMax, delta), undefined, undefined);
+	constructor(path: string, refreshMin?: number, refreshMax?: number, delta?: number, uuid?: string, error?: MessageError, from?: string) {
+		super(new RegisterRequestBody(path, refreshMin, refreshMax, delta), uuid, error, from);
 	}
 }
 
@@ -76,8 +77,8 @@ export class UnregisterRequest extends AbstractMessage {
 	public type: Type = Type.DataUnregisterRequest;
 	public body: UnregisterRequestBody;
 
-	constructor(path: string, uuid?: string, error?: MessageError) {
-		super(new UnregisterRequestBody(path), uuid, error);
+	constructor(path: string, uuid?: string, error?: MessageError, from?: string) {
+		super(new UnregisterRequestBody(path), uuid, error, from);
 	}
 }
 
@@ -90,8 +91,8 @@ export class GetValueRequest extends AbstractMessage {
 	public type: Type = Type.DataGetValueRequest;
 	public body: GetRequestBody;
 
-	constructor(path: string) {
-		super(new GetRequestBody(path), undefined, undefined);
+	constructor(path: string, uuid?: string, error?: MessageError, from?: string) {
+		super(new GetRequestBody(path), uuid, error, from);
 	}
 }
 
@@ -104,8 +105,8 @@ export class SetValueRequest extends AbstractMessage {
 	public type: Type = Type.DataSetValueRequest;
 	public body: SetValueRequestBody;
 
-	constructor(path: string, value: Data, uuid?: string, error?: MessageError) {
-		super(new SetValueRequestBody(path, value), uuid, error);
+	constructor(path: string, value: Data, uuid?: string, error?: MessageError, from?: string) {
+		super(new SetValueRequestBody(path, value), uuid, error, from);
 	}
 }
 
@@ -113,8 +114,8 @@ export class SetValueResponse extends AbstractMessage {
 	public type: Type = Type.DataSetValueResponse;
 	public body: Data;
 
-	constructor(path?: string, value?: any, uuid?: string, error?: MessageError) {
-		super(path ? new Data(path, value) : undefined, uuid, error);
+	constructor(path?: string, value?: any, uuid?: string, error?: MessageError, from?: string) {
+		super(path ? new Data(path, value) : undefined, uuid, error, from);
 	}
 }
 
@@ -135,9 +136,12 @@ export class GetSchemaRequest extends AbstractMessage {
 
 	constructor(
 		path: string,
-		level: number = GetSchemaRequestBody.UNLIMITED_LEVEL
+		level: number = GetSchemaRequestBody.UNLIMITED_LEVEL,
+		uuid?: string,
+		error?: MessageError,
+		from?: string
 	) {
-		super(new GetSchemaRequestBody(path, level), undefined, undefined);
+		super(new GetSchemaRequestBody(path, level), uuid, error, from);
 	}
 }
 
@@ -145,9 +149,5 @@ export class GetSchemaResponse extends AbstractMessage {
 
 	public type: Type = Type.DataGetSchemaResponse;
 	public body: DataSchema | undefined;
-
-	constructor(body?: DataSchema, uuid?: string, error?: MessageError) {
-		super(body, uuid, error);
-	}
 }
 

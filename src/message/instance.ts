@@ -17,6 +17,7 @@ import {
 	Status,
 	InfoRequestBody,
     InstanceMonitor,
+    Monitor as MonitorModel
 
 } from "../model/instance";
 
@@ -82,7 +83,7 @@ export class Discovery extends AbstractMessage {
 
 export class Monitor extends AbstractMessage {
 	public type: Type = Type.InstanceMonitor;
-	public body: Array<Instance>;
+	public body: MonitorModel;
 }
 
 export class MonitorSubscribeRequest extends AbstractMessage {
