@@ -37,28 +37,28 @@ export class InfoResponse extends AbstractMessage {
 
 
 export class MonitorInstance extends AbstractMessage {
-	public type: Type = Type.InstanceMonitorInstance;
+	public type: Type = Type.InstanceMonitor;
 	public body: InstanceMonitor;
 }
 
-export class MonitorInstanceSubscribeRequest extends AbstractMessage {
+export class MonitorSubscribeRequest extends AbstractMessage {
 
-	public type: Type = Type.InstanceMonitorInstanceSubscribeRequest;
+	public type: Type = Type.InstanceMonitorSubscribeRequest;
 	public body: number;
 }
 
-export class MonitorInstanceSubscribeResponse extends AbstractMessage {
-	public type: Type = Type.InstanceMonitorInstanceSubscribeResponse;
+export class MonitorSubscribeResponse extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorSubscribeResponse;
 	public body: InstanceMonitor;
 }
-export class MonitorInstanceUnsubscribeRequest extends AbstractMessage {
+export class MonitorUnsubscribeRequest extends AbstractMessage {
 
-	public type: Type = Type.InstanceMonitorInstanceUnsubscribeRequest;
+	public type: Type = Type.InstanceMonitorUnsubscribeRequest;
 	public body: number;
 }
 
-export class MonitorInstanceUsnsubscribeResponse extends AbstractMessage {
-	public type: Type = Type.InstanceMonitorInstanceUnsubscribeResponse;
+export class MonitorUsnsubscribeResponse extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorUnsubscribeResponse;
 	public body: null;
 }
 
@@ -79,32 +79,6 @@ export class ListResponse extends AbstractMessage {
 export class Discovery extends AbstractMessage {
 	public type: Type = Type.InstanceDiscovery;
 	public body: Array<Instance>;
-}
-
-export class Monitor extends AbstractMessage {
-	public type: Type = Type.InstanceMonitor;
-	public body: MonitorModel;
-}
-
-export class MonitorSubscribeRequest extends AbstractMessage {
-	public type: Type = Type.InstanceMonitorSubscribeRequest;
-	public body: null;
-}
-
-
-export class MonitorSubscribeResponse extends AbstractMessage {
-	public type: Type = Type.InstanceMonitorSubscribeResponse;
-	public body: null;
-}
-
-export class MonitorUnsubscribeRequest extends AbstractMessage {
-	public type: Type = Type.InstanceMonitorUnsubscribeRequest;
-	public body: null;
-}
-
-export class MonitorUnsubscribeResponse extends AbstractMessage {
-	public type: Type = Type.InstanceMonitorUnsubscribeResponse;
-	public body: null;
 }
 
 export class RestartRequest extends AbstractMessage {

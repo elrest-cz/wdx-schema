@@ -7,7 +7,6 @@
 
 import { System } from "./runtime";
 
-
 export class InfoRequestBody {
 
 	constructor(public id: number) {

@@ -35,14 +35,6 @@ export enum Type {
 	InstanceMonitorUnsubscribeRequest = "InstanceMonitorUnsubscribeRequest",
 	InstanceMonitorUnsubscribeResponse = "InstanceMonitorUnsubscribeResponse",
 
-	InstanceMonitorInstance = "InstanceMonitorInstance",
-
-	InstanceMonitorInstanceSubscribeRequest = "InstanceMonitorInstanceSubscribeRequest",
-	InstanceMonitorInstanceSubscribeResponse = "InstanceMonitorSubscribeResponse",
-
-	InstanceMonitorInstanceUnsubscribeRequest = "InstanceMonitorInstanceUnsubscribeRequest",
-	InstanceMonitorInstanceUnsubscribeResponse = "InstanceMonitorInstanceUnsubscribeResponse",
-
 	InstanceRestartRequest = "InstanceRestartRequest",
 	InstanceRestartResponse = "InstanceRestartResponse",
 	InstanceStartRequest = "InstanceStartRequest",
@@ -106,7 +98,18 @@ export enum Type {
 	 */
 	RuntimeSystemRequest = "RuntimeSystemRequest",
 	RuntimeSystemResponse = "RuntimeSystemResponse",
-	
+
+	RuntimeMonitorInstance = "RuntimeMonitorInstance",
+
+	RuntimeMonitor = "RuntimeMonitor",
+
+	RuntimeMonitorSubscribeRequest = "RuntimeMonitorSubscribeRequest",
+	RuntimeMonitorSubscribeResponse = "RuntimeMonitorSubscribeResponse",
+
+	RuntimeMonitorUnsubscribeRequest = "RuntimeMonitorUnsubscribeRequest",
+	RuntimeMonitorUnsubscribeResponse = "RuntimeMonitorUnsubscribeResponse",
+
+
 	/**
 	 * Scripts
 	 */
