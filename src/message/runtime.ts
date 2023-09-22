@@ -28,6 +28,23 @@ export class SystemResponse extends AbstractMessage {
 	public body: Model.Runtime.System;
 }
 
+/**
+ * eDesign Runtime - Messages Runtime Info Request
+ * 
+ */
+export class InfoRequest extends AbstractMessage {
+	public type: Type = Type.RuntimeInfoRequest;
+	public body: undefined;
+}
+
+/**
+ * eDesign Runtime  - Messages Runtime System Response
+ * 
+ */
+export class InfoResponse extends AbstractMessage {
+	public type: Type = Type.RuntimeInfoResponse;
+	public body: Model.Runtime.Runtime;
+}
 
 /**
  * eDesign Runtime  - Runtime Monitor Message

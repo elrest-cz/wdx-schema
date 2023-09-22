@@ -103,6 +103,9 @@ export enum Type {
 
 	RuntimeMonitor = "RuntimeMonitor",
 
+	RuntimeInfoRequest = "RuntimeInfoRequest",
+	RuntimeInfoResponse = "RuntimeInfoResponse",
+
 	RuntimeMonitorSubscribeRequest = "RuntimeMonitorSubscribeRequest",
 	RuntimeMonitorSubscribeResponse = "RuntimeMonitorSubscribeResponse",
 
