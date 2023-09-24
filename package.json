@@ -2,7 +2,7 @@
 	"name": "@elrest/edesign-library-messages",
 	"description": "Elrest - eDesign - Library Messages",
 	"license": "2023 Elrest AutomationsSysteme GMBH",
-	"version": "1.0.99",
+	"version": "1.0.105",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
@@ -19,7 +19,7 @@
 	},
 	"publishConfig": {
 		"access": "restricted",
-		"registry": "http://dev-01.elrest.zz:4873/"
+		"registry": "http://localhost:4873/"
 	},
 	"devDependencies": {
 		"@types/node": "^20.4.8",
