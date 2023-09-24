@@ -17,10 +17,6 @@
 		"pm2": "^5.3.0",
 		"uuid": "^9.0.0"
 	},
-	"publishConfig": {
-		"access": "restricted",
-		"registry": "http://localhost:4873/"
-	},
 	"devDependencies": {
 		"@types/node": "^20.4.8",
 		"@types/uuid": "^9.0.2",
