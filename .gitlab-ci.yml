@@ -24,4 +24,5 @@ build-job:
     - npm version patch
     - npm publish --patch
     - git remote remove ci || true
-    - git push --all --tags "http://ELREST_MAINTAINER:${ELREST_MAINTAINER}@${CI_REPOSITORY_URL#*@}"
+    - git push --all "http://ELREST_MAINTAINER:${ELREST_MAINTAINER}@${CI_REPOSITORY_URL#*@}"
+    - git push --tags "http://ELREST_MAINTAINER:${ELREST_MAINTAINER}@${CI_REPOSITORY_URL#*@}"
