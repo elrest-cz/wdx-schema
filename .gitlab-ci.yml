@@ -6,6 +6,9 @@ stages:
 build-job:
   image: node:latest
   stage: build
+  before_script:
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
   script:
     - npm install
     - npm run build
@@ -16,4 +19,7 @@ build-job:
       } >> .npmrc
 
     - echo "Created the following .npmrc:"; cat .npmrc
+    - npm version patch
     - npm publish --patch
+    - git remote remove ci || true
+    - git push --tags "http://ELREST_MAINTAINER:${ELREST_MAINTAINER}@${CI_REPOSITORY_URL#*@}"
