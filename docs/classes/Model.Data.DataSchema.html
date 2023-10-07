@@ -17,12 +17,16 @@
 <li><a href="../modules/Model.Data.html">Data</a></li>
 <li><a href="Model.Data.DataSchema.html">DataSchema</a></li></ul>
 <h1>Class DataSchema</h1></div>
+<section class="tsd-panel tsd-comment">
+<div class="tsd-comment tsd-typography"><p>eDeesign Runtime Model Data Schema Metadata</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
 <li><span class="target">DataSchema</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in model/data.ts:37</li></ul></aside>
+<li>Defined in model/data.ts:49</li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -35,18 +39,17 @@
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
 <div class="tsd-index-list"><a href="Model.Data.DataSchema.html#children" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>children?</span></a>
+<a href="Model.Data.DataSchema.html#metadata" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>metadata</span></a>
 <a href="Model.Data.DataSchema.html#name" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>name</span></a>
-<a href="Model.Data.DataSchema.html#node_class" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>node_<wbr/>class?</span></a>
 <a href="Model.Data.DataSchema.html#path" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>path</span></a>
 <a href="Model.Data.DataSchema.html#relativePath" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>relative<wbr/>Path</span></a>
-<a href="Model.Data.DataSchema.html#type_class" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>type_<wbr/>class?</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Constructors</h2>
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_DataSchema"><span class="tsd-kind-constructor-signature">new <wbr/>Data<wbr/>Schema</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">relativePath</span>, <span class="tsd-kind-parameter">name</span>, <span class="tsd-kind-parameter">children</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">node_class</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">type_class</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Model.Data.DataSchema.html" class="tsd-signature-type tsd-kind-class">DataSchema</a><a href="#constructor.new_DataSchema" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_DataSchema"><span class="tsd-kind-constructor-signature">new <wbr/>Data<wbr/>Schema</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">relativePath</span>, <span class="tsd-kind-parameter">name</span>, <span class="tsd-kind-parameter">children</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">metadata</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Model.Data.DataSchema.html" class="tsd-signature-type tsd-kind-class">DataSchema</a><a href="#constructor.new_DataSchema" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -60,44 +63,37 @@
 <li>
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">children</span>: <a href="Model.Data.DataSchema.html" class="tsd-signature-type tsd-kind-class">DataSchema</a><span class="tsd-signature-symbol">[]</span></h5></li>
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">node_class</span>: <span class="tsd-signature-type">string</span></h5></li>
-<li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">type_class</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">metadata</span>: <a href="Model.Data.DataSchemaMetadata.html" class="tsd-signature-type tsd-kind-class">DataSchemaMetadata</a><span class="tsd-signature-symbol"> = ...</span></h5></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="Model.Data.DataSchema.html" class="tsd-signature-type tsd-kind-class">DataSchema</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in model/data.ts:39</li></ul></aside></li></ul></section></section>
+<li>Defined in model/data.ts:50</li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member"><a id="children" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>children</span><a href="#children" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">children</span><span class="tsd-signature-symbol">?:</span> <a href="Model.Data.DataSchema.html" class="tsd-signature-type tsd-kind-class">DataSchema</a><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in model/data.ts:43</li></ul></aside></section>
+<li>Defined in model/data.ts:54</li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="metadata" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>metadata</span><a href="#metadata" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">metadata</span><span class="tsd-signature-symbol">:</span> <a href="Model.Data.DataSchemaMetadata.html" class="tsd-signature-type tsd-kind-class">DataSchemaMetadata</a><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in model/data.ts:55</li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="name" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>name</span><a href="#name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">name</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in model/data.ts:42</li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="node_class" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>node_<wbr/>class</span><a href="#node_class" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">node_<wbr/>class</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in model/data.ts:44</li></ul></aside></section>
+<li>Defined in model/data.ts:53</li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="path" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>path</span><a href="#path" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">path</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in model/data.ts:40</li></ul></aside></section>
+<li>Defined in model/data.ts:51</li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="relativePath" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>relative<wbr/>Path</span><a href="#relativePath" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">relative<wbr/>Path</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in model/data.ts:41</li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="type_class" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>type_<wbr/>class</span><a href="#type_class" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">type_<wbr/>class</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in model/data.ts:45</li></ul></aside></section></section></div>
+<li>Defined in model/data.ts:52</li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -119,11 +115,10 @@
 <ul>
 <li><a href="#constructor" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
 <li><a href="#children" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>children</span></a></li>
+<li><a href="#metadata" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>metadata</span></a></li>
 <li><a href="#name" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>name</span></a></li>
-<li><a href="#node_class" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>node_<wbr/>class</span></a></li>
 <li><a href="#path" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>path</span></a></li>
-<li><a href="#relativePath" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>relative<wbr/>Path</span></a></li>
-<li><a href="#type_class" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>type_<wbr/>class</span></a></li></ul></div></details></div>
+<li><a href="#relativePath" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>relative<wbr/>Path</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>@elrest/edesign-library-messages</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">

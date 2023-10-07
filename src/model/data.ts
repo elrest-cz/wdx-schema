@@ -34,15 +34,28 @@ export class RegisterProviderRequestBody {
 	) { }
 }
 
-export class DataSchema {
+/**
+ * eDeesign Runtime Model Data Schema Metadata
+ * 
+ */
+export class DataSchemaMetadata {
 
+	/**
+	 * Key/Value pairs of any adapter data schema specific names and it's values
+	 */
+	[name: string]: any;
+}
+
+/**
+ * eDeesign Runtime Model Data Schema Metadata
+ */
+export class DataSchema {
 	constructor(
 		public path: string,
 		public relativePath: string,
 		public name: string | undefined,
 		public children?: Array<DataSchema> | undefined,
-		public node_class?: string | undefined,
-		public type_class?: string | undefined
+		public metadata: DataSchemaMetadata = new DataSchemaMetadata
 	) {
 	}
 }
