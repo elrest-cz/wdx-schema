@@ -2,7 +2,7 @@
 	"name": "@elrest/edesign-library-messages",
 	"description": "Elrest - eDesign - Library Messages",
 	"license": "2023 Elrest AutomationsSysteme GMBH",
-	"version": "1.0.151",
+	"version": "1.0.152",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
@@ -11,7 +11,8 @@
 		"build": "tsc && yarn docs",
 		"build:watch": "nodemon",
 		"docs": "npx typedoc --options ./typedoc.json",
-		"publish:patch": "yarn build & yarn publish --patch"
+		"publish:patch": "yarn build & yarn publish --patch",
+		"clean": "npx rimraf ./build ./.build.json"
 	},
 	"dependencies": {
 		"pm2": "^5.3.0",
