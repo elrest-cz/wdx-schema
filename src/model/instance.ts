@@ -58,6 +58,13 @@ export class InstanceMonitor {
 
 }
 
+export class Logs {
+	constructor(
+		public info: Array<string> = [],
+		public error: Array<string> = []
+	) { }
+}
+
 /**
  * Elrest eDesign Runtime Library Messages Model Instance
  * 
@@ -69,7 +76,7 @@ export class InstanceMonitor {
 
 export class Instance {
 
-	public logs: Array<string> = [];
+	public logs: Logs = new Logs;
 
 	constructor(
 
