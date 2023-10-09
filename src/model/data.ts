@@ -86,6 +86,12 @@ export class RegisterRequestBody {
 }
 
 
+export class UnregisterResponseBody {
+
+	constructor(public path: string) {
+	}
+}
+
 export class UnregisterRequestBody {
 
 	constructor(public path: string) {

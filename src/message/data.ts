@@ -15,7 +15,8 @@ import {
 	RegisterRequestBody,
 	UnregisterRequestBody,
 	SetValueRequestBody,
-	RegisterProviderRequestBody
+	RegisterProviderRequestBody,
+	UnregisterResponseBody
 } from "../model/data";
 
 export class DataUpdate extends AbstractMessage {
@@ -84,7 +85,11 @@ export class UnregisterRequest extends AbstractMessage {
 
 export class UnregisterResponse extends AbstractMessage {
 	public type: Type = Type.DataUnregisterResponse;
-	public body: null;
+	public body: UnregisterResponseBody;
+	
+	constructor(path: string, uuid?: string, error?: MessageError, from?: string) {
+		super(new UnregisterResponseBody(path), uuid, error, from);
+	}
 }
 
 export class GetValueRequest extends AbstractMessage {
