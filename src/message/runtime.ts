@@ -12,7 +12,7 @@ import * as Model from "../model";
 
 /**
  * eDesign Runtime - Messages Runtime System Request
- * 
+ * @todo remove
  */
 export class SystemRequest extends AbstractMessage {
 	public type: Type = Type.RuntimeSystemRequest;
@@ -21,7 +21,7 @@ export class SystemRequest extends AbstractMessage {
 
 /**
  * eDesign Runtime  - Messages Runtime System Response
- * 
+ * @todo remove
  */
 export class SystemResponse extends AbstractMessage {
 	public type: Type = Type.RuntimeSystemResponse;

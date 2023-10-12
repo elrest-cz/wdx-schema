@@ -50,15 +50,6 @@ export class RegisterProviderResponse extends AbstractMessage {
 	public body: undefined;
 }
 
-export class ProviderRequest extends AbstractMessage {
-	public type: Type = Type.DataProviderRequest;
-	public body: any;
-}
-
-export class ProviderResponse extends AbstractMessage {
-	public type: Type = Type.DataProviderResponse;
-	public body: any;
-}
 
 export class RegisterRequest extends AbstractMessage {
 	public type: Type = Type.DataRegisterRequest;
