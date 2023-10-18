@@ -16,8 +16,8 @@ import {
 	Instance,
 	Status,
 	InfoRequestBody,
-    InstanceMonitor,
-    Monitor as MonitorModel
+	InstanceMonitor,
+	Monitor as MonitorModel
 
 } from "../model/instance";
 
@@ -38,7 +38,7 @@ export class InfoResponse extends AbstractMessage {
 
 export class MonitorInstance extends AbstractMessage {
 	public type: Type = Type.InstanceMonitor;
-	public body: InstanceMonitor;
+	public body: Instance;
 }
 
 export class MonitorSubscribeRequest extends AbstractMessage {
@@ -49,15 +49,16 @@ export class MonitorSubscribeRequest extends AbstractMessage {
 
 export class MonitorSubscribeResponse extends AbstractMessage {
 	public type: Type = Type.InstanceMonitorSubscribeResponse;
-	public body: InstanceMonitor;
+	public body: Instance;
 }
+
 export class MonitorUnsubscribeRequest extends AbstractMessage {
 
 	public type: Type = Type.InstanceMonitorUnsubscribeRequest;
 	public body: number;
 }
 
-export class MonitorUsnsubscribeResponse extends AbstractMessage {
+export class MonitorUnsubscribeResponse extends AbstractMessage {
 	public type: Type = Type.InstanceMonitorUnsubscribeResponse;
 	public body: null;
 }
