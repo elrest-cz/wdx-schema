@@ -6,3 +6,5 @@ typedoc.json
 **yarn-error.log
 **yarn.lock
 .build.json
+.gitlab-ci.yml
+.git
