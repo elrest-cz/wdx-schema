@@ -2,7 +2,8 @@
 	"verbose": true,
 	"legacyWatch": true,
 	"watch": [
-		"./src"
+		"./src",
+		"./.build.json"
 	],
 	"ext": ".ts,.js,.json",
 	"ignore": [
