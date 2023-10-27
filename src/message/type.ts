@@ -27,6 +27,7 @@ export enum Type {
 	InstanceListRequest = "InstanceListRequest",
 	InstanceListResponse = "InstanceListResponse",
 
+	/** Instance Monitor */
 	InstanceMonitor = "InstanceMonitor",
 
 	InstanceMonitorSubscribeRequest = "InstanceMonitorSubscribeRequest",
@@ -34,6 +35,15 @@ export enum Type {
 
 	InstanceMonitorUnsubscribeRequest = "InstanceMonitorUnsubscribeRequest",
 	InstanceMonitorUnsubscribeResponse = "InstanceMonitorUnsubscribeResponse",
+
+	/** Instance Monitor Log */
+	InstanceMonitorLog = "InstanceMonitorLog",
+
+	InstanceMonitorLogSubscribeRequest = "InstanceMonitorLogSubscribeRequest",
+	InstanceMonitorLogSubscribeResponse = "InstanceMonitorLogSubscribeResponse",
+
+	InstanceMonitorLogUnsubscribeRequest = "InstanceMonitorLogUnsubscribeRequest",
+	InstanceMonitorLogUnsubscribeResponse = "InstanceMonitorLogUnsubscribeResponse",
 
 	InstanceRestartRequest = "InstanceRestartRequest",
 	InstanceRestartResponse = "InstanceRestartResponse",

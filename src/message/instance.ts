@@ -14,10 +14,12 @@ import { Type } from './type';
 import {
 	ListRequestBody,
 	Instance,
-	Status,
 	InfoRequestBody,
 	InstanceMonitor,
-	Monitor as MonitorModel
+	Logs,
+	Status,
+	Monitor as MonitorModel,
+	
 
 } from "../model/instance";
 
@@ -63,6 +65,36 @@ export class MonitorUnsubscribeResponse extends AbstractMessage {
 	public body: null;
 }
 
+/**
+ * Monitor Logs Subscriptions
+ */
+export class MonitorLog extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorLog;
+	public body: Logs;
+}
+
+export class MonitorLogSubscribeRequest extends AbstractMessage {
+
+	public type: Type = Type.InstanceMonitorLogSubscribeRequest;
+	public body: Logs;
+}
+
+export class MonitorLogSubscribeResponse extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorLogSubscribeResponse;
+	public body: Logs;
+}
+
+export class MonitorLogUnsubscribeRequest extends AbstractMessage {
+
+	public type: Type = Type.InstanceMonitorLogUnsubscribeRequest;
+	public body: number;
+}
+
+export class MonitorLogUnsubscribeResponse extends AbstractMessage {
+	public type: Type = Type.InstanceMonitorLogUnsubscribeResponse;
+	public body: null;
+}
+
 export class ListRequest extends AbstractMessage {
 	public type: Type = Type.InstanceListRequest;
 	public body: ListRequestBody;
@@ -76,6 +108,7 @@ export class ListResponse extends AbstractMessage {
 	public type: Type = Type.InstanceListResponse;
 	public body: Array<Instance>;
 }
+
 
 export class Discovery extends AbstractMessage {
 	public type: Type = Type.InstanceDiscovery;
