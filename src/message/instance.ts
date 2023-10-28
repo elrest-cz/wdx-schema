@@ -76,7 +76,7 @@ export class MonitorLog extends AbstractMessage {
 export class MonitorLogSubscribeRequest extends AbstractMessage {
 
 	public type: Type = Type.InstanceMonitorLogSubscribeRequest;
-	public body: Logs;
+	public body: number;
 }
 
 export class MonitorLogSubscribeResponse extends AbstractMessage {

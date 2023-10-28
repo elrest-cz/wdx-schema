@@ -35,7 +35,8 @@ export class ClientConfiguration {
 	constructor(
 		public protocol: ClientProtocol = ClientProtocol.ws,
 		public host: string = "",
-		public port: number = 82
+		public port: number = 82,
+		public path: string = '/',
 	) { }
 }
 
