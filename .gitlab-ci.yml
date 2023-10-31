@@ -16,6 +16,7 @@ build-job:
   script:
     - npm install
     - npm run build
+    
     - |
       {
         echo "@${CI_PROJECT_ROOT_NAMESPACE}:registry=${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/npm/"
@@ -24,6 +25,9 @@ build-job:
 
     - echo "Created the following .npmrc:"; cat .npmrc
 
+    - git add --all
+    - git commit -m "CI Build" || true
+    
     - npm version patch
     - git push gitlab HEAD:$CI_COMMIT_REF_NAME -o ci.skip
     - git push gitlab --tags -f -o ci.skip
