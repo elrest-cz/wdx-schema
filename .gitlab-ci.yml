@@ -6,6 +6,10 @@ stages:
 build-job:
   image: node:latest
   stage: build
+  variables:
+  #  GIT_SUBMODULE_STRATEGY: recursive
+  #  GIT_SUBMODULE_UPDATE_FLAGS: --jobs 4
+    GIT_STRATEGY : clone
   only:
   - master
   before_script: 
