@@ -16,8 +16,6 @@ build-job:
   script:
     - npm install
     - npm run build
-    - git add --all
-    - git commit -m "CI Build" || true
 
     - |
       {
@@ -26,6 +24,8 @@ build-job:
       } >> .npmrc
 
     - echo "Created the following .npmrc:"; cat .npmrc
+    - git add --all
+    - git commit -m "CI Build" || true
 
     
     - npm version patch
