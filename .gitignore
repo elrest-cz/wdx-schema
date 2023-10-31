@@ -7,3 +7,4 @@
 **yarn.lock
 .build.json
 package-lock.json
+.npmrc
