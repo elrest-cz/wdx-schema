@@ -50,12 +50,16 @@ export class DataSchemaMetadata {
  * eDeesign Runtime Model Data Schema Metadata
  */
 export class DataSchema {
+
+	public createdTimestamp: number = (new Date()).getTime();
+	public updateTimestamp: number = (new Date()).getTime();
+
 	constructor(
-		public path: string,
-		public relativePath: string,
-		public name: string | undefined,
+		public path: string = '',
+		public relativePath: string = '',
+		public name: string = '',
 		public children?: Array<DataSchema> | undefined,
-		public metadata: DataSchemaMetadata = new DataSchemaMetadata
+		public metadata: DataSchemaMetadata = new DataSchemaMetadata,
 	) {
 	}
 }

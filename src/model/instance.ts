@@ -96,27 +96,27 @@ export class Instance {
 		/**
 		 * name(string)	“my-api”	application name(default to script filename without extension)
 		 */
-		public name?: string,
+		public name: string = '',
 
 		/**
 		 * namespace(string)	“scripts”	application namespaces
 		 */
-		public namespace?: string,
+		public namespace: string = '',
 
 		/**
 		 * namespace(string)	“scripts”	application namespaces
 		 */
-		public mode?: ExecutionMode,
+		public mode: ExecutionMode = ExecutionMode.fork,
 
 		/**
 		 * pm2_env(object)
 		 */
-		public pm2_env?: any,
+		public pm2_env: any = {},
 
 		/**
 		 * pm2_env(object)
 		 */
-		public status?: Status,
+		public status: Status = Status.Offline,
 
 		/**
 		 * monit(Monit)
