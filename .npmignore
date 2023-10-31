@@ -1,6 +1,5 @@
 **src
 **logs
-nodemon.json
 tsconfig.json
 typedoc.json
 **yarn-error.log
