@@ -1,10 +1,11 @@
 **node_modules
 **build
-**logs
 .settings
+**.logs
 .project
 **yarn-error.log
 **yarn.lock
 .build.json
 package-lock.json
 .npmrc
+docs
