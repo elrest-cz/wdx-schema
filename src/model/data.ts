@@ -51,7 +51,12 @@ export class DataSchemaMetadata {
  */
 export class DataSchema {
 
+	public readonly: boolean = false;
+
+	public subscribeable: boolean = false;
+
 	public createdTimestamp: number = (new Date()).getTime();
+
 	public updateTimestamp: number = (new Date()).getTime();
 
 	constructor(
@@ -60,6 +65,7 @@ export class DataSchema {
 		public name: string = '',
 		public children?: Array<DataSchema> | undefined,
 		public metadata: DataSchemaMetadata = new DataSchemaMetadata,
+		public valueSnapshot?: Data
 	) {
 	}
 }
