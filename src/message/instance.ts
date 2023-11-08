@@ -158,3 +158,19 @@ export class StopResponse extends AbstractMessage {
 	public type: Type = Type.InstanceStopResponse;
 	public body: Instance;
 }
+
+/**
+ * eDesign Runtime Message Instance Save Request
+ */
+export class SaveRequest extends AbstractMessage {
+	public type: Type = Type.InstanceSaveRequest;
+	public body: Instance;
+
+}
+/**
+ * eDesign Runtime Message Instance Save Reposnse
+ */
+export class SaveResponse extends AbstractMessage {
+	public type: Type = Type.InstanceSaveResponse;
+	public body: Instance;
+}

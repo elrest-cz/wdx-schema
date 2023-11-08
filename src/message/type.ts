@@ -51,6 +51,8 @@ export enum Type {
 	InstanceStartResponse = "InstanceStartResponse",
 	InstanceStopRequest = "InstanceStopRequest",
 	InstanceStopResponse = "InstanceStopResponse",
+	InstanceSaveRequest = "InstanceSaveRequest",
+	InstanceSaveResponse = "InstanceSaveResponse",
 
 	InstanceSubscribeRequest = "InstanceSubscribeRequest",
 	InstanceSubscribeResponse = "InstanceSubscribeResponse",
