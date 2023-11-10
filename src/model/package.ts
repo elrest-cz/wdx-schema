@@ -82,14 +82,14 @@ export class Package {
 		public author?: Array<PackageAuthor>,
 		public name?: string,
 		public description?: string,
-		public distTags?: PackageDistTags,
-		public maintainers?: Array<PackageMaintainer>,
-		public readmeFilename?: string,
+		public documentation?: string,
 		public time?: any,
 		public license?: string,
-		public versions?: PackageVersions,
 		public status?: Status,
-		public currentVersion?: string
+		public currentVersion?: string,
+		public newestVersion?: string,
+		public installed?: Boolean,
+		public mandatory?: Boolean
 	) { }
 }
 
