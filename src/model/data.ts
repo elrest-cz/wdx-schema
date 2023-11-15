@@ -71,15 +71,26 @@ export class DataSchema {
 export class DataValue {
 	constructor(
 		public path: string,
-		public value: any
+		public value: any,
+		public type?: DataType
 	) {
 	}
+}
+
+export enum DataType {
+	ANY = 'any',
+	STRING = 'string',
+	NUMBER = 'number',
+	DATE = 'date',
+	ARRAY = 'array',
+	OBJECT = 'object',
 }
 
 export class Data {
 	constructor(
 		public path: string,
-		public value: any
+		public value: any,
+		public type?: DataType
 	) {
 	}
 }
