@@ -1,6 +1,6 @@
 {
 	"name": "@elrest/edesign-runtime-ipc-typescript",
-	"description": "Elrest Automations Systeme - eDesign - Runtime - Inter Process Communication - Typescript",
+	"description": "Elrest Automations Systeme GMBH - eDesign - Runtime - Inter Process Communication - Typescript",
 	"keywords": [
 		"Elrest",
 		"Automations",
@@ -17,7 +17,7 @@
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
-		"test": "nyc mocha",
+		"test": "npx nyc mocha",
 		"start:dev": "npx nodemon --legacy-watch --config ./nodemon.json",
 		"build": "yarn clean && yarn build-tsc && yarn docs",
 		"build-tsc": "npx tsc",
@@ -32,12 +32,13 @@
 		"cover:report": "nyc report --reporter=lcov --reporter=text"
 	},
 	"dependencies": {
-		"pm2": "^5.3.0",
 		"uuid": "^9.0.0"
 	},
 	"devDependencies": {
 		"@types/node": "^20.4.8",
 		"@types/uuid": "^9.0.2",
+		"@typescript-eslint/eslint-plugin": "^6.11.0",
+		"@typescript-eslint/parser": "^6.11.0",
 		"concat-md": "^0.5.1",
 		"eslint": "^8.51.0",
 		"mocha": "^10.2.0",

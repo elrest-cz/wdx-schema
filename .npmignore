@@ -7,3 +7,4 @@ typedoc.json
 .build.json
 .gitlab-ci.yml
 .git
+.eslintrc.js
