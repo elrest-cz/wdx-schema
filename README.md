@@ -1,9 +1,3 @@
-# eDesign Application Library Messages v.1.0.1
+# eDesign Runtime IPC Typescript
 
-
-(C) 2023 Elrest AutomationsSysteme GMBH
-
-
-## Web Socket Messages
-
-See [docs/index.html](docs/index.html) for more informations.
+(C) 2023 Elrest Automations Systeme GMBH
