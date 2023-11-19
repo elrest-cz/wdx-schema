@@ -11,7 +11,7 @@
 		"Typescript",
 		"Library"
 	],
-	"license": "Elrest Automations Systeme GMBH",
+	"license": "(C) 2023 Elrest Automations Systeme GMBH",
 	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
 	"version": "1.0.250",
 	"main": "build/index.js",
