@@ -12,6 +12,7 @@
 		"Library"
 	],
 	"license": "Elrest Automations Systeme GMBH",
+	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
 	"version": "1.0.247",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
