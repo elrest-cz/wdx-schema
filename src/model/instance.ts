@@ -283,6 +283,16 @@ export class Instance {
 		pre-deploy-local	pre-deploy action	String	 
 		post-deploy	post-deploy action	String
 		*/
+
+		/**
+		 * eDesign Connection id
+		 */
+		public id?: number,
+		
+		/**
+		 * eDesign Installed Package Id
+		 */
+		public installedPackageId?: number,
 	) { }
 
 }
