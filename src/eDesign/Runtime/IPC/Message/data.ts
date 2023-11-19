@@ -17,7 +17,7 @@ import {
 	SetValueRequestBody,
 	RegisterProviderRequestBody,
 	UnregisterResponseBody
-} from "../model/data";
+} from "../Model/data";
 
 export class DataUpdate extends AbstractMessage {
 

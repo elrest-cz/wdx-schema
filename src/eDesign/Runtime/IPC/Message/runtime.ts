@@ -8,7 +8,7 @@
 
 import { AbstractMessage } from "./abstract";
 import { Type } from "./type";
-import * as Model from "../model";
+import * as Model from "../Model";
 
 /**
  * eDesign Runtime - Messages Runtime System Request

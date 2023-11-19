@@ -21,7 +21,7 @@ import {
 	Monitor as MonitorModel,
 	
 
-} from "../model/instance";
+} from "../Model/instance";
 
 export class InfoRequest extends AbstractMessage {
 	public type: Type = Type.InstanceInfoRequest;

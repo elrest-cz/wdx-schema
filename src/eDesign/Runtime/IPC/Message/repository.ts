@@ -11,12 +11,12 @@ import { Type } from "./type";
 import {
 	InfoRequestBody,
 	ListRequestBody
-} from "../model/repository";
+} from "../Model/repository";
 import {
 	Package,
 	PackageVersion,
 	Status
-} from "../model/package";
+} from "../Model/package";
 
 /**
  * 
