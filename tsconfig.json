@@ -3,9 +3,9 @@
 		"strictPropertyInitialization": false,
 		"alwaysStrict": false,
 		"target": "ES2015",
-		"module": "commonjs",
+		"module": "CommonJS",
 		"lib": [
-			"es6"
+			"ES2015"
 		],
 		"allowJs": true,
 		"outDir": "build",
