@@ -8,3 +8,4 @@ typedoc.json
 .gitlab-ci.yml
 .git
 .eslintrc.js
+nodemon.json
