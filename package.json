@@ -20,6 +20,7 @@
 		"test": "npx nyc mocha",
 		"start:dev": "npx nodemon --legacy-watch --config ./nodemon.json",
 		"build": "yarn clean && yarn build-tsc && yarn docs",
+		"build-update": "yarn update-elrest && yarn install --force && yarn build",
 		"build-tsc": "npx tsc",
 		"build:watch": "nodemon --config nodemon.dev.json",
 		"docs": "npx typedoc --options ./typedoc.json",
