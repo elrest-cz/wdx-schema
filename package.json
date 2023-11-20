@@ -13,7 +13,8 @@
 	],
 	"license": "(C) 2023 Elrest Automations Systeme GMBH",
 	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
-	"version": "1.0.251",
+	"version": "1.0.252",
+	"type": "module",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
