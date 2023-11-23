@@ -16,8 +16,7 @@
 		"resolveJsonModule": true,
 		"declaration": true,
 		"sourceMap": true,
-		"composite": true,
-		"tsBuildInfoFile": ".build.json"
+		"composite": true
 	},
 	"exclude": [
 		"logs",
