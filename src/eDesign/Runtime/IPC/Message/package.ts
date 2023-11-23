@@ -15,7 +15,7 @@ import {
 	Status,
 	Package,
 	UninstallRequestBody,
-} from "../model/package";
+} from "../Model/package";
 
 
 

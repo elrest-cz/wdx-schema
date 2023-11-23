@@ -3,9 +3,9 @@
 		"strictPropertyInitialization": false,
 		"alwaysStrict": false,
 		"target": "ES2015",
-		"module": "commonjs",
+		"module": "CommonJS",
 		"lib": [
-			"es6"
+			"ES2015"
 		],
 		"allowJs": true,
 		"outDir": "build",
@@ -16,8 +16,7 @@
 		"resolveJsonModule": true,
 		"declaration": true,
 		"sourceMap": true,
-		"composite": true,
-		"tsBuildInfoFile": ".build.json"
+		"composite": true
 	},
 	"exclude": [
 		"logs",

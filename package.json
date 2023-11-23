@@ -1,38 +1,59 @@
 {
-	"name": "@elrest/edesign-library-messages",
-	"description": "Elrest - eDesign - Library Messages",
-	"license": "2023 Elrest AutomationsSysteme GMBH",
-	"version": "1.0.247",
+	"name": "@elrest/edesign-runtime-ipc-typescript",
+	"description": "Elrest Automations Systeme GMBH - eDesign - Runtime - Inter Process Communication - Typescript",
+	"keywords": [
+		"Elrest",
+		"Automations",
+		"Systeme",
+		"eDesign",
+		"Runtime",
+		"IPC",
+		"Typescript",
+		"Library"
+	],
+	"license": "(C) 2023 Elrest Automations Systeme GMBH",
+	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
+	"version": "1.0.256",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
-		"test": "nyc mocha",
+		"test": "npx nyc mocha",
 		"start:dev": "npx nodemon --legacy-watch --config ./nodemon.json",
-		"build": "yarn clean && tsc && yarn docs",
-		"build:watch": "nodemon",
+		"build": "yarn clean && yarn build-tsc && yarn docs",
+		"build-update": "yarn update-elrest && yarn install --force && yarn build",
+		"build-tsc": "npx tsc",
+		"build:watch": "nodemon --config nodemon.dev.json",
 		"docs": "npx typedoc --options ./typedoc.json",
+		"docs-readme": "npx typedoc --plugin typedoc-plugin-markdown --theme markdown --out docs/readme && npx concat-md --toc --decrease-title-levels --dir-name-as-title temp-docs > README.md && npx showdown makehtml -i README.md -o README.html && npx rimraf temp-docs",
 		"publish:patch": "yarn build && yarn publish --patch --verbose",
-		"clean": "npx rimraf ./build ./.build.json",
+		"clean": "npx rimraf ./docs ./build ./.build.json",
 		"cover": "npm run cover:unit && npm run cover:integration && npm run cover:report",
 		"cover:unit": "nyc --silent npm run test:unit",
 		"cover:integration": "nyc --silent --no-clean npm run test:integration",
 		"cover:report": "nyc report --reporter=lcov --reporter=text"
 	},
 	"dependencies": {
-		"pm2": "^5.3.0",
 		"uuid": "^9.0.0"
 	},
 	"devDependencies": {
 		"@types/node": "^20.4.8",
 		"@types/uuid": "^9.0.2",
+		"@typescript-eslint/eslint-plugin": "^6.11.0",
+		"@typescript-eslint/parser": "^6.11.0",
+		"concat-md": "^0.5.1",
 		"eslint": "^8.51.0",
 		"mocha": "^10.2.0",
 		"nodemon": "^3.0.1",
 		"nyc": "^15.1.0",
 		"rimraf": "^5.0.1",
+		"showdown": "^2.1.0",
 		"string-width": "^6.1.0",
 		"ts-node": "^10.9.1",
-		"typedoc": "^0.24.8",
+		"typedoc": "^0.25.3",
+		"typedoc-plugin-markdown": "^3.17.1",
 		"typescript": "^5.1.6"
+	},
+	"engines": {
+		"node": ">=18.18.2"
 	}
 }

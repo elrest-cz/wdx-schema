@@ -1,15 +1,11 @@
 /**
- * Elrest eDesign Runtime Library - Messages
- * 
- * @copyright 2023 Elrest AutomationsSysteme GMBH
+ * Elrest eDesign Runtime
+ *  
+ * @copyright 2023 Elrest Automations Systeme GMBH
  */
 
 'use strict';
 
-import * as Message from './message';
-import * as Model from './model';
+import * as eDesign from './eDesign';
 
-export {
-	Message,
-	Model
-}
+export { eDesign };

@@ -6,8 +6,8 @@
 
 'use strict';
 
-import { Entry } from "../model/filesystem";
-import { BrowseRequestBody } from "../model/script";
+import { Entry } from "../Model/filesystem";
+import { BrowseRequestBody } from "../Model/script";
 import { AbstractMessage, MessageError } from "./abstract";
 import { Type } from "./type";
 

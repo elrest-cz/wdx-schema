@@ -1,9 +1,8 @@
 /**
- * Elrest eDesign Runtime Library Messages Model
+ * Elrest eDesign Runtime IPC Typescript Model Package
  * 
  * 
- * 
- * @copyright 2023 Elrest AutomationsSysteme GMBH
+ * @copyright 2023 Elrest Automations Systeme GMBH
  */
 
 'use strict';
