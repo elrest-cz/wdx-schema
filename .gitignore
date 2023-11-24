@@ -1,8 +1,6 @@
 **node_modules
 **build
-.settings
 **.logs
-.project
 **yarn-error.log
 **yarn.lock
 .build.json
