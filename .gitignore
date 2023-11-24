@@ -1,11 +1,10 @@
 **node_modules
 **build
-.settings
 **.logs
-.project
 **yarn-error.log
 **yarn.lock
 .build.json
 package-lock.json
 .npmrc
 docs
+tsconfig.tsbuildinfo
