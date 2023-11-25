@@ -1,5 +1,7 @@
 **src
 **logs
+./.settings
+./.project
 tsconfig.json
 typedoc.json
 **yarn-error.log
