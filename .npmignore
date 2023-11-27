@@ -1,7 +1,7 @@
 **src
 **logs
-./.settings
-./.project
+.settings
+.project
 tsconfig.json
 typedoc.json
 **yarn-error.log
@@ -11,3 +11,5 @@ typedoc.json
 .git
 .eslintrc.js
 nodemon.json
+ecosystem.dev.config.js
+tsconfig.tsbuildinfo
