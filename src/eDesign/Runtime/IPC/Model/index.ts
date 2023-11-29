@@ -7,15 +7,15 @@
 
 'use strict';
 
-import * as Data from './data';
-import * as Device from './device';
-import * as Filesystem from './filesystem';
-import * as Host from './host';
-import * as Instance from './instance';
-import * as Package from './package';
-import * as Repository from './repository';
-import * as Runtime from './runtime';
-import * as Script from './script';
+import * as Data from './Data';
+import * as Device from './Device';
+import * as Filesystem from './Filesystem';
+import * as Host from './Host';
+import * as Instance from './Instance';
+import * as Package from './Package';
+import * as Repository from './Repository';
+import * as Runtime from './Runtime';
+import * as Script from './Script';
 
 export {
 	Data,
