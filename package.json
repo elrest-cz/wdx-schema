@@ -13,7 +13,7 @@
 	],
 	"license": "(C) 2023 Elrest Automations Systeme GMBH",
 	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
-	"version": "1.0.277",
+	"version": "1.0.281",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
@@ -37,7 +37,7 @@
 		"uuid": "^9.0.0"
 	},
 	"devDependencies": {
-		"@types/node": "^20.4.8",
+		"@types/node": "^20.10.1",
 		"@types/uuid": "^9.0.2",
 		"@typescript-eslint/eslint-plugin": "^6.11.0",
 		"@typescript-eslint/parser": "^6.11.0",
