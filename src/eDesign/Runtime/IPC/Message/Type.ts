@@ -11,130 +11,130 @@ export enum Type {
 	/**
 	 * Instance
 	 */
-	InstanceConnectRequest = "InstanceConnectRequest",
-	InstanceConnectResponse = "InstanceConnectResponse",
+	InstanceConnectRequest = 'InstanceConnectRequest',
+	InstanceConnectResponse = 'InstanceConnectResponse',
 
-	InstanceDiscovery = "InstanceDiscovery",
+	InstanceDiscovery = 'InstanceDiscovery',
 
-	InstanceDeleteRequest = "InstanceDeleteRequest",
-	InstanceDeleteResponse = "InstanceDeleteResponse",
-	InstanceDisconnectRequest = "InstanceDisconnectRequest",
-	InstanceDisconnectResponse = "InstanceDisconnectResponse",
+	InstanceDeleteRequest = 'InstanceDeleteRequest',
+	InstanceDeleteResponse = 'InstanceDeleteResponse',
+	InstanceDisconnectRequest = 'InstanceDisconnectRequest',
+	InstanceDisconnectResponse = 'InstanceDisconnectResponse',
 
-	InstanceInfoRequest = "InstanceInfoRequest",
-	InstanceInfoResponse = "InstanceInfoResponse",
+	InstanceInfoRequest = 'InstanceInfoRequest',
+	InstanceInfoResponse = 'InstanceInfoResponse',
 
-	InstanceListRequest = "InstanceListRequest",
-	InstanceListResponse = "InstanceListResponse",
+	InstanceListRequest = 'InstanceListRequest',
+	InstanceListResponse = 'InstanceListResponse',
 
 	/** Instance Monitor */
-	InstanceMonitor = "InstanceMonitor",
+	InstanceMonitor = 'InstanceMonitor',
 
-	InstanceMonitorSubscribeRequest = "InstanceMonitorSubscribeRequest",
-	InstanceMonitorSubscribeResponse = "InstanceMonitorSubscribeResponse",
+	InstanceMonitorSubscribeRequest = 'InstanceMonitorSubscribeRequest',
+	InstanceMonitorSubscribeResponse = 'InstanceMonitorSubscribeResponse',
 
-	InstanceMonitorUnsubscribeRequest = "InstanceMonitorUnsubscribeRequest",
-	InstanceMonitorUnsubscribeResponse = "InstanceMonitorUnsubscribeResponse",
+	InstanceMonitorUnsubscribeRequest = 'InstanceMonitorUnsubscribeRequest',
+	InstanceMonitorUnsubscribeResponse = 'InstanceMonitorUnsubscribeResponse',
 
 	/** Instance Monitor Log */
-	InstanceMonitorLog = "InstanceMonitorLog",
+	InstanceMonitorLog = 'InstanceMonitorLog',
 
-	InstanceMonitorLogSubscribeRequest = "InstanceMonitorLogSubscribeRequest",
-	InstanceMonitorLogSubscribeResponse = "InstanceMonitorLogSubscribeResponse",
+	InstanceMonitorLogSubscribeRequest = 'InstanceMonitorLogSubscribeRequest',
+	InstanceMonitorLogSubscribeResponse = 'InstanceMonitorLogSubscribeResponse',
 
-	InstanceMonitorLogUnsubscribeRequest = "InstanceMonitorLogUnsubscribeRequest",
-	InstanceMonitorLogUnsubscribeResponse = "InstanceMonitorLogUnsubscribeResponse",
+	InstanceMonitorLogUnsubscribeRequest = 'InstanceMonitorLogUnsubscribeRequest',
+	InstanceMonitorLogUnsubscribeResponse = 'InstanceMonitorLogUnsubscribeResponse',
 
-	InstanceRestartRequest = "InstanceRestartRequest",
-	InstanceRestartResponse = "InstanceRestartResponse",
-	InstanceStartRequest = "InstanceStartRequest",
-	InstanceStartResponse = "InstanceStartResponse",
-	InstanceStopRequest = "InstanceStopRequest",
-	InstanceStopResponse = "InstanceStopResponse",
-	InstanceSaveRequest = "InstanceSaveRequest",
-	InstanceSaveResponse = "InstanceSaveResponse",
+	InstanceRestartRequest = 'InstanceRestartRequest',
+	InstanceRestartResponse = 'InstanceRestartResponse',
+	InstanceStartRequest = 'InstanceStartRequest',
+	InstanceStartResponse = 'InstanceStartResponse',
+	InstanceStopRequest = 'InstanceStopRequest',
+	InstanceStopResponse = 'InstanceStopResponse',
+	InstanceSaveRequest = 'InstanceSaveRequest',
+	InstanceSaveResponse = 'InstanceSaveResponse',
 
-	InstanceSubscribeRequest = "InstanceSubscribeRequest",
-	InstanceSubscribeResponse = "InstanceSubscribeResponse",
+	InstanceSubscribeRequest = 'InstanceSubscribeRequest',
+	InstanceSubscribeResponse = 'InstanceSubscribeResponse',
 
-	InstanceUnsubscribeRequest = "InstanceUnsubscribeRequest",
-	InstanceUnsubscribeResponse = "InstanceUnsubscribeResponse",
+	InstanceUnsubscribeRequest = 'InstanceUnsubscribeRequest',
+	InstanceUnsubscribeResponse = 'InstanceUnsubscribeResponse',
 
 	/**
 	 * Data
 	 */
-	DataUpdate = "DataUpdate",
+	DataUpdate = 'DataUpdate',
 
-	DataRegisterProviderRequest = "DataRegisterProviderRequest",
-	DataRegisterProviderResponse = "DataRegisterProviderResponse",
+	DataRegisterProviderRequest = 'DataRegisterProviderRequest',
+	DataRegisterProviderResponse = 'DataRegisterProviderResponse',
 
-	DataProviderRequest = "DataProviderRequest",
-	DataProviderResponse = "DataProviderResponse",
+	DataProviderRequest = 'DataProviderRequest',
+	DataProviderResponse = 'DataProviderResponse',
 
-	DataRegisterRequest = "DataRegisterRequest",
-	DataRegisterResponse = "DataRegisterResponse",
+	DataRegisterRequest = 'DataRegisterRequest',
+	DataRegisterResponse = 'DataRegisterResponse',
 
-	DataUnregisterRequest = "DataUnregisterRequest",
-	DataUnregisterResponse = "DataUnregisterResponse",
+	DataUnregisterRequest = 'DataUnregisterRequest',
+	DataUnregisterResponse = 'DataUnregisterResponse',
 
-	DataSetValueRequest = "DataSetValueRequest",
-	DataSetValueResponse = "DataSetValueResponse",
+	DataSetValueRequest = 'DataSetValueRequest',
+	DataSetValueResponse = 'DataSetValueResponse',
 
-	DataGetValueRequest = "DataGetValueRequest",
-	DataGetValueResponse = "DataGetValueResponse",
+	DataGetValueRequest = 'DataGetValueRequest',
+	DataGetValueResponse = 'DataGetValueResponse',
 
-	DataSetSchemaRequest = "DataSetSchemaRequest",
-	DataSetSchemaResponse = "DataSetSchemaResponse",
+	DataSetSchemaRequest = 'DataSetSchemaRequest',
+	DataSetSchemaResponse = 'DataSetSchemaResponse',
 
-	DataGetSchemaRequest = "DataGetSchemaRequest",
-	DataGetSchemaResponse = "DataGetSchemaResponse",
+	DataGetSchemaRequest = 'DataGetSchemaRequest',
+	DataGetSchemaResponse = 'DataGetSchemaResponse',
 
 	/**
 	 * Package
 	 */
-	PackageInstallRequest = "PackageInstallRequest",
-	PackageInstallResponse = "PackageInstallResponse",
-	PackageUninstallRequest = "PackageUninstallRequest",
-	PackageUninstallResponse = "PackageUninstallResponse",
+	PackageInstallRequest = 'PackageInstallRequest',
+	PackageInstallResponse = 'PackageInstallResponse',
+	PackageUninstallRequest = 'PackageUninstallRequest',
+	PackageUninstallResponse = 'PackageUninstallResponse',
 
 	/**
 	 * Repository
 	 */
-	RepositoryListRequest = "RepositoryListRequest",
-	RepositoryListResponse = "RepositoryListResponse",
-	RepositoryInfoRequest = "RepositoryInfoRequest",
-	RepositoryInfoResponse = "RepositoryInfoResponse",
+	RepositoryListRequest = 'RepositoryListRequest',
+	RepositoryListResponse = 'RepositoryListResponse',
+	RepositoryInfoRequest = 'RepositoryInfoRequest',
+	RepositoryInfoResponse = 'RepositoryInfoResponse',
 
 	/**
 	 * Runtime
 	 */
-	RuntimeSystemRequest = "RuntimeSystemRequest",
-	RuntimeSystemResponse = "RuntimeSystemResponse",
+	RuntimeSystemRequest = 'RuntimeSystemRequest',
+	RuntimeSystemResponse = 'RuntimeSystemResponse',
 
-	RuntimeMonitorInstance = "RuntimeMonitorInstance",
+	RuntimeMonitorInstance = 'RuntimeMonitorInstance',
 
-	RuntimeMonitor = "RuntimeMonitor",
+	RuntimeMonitor = 'RuntimeMonitor',
 
-	RuntimeInfoRequest = "RuntimeInfoRequest",
-	RuntimeInfoResponse = "RuntimeInfoResponse",
+	RuntimeInfoRequest = 'RuntimeInfoRequest',
+	RuntimeInfoResponse = 'RuntimeInfoResponse',
 
-	RuntimeMonitorSubscribeRequest = "RuntimeMonitorSubscribeRequest",
-	RuntimeMonitorSubscribeResponse = "RuntimeMonitorSubscribeResponse",
+	RuntimeMonitorSubscribeRequest = 'RuntimeMonitorSubscribeRequest',
+	RuntimeMonitorSubscribeResponse = 'RuntimeMonitorSubscribeResponse',
 
-	RuntimeMonitorUnsubscribeRequest = "RuntimeMonitorUnsubscribeRequest",
-	RuntimeMonitorUnsubscribeResponse = "RuntimeMonitorUnsubscribeResponse",
+	RuntimeMonitorUnsubscribeRequest = 'RuntimeMonitorUnsubscribeRequest',
+	RuntimeMonitorUnsubscribeResponse = 'RuntimeMonitorUnsubscribeResponse',
 
 
 	/**
 	 * Scripts
 	 */
-	ScriptBrowseRequest = "ScriptBrowseRequest",
-	ScriptBrowseResponse = "ScriptBrowseResponse",
+	ScriptBrowseRequest = 'ScriptBrowseRequest',
+	ScriptBrowseResponse = 'ScriptBrowseResponse',
 
-	ScriptSaveRequest = "ScriptSaveRequest",
-	ScriptSaveResponse = "ScriptSaveResponse",
+	ScriptSaveRequest = 'ScriptSaveRequest',
+	ScriptSaveResponse = 'ScriptSaveResponse',
 
-	ScriptDeleteRequest = "ScriptDeleteRequest",
-	ScriptDeleteResponse = "ScriptDeleteResponse",
+	ScriptDeleteRequest = 'ScriptDeleteRequest',
+	ScriptDeleteResponse = 'ScriptDeleteResponse',
 
 }
