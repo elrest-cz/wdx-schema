@@ -149,3 +149,23 @@ export class GetSchemaResponse extends AbstractMessage {
 	public body: DataSchema | undefined;
 }
 
+export class DeleteSchemaRequest extends AbstractMessage {
+
+	public type: Type = Type.DataDeleteSchemaRequest;
+	public body: string;
+
+	constructor(
+		path: string,
+		uuid?: string,
+		error?: MessageError,
+		from?: string
+	) {
+		super(path, uuid, error, from);
+	}
+}
+
+export class DeleteSchemaResponse extends AbstractMessage {
+
+	public type: Type = Type.DataDeleteSchemaResponse;
+	public body: undefined;
+}

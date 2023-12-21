@@ -89,6 +89,9 @@ export enum Type {
 	DataGetSchemaRequest = 'DataGetSchemaRequest',
 	DataGetSchemaResponse = 'DataGetSchemaResponse',
 
+	DataDeleteSchemaRequest = 'DataDeleteSchemaRequest',
+	DataDeleteSchemaResponse = 'DataDeleteSchemaResponse',
+
 	/**
 	 * Package
 	 */
