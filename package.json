@@ -11,6 +11,20 @@
 		"Typescript",
 		"Library"
 	],
+	"contributors": [
+		{
+			"name": "Pavol Fazik",
+			"email": "pavol.fazik@elrest.cz"
+		},
+		{
+			"name": "Slavomir Sidor",
+			"email": "slavomir.sidor@elrest.cz"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "http://web-10.elrest.zz/elrest/edesign/edesign-runtime/edesign-runtime-ipc/edesign-runtime-messages.git"
+	},
 	"license": "(C) 2023 Elrest Automations Systeme GMBH",
 	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
 	"version": "1.0.285",
