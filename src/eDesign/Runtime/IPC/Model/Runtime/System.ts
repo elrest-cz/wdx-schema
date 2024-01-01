@@ -1,7 +1,7 @@
 /**
  * Elrest eDesign Runtime IPC Typescript Model Runtime System
  * 
- * @copyright 2023 Elrest Automations Systeme GMBH
+ * @copyright 2024 Elrest Automations Systeme GMBH
  * @see https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/protocol
  */
 

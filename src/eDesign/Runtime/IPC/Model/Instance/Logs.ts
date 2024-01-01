@@ -1,7 +1,7 @@
 /**
  * Elrest eDesign Runtime IPC Typescript Model Instance Logs
  * 
- * @copyright 2023 Elrest AutomationsSysteme GMBH
+ * @copyright 2024 Elrest AutomationsSysteme GMBH
  */
 'use strict';
 

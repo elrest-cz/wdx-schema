@@ -1,7 +1,7 @@
 /**
  * Elrest eDesign - Package
  * 
- * @copyright 2023 Elrest AutomationsSysteme GMBH
+ * @copyright 2024 Elrest AutomationsSysteme GMBH
  */
 
 'use strict';
