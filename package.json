@@ -25,7 +25,7 @@
 		"type": "git",
 		"url": "http://web-10.elrest.zz/elrest/edesign/edesign-runtime/edesign-runtime-ipc/edesign-runtime-messages.git"
 	},
-	"license": "(C) 2023 Elrest Automations Systeme GMBH",
+	"license": "(C) Copyright 2024 Elrest Automations Systeme GMBH",
 	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
 	"version": "1.0.292",
 	"main": "build/index.js",
