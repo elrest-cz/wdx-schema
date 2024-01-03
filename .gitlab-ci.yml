@@ -4,7 +4,7 @@ stages:
   - deploy
 
 build-job:
-  image: node:18.18.2-alpine3.18
+  image: node:latest
   stage: build
   variables:
   #  GIT_SUBMODULE_STRATEGY: recursive
