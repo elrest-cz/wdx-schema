@@ -23,7 +23,7 @@ build-job:
 
     - |
       {
-        echo "registry=http://${ELREST_VERDACCIO_URL}/"
+        echo "registry=${ELREST_VERDACCIO_URL}/"
         echo "${ELREST_VERDACCIO_URL#http*:}/:_authToken=\${ELREST_VERDACCIO_TOKEN}"
       } >> .npmrc
 
