@@ -6,6 +6,8 @@ stages:
 build-job:
   image: node:latest
   stage: build
+  trigger:    
+     project: elrest/edesign/edesign-runtime/edesign-runtime-library
   variables:
   #  GIT_SUBMODULE_STRATEGY: recursive
   #  GIT_SUBMODULE_UPDATE_FLAGS: --jobs 4
