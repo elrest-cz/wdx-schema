@@ -4,6 +4,8 @@ stages:
   - deploy
 
 build-job:
+  trigger:
+    project: elrest/edesign/edesign-runtime/edesign-runtime-library
   image: node:latest
   stage: build
   variables:
