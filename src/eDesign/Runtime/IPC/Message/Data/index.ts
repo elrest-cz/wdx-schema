@@ -167,5 +167,14 @@ export class DeleteSchemaRequest extends AbstractMessage {
 export class DeleteSchemaResponse extends AbstractMessage {
 
 	public type: Type = Type.DataDeleteSchemaResponse;
-	public body: undefined;
+	public body: string;
+
+	constructor(
+		path: string,
+		uuid?: string,
+		error?: MessageError,
+		from?: string
+	) {
+		super(path, uuid, error, from);
+	}
 }
