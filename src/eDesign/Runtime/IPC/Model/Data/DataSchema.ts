@@ -22,6 +22,7 @@ export class DataSchema {
 		public metadata: DataSchemaMetadata = new DataSchemaMetadata,
 		public readonly: boolean = false,
 		public subscribeable: boolean = false,
+		public removable: boolean = false,
 		public valueSnapshot?: Data
 	) {
 	}
