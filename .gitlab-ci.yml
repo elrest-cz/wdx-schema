@@ -4,8 +4,6 @@ stages:
   - deploy
 
 build-job:
-  trigger:
-    project: elrest/edesign/edesign-runtime/edesign-runtime-library
   image: node:latest
   stage: build
   variables:
@@ -33,7 +31,6 @@ build-job:
     - git add --all
     - git commit -m "CI Build" || true
 
-    
     - npm version patch
     - git push gitlab HEAD:$CI_COMMIT_REF_NAME -o ci.skip
     - git push gitlab --tags -f -o ci.skip
