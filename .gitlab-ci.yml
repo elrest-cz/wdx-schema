@@ -4,6 +4,8 @@ stages:
   - deploy
 
 build-job:
+  trigger:
+    project: elrest/edesign/edesign-runtime/edesign-runtime-library
   image: node:latest
   stage: build
   variables:
@@ -23,8 +25,8 @@ build-job:
 
     - |
       {
-        echo "@${CI_PROJECT_ROOT_NAMESPACE}:registry=${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/npm/"
-        echo "${CI_API_V4_URL#http*:}/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=\${CI_JOB_TOKEN}"
+        echo "registry=${ELREST_VERDACCIO_URL}/"
+        echo "${ELREST_VERDACCIO_URL#http*:}/:_authToken=\${ELREST_VERDACCIO_TOKEN}"
       } >> .npmrc
 
     - echo "Created the following .npmrc:"; cat .npmrc
