@@ -5,6 +5,7 @@
  */
 'use strict';
 
+import { v4 as uuidv4 } from 'uuid';
 import { Data } from './Data';
 import { DataSchemaMetadata } from './DataSchemaMetadata';
 
@@ -23,7 +24,8 @@ export class DataSchema {
 		public readonly: boolean = false,
 		public subscribeable: boolean = false,
 		public editable: boolean = false,
-		public valueSnapshot?: Data
+		public valueSnapshot?: Data,
+		public uuid: string = uuidv4()
 	) {
 	}
 }
