@@ -12,6 +12,10 @@ export enum DataSchemaMetadataMODBUSType {
 }
 
 export class DataSchemaMetadataMODBUS extends DataSchemaMetadata {
-	public addressFrom: string;
+	public addressFrom: {
+		label: 'address-from',
+		type: string,
+	};
+
 	public type: DataSchemaMetadataMODBUSType;
 }
