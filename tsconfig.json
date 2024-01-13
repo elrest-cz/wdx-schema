@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"strictPropertyInitialization": false,
 		"alwaysStrict": false,
-		"target": "ES2022",
+		"target": "ES2015",
 		"module": "CommonJS",
 		"lib": [
 			"ES2015"
