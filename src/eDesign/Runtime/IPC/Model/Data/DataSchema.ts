@@ -7,7 +7,7 @@
 
 import { v4 as uuidv4 } from 'uuid';
 import { Data } from './Data';
-import { DataSchemaMetadata } from './DataSchemaMetadata';
+import { DataSchemaMetadata } from './MetaData/DataSchemaMetadata';
 
 export class DataSchema {
 

@@ -9,7 +9,7 @@ export const PATH_SEPARATOR = '.';
 
 import { Data } from './Data';
 import { DataSchema } from './DataSchema';
-import { DataSchemaMetadata } from './DataSchemaMetadata';
+import * as MetaData from './MetaData';
 import { DataType } from './DataType';
 import { DataValue } from './DataValue';
 import { GetRequestBody } from './GetRequestBody';
@@ -23,7 +23,7 @@ import { UnregisterResponseBody } from './UnregisterResponseBody';
 export {
 	Data,
 	DataSchema,
-	DataSchemaMetadata,
+	MetaData,
 	DataType,
 	DataValue,
 	GetRequestBody,
