@@ -27,7 +27,7 @@
 	},
 	"license": "(C) Copyright 2024 Elrest Automations Systeme GMBH",
 	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
-	"version": "1.0.312",
+	"version": "1.0.313",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
@@ -52,7 +52,7 @@
 	},
 	"devDependencies": {
 		"@types/node": "^20.10.1",
-		"@types/uuid": "^9.0.2",
+		"@types/uuid": "^9.0.7",
 		"@typescript-eslint/eslint-plugin": "^6.11.0",
 		"@typescript-eslint/parser": "^6.11.0",
 		"concat-md": "^0.5.1",
@@ -62,11 +62,10 @@
 		"nyc": "^15.1.0",
 		"rimraf": "^5.0.5",
 		"showdown": "^2.1.0",
-		"string-width": "^6.1.0",
-		"ts-node": "^10.9.1",
-		"typedoc": "^0.25.3",
+		"ts-node": "^10.9.2",
+		"typedoc": "^0.25.7",
 		"typedoc-plugin-markdown": "^3.17.1",
-		"typescript": "^5.1.6"
+		"typescript": "^5.3.3"
 	},
 	"engines": {
 		"node": ">=18.18.2"
