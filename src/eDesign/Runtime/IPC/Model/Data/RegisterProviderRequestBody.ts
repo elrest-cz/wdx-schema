@@ -5,13 +5,15 @@
  */
 'use strict';
 
+import { DataSchema } from './../../Model/Data/DataSchema';
+
 
 export class RegisterProviderRequestBody {
 
 	constructor(
 
-		public provider: string,
+		public providerName: string,
 
-		public path: string
+		public schema: DataSchema
 	) { }
 }
