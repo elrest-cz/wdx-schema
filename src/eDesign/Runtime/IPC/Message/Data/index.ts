@@ -36,12 +36,17 @@ export class RegisterProviderRequest extends AbstractMessage {
 
 	constructor(
 		provider: string,
-		path: string,
+		schema: DataSchema,
 		uuid?: string,
 		error?: MessageError,
 		from?: string
 	) {
-		super(new RegisterProviderRequestBody(provider, path), uuid, error, from);
+		super(
+			new RegisterProviderRequestBody(provider, schema),
+			uuid,
+			error,
+			from
+		);
 	}
 }
 
