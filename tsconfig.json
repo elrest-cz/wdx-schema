@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
 		"strictPropertyInitialization": false,
+		"tsBuildInfoFile": ".build.json",
 		"alwaysStrict": false,
 		"target": "ES2015",
 		"module": "CommonJS",
