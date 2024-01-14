@@ -6,6 +6,7 @@
 'use strict';
 
 export class MessageError {
+
 	constructor(
 		public code: number,
 		public message: string
