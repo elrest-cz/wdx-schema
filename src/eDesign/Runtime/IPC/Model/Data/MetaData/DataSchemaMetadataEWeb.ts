@@ -8,9 +8,11 @@
 import { DataSchemaMetadata } from './DataSchemaMetadata';
 
 
-
+/**
+ * @todo enumerate eweb types
+ */
 export class DataSchemaMetadataEWebVariableType {
-
+	
 }
 
 export class DataSchemaMetadataEWebProvider extends DataSchemaMetadata {

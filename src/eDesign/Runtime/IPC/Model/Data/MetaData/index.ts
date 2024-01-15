@@ -8,10 +8,23 @@
 export const PATH_SEPARATOR = '.';
 
 import { DataSchemaMetadata } from './DataSchemaMetadata';
-import { DataSchemaMetadataMODBUS, DataSchemaMetadataMODBUSType } from './DataSchemaMetadataMODBUS';
+import {
+	DataSchemaMetadataMODBUS,
+	DataSchemaMetadataMODBUSType,
+} from './DataSchemaMetadataMODBUS';
+import {
+	DataSchemaMetadataEWebVariableType,
+	DataSchemaMetadataEWebProvider,
+	DataSchemaMetadataEWebVariable,
+} from './DataSchemaMetadataEWeb';
 
 export {
 	DataSchemaMetadata,
+
 	DataSchemaMetadataMODBUS,
 	DataSchemaMetadataMODBUSType,
+
+	DataSchemaMetadataEWebVariableType,
+	DataSchemaMetadataEWebProvider,
+	DataSchemaMetadataEWebVariable,
 };
