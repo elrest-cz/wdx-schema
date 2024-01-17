@@ -7,7 +7,7 @@
 
 import { v4 as uuidv4 } from 'uuid';
 import { Data } from './Data';
-import { DataSchemaMetadata } from './MetaData/DataSchemaMetadata';
+import { AbstractMetaData } from './MetaData/AbstractMetaData';
 
 export class DataSchema {
 
@@ -20,7 +20,7 @@ export class DataSchema {
 		public relativePath: string = '',
 		public name: string = '',
 		public children?: Array<DataSchema> | undefined,
-		public metadata: DataSchemaMetadata = new DataSchemaMetadata,
+		public metadata?: AbstractMetaData,
 		public readonly: boolean = false,
 		public subscribeable: boolean = false,
 		public editable: boolean = false,

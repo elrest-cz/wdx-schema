@@ -7,24 +7,16 @@
 
 export const PATH_SEPARATOR = '.';
 
-import { DataSchemaMetadata } from './DataSchemaMetadata';
-import {
-	DataSchemaMetadataMODBUS,
-	DataSchemaMetadataMODBUSType,
-} from './DataSchemaMetadataMODBUS';
-import {
-	DataSchemaMetadataEWebVariableType,
-	DataSchemaMetadataEWebProvider,
-	DataSchemaMetadataEWebVariable,
-} from './DataSchemaMetadataEWeb';
+import { AbstractMetaData } from './AbstractMetaData';
+import { MetaDataBACNET } from './MetaDataBACNET';
+import { MetaDataMODBUS } from './MetaDataMODBUS';
+import { MetaDataEWeb } from './MetaDataEWeb';
+import { MetaDataVirtual } from './MetaDataVirtual';
 
 export {
-	DataSchemaMetadata,
-
-	DataSchemaMetadataMODBUS,
-	DataSchemaMetadataMODBUSType,
-
-	DataSchemaMetadataEWebVariableType,
-	DataSchemaMetadataEWebProvider,
-	DataSchemaMetadataEWebVariable,
+	AbstractMetaData,
+	MetaDataBACNET,
+	MetaDataMODBUS,
+	MetaDataEWeb,
+	MetaDataVirtual,
 };
