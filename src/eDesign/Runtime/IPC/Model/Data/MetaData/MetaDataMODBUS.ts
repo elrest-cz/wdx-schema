@@ -1,18 +1,18 @@
 /**
- * Elrest eDesign Runtime IPC Typescript Model Data Schema Metadata
+ * Elrest eDesign Runtime IPC Typescript Model Data Schema MetaData MODBUS
  * 
  * @copyright 2024 Elrest Automations Systeme GMBH
  */
 'use strict';
 
-import { AbstractMetaData } from './AbstractMetaData';
+import { MetaDataStore } from './MetaDataStore';
 import { MetaDataType } from './MetaDataType';
 
 export enum MetadataMODBUSType {
 
 }
 
-export class MetaDataMODBUS extends AbstractMetaData {
+export class MetaDataMODBUS extends MetaDataStore {
 
 	public type: MetaDataType = MetaDataType.MODBUS;
 

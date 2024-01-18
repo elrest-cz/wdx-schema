@@ -13,7 +13,7 @@ export class DataSchema {
 
 	public createdTimestamp: number = (new Date()).getTime();
 
-	public updateTimestamp: number = (new Date()).getTime();
+	public updateTimestamp: number = this.createdTimestamp;
 
 	constructor(
 		public path: string = '',

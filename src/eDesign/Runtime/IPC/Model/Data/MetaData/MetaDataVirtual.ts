@@ -5,9 +5,9 @@
  */
 'use strict';
 
-import { AbstractMetaData } from './AbstractMetaData';
+import { MetaDataStore } from './MetaDataStore';
 import { MetaDataType } from './MetaDataType';
 
-export class MetaDataVirtual extends AbstractMetaData {
+export class MetaDataVirtual extends MetaDataStore {
 	public type: MetaDataType = MetaDataType.VIRTUAL;
 }
