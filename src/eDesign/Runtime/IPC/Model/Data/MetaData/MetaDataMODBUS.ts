@@ -20,4 +20,9 @@ export class MetaDataMODBUS extends MetaDataStore {
 		label: 'address-from',
 		type: string,
 	};
+
+	public format: {
+		label: 'format',
+		type: string,
+	};
 }
