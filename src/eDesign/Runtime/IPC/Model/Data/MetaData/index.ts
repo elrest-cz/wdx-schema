@@ -14,6 +14,7 @@ import { MetaDataBACNET } from './MetaDataBACNET';
 import { MetaDataMODBUS } from './MetaDataMODBUS';
 import { MetaDataEWeb } from './MetaDataEWeb';
 import { MetaDataVirtual } from './MetaDataVirtual';
+import { MetaDataCC100IO } from './MetaDataCC100-IO';
 
 export {
 	AbstractMetaData,
@@ -23,4 +24,5 @@ export {
 	MetaDataEWeb,
 	MetaDataStore,
 	MetaDataVirtual,
+	MetaDataCC100IO,
 };

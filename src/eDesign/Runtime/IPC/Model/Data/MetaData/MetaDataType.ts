@@ -17,4 +17,6 @@ export enum MetaDataType {
 
 	VIRTUAL = 'virtual',
 
+	CC100IO = 'cc100-io',
+
 }
