@@ -19,4 +19,6 @@ export enum MetaDataType {
 
 	CC100IO = 'cc100-io',
 
+	CC100IO_ADAPTER = 'cc100-io-adapter',
+
 }
