@@ -6,36 +6,9 @@
 'use strict';
 
 import { AbstractMetaData } from './AbstractMetaData';
+import { MetaDataCC100IOType } from './MetaDataCC100-IOType';
 import { MetaDataType } from './MetaDataType';
 
-export class MetaDataCC100IOAdapter extends AbstractMetaData {
-
-	public type: MetaDataType = MetaDataType.CC100IO_ADAPTER;
-
-}
-
-export enum MetaDataCC100IOType {
-
-	/**
-	 * Digital Input
-	 */
-	DI = 'DI',
-
-	/**
-	 * Digital Output
-	 */
-	DO = 'DO',
-
-	/**
-	 * Analog Input
-	 */
-	AI = 'AI',
-
-	/**
-	 * Analog Output
-	 */
-	AO = 'AO',
-}
 
 export class MetaDataCC100IO extends AbstractMetaData {
 

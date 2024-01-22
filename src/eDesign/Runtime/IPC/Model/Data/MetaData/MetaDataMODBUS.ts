@@ -10,19 +10,16 @@ import { MetaDataType } from './MetaDataType';
 
 export enum MetadataMODBUSType {
 
+	FLOAT = 'float',
+
 }
 
 export class MetaDataMODBUS extends MetaDataStore {
 
 	public type: MetaDataType = MetaDataType.MODBUS;
 
-	public addressFrom: {
-		label: 'address-from',
-		type: string,
-	};
+	public MODBUSAddressFrom: string;
 
-	public format: {
-		label: 'format',
-		type: string,
-	};
+	public MODBUSType: MetadataMODBUSType;
+
 }

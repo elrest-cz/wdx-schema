@@ -14,12 +14,10 @@ import { MetaDataBACNET } from './MetaDataBACNET';
 import { MetaDataMODBUS } from './MetaDataMODBUS';
 import { MetaDataEWeb } from './MetaDataEWeb';
 import { MetaDataVirtual } from './MetaDataVirtual';
-import {
-	MetaDataCC100IO,
-	MetaDataCC100IOAdapter,
-	MetaDataCC100IOType,
-} from './MetaDataCC100-IO';
-
+import { MetaDataCC100IO } from './MetaDataCC100-IO';
+import { MetaDataCC100IOAdapter } from './MetaDataCC100-IOAdapter';
+import { MetaDataCC100IOType } from './MetaDataCC100-IOType';
+import { MetaDataROOT } from './MetaDataROOT';
 
 export {
 	AbstractMetaData,
@@ -32,4 +30,5 @@ export {
 	MetaDataCC100IO,
 	MetaDataCC100IOAdapter,
 	MetaDataCC100IOType,
+	MetaDataROOT,
 };
