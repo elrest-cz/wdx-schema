@@ -10,7 +10,8 @@ import { MetaDataType } from './MetaDataType';
 
 export class MetaDataCC100IOAdapter extends AbstractMetaData {
 
-	public type: MetaDataType = MetaDataType.CC100IO;
+	public type: MetaDataType = MetaDataType.CC100IO_ADAPTER;
+
 }
 
 export enum MetaDataCC100IOType {
