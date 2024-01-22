@@ -41,7 +41,12 @@ export class MetaDataCC100IO extends AbstractMetaData {
 
 	public type: MetaDataType = MetaDataType.CC100IO;
 
-	public CC100IOType: MetaDataCC100IOType;
+	constructor(
 
-	public CC100IOIndex: number;
+		public CC100IOType: MetaDataCC100IOType,
+
+		public CC100IOIndex: number,
+	) {
+		super();
+	}
 }
