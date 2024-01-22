@@ -54,11 +54,19 @@ export class MonitorUnsubscribeRequest extends AbstractMessage {
 
 	public type: Type = Type.InstanceMonitorUnsubscribeRequest;
 	public body: number;
+
+	constructor(id: number, uuid?: string, error?: MessageError) {
+		super(id, uuid, error);
+	}
 }
 
 export class MonitorUnsubscribeResponse extends AbstractMessage {
 	public type: Type = Type.InstanceMonitorUnsubscribeResponse;
-	public body: null;
+	public body: number;
+
+	constructor(id: number, uuid?: string, error?: MessageError) {
+		super(id, uuid, error);
+	}
 }
 
 /**
