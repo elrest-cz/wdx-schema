@@ -5,10 +5,10 @@
  */
 'use strict';
 
-import { AbstractMetaData } from './AbstractMetaData';
+import { MetaDataAbstractAdapter } from './MetaDataAbstractAdapter';
 import { MetaDataType } from './MetaDataType';
 
-export class MetaDataEWebAdapter extends AbstractMetaData {
+export class MetaDataEWebAdapter extends MetaDataAbstractAdapter {
 
 	public type: MetaDataType = MetaDataType.EWEB_ADAPTER;
 

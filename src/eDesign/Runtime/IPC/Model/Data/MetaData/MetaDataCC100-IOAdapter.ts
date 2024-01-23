@@ -5,10 +5,10 @@
  */
 'use strict';
 
-import { AbstractMetaData } from './AbstractMetaData';
+import { MetaDataAbstractAdapter } from './MetaDataAbstractAdapter';
 import { MetaDataType } from './MetaDataType';
 
-export class MetaDataCC100IOAdapter extends AbstractMetaData {
+export class MetaDataCC100IOAdapter extends MetaDataAbstractAdapter {
 
 	public type: MetaDataType = MetaDataType.CC100IO_ADAPTER;
 

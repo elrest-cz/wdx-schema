@@ -5,10 +5,10 @@
  */
 'use strict';
 
-import { MetaDataStore } from './MetaDataStore';
+import { MetaDataAbstractAdapter } from './MetaDataAbstractAdapter';
 import { MetaDataType } from './MetaDataType';
 
-export class MetadataMODBUSAdapter extends MetaDataStore {
+export class MetadataMODBUSAdapter extends MetaDataAbstractAdapter {
 
 	public type: MetaDataType = MetaDataType.MODBUS_ADAPTER;
 
