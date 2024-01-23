@@ -8,6 +8,6 @@
 import { AbstractMetaData } from './AbstractMetaData';
 import { MetaDataType } from './MetaDataType';
 
-export class MetaDataBACNETAdapter extends AbstractMetaData {
-	public type: MetaDataType = MetaDataType.BACNET_ADAPTER;
+export class MetaDataBACNETProvider extends AbstractMetaData {
+	public type: MetaDataType = MetaDataType.BACNET_PROVIDER;
 }

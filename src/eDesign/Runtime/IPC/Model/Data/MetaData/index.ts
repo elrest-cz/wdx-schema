@@ -12,15 +12,20 @@ import { MetaDataAny } from './MetaDataAny';
 import { MetaDataStore } from './MetaDataStore';
 import { MetaDataBACNET } from './MetaDataBACNET';
 import { MetaDataBACNETAdapter } from './MetaDataBACNETAdapter';
+import { MetaDataBACNETProvider } from './MetaDataBACNETProvider';
 import { MetaDataMODBUS } from './MetaDataMODBUS';
 import { MetadataMODBUSType } from './MetadataMODBUSType';
 import { MetadataMODBUSAdapter } from '././MetaDataMODBUSAdapter';
+import { MetaDataMODBUSProvider } from '././MetaDataMODBUSProvider';
 import { MetaDataEWeb } from './MetaDataEWeb';
 import { MetaDataEWebAdapter } from './MetaDataEWebAdapter';
+import { MetaDataEWebProvider } from './MetaDataEWebProvider';
 import { MetaDataVirtual } from './MetaDataVirtual';
 import { MetaDataVirtualAdapter } from './MetaDataVirtualAdapter';
+import { MetaDataVirtualProvider } from './MetaDataVirtualProvider';
 import { MetaDataCC100IO } from './MetaDataCC100-IO';
 import { MetaDataCC100IOAdapter } from './MetaDataCC100-IOAdapter';
+import { MetaDataCC100IOProvider } from './MetaDataCC100-IOProvider';
 import { MetaDataCC100IOType } from './MetaDataCC100-IOType';
 import { MetaDataROOT } from './MetaDataROOT';
 
@@ -29,16 +34,22 @@ export {
 	MetaDataAny,
 	MetaDataBACNET,
 	MetaDataBACNETAdapter,
+	MetaDataBACNETProvider,
 	MetaDataMODBUS,
 	MetadataMODBUSType,
 	MetadataMODBUSAdapter,
+	MetaDataMODBUSProvider,
 	MetaDataEWeb,
 	MetaDataEWebAdapter,
+	MetaDataEWebProvider,
 	MetaDataStore,
 	MetaDataVirtual,
 	MetaDataVirtualAdapter,
+	MetaDataVirtualProvider,
 	MetaDataCC100IO,
 	MetaDataCC100IOAdapter,
 	MetaDataCC100IOType,
+	MetaDataCC100IOProvider,
 	MetaDataROOT,
 };
+
