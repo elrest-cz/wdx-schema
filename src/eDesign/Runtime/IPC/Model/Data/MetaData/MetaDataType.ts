@@ -11,11 +11,19 @@ export enum MetaDataType {
 
 	EWEB = 'eweb',
 
+	EWEB_ADAPTER = 'eweb-adapter',
+
 	MODBUS = 'modbus',
+
+	MODBUS_ADAPTER = 'modbus-adapter',
 
 	BACNET = 'bacnet',
 
+	BACNET_ADAPTER = 'bacnet-adapter',
+
 	VIRTUAL = 'virtual',
+
+	VIRTUAL_ADAPTER = 'virtual-adapter',
 
 	CC100IO = 'cc100-io',
 
