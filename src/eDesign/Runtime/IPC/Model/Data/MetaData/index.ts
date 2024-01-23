@@ -8,6 +8,7 @@
 export const PATH_SEPARATOR = '.';
 
 import { AbstractMetaData } from './AbstractMetaData';
+import { MetaDataAbstractAdapter } from './MetaDataAbstractAdapter';
 import { MetaDataAny } from './MetaDataAny';
 import { MetaDataStore } from './MetaDataStore';
 import { MetaDataBACNET } from './MetaDataBACNET';
@@ -32,6 +33,7 @@ import { MetaDataROOT } from './MetaDataROOT';
 
 export {
 	AbstractMetaData,
+	MetaDataAbstractAdapter,
 	MetaDataAny,
 	MetaDataBACNET,
 	MetaDataBACNETAdapter,
