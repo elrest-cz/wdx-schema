@@ -27,6 +27,8 @@ export enum MetaDataType {
 
 	BACNET_PROVIDER = 'bacnet-provider',
 
+	BACNET_DEVICE = 'bacnet-device',
+
 	VIRTUAL = 'virtual',
 
 	VIRTUAL_ADAPTER = 'virtual-adapter',
