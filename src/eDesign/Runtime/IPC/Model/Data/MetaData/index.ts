@@ -13,6 +13,7 @@ import { MetaDataStore } from './MetaDataStore';
 import { MetaDataBACNET } from './MetaDataBACNET';
 import { MetaDataBACNETAdapter } from './MetaDataBACNETAdapter';
 import { MetaDataBACNETProvider } from './MetaDataBACNETProvider';
+import { MetaDataBACNETDevice } from './MetaDataBACNETDevice';
 import { MetaDataMODBUS } from './MetaDataMODBUS';
 import { MetadataMODBUSType } from './MetadataMODBUSType';
 import { MetadataMODBUSAdapter } from '././MetaDataMODBUSAdapter';
@@ -35,6 +36,7 @@ export {
 	MetaDataBACNET,
 	MetaDataBACNETAdapter,
 	MetaDataBACNETProvider,
+	MetaDataBACNETDevice,
 	MetaDataMODBUS,
 	MetadataMODBUSType,
 	MetadataMODBUSAdapter,
