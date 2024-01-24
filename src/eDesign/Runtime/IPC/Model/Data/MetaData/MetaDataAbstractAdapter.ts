@@ -1,5 +1,5 @@
 /**
- * Elrest eDesign Runtime IPC Typescript Model Data Schema Metadata
+ * Elrest eDesign Runtime IPC Typescript Model Data Schema Metadata Adapter Adapter
  * 
  * @copyright 2024 Elrest Automations Systeme GMBH
  */

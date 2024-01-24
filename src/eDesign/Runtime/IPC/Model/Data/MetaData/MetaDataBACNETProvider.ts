@@ -5,9 +5,10 @@
  */
 'use strict';
 
-import { AbstractMetaData } from './AbstractMetaData';
+import { MetaDataAbstractProvider } from './MetaDataAbstractProvider';
 import { MetaDataType } from './MetaDataType';
 
-export class MetaDataBACNETProvider extends AbstractMetaData {
+export class MetaDataBACNETProvider extends MetaDataAbstractProvider {
 	public type: MetaDataType = MetaDataType.BACNET_PROVIDER;
+	
 }
