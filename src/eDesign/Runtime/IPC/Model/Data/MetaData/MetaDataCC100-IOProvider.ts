@@ -12,4 +12,6 @@ export class MetaDataCC100IOProvider extends AbstractMetaData {
 
 	public type: MetaDataType = MetaDataType.CC100IO_PROVIDER;
 
+	public providedType: MetaDataType = MetaDataType.CC100IO_ADAPTER;
+
 }

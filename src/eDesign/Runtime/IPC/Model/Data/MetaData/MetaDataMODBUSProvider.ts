@@ -5,13 +5,13 @@
  */
 'use strict';
 
-import { MetaDataStore } from './MetaDataStore';
+import { MetaDataAbstractProvider } from './MetaDataAbstractProvider';
 import { MetaDataType } from './MetaDataType';
 
-export class MetaDataMODBUSProvider extends MetaDataStore {
+export class MetaDataMODBUSProvider extends MetaDataAbstractProvider {
 
 	public type: MetaDataType = MetaDataType.MODBUS_PROVIDER;
 
-	public MODBUSPort: number;
+	public providedType: MetaDataType = MetaDataType.MODBUS_ADAPTER;
 
 }

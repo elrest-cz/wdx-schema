@@ -9,6 +9,8 @@ import { MetaDataAbstractProvider } from './MetaDataAbstractProvider';
 import { MetaDataType } from './MetaDataType';
 
 export class MetaDataBACNETProvider extends MetaDataAbstractProvider {
+
 	public type: MetaDataType = MetaDataType.BACNET_PROVIDER;
-	
+
+	public providedType: MetaDataType = MetaDataType.BACNET_ADAPTER;
 }

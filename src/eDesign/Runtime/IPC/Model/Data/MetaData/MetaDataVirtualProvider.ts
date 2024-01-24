@@ -1,18 +1,17 @@
 /**
- * Elrest eDesign Runtime IPC Typescript Model Data Schema MetaData Virtual Adapter 
+ * Elrest eDesign Runtime IPC Typescript Model Data Schema MetaData Virtual Provider
  * 
  * @copyright 2024 Elrest Automations Systeme GMBH
  */
 'use strict';
 
-import { AbstractMetaData } from './AbstractMetaData';
+import { MetaDataAbstractProvider } from './MetaDataAbstractProvider';
 import { MetaDataType } from './MetaDataType';
 
-export class MetaDataVirtualProvider extends AbstractMetaData {
+export class MetaDataVirtualProvider extends MetaDataAbstractProvider {
 
 	public type: MetaDataType = MetaDataType.VIRTUAL_PROVIDER;
 
-	public id?: number;
+	public providedType: MetaDataType = MetaDataType.VIRTUAL_ADAPTER;
 
-	public parentId?: number;
 }
