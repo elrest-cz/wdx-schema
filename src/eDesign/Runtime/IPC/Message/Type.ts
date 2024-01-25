@@ -140,4 +140,5 @@ export enum Type {
 	ScriptDeleteRequest = 'ScriptDeleteRequest',
 	ScriptDeleteResponse = 'ScriptDeleteResponse',
 
+	KeepALive = 'KeepAlive',
 }

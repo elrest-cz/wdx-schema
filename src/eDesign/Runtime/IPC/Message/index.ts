@@ -7,6 +7,7 @@
 
 import { Type } from './Type';
 import { AbstractMessage } from './AbstractMessage';
+import { KeepAlive } from './KeepAlive';
 import { MessageError } from './MessageError';
 import * as Data from './Data';
 import * as Instance from './Instance';
@@ -18,6 +19,7 @@ import * as Script from './Script';
 export {
 	AbstractMessage,
 	MessageError,
+	KeepAlive,
 	Data,
 	Instance,
 	Type,
