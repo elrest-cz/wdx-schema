@@ -13,4 +13,6 @@ export class MetaDataBACNETProvider extends MetaDataAbstractProvider {
 	public type: MetaDataType = MetaDataType.BACNET_PROVIDER;
 
 	public providedType: MetaDataType = MetaDataType.BACNET_ADAPTER;
+
+	public providerBasePath: string = 'bacnet';
 }

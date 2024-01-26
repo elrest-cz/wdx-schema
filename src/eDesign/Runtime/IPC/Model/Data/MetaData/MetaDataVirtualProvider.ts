@@ -14,4 +14,7 @@ export class MetaDataVirtualProvider extends MetaDataAbstractProvider {
 
 	public providedType: MetaDataType = MetaDataType.VIRTUAL_ADAPTER;
 
+	public providerBasePath: string = 'virtual';
+
+
 }

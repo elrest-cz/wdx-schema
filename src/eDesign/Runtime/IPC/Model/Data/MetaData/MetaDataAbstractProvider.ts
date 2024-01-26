@@ -12,4 +12,6 @@ export abstract class MetaDataAbstractProvider extends AbstractMetaData {
 
 	public abstract providedType: MetaDataType;
 
+	public abstract providerBasePath: string;
+
 }

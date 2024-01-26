@@ -14,4 +14,6 @@ export class MetaDataEWebProvider extends MetaDataAbstractProvider {
 
 	public providedType: MetaDataType = MetaDataType.EWEB_ADAPTER;
 
+	public providerBasePath: string = 'eweb';
+
 }

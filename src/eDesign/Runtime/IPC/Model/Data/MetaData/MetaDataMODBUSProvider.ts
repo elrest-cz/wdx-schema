@@ -14,4 +14,6 @@ export class MetaDataMODBUSProvider extends MetaDataAbstractProvider {
 
 	public providedType: MetaDataType = MetaDataType.MODBUS_ADAPTER;
 
+	public providerBasePath: string = 'modbus';
+
 }
