@@ -12,4 +12,8 @@ export class MetaDataBACNETAdapter extends MetaDataAbstractAdapter {
 
 	public type: MetaDataType = MetaDataType.BACNET_ADAPTER;
 
+	public interface: string;
+
+	public broadcastAddress: string;
+
 }
