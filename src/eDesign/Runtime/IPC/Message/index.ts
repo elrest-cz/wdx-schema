@@ -15,6 +15,7 @@ import * as Package from './Package';
 import * as Repository from './Repository';
 import * as Runtime from './Runtime';
 import * as Script from './Script';
+import * as Trending from './Trending';
 
 export {
 	AbstractMessage,
@@ -26,5 +27,6 @@ export {
 	Package,
 	Repository,
 	Runtime,
-	Script
+	Script,
+	Trending,
 };

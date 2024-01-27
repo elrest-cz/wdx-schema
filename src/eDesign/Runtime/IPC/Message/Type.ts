@@ -127,7 +127,6 @@ export enum Type {
 	RuntimeMonitorUnsubscribeRequest = 'RuntimeMonitorUnsubscribeRequest',
 	RuntimeMonitorUnsubscribeResponse = 'RuntimeMonitorUnsubscribeResponse',
 
-
 	/**
 	 * Scripts
 	 */
@@ -140,5 +139,14 @@ export enum Type {
 	ScriptDeleteRequest = 'ScriptDeleteRequest',
 	ScriptDeleteResponse = 'ScriptDeleteResponse',
 
+	/**
+	 * KeepALive
+	 */
 	KeepALive = 'KeepAlive',
+
+	/**
+	 * Trending
+	 */
+	TrendingStart = 'TrendingStart',
+	TrendingStop = 'TrendingStop',
 }
