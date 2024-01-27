@@ -147,6 +147,8 @@ export enum Type {
 	/**
 	 * Trending
 	 */
-	TrendingStart = 'TrendingStart',
-	TrendingStop = 'TrendingStop',
+	TrendingStartRequest = 'TrendingStartRequest',
+	TrendingStartResponse = 'TrendingStartResponse',
+	TrendingStopRequest = 'TrendingStopRequest',
+	TrendingStopResponse = 'TrendingStopResponse',
 }

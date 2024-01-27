@@ -1,5 +1,5 @@
 /**
- * Elrest eDesign Runtime IPC Typescript Trending Stop Message
+ * Elrest eDesign Runtime IPC Typescript Trending Start Response Message
  * 
  * @copyright 2024 Elrest AutomationsSysteme GMBH
  */
@@ -8,7 +8,9 @@
 import { AbstractMessage } from '../AbstractMessage';
 import { Type } from './../Type';
 
-export class StopMessage extends AbstractMessage {
-	public type: Type = Type.TrendingStop;
+export class StartResponse extends AbstractMessage {
+
+	public type: Type = Type.TrendingStartResponse;
+
 	public body: string;
 }

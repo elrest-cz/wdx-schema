@@ -5,10 +5,14 @@
  */
 'use strict';
 
-import { StartMessage } from './StartMessage';
-import { StopMessage } from './StopMessage';
+import { StartRequest } from './StartRequest';
+import { StartResponse } from './StartResponse';
+import { StopRequest } from './StopRequest';
+import { StopResponse } from './StopResponse';
 
 export {
-	StartMessage,
-	StopMessage,
+	StartRequest,
+	StartResponse,
+	StopRequest,
+	StopResponse,
 }
