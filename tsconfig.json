@@ -18,7 +18,6 @@
 		"declaration": true,
 		"sourceMap": true,
 		"composite": true,
-		"types": ["module"]
 	},
 	"exclude": [
 		"logs",
