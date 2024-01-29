@@ -42,7 +42,11 @@ export class MonitorInstance extends AbstractMessage {
 export class MonitorSubscribeRequest extends AbstractMessage {
 
 	public type: Type = Type.InstanceMonitorSubscribeRequest;
-	public body: number;
+
+	/**
+	 * Instance name
+	 */
+	public body: string;
 }
 
 export class MonitorSubscribeResponse extends AbstractMessage {
@@ -53,50 +57,20 @@ export class MonitorSubscribeResponse extends AbstractMessage {
 export class MonitorUnsubscribeRequest extends AbstractMessage {
 
 	public type: Type = Type.InstanceMonitorUnsubscribeRequest;
-	public body: number;
 
-	constructor(id: number, uuid?: string, error?: MessageError) {
-		super(id, uuid, error);
-	}
+	/**
+	 * Instance name
+	 */
+	public body: string;
 }
 
 export class MonitorUnsubscribeResponse extends AbstractMessage {
 	public type: Type = Type.InstanceMonitorUnsubscribeResponse;
-	public body: number;
+	public body: string;
 
-	constructor(id: number, uuid?: string, error?: MessageError) {
+	constructor(id: string, uuid?: string, error?: MessageError) {
 		super(id, uuid, error);
 	}
-}
-
-/**
- * Monitor Logs Subscriptions
- */
-export class MonitorLog extends AbstractMessage {
-	public type: Type = Type.InstanceMonitorLog;
-	public body: Logs;
-}
-
-export class MonitorLogSubscribeRequest extends AbstractMessage {
-
-	public type: Type = Type.InstanceMonitorLogSubscribeRequest;
-	public body: number;
-}
-
-export class MonitorLogSubscribeResponse extends AbstractMessage {
-	public type: Type = Type.InstanceMonitorLogSubscribeResponse;
-	public body: Logs;
-}
-
-export class MonitorLogUnsubscribeRequest extends AbstractMessage {
-
-	public type: Type = Type.InstanceMonitorLogUnsubscribeRequest;
-	public body: number;
-}
-
-export class MonitorLogUnsubscribeResponse extends AbstractMessage {
-	public type: Type = Type.InstanceMonitorLogUnsubscribeResponse;
-	public body: null;
 }
 
 export class ListRequest extends AbstractMessage {

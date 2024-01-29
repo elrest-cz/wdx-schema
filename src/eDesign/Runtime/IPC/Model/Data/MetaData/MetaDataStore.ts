@@ -13,7 +13,7 @@ import { MetaDataType } from './MetaDataType';
  */
 export class MetaDataStore extends AbstractMetaData {
 
-	public type: MetaDataType = MetaDataType.ANY;
+	public type: MetaDataType = MetaDataType.VIRTUAL;
 
 	public id?: number;
 
