@@ -14,12 +14,25 @@ export enum MetadataMODBUSType {
 
 }
 
+export enum MetadataMODBUSAccess {
+
+	READ = 'read',
+
+	WRITE = 'write',
+
+}
+
 export class MetaDataMODBUS extends MetaDataStore {
 
 	public type: MetaDataType = MetaDataType.MODBUS;
 
-	public MODBUSAddressFrom: string;
+	/**
+	 * Decimal number 
+	 */
+	public MODBUSAddressFrom: number;
 
 	public MODBUSType: MetadataMODBUSType;
+
+	public MODBUSAccess: Array<MetadataMODBUSAccess> = new Array<MetadataMODBUSAccess>;
 
 }
