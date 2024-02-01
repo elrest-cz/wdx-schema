@@ -5,22 +5,10 @@
  */
 'use strict';
 
+import { MetadataMODBUSAccess } from './MetadataMODBUSAccess';
 import { MetaDataStore } from './MetaDataStore';
 import { MetaDataType } from './MetaDataType';
-
-export enum MetadataMODBUSType {
-
-	FLOAT = 'float',
-
-}
-
-export enum MetadataMODBUSAccess {
-
-	READ = 'read',
-
-	WRITE = 'write',
-
-}
+import { MetadataMODBUSType } from './MetadataMODBUSType';
 
 export class MetaDataMODBUS extends MetaDataStore {
 

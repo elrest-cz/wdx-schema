@@ -19,6 +19,7 @@ import { MetaDataBACNETProvider } from './MetaDataBACNETProvider';
 import { MetaDataBACNETDevice } from './MetaDataBACNETDevice';
 import { MetaDataMODBUS } from './MetaDataMODBUS';
 import { MetadataMODBUSType } from './MetadataMODBUSType';
+import { MetadataMODBUSAccess } from './MetadataMODBUSAccess';
 import { MetadataMODBUSAdapter } from '././MetaDataMODBUSAdapter';
 import { MetaDataMODBUSProvider } from '././MetaDataMODBUSProvider';
 import { MetaDataEWeb } from './MetaDataEWeb';
@@ -45,6 +46,7 @@ export {
 	MetaDataBACNETDevice,
 	MetaDataMODBUS,
 	MetadataMODBUSType,
+	MetadataMODBUSAccess,
 	MetadataMODBUSAdapter,
 	MetaDataMODBUSProvider,
 	MetaDataEWeb,

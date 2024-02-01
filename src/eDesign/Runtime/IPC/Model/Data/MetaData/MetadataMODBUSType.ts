@@ -7,6 +7,10 @@
 
 export enum MetadataMODBUSType {
 
-	FLOAT = 'float',
+	FLOAT32 = 'FLOAT32',
+
+	FLOAT32LE = 'FLOAT32LE',
+
+	FLOAT32BE = 'FLOAT32BE',
 
 }
