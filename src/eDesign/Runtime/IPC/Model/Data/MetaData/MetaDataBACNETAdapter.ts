@@ -16,4 +16,6 @@ export class MetaDataBACNETAdapter extends MetaDataAbstractAdapter {
 
 	public broadcastAddress: string;
 
+	public apduTimeout: number;
+
 }

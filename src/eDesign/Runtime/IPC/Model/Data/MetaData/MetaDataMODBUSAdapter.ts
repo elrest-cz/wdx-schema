@@ -14,4 +14,6 @@ export class MetadataMODBUSAdapter extends MetaDataAbstractAdapter {
 
 	public MODBUSPort: number;
 
+	public MODBUSHost: string;
+
 }
