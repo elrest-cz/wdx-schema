@@ -9,5 +9,17 @@ import { AbstractMetaData } from './AbstractMetaData';
 import { MetaDataType } from './MetaDataType';
 
 export class MetaDataEWeb extends AbstractMetaData {
+
 	public type: MetaDataType = MetaDataType.EWEB;
+
+	/**
+	 * @todo need enumerations?
+	 */
+	public nodeClass: string;
+
+
+	/**
+	 * @todo need enumerations?
+	 */
+	public typeClass: string;
 }
