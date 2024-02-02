@@ -15,9 +15,9 @@ export class SchemaChanges extends AbstractMessage {
 
 	public type: Type = Type.DataSchemaChanges;
 
-	public body: DataSchema;
+	public body?: DataSchema;
 
-	constructor(data: DataSchema, uuid?: string, error?: MessageError, from?: string) {
+	constructor(data?: DataSchema, uuid?: string, error?: MessageError, from?: string) {
 		super(data, uuid, error, from);
 	}
 }
