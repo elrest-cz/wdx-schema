@@ -11,7 +11,7 @@ import { AbstractMessage } from './../AbstractMessage';
 
 
 export class RegisterSchemaChangesRequest extends AbstractMessage {
-	public type: Type = Type.DataUnregisterSchemaChangesRequest;
+	public type: Type = Type.DataRegisterSchemaChangesRequest;
 	public body: null;
 
 	constructor(uuid?: string, error?: MessageError, from?: string) {
