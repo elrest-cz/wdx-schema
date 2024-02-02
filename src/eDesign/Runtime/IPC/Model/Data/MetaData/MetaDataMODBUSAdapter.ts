@@ -16,4 +16,10 @@ export class MetadataMODBUSAdapter extends MetaDataAbstractAdapter {
 
 	public MODBUSHost: string;
 
+	public vendorName?: string;
+
+	public productCode?: string;
+
+	public productVersion?: string;
+
 }
