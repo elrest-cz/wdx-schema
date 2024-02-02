@@ -5,181 +5,52 @@
  */
 'use strict';
 
-import { AbstractMessage } from './../AbstractMessage';
-import { MessageError } from '../MessageError';
-import { Type } from './../Type';
+import { DataUpdate } from './DataUpdate';
+import { RegisterSchemaChangesRequest } from './RegisterSchemaChangesRequest';
+import { RegisterSchemaChangesResponse } from './RegisterSchemaChangesResponse';
+import { UnregisterSchemaChangesRequest } from './UnregisterSchemaChangesRequest';
+import { UnregisterSchemaChangesResponse } from './UnregisterSchemaChangesResponse';
+import { RegisterProviderRequest } from './RegisterProviderRequest';
+import { RegisterProviderResponse } from './RegisterProviderResponse';
+import { RegisterRequest } from './RegisterRequest';
+import { RegisterResponse } from './RegisterResponse';
+import { UnregisterRequest } from './UnregisterRequest';
+import { UnregisterResponse } from './UnregisterResponse';
+import { SetValueRequest } from './SetValueRequest';
+import { SetValueResponse } from './SetValueResponse';
+import { GetValueRequest } from './GetValueRequest';
+import { GetValueResponse } from './GetValueResponse';
+import { SetSchemaRequest } from './SetSchemaRequest';
+import { SetSchemaResponse } from './SetSchemaResponse';
+import { GetSchemaRequest } from './GetSchemaRequest';
+import { GetSchemaResponse } from './GetSchemaResponse';
+import { DeleteSchemaRequest } from './DeleteSchemaRequest';
+import { DeleteSchemaResponse } from './DeleteSchemaResponse';
 
-import {
-	GetSchemaRequestBody,
-	Data,
-	DataSchema,
-	GetRequestBody,
-	RegisterRequestBody,
-	UnregisterRequestBody,
-	SetValueRequestBody,
-	RegisterProviderRequestBody,
-	UnregisterResponseBody
-} from '../../Model/Data';
-
-export class DataUpdate extends AbstractMessage {
-
-	public type: Type = Type.DataUpdate;
-
-	public body: Data;
-}
-
-export class RegisterProviderRequest extends AbstractMessage {
-
-	public type: Type = Type.DataRegisterProviderRequest;
-
-	public body: RegisterProviderRequestBody;
-
-	constructor(
-		provider: string,
-		schema: DataSchema,
-		uuid?: string,
-		error?: MessageError,
-		from?: string
-	) {
-		super(
-			new RegisterProviderRequestBody(provider, schema),
-			uuid,
-			error,
-			from
-		);
-	}
-}
-
-export class RegisterProviderResponse extends AbstractMessage {
-
-	public type: Type = Type.DataRegisterProviderResponse;
-
-	public body: undefined;
-}
+export {
+	DataUpdate,
+	RegisterProviderRequest,
+	RegisterProviderResponse,
+	RegisterRequest,
+	RegisterResponse,
+	RegisterSchemaChangesRequest,
+	RegisterSchemaChangesResponse,
+	UnregisterRequest,
+	UnregisterResponse,
+	UnregisterSchemaChangesRequest,
+	UnregisterSchemaChangesResponse,
+	SetValueRequest,
+	SetValueResponse,
+	GetValueRequest,
+	GetValueResponse,
+	SetSchemaRequest,
+	SetSchemaResponse,
+	GetSchemaRequest,
+	GetSchemaResponse,
+	DeleteSchemaRequest,
+	DeleteSchemaResponse,
+};
 
 
-export class RegisterRequest extends AbstractMessage {
-	public type: Type = Type.DataRegisterRequest;
-	public body: RegisterRequestBody;
 
-	constructor(path: string, refreshMin?: number, refreshMax?: number, delta?: number, uuid?: string, error?: MessageError, from?: string) {
-		super(new RegisterRequestBody(path, refreshMin, refreshMax, delta), uuid, error, from);
-	}
-}
 
-export class RegisterResponse extends AbstractMessage {
-	public type: Type = Type.DataRegisterResponse;
-	public body: Data;
-}
-
-export class UnregisterRequest extends AbstractMessage {
-	public type: Type = Type.DataUnregisterRequest;
-	public body: UnregisterRequestBody;
-
-	constructor(path: string, uuid?: string, error?: MessageError, from?: string) {
-		super(new UnregisterRequestBody(path), uuid, error, from);
-	}
-}
-
-export class UnregisterResponse extends AbstractMessage {
-	public type: Type = Type.DataUnregisterResponse;
-	public body: UnregisterResponseBody;
-
-	constructor(path: string, uuid?: string, error?: MessageError, from?: string) {
-		super(new UnregisterResponseBody(path), uuid, error, from);
-	}
-}
-
-export class GetValueRequest extends AbstractMessage {
-	public type: Type = Type.DataGetValueRequest;
-	public body: GetRequestBody;
-
-	constructor(path: string, uuid?: string, error?: MessageError, from?: string) {
-		super(new GetRequestBody(path), uuid, error, from);
-	}
-}
-
-export class GetValueResponse extends AbstractMessage {
-	public type: Type = Type.DataGetValueResponse;
-	public body: Data;
-}
-
-export class SetValueRequest extends AbstractMessage {
-	public type: Type = Type.DataSetValueRequest;
-	public body: SetValueRequestBody;
-
-	constructor(path: string, value: Data, uuid?: string, error?: MessageError, from?: string) {
-		super(new SetValueRequestBody(path, value), uuid, error, from);
-	}
-}
-
-export class SetValueResponse extends AbstractMessage {
-	public type: Type = Type.DataSetValueResponse;
-	public body: Data;
-
-	constructor(path?: string, value?: any, uuid?: string, error?: MessageError, from?: string) {
-		super(path ? new Data(path, value) : undefined, uuid, error, from);
-	}
-}
-
-export class SetSchemaRequest extends AbstractMessage {
-	public type: Type = Type.DataSetSchemaRequest;
-	public body: DataSchema;
-}
-
-export class SetSchemaResponse extends AbstractMessage {
-	public type: Type = Type.DataSetSchemaResponse;
-	public body: DataSchema;
-}
-
-export class GetSchemaRequest extends AbstractMessage {
-
-	public type: Type = Type.DataGetSchemaRequest;
-	public body: GetSchemaRequestBody;
-
-	constructor(
-		path: string,
-		level: number = GetSchemaRequestBody.UNLIMITED_LEVEL,
-		uuid?: string,
-		error?: MessageError,
-		from?: string
-	) {
-		super(new GetSchemaRequestBody(path, level), uuid, error, from);
-	}
-}
-
-export class GetSchemaResponse extends AbstractMessage {
-
-	public type: Type = Type.DataGetSchemaResponse;
-	public body: DataSchema | undefined;
-}
-
-export class DeleteSchemaRequest extends AbstractMessage {
-
-	public type: Type = Type.DataDeleteSchemaRequest;
-	public body: string;
-
-	constructor(
-		path: string,
-		uuid?: string,
-		error?: MessageError,
-		from?: string
-	) {
-		super(path, uuid, error, from);
-	}
-}
-
-export class DeleteSchemaResponse extends AbstractMessage {
-
-	public type: Type = Type.DataDeleteSchemaResponse;
-	public body: string;
-
-	constructor(
-		path: string,
-		uuid?: string,
-		error?: MessageError,
-		from?: string
-	) {
-		super(path, uuid, error, from);
-	}
-}

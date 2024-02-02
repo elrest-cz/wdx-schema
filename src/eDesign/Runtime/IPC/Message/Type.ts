@@ -77,6 +77,12 @@ export enum Type {
 	DataUnregisterRequest = 'DataUnregisterRequest',
 	DataUnregisterResponse = 'DataUnregisterResponse',
 
+	DataRegisterSchemaChangesRequest = 'DataRegisterSchemaChangesRequest',
+	DataRegisterSchemaChangesResponse = 'DataRegisterSchemaChangesResponse',
+
+	DataUnregisterSchemaChangesRequest = 'DataUnregisterSchemaChangesRequest',
+	DataUnregisterSchemaChangesResponse = 'DataUnregisterSchemaChangesResponse',
+
 	DataSetValueRequest = 'DataSetValueRequest',
 	DataSetValueResponse = 'DataSetValueResponse',
 
