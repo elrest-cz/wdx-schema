@@ -7,17 +7,54 @@
 
 export enum MetadataMODBUSType {
 
-	REAL32LE = 'REAL32LE',
+	/**
+	 * Unsigned Integer 16 - Big Endian
+	 */
+	UINT16_BE = 'UINT16_BE',
 
-	REAL32BE = 'REAL32BE',
+	/**
+	 * Unsigned Integer 16 Little Endian
+	 */
+	UINT16_LE = 'UINT16_LE',
 
-	INT16LE = 'INT16LE',
+	/**
+	 * Signed Integer 16 - Big Endian
+	 */
+	INT16_BE = 'INT16_BE',
 
-	INT16BE = 'INT16BE',
+	/**
+	 * Signed Integer 16 - Little Endian
+	 */
+	INT16_LE = 'INT16_LE',
 
-	BOOLEANCOIL = 'BOOLEAN',
+	/**
+	 * Float 32 - Big Endian
+	 */
+	FLOAT32_BE = 'FLOAT32_BE',
 
-	BOOLEANLE = 'BOOLEANLE',
+	/**
+	 * Float 32 - Big Endian - Reversed
+	 */
+	FLOAT32_BE_RE = '/',
 
-	BOOLEANBE = 'BOOLEANBE',
+	/**
+	 * Float 32 - Little Endian
+	 */
+	FLOAT32_LE = 'FLOAT32_LE',
+
+	/**
+	 * Float 32 - Little Endian - Reversed
+	 */
+	FLOAT32_LE_RE = 'FLOAT32_LE_RE',
+
+	/**
+	 * String - Little Endian
+	 */
+	STRING_LE = 'STRING_LE',
+
+	/**
+	 * String - Little Endian - Reversed
+	 */
+	STRING_LE_RE = 'STRING_LE_RE',
+
 }
