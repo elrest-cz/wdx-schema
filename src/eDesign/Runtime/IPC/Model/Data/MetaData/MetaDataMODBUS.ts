@@ -23,4 +23,6 @@ export class MetaDataMODBUS extends MetaDataStore {
 
 	public MODBUSAccess: Array<MetadataMODBUSAccess> = new Array<MetadataMODBUSAccess>;
 
+	public MODBUSAddressLength: number;
+
 }
