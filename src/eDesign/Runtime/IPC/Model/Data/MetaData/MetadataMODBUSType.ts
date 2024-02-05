@@ -35,7 +35,7 @@ export enum MetadataMODBUSType {
 	/**
 	 * Float 32 - Big Endian - Reversed
 	 */
-	FLOAT32_BE_RE = '/',
+	FLOAT32_BE_RE = 'FLOAT32_BE_RE',
 
 	/**
 	 * Float 32 - Little Endian
