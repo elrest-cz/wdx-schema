@@ -11,8 +11,4 @@ import { MetaDataType } from './MetaDataType';
 export class MetaDataVirtualAdapter extends MetaDataAbstractAdapter {
 
 	public type: MetaDataType = MetaDataType.VIRTUAL_ADAPTER;
-
-	public id?: number;
-
-	public parentId?: number;
 }
