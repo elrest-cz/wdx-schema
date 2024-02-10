@@ -19,6 +19,6 @@ export class MetaDataEWebAdapter extends MetaDataAbstractAdapter {
 	public socketUsername: string;
 
 	public socketPassword: string;
-	
+
 	public socketPath: string;
 }
