@@ -9,7 +9,7 @@
 
 export const BROWSE_DEFAULT_LEVEL = 1;
 export const BROWSE_NO_LEVEL = -1;
-export const INSTANCE_NAMESPACE = 'script';
+export const INSTANCE_NAMESPACE = 'JS Scripts';
 
 import { BrowseRequestBody } from './BrowseRequestBody';
 import { Script } from './Script';
