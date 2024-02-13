@@ -239,6 +239,8 @@ export class Instance {
 		 * eDesign Installed Package Id
 		 */
 		public installedPackageId?: number,
+
+		public autorestart?: boolean,
 	) { }
 
 }
