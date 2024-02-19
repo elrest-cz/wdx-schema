@@ -41,6 +41,12 @@ export enum MetaDataType {
 
 	CC100IO_PROVIDER = 'cc100-io-provider',
 
+	MQTT = 'mqtt',
+
+	MQTT_ADAPTER = 'mqtt-adapter',
+
+	MQTT_PROVIDER = 'mqtt-provider',
+
 	ROOT = 'root',
 
 }
