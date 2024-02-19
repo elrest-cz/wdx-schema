@@ -6,15 +6,17 @@
 'use strict';
 
 import { MetaDataAbstractAdapter } from './MetaDataAbstractAdapter';
+import { MetaDataMQTTProtocol } from './MetaDataMQTTProtocol';
 import { MetaDataType } from './MetaDataType';
+
 
 export class MetaDataMQTTAdapter extends MetaDataAbstractAdapter {
 
 	public type: MetaDataType = MetaDataType.MQTT_ADAPTER;
 
-	public MQTTProtocol: string;
+	public MQTTProtocol: MetaDataMQTTProtocol;
 
-	public MQTTPOrt: number;
+	public MQTTPort: number;
 
 	public MQTTHost: string;
 
