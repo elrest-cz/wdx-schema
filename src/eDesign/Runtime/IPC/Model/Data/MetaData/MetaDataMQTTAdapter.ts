@@ -8,7 +8,7 @@
 import { MetaDataAbstractAdapter } from './MetaDataAbstractAdapter';
 import { MetaDataType } from './MetaDataType';
 
-export class MetaDataMQQTAdapter extends MetaDataAbstractAdapter {
+export class MetaDataMQTTAdapter extends MetaDataAbstractAdapter {
 
 	public type: MetaDataType = MetaDataType.MQTT_ADAPTER;
 

@@ -32,9 +32,9 @@ import { MetaDataCC100IO } from './MetaDataCC100-IO';
 import { MetaDataCC100IOAdapter } from './MetaDataCC100-IOAdapter';
 import { MetaDataCC100IOProvider } from './MetaDataCC100-IOProvider';
 import { MetaDataCC100IOType } from './MetaDataCC100-IOType';
-import { MetaDataMQQT } from './MetaDataMQQT';
-import { MetaDataMQQTAdapter } from './MetaDataMQQTAdapter';
-import { MetaDataMQQTProvider } from './MetaDataMQQTProvider';
+import { MetaDataMQTT } from './MetaDataMQTT';
+import { MetaDataMQTTAdapter } from './MetaDataMQTTAdapter';
+import { MetaDataMQTTProvider } from './MetaDataMQTTProvider';
 import { MetaDataROOT } from './MetaDataROOT';
 
 export {
@@ -63,9 +63,9 @@ export {
 	MetaDataCC100IOAdapter,
 	MetaDataCC100IOType,
 	MetaDataCC100IOProvider,
-	MetaDataMQQT,
-	MetaDataMQQTAdapter,
-	MetaDataMQQTProvider,
+	MetaDataMQTT,
+	MetaDataMQTTAdapter,
+	MetaDataMQTTProvider,
 	MetaDataROOT,
 };
 
