@@ -26,6 +26,8 @@ export class MetaDataMQTTAdapter extends MetaDataAbstractAdapter {
 
 	public MQQTProtocolId?: string;
 
+	public MQQTProtocolVersion?: number;
+
 	public MQQTReconnectPeriod?: number;
 
 	public MQQTConnectTimeout?: number;
