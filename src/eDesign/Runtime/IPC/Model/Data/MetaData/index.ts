@@ -11,7 +11,6 @@ import {AbstractMetaData} from './AbstractMetaData';
 import {MetaDataType} from './MetaDataType';
 import {MetaDataAbstractAdapter} from './MetaDataAbstractAdapter';
 import {MetaDataAbstractProvider} from './MetaDataAbstractProvider';
-import {MetaDataAny} from './MetaDataAny';
 import {MetaDataStore} from './MetaDataStore';
 import {MetaDataBACNET} from './MetaDataBACNET';
 import {MetaDataBACNETAdapter} from './MetaDataBACNETAdapter';
@@ -43,7 +42,6 @@ export {
   MetaDataType,
   MetaDataAbstractAdapter,
   MetaDataAbstractProvider,
-  MetaDataAny,
   MetaDataBACNET,
   MetaDataBACNETAdapter,
   MetaDataBACNETProvider,
