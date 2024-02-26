@@ -7,8 +7,6 @@
 
 export enum MetaDataType {
 
-	ANY = 'ANY',
-
 	EWEB = 'eweb',
 
 	EWEB_ADAPTER = 'eweb-adapter',
