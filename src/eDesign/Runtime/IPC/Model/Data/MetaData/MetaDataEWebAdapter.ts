@@ -12,6 +12,8 @@ export class MetaDataEWebAdapter extends MetaDataAbstractAdapter {
 
 	public type: MetaDataType = MetaDataType.EWEB_ADAPTER;
 
+	public socketProtocol: string;
+
 	public socketHost: string;
 
 	public socketPort: number;

@@ -27,6 +27,8 @@ import { GetSchemaResponse } from './GetSchemaResponse';
 import { DeleteSchemaRequest } from './DeleteSchemaRequest';
 import { DeleteSchemaResponse } from './DeleteSchemaResponse';
 import { SchemaChanges } from './SchemaChanges';
+import { RefreshSchemaRequest } from './RefreshSchemaRequest';
+import { RefreshSchemaResponse } from './RefreshSchemaResponse';
 
 export {
 	DataUpdate,
@@ -51,6 +53,8 @@ export {
 	SchemaChanges,
 	DeleteSchemaRequest,
 	DeleteSchemaResponse,
+	RefreshSchemaRequest,
+	RefreshSchemaResponse,
 };
 
 

@@ -15,7 +15,7 @@ export class MetaDataEWeb extends AbstractMetaData {
 	/**
 	 * @todo need enumerations?
 	 */
-	public nodeClass: string;
+	public nodeClass: number;
 
 
 	/**

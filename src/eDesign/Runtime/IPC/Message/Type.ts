@@ -65,6 +65,9 @@ export enum Type {
 	 */
 	DataUpdate = 'DataUpdate',
 
+	DataRefreshSchemaRequest = 'DataRefreshSchemaRequest',
+	DataRefreshSchemaResponse = 'DataRefreshSchemaResponse',
+
 	DataRegisterProviderRequest = 'DataRegisterProviderRequest',
 	DataRegisterProviderResponse = 'DataRegisterProviderResponse',
 

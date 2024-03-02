@@ -26,6 +26,7 @@ export class DataSchema {
 		public editable: boolean = false,
 		public extendable: boolean = false,
 		public removable: boolean  = true,
+		public refreshable: boolean  = false,
 		public valueSnapshot?: Data,
 		public uuid: string = uuidv4()
 	) {
