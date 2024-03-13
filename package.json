@@ -1,6 +1,6 @@
 {
-	"name": "@elrest/wdx-schema",
-	"description": "Elrest Automations Systeme GMBH - eDesign - Runtime - Inter Process Communication - Typescript",
+	"name": "@wago/wdx-schema",
+	"description": "Elrest Automations Systeme GMBH - WDX Schema",
 	"keywords": [
 		"Elrest",
 		"Automations",
@@ -27,7 +27,7 @@
 	},
 	"license": "(C) Copyright 2024 Elrest Automations Systeme GMBH",
 	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
-	"version": "1.0.371",
+	"version": "1.0.372",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
@@ -54,11 +54,7 @@
 	"devDependencies": {
 		"@types/node": "^20.10.1",
 		"@types/uuid": "^9.0.x",
-		"@typescript-eslint/eslint-plugin": "^6.11.0",
-		"@typescript-eslint/parser": "^6.11.0",
 		"concat-md": "^0.5.1",
-		"eslint": "^8.51.0",
-		"mocha": "^10.2.0",
 		"nodemon": "^3.0.1",
 		"nyc": "^15.1.0",
 		"rimraf": "^5.0.5",
