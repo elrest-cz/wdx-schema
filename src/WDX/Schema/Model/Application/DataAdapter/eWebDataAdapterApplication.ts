@@ -11,4 +11,7 @@ import {AbstractApplication} from '../AbstractApplication';
 
 export class eWebDataAdapterApplication extends AbstractApplication {
   public code: string = Type.eWebDataAdapterApplication;
+  public eWeb: {
+
+  };
 }

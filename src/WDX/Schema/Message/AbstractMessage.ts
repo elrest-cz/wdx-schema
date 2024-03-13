@@ -9,6 +9,7 @@ import {v4 as uuidv4} from 'uuid';
 import {Type} from './Type';
 import {MessageError} from './MessageError';
 import {AbstractApplication} from '../Model/Application';
+import {Instance} from './../Model/Instance';
 
 export abstract class AbstractMessage {
   public abstract type: Type;
@@ -28,9 +29,9 @@ export abstract class AbstractMessage {
 
   public topic: string = '';
 
-  public target: AbstractApplication;
+  public target: Instance;
 
-  public origin: AbstractApplication;
+  public origin: Instance;
 
   constructor(
       body?: any,
@@ -38,13 +39,15 @@ export abstract class AbstractMessage {
       error?: MessageError,
       from: string = '',
       topic?: string,
-      target?: AbstractApplication,
-      origin?: AbstractApplication,
+      target?: Instance,
+      origin?: Instance,
   ) {
     if (body) this.body = body;
     this.uuid = uuid ? uuid : uuidv4();
     if (error) this.error = error;
     if (from) this.from = from;
     if (topic) this.topic = topic;
+    if (target) this.target = target;
+    if (origin) this.origin = origin;
   }
 }
