@@ -1,11 +1,11 @@
 /**
- * Elrest eDesign Runtime
+ * Elrest WDX Schema
  *  
  * @copyright 2024 Elrest Automations Systeme GMBH
  */
 
 'use strict';
 
-import * as eDesign from './eDesign';
+import * as WDX from './WDX';
 
-export { eDesign };
+export { WDX };

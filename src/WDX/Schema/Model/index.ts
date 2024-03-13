@@ -7,6 +7,7 @@
 
 'use strict';
 
+import * as Application from './Application';
 import * as Data from './Data';
 import * as Device from './Device';
 import * as Filesystem from './Filesystem';
@@ -18,6 +19,7 @@ import * as Runtime from './Runtime';
 import * as Script from './Script';
 
 export {
+	Application,
 	Data,
 	Device,
 	Filesystem,

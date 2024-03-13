@@ -23,7 +23,7 @@ export class Script extends File {
 			undefined,
 			path,
 			INSTANCE_NAMESPACE,
-			ExecutionMode.fork,
+			ExecutionMode.process,
 			undefined,
 			undefined
 		),

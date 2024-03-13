@@ -8,6 +8,7 @@
 import {v4 as uuidv4} from 'uuid';
 import {Type} from './Type';
 import {MessageError} from './MessageError';
+import {AbstractApplication} from '../Model/Application';
 
 export abstract class AbstractMessage {
   public abstract type: Type;
@@ -20,9 +21,16 @@ export abstract class AbstractMessage {
 
   public error?: MessageError|null;
 
+  /**
+   * @todo get rid of this and use message orignal instead
+   */
   public from: string = '';
 
   public topic: string = '';
+
+  public target: AbstractApplication;
+
+  public origin: AbstractApplication;
 
   constructor(
       body?: any,
@@ -30,6 +38,8 @@ export abstract class AbstractMessage {
       error?: MessageError,
       from: string = '',
       topic?: string,
+      target?: AbstractApplication,
+      origin?: AbstractApplication,
   ) {
     if (body) this.body = body;
     this.uuid = uuid ? uuid : uuidv4();
