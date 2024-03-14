@@ -47,4 +47,6 @@ export enum MetaDataType {
 
 	ROOT = 'root',
 
+	ANY = 'any',
+
 }
