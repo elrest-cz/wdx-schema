@@ -8,16 +8,19 @@
 
 import {ServerOpts} from './ServerOpts';
 import {ListenOptions} from './ListenOptions';
+import {BindOptions, SocketOptions} from 'dgram';
 
 export abstract class AbstractApplication {
   public abstract code: string;
 
   constructor(
-      public listen: 'tcp'|'udp'|'none'|undefined = 'none', 
-      public tcpOptions: {
+      public tcpOptions?: {
         serverOpts: ServerOpts,
         listenOpts: ListenOptions,
       },
-      public udpOption: {},
-      ) {}
+      public udpOption?: {
+        serverOpts: SocketOptions,
+        listenOpts: BindOptions,
+      },
+  ) {}
 }

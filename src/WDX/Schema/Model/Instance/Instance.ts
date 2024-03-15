@@ -5,40 +5,36 @@
  */
 'use strict';
 
-import {v4 as uuidv4} from 'uuid';
 import {Status} from './Status';
 import {ExecutionMode} from './ExecutionMode';
-import {Logs} from './Logs';
-import {Monit} from './Monit';
 import {AbstractApplication} from '../Application';
+import {WorkerOptions} from 'worker_threads';
+import {ExecutionEnvironment} from '..';
+
 export class Instance {
+
   public uuid: string;
+
+  public executionEnvironment?: ExecutionEnvironment.Options;
 
   public processId?: number;
 
   public threadId?: number;
 
-  public title: string = '';
+  public name?: string;
 
-  public mode?: ExecutionMode;
+  public executionMode?: ExecutionMode;
 
   public application?: AbstractApplication;
 
-  public status: Status = Status.Offline;
-
-  public interpreter?: string;
-
-  public script?: string;
-
-  public argsv?: any;
-
-  public env?: any;
-
-  public cwd?: string;
+  public status?: Status;
 
   public restart?:
       {autorestart?: boolean, maxRestarts?: number, restartCount?: number};
 
+  public memory?: number;
+
+  public cpu?: number;
 
   public cron?: {
     /**

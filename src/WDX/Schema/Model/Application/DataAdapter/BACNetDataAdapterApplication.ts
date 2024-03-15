@@ -11,8 +11,6 @@ import {AbstractApplication} from '../AbstractApplication';
 
 export class BACNetDataAdapterApplication extends AbstractApplication {
   public code: string = Type.BACNetDataAdapterApplication;
-
-	apduTimeout?: number;
-	interface?: string;
-	broadcastAddress?: string;
+  public bacnetOptions?:
+      {apduTimeout?: number; interface?: string; broadcastAddress?: string;}
 }
