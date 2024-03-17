@@ -1,7 +1,7 @@
 /**
  * Elrest eDesign Runtime IPC Typescript Model Package
- * 
- * 
+ *
+ *
  * @copyright 2024 Elrest Automations Systeme GMBH
  */
 
@@ -19,18 +19,20 @@ import * as Process from './Process';
 import * as Repository from './Repository';
 import * as Runtime from './Runtime';
 import * as Script from './Script';
+import * as Worker from './Worker';
 
 export {
-	Application,
-	Data,
-	Device,
-	ExecutionEnvironment,
-	Filesystem,
-	Host,
-	Package,
-	Instance,
-	Process,
-	Repository,
-	Runtime,
-	Script
+  Application,
+  Data,
+  Device,
+  ExecutionEnvironment,
+  Filesystem,
+  Host,
+  Package,
+  Instance,
+  Process,
+  Repository,
+  Runtime,
+  Script,
+  Worker,
 };

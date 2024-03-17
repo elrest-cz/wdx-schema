@@ -3,55 +3,59 @@
  *
  * @copyright 2024 Elrest Automations Systeme GMBH
  */
-'use strict';
+'use strict'
 
-import {Status} from './Status';
+import{Status} from './Status';
 import {ExecutionMode} from './ExecutionMode';
 import {AbstractApplication} from '../Application';
-import {WorkerOptions} from 'worker_threads';
-import {ExecutionEnvironment} from '..';
+import {ExecutionEnvironment} from './../';
+import {v4 as uuidv4} from 'uuid';
 
 export class Instance {
+  constructor(
 
-  public uuid: string;
+      public uuid: string = uuidv4(),
 
-  public executionEnvironment?: ExecutionEnvironment.Options;
+      public executionEnvironment?: ExecutionEnvironment.Options,
 
-  public processId?: number;
+      public processId?: number,
 
-  public threadId?: number;
+      public threadId?: number,
 
-  public name?: string;
+      public name?: string,
 
-  public executionMode?: ExecutionMode;
+      public executionMode?: ExecutionMode,
 
-  public application?: AbstractApplication;
+      public application?: AbstractApplication,
 
-  public status?: Status;
+      public status?: Status,
 
-  public restart?:
-      {autorestart?: boolean, maxRestarts?: number, restartCount?: number};
+      public restart?:
+          {autorestart?: boolean, maxRestarts?: number, restartCount?: number},
 
-  public memory?: number;
+      public memory?: number,
 
-  public cpu?: number;
+      public cpu?: number,
 
-  public cron?: {
-    /**
-     * Seconds 0-59
-     */
-    seconds: string,
+      public cron?: {
+        /**
+         * Seconds 0-59
+         */
+        seconds: string,
 
-    minutes: string,
+        minutes: string,
 
-    hours: string,
+        hours: string,
 
-    dayOfTHeMonth: string,
+        dayOfTHeMonth: string,
 
-    month: string,
+        month: string,
 
-    dayOfTheWeek: string,
+        dayOfTheWeek: string,
 
-    year: string,
-  };
+        year: string,
+      },
+  ) {
+    console.log(this);
+  }
 }

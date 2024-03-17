@@ -9,7 +9,7 @@ import {WorkerOptions} from 'worker_threads';
 
 export class Options {
   public spawn?:
-      {command: string, args?: Array<string>, options?: SpawnOptions};
+      {command: string, readonly args: Array<string>, options: SpawnOptions};
 
   public worker?: {script: string, options?: WorkerOptions};
 }

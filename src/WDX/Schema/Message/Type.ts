@@ -14,7 +14,7 @@ export enum Type {
 	InstanceConnectRequest = 'InstanceConnectRequest',
 	InstanceConnectResponse = 'InstanceConnectResponse',
 
-	InstanceDiscovery = 'InstanceDiscovery',
+	InstanceWhoisRequ = 'InstanceWhois',
 
 	InstanceDeleteRequest = 'InstanceDeleteRequest',
 	InstanceDeleteResponse = 'InstanceDeleteResponse',
