@@ -56,6 +56,5 @@ export class Instance {
         year: string,
       },
   ) {
-    console.log(this);
   }
 }

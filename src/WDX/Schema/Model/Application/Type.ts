@@ -10,7 +10,7 @@ export enum Type {
 
   AlarmingApplication = 'Alarm',
 
-  ControllerApplication = 'Controller',
+  ControllerApplication = 'WDX',
 
   DataApplication = 'Data',
 
