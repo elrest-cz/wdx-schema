@@ -12,6 +12,8 @@ export enum Type {
 
   ControllerApplication = 'WDX',
 
+  ControllerCtrlApplication = 'WDX-Ctrl',
+
   DataApplication = 'Data',
 
   JSWorkspaceApplication = 'JSWorkspace',
