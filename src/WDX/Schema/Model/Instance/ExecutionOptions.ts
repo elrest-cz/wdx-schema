@@ -6,10 +6,12 @@
 
 import {SpawnOptions} from 'child_process';
 import {WorkerOptions} from 'worker_threads';
+import {ExecutionMode} from './ExecutionMode';
 
-export class Options {
-  public spawn?:
-      {command: string, readonly args: Array<string>, options: SpawnOptions};
-
-  public worker?: {script: string, options?: WorkerOptions};
+export class ExecutionOptions {
+  constructor(
+      public mode: ExecutionMode,
+      public script: string,
+      public options: SpawnOptions|WorkerOptions,
+  ) {}
 }

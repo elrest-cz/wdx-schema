@@ -12,8 +12,6 @@ import {ControllerApplication} from './ControllerApplication';
 import {DataApplication} from './DataApplication';
 import {JSWorkspaceApplication} from './JSWorkspaceApplication';
 import {JSScriptApplication} from './JSScriptApplication';
-import {ListenOptions} from './ListenOptions';
-import {ServerOpts} from './ServerOpts';
 import {TrendingApplication} from './TrendingApplication';
 import {WebSocketServerApplication} from './WebSocketServerApplication';
 
@@ -26,8 +24,6 @@ export {
   DataApplication,
   JSWorkspaceApplication,
   JSScriptApplication,
-  ListenOptions,
-  ServerOpts,
   TrendingApplication,
   WebSocketServerApplication,
 }

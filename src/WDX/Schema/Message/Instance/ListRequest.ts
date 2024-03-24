@@ -18,8 +18,11 @@ export class ListRequest extends AbstractMessage {
   public body: Array<Instance>;
 
   constructor(
-      status: Status = Status.Any, namespace: string = '', uuid?: string,
-      error?: MessageError) {
+      status?: Status,
+      namespace?: string,
+      uuid?: string,
+      error?: MessageError,
+  ) {
     super(new Array<Instance>, uuid, error);
   }
 }

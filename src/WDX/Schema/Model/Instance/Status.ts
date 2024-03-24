@@ -11,5 +11,4 @@ export enum Status {
 	Stopping = 'stopping',
 	Offline = 'stopped',
 	Error = 'errored',
-	Any = ''
 }

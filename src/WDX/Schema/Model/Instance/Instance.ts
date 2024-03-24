@@ -6,55 +6,35 @@
 'use strict'
 
 import{Status} from './Status';
-import {ExecutionMode} from './ExecutionMode';
 import {AbstractApplication} from '../Application';
-import {ExecutionEnvironment} from './../';
 import {v4 as uuidv4} from 'uuid';
+import {ExecutionOptions} from './ExecutionOptions';
+import {RestartOptions} from './RestartOptions';
+import {CronOptions} from './CronOptions';
 
 export class Instance {
   constructor(
 
       public uuid: string = uuidv4(),
 
-      public executionEnvironment?: ExecutionEnvironment.Options,
+      public name?: string,
+
+      public status?: Status,
+
+      public application?: AbstractApplication,
+
+      public executionOptions?: ExecutionOptions,
+
+      public restartOptions?: RestartOptions,
+
+      public cronOptions?: CronOptions,
 
       public processId?: number,
 
       public threadId?: number,
 
-      public name?: string,
-
-      public executionMode?: ExecutionMode,
-
-      public application?: AbstractApplication,
-
-      public status?: Status,
-
-      public restart?:
-          {autorestart?: boolean, maxRestarts?: number, restartCount?: number},
-
       public memory?: number,
 
       public cpu?: number,
-
-      public cron?: {
-        /**
-         * Seconds 0-59
-         */
-        seconds: string,
-
-        minutes: string,
-
-        hours: string,
-
-        dayOfTHeMonth: string,
-
-        month: string,
-
-        dayOfTheWeek: string,
-
-        year: string,
-      },
-  ) {
-  }
+  ) {}
 }

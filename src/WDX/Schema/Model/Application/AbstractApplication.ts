@@ -6,8 +6,7 @@
  */
 'use strict';
 
-import {ServerOpts} from './ServerOpts';
-import {ListenOptions} from './ListenOptions';
+import {ServerOpts, ListenOptions} from 'node:net';
 import {BindOptions, SocketOptions} from 'dgram';
 
 export abstract class AbstractApplication {

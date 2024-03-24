@@ -6,10 +6,11 @@
 'use strict';
 
 export enum ExecutionMode {
-  thread = 'thread',
-  threadCluster = 'threadCluster',
-  process = 'fork',
-  processCluster = 'cluster',
-  docker = 'docker',
-  libvirt = 'libvirt',
+  // thread = 'thread',
+  // threadCluster = 'threadCluster',
+  spawn = 'spawn',
+  // spawnCluster = 'spawn',
+  // docker = 'docker',
+  // libvirt = 'libvirt',
+  worker = 'worker',
 }
