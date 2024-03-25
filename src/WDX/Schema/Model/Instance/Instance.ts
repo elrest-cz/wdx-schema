@@ -11,6 +11,7 @@ import {v4 as uuidv4} from 'uuid';
 import {ExecutionOptions} from './ExecutionOptions';
 import {RestartOptions} from './RestartOptions';
 import {CronOptions} from './CronOptions';
+import {LogOptions} from './LogOptions';
 
 export class Instance {
   constructor(
@@ -28,6 +29,8 @@ export class Instance {
       public restartOptions?: RestartOptions,
 
       public cronOptions?: CronOptions,
+
+      public logOptions?: LogOptions,
 
       public processId?: number,
 
