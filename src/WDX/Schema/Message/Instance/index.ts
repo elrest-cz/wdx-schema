@@ -15,7 +15,9 @@ import {MonitorUnsubscribeResponse} from './MonitorUnsubscribeResponse';
 import {ListRequest} from './ListRequest';
 import {ListResponse} from './ListResponse';
 import {RestartRequest} from './RestartRequest';
+import {RestartResponse} from './RestartResponse';
 import {StartRequest} from './StartRequest';
+import {StartResponse} from './StartResponse';
 import {DeleteRequest} from './DeleteRequest';
 import {DeleteResponse} from './DeleteResponse';
 import {StopRequest} from './StopRequest';
@@ -32,7 +34,9 @@ export {
   ListRequest,
   ListResponse,
   RestartRequest,
+  RestartResponse,
   StartRequest,
+  StartResponse,
   DeleteRequest,
   DeleteResponse,
   StopRequest,

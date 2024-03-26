@@ -11,7 +11,6 @@ import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 import {Instance} from '../../Model/Instance';
 
-
 export class RestartResponse extends AbstractMessage {
     public type: Type = Type.InstanceRestartResponse;
     public body: Instance;
