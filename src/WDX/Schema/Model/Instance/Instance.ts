@@ -7,7 +7,6 @@
 
 import{Status} from './Status';
 import {AbstractApplication} from '../Application';
-import {v4 as uuidv4} from 'uuid';
 import {ExecutionOptions} from './ExecutionOptions';
 import {RestartOptions} from './RestartOptions';
 import {CronOptions} from './CronOptions';
@@ -16,7 +15,7 @@ import {LogOptions} from './LogOptions';
 export class Instance {
   constructor(
 
-      public uuid: string = uuidv4(),
+      public uuid: string,
 
       public name?: string,
 
