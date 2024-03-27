@@ -11,4 +11,18 @@ import {AbstractApplication} from './AbstractApplication';
 
 export class WebSocketServerApplication extends AbstractApplication {
   public code: string = Type.WebSocketServerApplication;
+
+  public webSocketServerOptions: {
+    /**
+     * @todo extend complete wss optons import {ServerOptions} from 'ws';
+     */
+    host?: string | undefined,
+    port?: number | undefined,
+    backlog?: number | undefined,
+    path?: string | undefined,
+    noServer?: boolean | undefined,
+    clientTracking?: boolean | undefined,
+    maxPayload?: number | undefined,
+    skipUTF8Validation?: boolean | undefined,
+  };
 }
