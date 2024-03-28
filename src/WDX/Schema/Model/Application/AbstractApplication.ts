@@ -6,20 +6,16 @@
  */
 'use strict';
 
-import {ServerOpts, ListenOptions} from 'node:net';
-import {BindOptions, SocketOptions} from 'dgram';
+import {DataSourceOptions} from './DataSourceOptions';
+import {TCPOptions} from './TCPOptions';
+import {UDPOptions} from './UDPOptions';
 
 export abstract class AbstractApplication {
   public abstract code: string;
 
   constructor(
-      public tcpOptions?: {
-        serverOpts: ServerOpts,
-        listenOpts: ListenOptions,
-      },
-      public udpOption?: {
-        serverOpts: SocketOptions,
-        listenOpts: BindOptions,
-      },
+      public tcpOptions?: TCPOptions,
+      public udpOption?: UDPOptions,
+      public dataSource?: DataSourceOptions,
   ) {}
 }

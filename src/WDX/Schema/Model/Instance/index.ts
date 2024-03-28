@@ -7,6 +7,7 @@
 
 export const INTERPRETER_NONE = 'none';
 
+import {LogLevel} from './LogLevel';
 import {CronOptions} from './CronOptions';
 import {ExecutionMode} from './ExecutionMode';
 import {ExecutionOptions} from './ExecutionOptions';
@@ -16,6 +17,7 @@ import {RestartOptions} from './RestartOptions';
 import {Status} from './Status';
 
 export {
+  LogLevel,
   CronOptions,
   ExecutionMode,
   ExecutionOptions,
