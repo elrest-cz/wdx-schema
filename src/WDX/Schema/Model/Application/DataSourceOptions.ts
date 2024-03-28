@@ -8,6 +8,8 @@
 
 import * as WAGOWDXORM from 'typeorm';
 
-export class DataSourceOptions extends WAGOWDXORM.DataSource{
-
+export class DataSourceOptions {
+  constructor(
+      public name?: string,
+  ) {}
 }

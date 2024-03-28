@@ -12,6 +12,8 @@ import {MonitorSubscribeRequest} from './MonitorSubscribeRequest';
 import {MonitorSubscribeResponse} from './MonitorSubscribeResponse';
 import {MonitorUnsubscribeRequest} from './MonitorUnsubscribeRequest'
 import {MonitorUnsubscribeResponse} from './MonitorUnsubscribeResponse';
+import {InfoRequest} from './InfoRequest';
+import {InfoResponse} from './InfoResponse';
 import {ListRequest} from './ListRequest';
 import {ListResponse} from './ListResponse';
 import {RestartRequest} from './RestartRequest';
@@ -31,6 +33,8 @@ export {
   MonitorSubscribeResponse,
   MonitorUnsubscribeRequest,
   MonitorUnsubscribeResponse,
+  InfoRequest,
+  InfoResponse,
   ListRequest,
   ListResponse,
   RestartRequest,
