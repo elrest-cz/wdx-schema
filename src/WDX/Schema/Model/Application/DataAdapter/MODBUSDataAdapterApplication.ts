@@ -11,4 +11,6 @@ import {AbstractApplication} from '../AbstractApplication';
 
 export class MODBUSDataAdapterApplication extends AbstractApplication {
   public code: string = Type.MODBUSDataAdapterApplication;
+
+  public modbusOptions?: {host?: string; port?: number;}
 }

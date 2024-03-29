@@ -13,4 +13,6 @@ import {AbstractApplication} from './AbstractApplication';
 
 export class JSScriptApplication extends AbstractApplication {
   public code: string = Type.JSScriptApplication;
+
+  public script: string;
 }

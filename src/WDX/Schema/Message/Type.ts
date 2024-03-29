@@ -19,6 +19,8 @@ export enum Type {
   InstanceDisconnectRequest = 'InstanceDisconnectRequest',
   InstanceDisconnectResponse = 'InstanceDisconnectResponse',
 
+  InstanceIAm = 'InstanceIAm',
+
   InstanceInfoRequest = 'InstanceInfoRequest',
   InstanceInfoResponse = 'InstanceInfoResponse',
 
@@ -58,6 +60,9 @@ export enum Type {
 
   InstanceUnsubscribeRequest = 'InstanceUnsubscribeRequest',
   InstanceUnsubscribeResponse = 'InstanceUnsubscribeResponse',
+
+  InstanceWhoIsRequest = 'InstanceWhoIsRequest',
+  InstanceWhoIsResponse = 'InstanceWhoIsResponse',
 
   /**
    * Data

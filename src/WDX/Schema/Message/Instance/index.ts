@@ -12,6 +12,7 @@ import {MonitorSubscribeRequest} from './MonitorSubscribeRequest';
 import {MonitorSubscribeResponse} from './MonitorSubscribeResponse';
 import {MonitorUnsubscribeRequest} from './MonitorUnsubscribeRequest'
 import {MonitorUnsubscribeResponse} from './MonitorUnsubscribeResponse';
+import {IAm} from './IAm';
 import {InfoRequest} from './InfoRequest';
 import {InfoResponse} from './InfoResponse';
 import {ListRequest} from './ListRequest';
@@ -26,6 +27,8 @@ import {StopRequest} from './StopRequest';
 import {StopResponse} from './StopResponse';
 import {SaveRequest} from './SaveRequest';
 import {SaveResponse} from './SaveResponse';
+import {WhoIsRequest} from './WhoIsRequest';
+import {WhoIsResponse} from './WhoIsResponse';
 
 export {
   MonitorInstance,
@@ -33,6 +36,7 @@ export {
   MonitorSubscribeResponse,
   MonitorUnsubscribeRequest,
   MonitorUnsubscribeResponse,
+  IAm,
   InfoRequest,
   InfoResponse,
   ListRequest,
@@ -47,4 +51,6 @@ export {
   StopResponse,
   SaveRequest,
   SaveResponse,
+  WhoIsRequest,
+  WhoIsResponse,
 }
