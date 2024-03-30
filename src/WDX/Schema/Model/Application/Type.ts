@@ -16,9 +16,11 @@ export enum Type {
 
   DataApplication = 'Data',
 
+  NodeREDApplication = 'NodeRED',
+
   JSWorkspaceApplication = 'JSWorkspace',
 
-  JSScriptApplication = 'JSScriptApplication',
+  JSScriptApplication = 'JSScript',
 
   TrendingApplication = 'Trend',
 

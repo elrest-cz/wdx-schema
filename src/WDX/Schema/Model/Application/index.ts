@@ -10,6 +10,7 @@ import {TCPOptions} from './TCPOptions';
 import {UDPOptions} from './UDPOptions';
 import {DataSourceOptions} from './DataSourceOptions';
 import {AbstractApplication} from './AbstractApplication';
+import {NodeREDApplication} from './NodeREDApplication';
 import {AlarmingApplication} from './AlarmingApplication';
 import {ControllerApplication} from './ControllerApplication';
 import {ControllerCtrlApplication} from './ControllerCtrlApplication';
@@ -26,6 +27,7 @@ export {
   UDPOptions,
   DataSourceOptions,
   AbstractApplication,
+  NodeREDApplication,
   AlarmingApplication,
   ControllerApplication,
   ControllerCtrlApplication,
