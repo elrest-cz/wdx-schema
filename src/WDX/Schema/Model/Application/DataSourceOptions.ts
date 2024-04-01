@@ -6,8 +6,6 @@
  */
 'use strict';
 
-import * as WAGOWDXORM from 'typeorm';
-
 export class DataSourceOptions {
   constructor(
       public name?: string,

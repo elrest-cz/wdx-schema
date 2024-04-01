@@ -40,7 +40,6 @@
 		"cover:report": "nyc report --reporter=lcov --reporter=text"
 	},
 	"dependencies": {
-		"typeorm": "^0.3.17",
 		"uuid": "^9.0.x"
 	},
 	"devDependencies": {
