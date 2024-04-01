@@ -36,16 +36,15 @@ export enum Type {
   InstanceMonitorUnsubscribeRequest = 'InstanceMonitorUnsubscribeRequest',
   InstanceMonitorUnsubscribeResponse = 'InstanceMonitorUnsubscribeResponse',
 
-  /** Instance Monitor Log */
-  InstanceMonitorLog = 'InstanceMonitorLog',
+  /** Instance Logs */
+  InstanceLog = 'InstanceLog',
+  InstanceLogSubscribeRequest = 'InstanceLogSubscribeRequest',
+  InstanceLogSubscribeResponse = 'InstanceLogSubscribeResponse',
+  InstanceLogUnsubscribeRequest = 'InstanceLogUnsubscribeRequest',
+  InstanceLogUnsubscribeResponse = 'InstanceLogUnsubscribeResponse',
+  esponse = 'InstanceMonitorUnsubscribeResponse',
 
-  InstanceMonitorLogSubscribeRequest = 'InstanceMonitorLogSubscribeRequest',
-  InstanceMonitorLogSubscribeResponse = 'InstanceMonitorLogSubscribeResponse',
-
-  InstanceMonitorLogUnsubscribeRequest = 'InstanceMonitorLogUnsubscribeRequest',
-  InstanceMonitorLogUnsubscribeResponse =
-      'InstanceMonitorLogUnsubscribeResponse',
-
+  /** Instance CRUD */
   InstanceRestartRequest = 'InstanceRestartRequest',
   InstanceRestartResponse = 'InstanceRestartResponse',
   InstanceStartRequest = 'InstanceStartRequest',

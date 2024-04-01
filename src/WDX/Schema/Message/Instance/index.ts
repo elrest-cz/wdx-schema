@@ -6,7 +6,6 @@
 
 'use strict';
 
-
 import {MonitorInstance} from './MonitorInstance';
 import {MonitorSubscribeRequest} from './MonitorSubscribeRequest';
 import {MonitorSubscribeResponse} from './MonitorSubscribeResponse';
@@ -17,6 +16,11 @@ import {InfoRequest} from './InfoRequest';
 import {InfoResponse} from './InfoResponse';
 import {ListRequest} from './ListRequest';
 import {ListResponse} from './ListResponse';
+import {LogMessage} from './LogMessage';
+import {LogSubscribeRequestMessage} from './LogSubscribeRequestMessage';
+import {LogSubscribeResponseMessage} from './LogSubscribeResponseMessage';
+import {LogUnsubscribeRequestMessage} from './LogUnsubscribeRequestMessage';
+import {LogUnsubscribeResponseMessage} from './LogUnsubscribeResponseMessage';
 import {RestartRequest} from './RestartRequest';
 import {RestartResponse} from './RestartResponse';
 import {StartRequest} from './StartRequest';
@@ -41,6 +45,11 @@ export {
   InfoResponse,
   ListRequest,
   ListResponse,
+  LogMessage,
+  LogSubscribeRequestMessage,
+  LogSubscribeResponseMessage,
+  LogUnsubscribeRequestMessage,
+  LogUnsubscribeResponseMessage,
   RestartRequest,
   RestartResponse,
   StartRequest,

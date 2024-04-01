@@ -31,6 +31,8 @@ export class Instance {
 
       public logOptions?: LogOptions,
 
+      public enabled?: boolean,
+
       public processId?: number,
 
       public threadId?: number,

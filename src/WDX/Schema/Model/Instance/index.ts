@@ -6,7 +6,7 @@
 'use strict';
 
 export const INTERPRETER_NONE = 'none';
-
+import {Log} from './Log';
 import {LogLevel} from './LogLevel';
 import {CronOptions} from './CronOptions';
 import {ExecutionMode} from './ExecutionMode';
@@ -17,6 +17,7 @@ import {RestartOptions} from './RestartOptions';
 import {Status} from './Status';
 
 export {
+  Log,
   LogLevel,
   CronOptions,
   ExecutionMode,
