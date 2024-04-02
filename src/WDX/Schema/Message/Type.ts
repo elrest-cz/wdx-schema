@@ -9,61 +9,6 @@
 export enum Type {
 
   /**
-   * Instance
-   */
-  InstanceConnectRequest = 'InstanceConnectRequest',
-  InstanceConnectResponse = 'InstanceConnectResponse',
-
-  InstanceDeleteRequest = 'InstanceDeleteRequest',
-  InstanceDeleteResponse = 'InstanceDeleteResponse',
-  InstanceDisconnectRequest = 'InstanceDisconnectRequest',
-  InstanceDisconnectResponse = 'InstanceDisconnectResponse',
-
-  InstanceIAm = 'InstanceIAm',
-
-  InstanceInfoRequest = 'InstanceInfoRequest',
-  InstanceInfoResponse = 'InstanceInfoResponse',
-
-  InstanceListRequest = 'InstanceListRequest',
-  InstanceListResponse = 'InstanceListResponse',
-
-  /** Instance Monitor */
-  InstanceMonitor = 'InstanceMonitor',
-
-  InstanceMonitorSubscribeRequest = 'InstanceMonitorSubscribeRequest',
-  InstanceMonitorSubscribeResponse = 'InstanceMonitorSubscribeResponse',
-
-  InstanceMonitorUnsubscribeRequest = 'InstanceMonitorUnsubscribeRequest',
-  InstanceMonitorUnsubscribeResponse = 'InstanceMonitorUnsubscribeResponse',
-
-  /** Instance Logs */
-  InstanceLog = 'InstanceLog',
-  InstanceLogSubscribeRequest = 'InstanceLogSubscribeRequest',
-  InstanceLogSubscribeResponse = 'InstanceLogSubscribeResponse',
-  InstanceLogUnsubscribeRequest = 'InstanceLogUnsubscribeRequest',
-  InstanceLogUnsubscribeResponse = 'InstanceLogUnsubscribeResponse',
-  esponse = 'InstanceMonitorUnsubscribeResponse',
-
-  /** Instance CRUD */
-  InstanceRestartRequest = 'InstanceRestartRequest',
-  InstanceRestartResponse = 'InstanceRestartResponse',
-  InstanceStartRequest = 'InstanceStartRequest',
-  InstanceStartResponse = 'InstanceStartResponse',
-  InstanceStopRequest = 'InstanceStopRequest',
-  InstanceStopResponse = 'InstanceStopResponse',
-  InstanceSaveRequest = 'InstanceSaveRequest',
-  InstanceSaveResponse = 'InstanceSaveResponse',
-
-  InstanceSubscribeRequest = 'InstanceSubscribeRequest',
-  InstanceSubscribeResponse = 'InstanceSubscribeResponse',
-
-  InstanceUnsubscribeRequest = 'InstanceUnsubscribeRequest',
-  InstanceUnsubscribeResponse = 'InstanceUnsubscribeResponse',
-
-  InstanceWhoIsRequest = 'InstanceWhoIsRequest',
-  InstanceWhoIsResponse = 'InstanceWhoIsResponse',
-
-  /**
    * Data
    */
   DataUpdate = 'DataUpdate',
@@ -107,6 +52,57 @@ export enum Type {
   DataDeleteSchemaResponse = 'DataDeleteSchemaResponse',
 
   /**
+   * Instance
+   */
+
+  InstanceDeleteRequest = 'InstanceDeleteRequest',
+  InstanceDeleteResponse = 'InstanceDeleteResponse',
+
+  InstanceIAm = 'InstanceIAm',
+
+  InstanceInfoRequest = 'InstanceInfoRequest',
+  InstanceInfoResponse = 'InstanceInfoResponse',
+
+  InstanceListRequest = 'InstanceListRequest',
+  InstanceListResponse = 'InstanceListResponse',
+
+  /** Instance Monitor */
+  InstanceMonitor = 'InstanceMonitor',
+
+  InstanceMonitorSubscribeRequest = 'InstanceMonitorSubscribeRequest',
+  InstanceMonitorSubscribeResponse = 'InstanceMonitorSubscribeResponse',
+
+  InstanceMonitorUnsubscribeRequest = 'InstanceMonitorUnsubscribeRequest',
+  InstanceMonitorUnsubscribeResponse = 'InstanceMonitorUnsubscribeResponse',
+
+  /** Instance Logs */
+  InstanceLog = 'InstanceLog',
+
+  InstanceLogSubscribeRequest = 'InstanceLogSubscribeRequest',
+  InstanceLogSubscribeResponse = 'InstanceLogSubscribeResponse',
+
+  InstanceLogUnsubscribeRequest = 'InstanceLogUnsubscribeRequest',
+  InstanceLogUnsubscribeResponse = 'InstanceLogUnsubscribeResponse',
+  esponse = 'InstanceMonitorUnsubscribeResponse',
+
+  /** Instance CRUD */
+  InstanceRestartRequest = 'InstanceRestartRequest',
+  InstanceRestartResponse = 'InstanceRestartResponse',
+
+  InstanceStartRequest = 'InstanceStartRequest',
+  InstanceStartResponse = 'InstanceStartResponse',
+
+  InstanceStopRequest = 'InstanceStopRequest',
+  InstanceStopResponse = 'InstanceStopResponse',
+
+  InstanceSaveRequest = 'InstanceSaveRequest',
+  InstanceSaveResponse = 'InstanceSaveResponse',
+
+  InstanceWhoIsRequest = 'InstanceWhoIsRequest',
+  InstanceWhoIsResponse = 'InstanceWhoIsResponse',
+
+
+  /**
    * Package
    */
   PackageInstallRequest = 'PackageInstallRequest',
@@ -125,10 +121,6 @@ export enum Type {
   /**
    * Runtime
    */
-  RuntimeSystemRequest = 'RuntimeSystemRequest',
-  RuntimeSystemResponse = 'RuntimeSystemResponse',
-
-  RuntimeMonitorInstance = 'RuntimeMonitorInstance',
 
   RuntimeMonitor = 'RuntimeMonitor',
 
@@ -151,7 +143,7 @@ export enum Type {
   RuntimeRestartResponse = 'RuntimeRestartResponse',
 
   /**
-   * Scripts
+   * JS Workspace
    */
   ScriptBrowseRequest = 'ScriptBrowseRequest',
   ScriptBrowseResponse = 'ScriptBrowseResponse',

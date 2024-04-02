@@ -20,7 +20,7 @@ export abstract class AbstractMessage {
 
   public error?: MessageError|null;
 
-  public topic: string = '';
+  public topic?: string;
 
   public target: Instance;
 
@@ -37,7 +37,7 @@ export abstract class AbstractMessage {
     if (body) this.body = body;
     this.uuid = uuid ? uuid : uuidv4();
     if (error) this.error = error;
-    if (topic) this.topic = topic;
+    this.topic = topic ?? undefined;
     if (target) this.target = target;
     if (origin) this.origin = origin;
   }
