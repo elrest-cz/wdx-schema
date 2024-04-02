@@ -6,6 +6,7 @@
 'use strict';
 
 export enum Status {
+	Any = 'any',
 	Online = 'online',
 	Starting = 'starting',
 	Stopping = 'stopping',
