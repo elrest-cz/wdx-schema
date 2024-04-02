@@ -22,7 +22,7 @@ export abstract class AbstractMessage {
 
   public topic?: string;
 
-  public target: Instance;
+  public target: Instance|string;
 
   public origin: Instance;
 
@@ -31,7 +31,7 @@ export abstract class AbstractMessage {
       uuid?: string,
       error?: MessageError,
       topic?: string,
-      target?: Instance,
+      target?: Instance|string,
       origin?: Instance,
   ) {
     if (body) this.body = body;
