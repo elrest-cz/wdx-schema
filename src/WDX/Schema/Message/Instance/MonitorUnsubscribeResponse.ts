@@ -10,13 +10,10 @@
 import {MessageError} from '../MessageError';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
+import {Instance} from '../../Model/Instance';
 
 export class MonitorUnsubscribeResponse extends AbstractMessage {
   public type: Type = Type.InstanceMonitorUnsubscribeResponse;
 
-  public body: string;
-
-  constructor(id: string, uuid?: string, error?: MessageError) {
-    super(id, uuid, error);
-  }
+  public body: Instance;
 }

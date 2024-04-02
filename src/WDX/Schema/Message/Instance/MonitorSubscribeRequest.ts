@@ -9,12 +9,9 @@
 
 import {AbstractMessage} from './../AbstractMessage';
 import {Type} from './../Type';
-
+import {Instance} from '../../Model/Instance';
 export class MonitorSubscribeRequest extends AbstractMessage {
   public type: Type = Type.InstanceMonitorSubscribeRequest;
 
-  /**
-   * Instance name
-   */
-  public body: string;
+  public body: Instance;
 }
