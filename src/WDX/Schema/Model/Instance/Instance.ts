@@ -13,6 +13,12 @@ import {CronOptions} from './CronOptions';
 import {LogOptions} from './LogOptions';
 
 export class Instance {
+  public createdDate: number = Date.now();
+
+  public updatedDate: number = this.createdDate;
+
+  public uptime: number|undefined;
+
   constructor(
 
       public uuid: string,
