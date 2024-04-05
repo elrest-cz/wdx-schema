@@ -19,20 +19,20 @@ build-job:
     - git remote remove gitlab || true
     - git remote add gitlab "http://ELREST_MAINTAINER:${ELREST_MAINTAINER}@${CI_REPOSITORY_URL#*@}"
   script:
-    - npm install
-    - npm run build
-
     - |
       {
-        echo "registry=${ELREST_VERDACCIO_URL}/"
-        echo "${ELREST_VERDACCIO_URL#http*:}/:_authToken=\${ELREST_VERDACCIO_TOKEN}"
-      } >> .npmrc
-
-    - echo "Created the following .npmrc:"; cat .npmrc
+        echo "email=slavomir.sidor@elrest.zz"
+        echo "registry=${WAG_NPM_RPOSITORY}/"
+        echo "${WAG_NPM_RPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
+        echo "${WAGO_NPM_X86_64_REPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
+      } > .npmrc
+    - cat .npmrc
+    - npm install --save
+    - npm run build
     - git add --all
     - git commit -m "CI Build" || true
-
-    - npm version patch
+    - npm version minor
     - git push gitlab HEAD:$CI_COMMIT_REF_NAME -o ci.skip
     - git push gitlab --tags -f -o ci.skip
-    - npm publish --patch
+    - npm publish --minor --registry ${WAGO_NPM_X86_64_REPOSITORY}/
+
