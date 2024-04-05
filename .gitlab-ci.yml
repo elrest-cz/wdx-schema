@@ -3,7 +3,7 @@ stages:
   - test
   - deploy
 
-build-job:
+build-master-job:
   image: node:latest
   stage: build
   variables:
@@ -12,27 +12,56 @@ build-job:
     GIT_STRATEGY : clone
   only:
   - master
+  before_script: 
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - git remote remove gitlab || true
+    - git remote add gitlab "http://gitlab:${MAINTAINER_TOKEN}@${CI_REPOSITORY_URL#*@}"
+  script:
+    - |
+      {
+        echo "registry=${WAGO_NPM_RPOSITORY}/"
+        echo "${WAGO_NPM_RPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
+        echo "${WAGO_NPM_X86_64_REPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
+      } > .npmrc
+    - cat .npmrc
+    - npm install --save
+    - npm run build
+    - git add --all
+    - git commit -m "CI Build" || true
+    - npm version minor
+    - git push gitlab HEAD:$CI_COMMIT_REF_NAME -o ci.skip
+    - git push gitlab --tags -f -o ci.skip
+    - npm publish --minor --registry ${WAGO_NPM_X86_64_REPOSITORY}/
+
+build-develop-job:
+  image: node:latest
+  stage: build
+  variables:
+  #  GIT_SUBMODULE_STRATEGY: recursive
+  #  GIT_SUBMODULE_UPDATE_FLAGS: --jobs 4
+    GIT_STRATEGY : clone
+  only:
   - develop
   before_script: 
     - git config --global user.name "${GITLAB_USER_NAME}"
     - git config --global user.email "${GITLAB_USER_EMAIL}"
     - git remote remove gitlab || true
-    - git remote add gitlab "http://ELREST_MAINTAINER:${ELREST_MAINTAINER}@${CI_REPOSITORY_URL#*@}"
+    - git remote add gitlab "http://gitlab:${MAINTAINER_TOKEN}@${CI_REPOSITORY_URL#*@}"
   script:
-    - npm install
-    - npm run build
-
     - |
       {
-        echo "registry=${ELREST_VERDACCIO_URL}/"
-        echo "${ELREST_VERDACCIO_URL#http*:}/:_authToken=\${ELREST_VERDACCIO_TOKEN}"
-      } >> .npmrc
-
-    - echo "Created the following .npmrc:"; cat .npmrc
+        echo "registry=${WAGO_NPM_RPOSITORY}/"
+        echo "${WAGO_NPM_RPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
+        echo "${WAGO_NPM_X86_64_REPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
+      } > .npmrc
+    - cat .npmrc
+    - npm install --save
+    - npm run build
     - git add --all
     - git commit -m "CI Build" || true
-
     - npm version patch
     - git push gitlab HEAD:$CI_COMMIT_REF_NAME -o ci.skip
     - git push gitlab --tags -f -o ci.skip
-    - npm publish --patch
+    - npm publish --patch --registry ${WAGO_NPM_X86_64_REPOSITORY}/
+
