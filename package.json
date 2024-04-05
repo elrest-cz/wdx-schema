@@ -1,15 +1,10 @@
 {
-	"name": "@elrest/edesign-runtime-ipc-typescript",
-	"description": "Elrest Automations Systeme GMBH - eDesign - Runtime - Inter Process Communication - Typescript",
+	"name": "@wago/wdx-schema",
+	"description": "WAGO - WDX - Schema",
 	"keywords": [
-		"Elrest",
-		"Automations",
-		"Systeme",
-		"eDesign",
-		"Runtime",
-		"IPC",
-		"Typescript",
-		"Library"
+		"WAGO",
+		"WDX",
+		"Schema"
 	],
 	"contributors": [
 		{
@@ -21,10 +16,6 @@
 			"email": "slavomir.sidor@elrest.cz"
 		}
 	],
-	"repository": {
-		"type": "git",
-		"url": "http://web-10.elrest.zz/elrest/edesign/edesign-runtime/edesign-runtime-ipc/edesign-runtime-messages.git"
-	},
 	"license": "(C) Copyright 2024 Elrest Automations Systeme GMBH",
 	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
 	"version": "1.2.0",
@@ -34,29 +25,24 @@
 		"test": "npx nyc mocha",
 		"start:dev": "npx nodemon --legacy-watch --config ./nodemon.json",
 		"build": "yarn build-tsc && yarn docs",
+		"build:dev": "yarn build-tsc",
 		"build-update": "yarn update-elrest && yarn install --force && yarn build",
 		"build-tsc": "npx tsc",
 		"build:watch": "nodemon --config nodemon.dev.json",
 		"docs": "npx typedoc --options ./typedoc.json",
+		"docs:json": "npx typedoc --json ./docs/docs.json --pretty --options ./typedoc.json",
 		"docs-readme": "npx typedoc --plugin typedoc-plugin-markdown --theme markdown --out docs/readme && npx concat-md --toc --decrease-title-levels --dir-name-as-title temp-docs > README.md && npx showdown makehtml -i README.md -o README.html && npx rimraf temp-docs",
-		"publish:patch": "yarn build && yarn publish --patch --verbose",
-		"clean": "npx rimraf ./docs ./build ./.build.json ./tsconfig.tsbuildinfo",
+		"publish:patch": "yarn build && yarn publish --patch --verbose --registry $NPM_PUBLISH_REGISTRY",
+		"clean": "npx rimraf ./docs ./build ./.build.json ./.build.json",
 		"cover": "npm run cover:unit && npm run cover:integration && npm run cover:report",
 		"cover:unit": "nyc --silent npm run test:unit",
 		"cover:integration": "nyc --silent --no-clean npm run test:integration",
 		"cover:report": "nyc report --reporter=lcov --reporter=text"
 	},
-	"dependencies": {
-		"uuid": "^9.0.x"
-	},
 	"devDependencies": {
 		"@types/node": "^20.10.1",
 		"@types/uuid": "^9.0.x",
-		"@typescript-eslint/eslint-plugin": "^6.11.0",
-		"@typescript-eslint/parser": "^6.11.0",
 		"concat-md": "^0.5.1",
-		"eslint": "^8.51.0",
-		"mocha": "^10.2.0",
 		"nodemon": "^3.0.1",
 		"nyc": "^15.1.0",
 		"rimraf": "^5.0.5",
