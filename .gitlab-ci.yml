@@ -20,7 +20,6 @@ build-job:
   script:
     - |
       {
-        echo "email=slavomir.sidor@elrest.zz"
         echo "registry=${WAGO_NPM_RPOSITORY}/"
         echo "${WAGO_NPM_RPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
         echo "${WAGO_NPM_X86_64_REPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
