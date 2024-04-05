@@ -12,7 +12,6 @@ build-job:
     GIT_STRATEGY : clone
   only:
   - master
-  - develop
   before_script: 
     - git config --global user.name "${GITLAB_USER_NAME}"
     - git config --global user.email "${GITLAB_USER_EMAIL}"
@@ -22,8 +21,8 @@ build-job:
     - |
       {
         echo "email=slavomir.sidor@elrest.zz"
-        echo "registry=${WAG_NPM_RPOSITORY}/"
-        echo "${WAG_NPM_RPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
+        echo "registry=${WAGO_NPM_RPOSITORY}/"
+        echo "${WAGO_NPM_RPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
         echo "${WAGO_NPM_X86_64_REPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
       } > .npmrc
     - cat .npmrc
