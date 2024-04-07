@@ -20,9 +20,9 @@ build-master-job:
   script:
     - |
       {
-        echo "registry=${WAGO_NPM_RPOSITORY}/"
-        echo "${WAGO_NPM_RPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
-        echo "${WAGO_NPM_X86_64_REPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
+        echo "registry=${NPM_RPOSITORY}"
+        echo "${NPM_RPOSITORY#http*:}:_auth=\${NPM_TOKEN}"
+        echo "${NPM_PUBLISH_REPOSITORY#http*:}:_auth=\${NPM_TOKEN}"
       } > .npmrc
     - cat .npmrc
     - npm install --save
@@ -32,7 +32,7 @@ build-master-job:
     - npm version minor
     - git push gitlab HEAD:$CI_COMMIT_REF_NAME -o ci.skip
     - git push gitlab --tags -f -o ci.skip
-    - npm publish --minor --registry ${WAGO_NPM_X86_64_REPOSITORY}/
+    - npm publish --minor --registry ${NPM_PUBLISH_REPOSITORY}
 
 build-develop-job:
   image: node:latest
@@ -51,9 +51,9 @@ build-develop-job:
   script:
     - |
       {
-        echo "registry=${WAGO_NPM_RPOSITORY}/"
-        echo "${WAGO_NPM_RPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
-        echo "${WAGO_NPM_X86_64_REPOSITORY#http*:}/:_authToken=\${WAGO_NPM_REPOSITORY_TOKEN}"
+        echo "registry=${NPM_RPOSITORY}"
+        echo "${NPM_RPOSITORY#http*:}:_auth=\${NPM_TOKEN}"
+        echo "${NPM_PUBLISH_REPOSITORY#http*:}:_auth=\${NPM_TOKEN}"
       } > .npmrc
     - cat .npmrc
     - npm install --save
@@ -63,5 +63,5 @@ build-develop-job:
     - npm version patch
     - git push gitlab HEAD:$CI_COMMIT_REF_NAME -o ci.skip
     - git push gitlab --tags -f -o ci.skip
-    - npm publish --patch --registry ${WAGO_NPM_X86_64_REPOSITORY}/
+    - npm publish --patch --registry ${NPM_PUBLISH_REPOSITORY}/
 
