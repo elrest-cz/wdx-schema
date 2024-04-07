@@ -32,7 +32,7 @@ build-master-job:
     - npm version minor
     - git push gitlab HEAD:$CI_COMMIT_REF_NAME -o ci.skip
     - git push gitlab --tags -f -o ci.skip
-    - npm publish --minor --registry ${NPM_PUBLISH_REPOSITORY}
+    - npm publish --patch --registry $NPM_PUBLISH_REPOSITORY
 
 build-develop-job:
   image: node:latest
@@ -63,5 +63,5 @@ build-develop-job:
     - npm version patch
     - git push gitlab HEAD:$CI_COMMIT_REF_NAME -o ci.skip
     - git push gitlab --tags -f -o ci.skip
-    - npm publish --patch --registry ${NPM_PUBLISH_REPOSITORY}/
+    - npm publish --patch --registry $NPM_PUBLISH_REPOSITORY
 
