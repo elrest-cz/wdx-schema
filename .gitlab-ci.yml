@@ -22,7 +22,7 @@ build-master-job:
       {
         echo "registry=${NPM_RPOSITORY}"
         echo "${NPM_RPOSITORY#http*:}:_auth=${NPM_TOKEN}"
-        echo "${NPM_PUBLISH_REPOSITORY#http*:}:_auth=${NPM_TOKEN}"
+        echo "${NPM_RELEASES_REPOSITORY#http*:}:_auth=${NPM_TOKEN}"
       } > .npmrc
     - cat .npmrc
     - npm install --save
@@ -32,7 +32,7 @@ build-master-job:
     - npm version minor
     - git push gitlab HEAD:$CI_COMMIT_REF_NAME -o ci.skip
     - git push gitlab --tags -f -o ci.skip
-    - npm publish --patch --registry $NPM_PUBLISH_REPOSITORY
+    - npm publish --patch --registry $NPM_RELEASES_REPOSITORY
 
 build-develop-job:
   image: node:latest
@@ -53,7 +53,7 @@ build-develop-job:
       {
         echo "registry=${NPM_RPOSITORY}"
         echo "${NPM_RPOSITORY#http*:}:_auth=${NPM_TOKEN}"
-        echo "${NPM_PUBLISH_REPOSITORY#http*:}:_auth=${NPM_TOKEN}"
+        echo "${NPM_SNAPSHOTS_REPOSITORY#http*:}:_auth=${NPM_TOKEN}"
       } > .npmrc
     - cat .npmrc
     - npm install --save
@@ -63,5 +63,5 @@ build-develop-job:
     - npm version patch
     - git push gitlab HEAD:$CI_COMMIT_REF_NAME -o ci.skip
     - git push gitlab --tags -f -o ci.skip
-    - npm publish --patch --registry $NPM_PUBLISH_REPOSITORY
+    - npm publish --patch --registry $NPM_SNAPSHOTS_REPOSITORY
 
