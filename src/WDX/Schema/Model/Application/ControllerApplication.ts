@@ -12,5 +12,19 @@ import {Instance} from '../../Model/Instance/Instance';
 
 export class ControllerApplication extends AbstractApplication {
   public code: string = Type.ControllerApplication;
+
+  /**
+   * CLI Instance argument to commands
+   */
   public instances?: Array<Instance>;
+
+  /**
+   * CLI Instance argument to commands
+   */
+  public instance?: Instance;
+
+  /**
+   * CLI Instance argument to commands
+   */
+  public instanceConfigFile?: string;
 }

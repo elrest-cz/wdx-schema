@@ -41,6 +41,8 @@ export class Instance {
 
       public processId?: number,
 
+      public parentProcessId?: number,
+
       public threadId?: number,
 
       public memory?: number,
