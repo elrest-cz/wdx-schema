@@ -5,7 +5,6 @@
  */
 'use strict';
 
-export const INTERPRETER_NONE = 'none';
 import {Log} from './Log';
 import {LogLevel} from './LogLevel';
 import {CronOptions} from './CronOptions';
