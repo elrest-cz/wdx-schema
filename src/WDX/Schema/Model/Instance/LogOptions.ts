@@ -10,7 +10,7 @@ import {LogLevel} from './LogLevel';
 export class LogOptions {
   constructor(
 
-      public level?: LogLevel,
+      public level?: Array<LogLevel>,
 
       public channels?: Array<string>,
 
