@@ -30,6 +30,8 @@ export class Instance {
 
   public uptime: number|undefined;
 
+  public locale: number|undefined;
+
   constructor(
 
       public uuid: string,

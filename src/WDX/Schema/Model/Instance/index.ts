@@ -6,6 +6,7 @@
 'use strict';
 
 import {Log} from './Log';
+import {LogDate} from './LogDate';
 import {CPUUsage} from './CPUUsage';
 import {LogLevel} from './LogLevel';
 import {CronOptions} from './CronOptions';
@@ -33,6 +34,7 @@ import {WebSocketServerInstance} from './WebSocketServerInstance';
 
 export {
   Log,
+  LogDate,
   CPUUsage,
   LogLevel,
   CronOptions,
