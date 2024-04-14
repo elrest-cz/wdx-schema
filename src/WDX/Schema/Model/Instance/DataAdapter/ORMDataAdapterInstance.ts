@@ -7,8 +7,8 @@
 'use strict';
 
 import {Type} from '../Type';
-import {AbstractApplication} from '../AbstractApplication';
+import {Instance} from '../Instance';
 
-export class VirtualDataAdapterApplication extends AbstractApplication {
-  public code: string = Type.VirtualDataAdapterApplication;
+export class ORMDataAdapterInstance extends Instance {
+  public code: string = Type.ORMDataAdapter;
 }

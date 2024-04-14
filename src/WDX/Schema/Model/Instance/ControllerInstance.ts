@@ -7,11 +7,10 @@
 'use strict';
 
 import {Type} from './Type';
-import {AbstractApplication} from './AbstractApplication';
-import {Instance} from '../../Model/Instance/Instance';
+import {Instance} from './Instance';
 
-export class ControllerApplication extends AbstractApplication {
-  public code: string = Type.ControllerApplication;
+export class ControllerInstance extends Instance {
+  public code: string = Type.Controller;
 
   /**
    * CLI Instance argument to commands

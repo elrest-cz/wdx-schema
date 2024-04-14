@@ -6,13 +6,24 @@
 'use strict'
 
 import{Status} from './Status';
-import {AbstractApplication} from '../Application';
 import {ExecutionOptions} from './ExecutionOptions';
 import {RestartOptions} from './RestartOptions';
 import {CronOptions} from './CronOptions';
 import {LogOptions} from './LogOptions';
+import {CPUUsage} from './CPUUsage';
+import {DataSourceOptions} from './DataSourceOptions';
+import {TCPOptions} from './TCPOptions';
+import {UDPOptions} from './UDPOptions';
 
 export class Instance {
+  public code: string;
+
+  public tcpOptions?: TCPOptions;
+
+  public udpOptions?: UDPOptions;
+
+  public dataSourceOptions?: DataSourceOptions;
+
   public createdDate: number = Date.now();
 
   public updatedDate: number = this.createdDate;
@@ -26,8 +37,6 @@ export class Instance {
       public name?: string,
 
       public status?: Status,
-
-      public application?: AbstractApplication,
 
       public executionOptions?: ExecutionOptions,
 
@@ -47,6 +56,6 @@ export class Instance {
 
       public memory?: number,
 
-      public cpu?: number,
+      public cpu?: CPUUsage,
   ) {}
 }

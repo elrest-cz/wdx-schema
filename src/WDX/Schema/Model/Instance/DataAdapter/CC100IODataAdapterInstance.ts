@@ -7,8 +7,8 @@
 'use strict';
 
 import {Type} from '../Type';
-import {AbstractApplication} from '../AbstractApplication';
+import {Instance} from '../Instance';
 
-export class CC100IODataAdapterApplication extends AbstractApplication {
-  public code: string = Type.CC100IODataAdapterApplication;
+export class CC100IODataAdapterInstance extends Instance {
+  public code: string = Type.CC100IODataAdapter;
 }

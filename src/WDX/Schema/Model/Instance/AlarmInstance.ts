@@ -9,8 +9,8 @@
 'use strict';
 
 import {Type} from './Type';
-import {AbstractApplication} from './AbstractApplication';
+import {Instance} from './Instance';
 
-export class JSWorkspaceApplication extends AbstractApplication {
-  public code: string = Type.JSWorkspaceApplication;
+export class AlarmInstance extends Instance {
+  public code: string = Type.Alarm;
 }

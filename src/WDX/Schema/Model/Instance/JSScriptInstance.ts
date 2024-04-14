@@ -9,10 +9,10 @@
 'use strict';
 
 import {Type} from './Type';
-import {AbstractApplication} from './AbstractApplication';
+import {Instance} from './Instance';
 
-export class JSScriptApplication extends AbstractApplication {
-  public code: string = Type.JSScriptApplication;
+export class JSScriptInstance extends Instance {
+  public code: string = Type.JSScript;
 
   public script: string;
 }

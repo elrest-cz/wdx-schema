@@ -7,8 +7,8 @@
 'use strict';
 
 import {Type} from './Type';
-import {AbstractApplication} from './AbstractApplication';
+import {Instance} from './Instance';
 
-export class DataApplication extends AbstractApplication {
-  public code: string = Type.DataApplication;
+export class DataInstance extends Instance {
+  public code: string = Type.Data;
 }
