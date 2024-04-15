@@ -19,19 +19,10 @@ export class Runtime {
 
 	constructor(
 
-		/**
-		 * eDesign Runtime Title
-		 */
 		public title: string = '',
 
-		/**
-		 * eDesign Runtime Host Client
-		 */
 		public clientConfiguration: ClientConfiguration = new ClientConfiguration,
 
-		/**
-		 * eDesign Runtime Host Connections
-		 */
 		public connections: Instance[] = [],
 
 		/**
