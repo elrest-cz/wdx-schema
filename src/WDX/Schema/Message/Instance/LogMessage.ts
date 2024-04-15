@@ -13,5 +13,5 @@ import {Log} from '../../Model/Instance/Log';
 export class LogMessage extends AbstractMessage {
   public type: Type = Type.InstanceLog;
 
-  public body: Array<Log>;
+  public body: string;
 }
