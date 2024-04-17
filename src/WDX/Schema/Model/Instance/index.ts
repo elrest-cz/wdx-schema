@@ -7,6 +7,7 @@
 
 import {Log} from './Log';
 import {LogDate} from './LogDate';
+import {MemoryUsage} from './MemoryUsage';
 import {CPUUsage} from './CPUUsage';
 import {LogLevel} from './LogLevel';
 import {CronOptions} from './CronOptions';
@@ -35,6 +36,7 @@ import {WebSocketServerInstance} from './WebSocketServerInstance';
 export {
   Log,
   LogDate,
+  MemoryUsage,
   CPUUsage,
   LogLevel,
   CronOptions,

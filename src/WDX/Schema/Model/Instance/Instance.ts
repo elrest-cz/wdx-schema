@@ -14,6 +14,7 @@ import {CPUUsage} from './CPUUsage';
 import {DataSourceOptions} from './DataSourceOptions';
 import {TCPOptions} from './TCPOptions';
 import {UDPOptions} from './UDPOptions';
+import {MemoryUsage} from './MemoryUsage';
 
 export class Instance {
   public code: string;
@@ -56,7 +57,7 @@ export class Instance {
 
       public threadId?: number,
 
-      public memory?: number,
+      public memory?: MemoryUsage,
 
       public cpu?: CPUUsage,
   ) {}
