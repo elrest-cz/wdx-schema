@@ -12,6 +12,8 @@ import {Instance} from './Instance';
 export class ControllerInstance extends Instance {
   public code: string = Type.Controller;
 
+  public command?: string;
+
   /**
    * CLI Instance argument to commands
    */
