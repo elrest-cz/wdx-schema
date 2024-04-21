@@ -10,11 +10,10 @@ import {ExecutionOptions} from './ExecutionOptions';
 import {RestartOptions} from './RestartOptions';
 import {CronOptions} from './CronOptions';
 import {LogOptions} from './LogOptions';
-import {CPUUsage} from './CPUUsage';
 import {DataSourceOptions} from './DataSourceOptions';
 import {TCPOptions} from './TCPOptions';
 import {UDPOptions} from './UDPOptions';
-import {MemoryUsage} from './MemoryUsage';
+import {ResourceUsage} from './ResourceUsage';
 
 export class Instance {
   public code: string;
@@ -32,6 +31,8 @@ export class Instance {
   public uptime: number|undefined;
 
   public locale: number|undefined;
+
+  public resourceUsage: ResourceUsage|undefined;
 
   constructor(
 
@@ -56,9 +57,5 @@ export class Instance {
       public parentProcessId?: number,
 
       public threadId?: number,
-
-      public memory?: MemoryUsage,
-
-      public cpu?: CPUUsage,
   ) {}
 }
