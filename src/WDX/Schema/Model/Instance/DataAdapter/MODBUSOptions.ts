@@ -7,7 +7,7 @@
 
 export class MODBUSOptions {
   constructor(
-      public host?: string,
-      public port?: number,
+      public host: string,
+      public port: number,
   ) {}
 }

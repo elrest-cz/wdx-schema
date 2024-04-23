@@ -8,6 +8,7 @@
 export class BACNetOptions {
   constructor(
       public apduTimeout?: number,
+      public port: number = 47809,
       public listenAddress?: string,
       public broadcastAddress?: string,
   ) {}
