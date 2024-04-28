@@ -6,12 +6,9 @@
 
 'use strict';
 
-import {Instance} from '../Instance';
 
-export class Runtime {
+export class NativeStack {
   constructor(
-
-      public instances: Instance[] = [],
-
+      public message: Array<{ps: string, symbol: string}>,
   ) {}
 }

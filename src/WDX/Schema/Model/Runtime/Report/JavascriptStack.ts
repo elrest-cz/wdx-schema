@@ -6,12 +6,10 @@
 
 'use strict';
 
-import {Instance} from '../Instance';
 
-export class Runtime {
+export class JavascriptStack {
   constructor(
-
-      public instances: Instance[] = [],
-
+      public message: string,
+      public stack: Array<string>,
   ) {}
 }

@@ -13,5 +13,5 @@ import * as Model from '../../Model';
 
 export class MonitorSubscribeResponse extends AbstractMessage {
 	public type: Type = Type.RuntimeMonitorSubscribeResponse;
-	public body: Model.Runtime.Runtime;
+	public body: Model.Runtime.Report.Report;
 }
