@@ -6,6 +6,7 @@
 
 'use strict';
 
+import {Instance} from '../../Instance/Instance';
 import {Header} from './Header';
 import {JavascriptHeap} from './JavascriptHeap';
 import {JavascriptStack} from './JavascriptStack';
@@ -14,6 +15,7 @@ import {ResourceUsage} from './ResourceUsage';
 import {UvthreadResourceUsage} from './UvthreadResourceUsage';
 
 export class Report {
+  public instances: Instance[] = [];
   constructor(
       public header: Header,
       public javascriptStack: JavascriptStack,
