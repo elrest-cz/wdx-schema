@@ -13,4 +13,6 @@ import {Instance} from './Instance';
 
 export class JSSWorkspaceInstance extends Instance {
   public code: string = Type.JSWorkspace;
+
+  public storage: string|undefined;
 }

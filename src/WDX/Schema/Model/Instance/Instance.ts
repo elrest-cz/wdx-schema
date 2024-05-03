@@ -34,6 +34,8 @@ export class Instance {
 
   public resourceUsage: ResourceUsage|undefined;
 
+  public namespace: string|undefined;
+
   constructor(
 
       public uuid: string,
