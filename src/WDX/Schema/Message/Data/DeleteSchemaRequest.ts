@@ -14,13 +14,4 @@ export class DeleteSchemaRequest extends AbstractMessage {
 
 	public type: Type = Type.DataDeleteSchemaRequest;
 	public body: string;
-
-	constructor(
-		path: string,
-		uuid?: string,
-		error?: MessageError,
-		from?: string
-	) {
-		super(path, uuid, error, from);
-	}
 }
