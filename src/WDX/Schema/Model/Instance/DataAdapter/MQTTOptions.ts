@@ -5,31 +5,33 @@
  */
 'use strict';
 
+import { WSProtocol } from "../WSProtocol";
+
 export class MQTTOptions {
   constructor(
 
-      public protocol?: string,
+    public protocol: WSProtocol = WSProtocol.ws,
 
-      public port?: number,
+    public port?: number,
 
-      public host?: string,
+    public host?: string,
 
-      public path?: string,
+    public path?: string,
 
-      public keepalive?: number,
+    public keepalive?: number,
 
-      public protocolId?: string,
+    public protocolId?: string,
 
-      public protocolVersion?: number,
+    public protocolVersion?: number,
 
-      public reconnectPeriod?: number,
+    public reconnectPeriod?: number,
 
-      public connectTimeout?: number,
+    public connectTimeout?: number,
 
-      public clientId?: string,
+    public clientId?: string,
 
-      public username?: string,
+    public username?: string,
 
-      public password?: string,
-  ) {}
+    public password?: string,
+  ) { }
 }

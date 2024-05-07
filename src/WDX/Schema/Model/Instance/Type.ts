@@ -14,11 +14,11 @@ export enum Type {
 
   Data = 'Data',
 
-  NodeRED = 'NodeRED',
-
   JSWorkspace = 'JSWorkspace',
 
   JSScript = 'JSScript',
+
+  NodeRED = 'NodeRED',
 
   Trend = 'Trend',
 
