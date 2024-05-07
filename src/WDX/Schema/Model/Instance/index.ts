@@ -7,6 +7,7 @@
 
 import {Log} from './Log';
 import {LogDate} from './LogDate';
+import {WSProtocol} from './WSProtocol';
 import {ResourceUsage} from './ResourceUsage';
 import {LogLevel} from './LogLevel';
 import {CronOptions} from './CronOptions';
@@ -35,6 +36,7 @@ import {WebSocketServerInstance} from './WebSocketServerInstance';
 export {
   Log,
   LogDate,
+  WSProtocol,
   ResourceUsage,
   LogLevel,
   CronOptions,
