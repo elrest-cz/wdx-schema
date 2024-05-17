@@ -31,7 +31,6 @@ import {MetaDataCC100IO} from './MetaDataCC100-IO';
 import {MetaDataCC100IOAdapter} from './MetaDataCC100-IOAdapter';
 import {MetaDataCC100IOProvider} from './MetaDataCC100-IOProvider';
 import {MetaDataCC100IOType} from './MetaDataCC100-IOType';
-import {MetaDataMQTTProtocol} from './MetaDataMQTTProtocol';
 import {MetaDataMQTT} from './MetaDataMQTT';
 import {MetaDataMQTTAdapter} from './MetaDataMQTTAdapter';
 import {MetaDataMQTTProvider} from './MetaDataMQTTProvider';
@@ -62,7 +61,6 @@ export {
   MetaDataCC100IOAdapter,
   MetaDataCC100IOType,
   MetaDataCC100IOProvider,
-  MetaDataMQTTProtocol,
   MetaDataMQTT,
   MetaDataMQTTAdapter,
   MetaDataMQTTProvider,

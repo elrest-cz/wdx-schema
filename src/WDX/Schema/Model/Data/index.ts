@@ -14,7 +14,6 @@ import { DataType } from './DataType';
 import { DataValue } from './DataValue';
 import { GetRequestBody } from './GetRequestBody';
 import { GetSchemaRequestBody } from './GetSchemaRequestBody';
-import { RegisterProviderRequestBody } from './RegisterProviderRequestBody';
 import { RegisterRequestBody } from './RegisterRequestBody';
 import { SetValueRequestBody } from './SetValueRequestBody';
 import { UnregisterRequestBody } from './UnregisterRequestBody';
@@ -28,7 +27,6 @@ export {
 	DataValue,
 	GetRequestBody,
 	GetSchemaRequestBody,
-	RegisterProviderRequestBody,
 	RegisterRequestBody,
 	SetValueRequestBody,
 	UnregisterRequestBody,
