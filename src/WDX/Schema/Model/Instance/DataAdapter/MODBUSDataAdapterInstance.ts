@@ -12,5 +12,6 @@ import {MODBUSOptions} from './MODBUSOptions';
 
 export class MODBUSDataAdapterInstance extends Instance {
   public code: string = Type.MODBUSDataAdapter;
+  public namespace: Type.MODBUSDataAdapter;
   public modbusOptions: MODBUSOptions = new MODBUSOptions();
 }

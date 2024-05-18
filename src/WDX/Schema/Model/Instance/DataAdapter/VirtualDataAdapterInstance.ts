@@ -11,4 +11,5 @@ import {Instance} from '../Instance';
 
 export class VirtualDataAdapterInstance extends Instance {
   public code: string = Type.VirtualDataAdapter;
+  public namespace: string = Type.VirtualDataAdapter;
 }

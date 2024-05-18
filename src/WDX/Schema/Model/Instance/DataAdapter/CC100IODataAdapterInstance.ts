@@ -11,4 +11,5 @@ import {Instance} from '../Instance';
 
 export class CC100IODataAdapterInstance extends Instance {
   public code: string = Type.CC100IODataAdapter;
+  public namespace: Type.CC100IODataAdapter;
 }

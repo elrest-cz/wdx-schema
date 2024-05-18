@@ -11,4 +11,5 @@ import {Instance} from '../Instance';
 
 export class ORMDataAdapterInstance extends Instance {
   public code: string = Type.ORMDataAdapter;
+  public namespace: Type.ORMDataAdapter;
 }

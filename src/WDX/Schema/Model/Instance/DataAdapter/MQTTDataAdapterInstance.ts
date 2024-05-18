@@ -11,7 +11,7 @@ import {Instance} from '../Instance';
 import {MQTTOptions} from './MQTTOptions';
 
 export class MQTTDataAdapterInstance extends Instance {
-  public code: string = Type.Data;
-
+  public code: string = Type.MQTTDataAdapter;
+  public namespace: Type.MODBUSDataAdapter;
   public mqttOptions: MQTTOptions = new MQTTOptions();
 }

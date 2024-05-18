@@ -12,5 +12,6 @@ import {BACNetOptions} from './BACNetOptions';
 
 export class BACNetDataAdapterInstance extends Instance {
   public code: string = Type.BACNetDataAdapter;
-  public bacnetOptions: BACNetOptions =new BACNetOptions();
+  public namespace: Type.BACNetDataAdapter;
+  public bacnetOptions: BACNetOptions = new BACNetOptions();
 }
