@@ -13,8 +13,4 @@ import { AbstractMessage } from './../AbstractMessage';
 export class UnregisterSchemaChangesResponse extends AbstractMessage {
 	public type: Type = Type.DataUnregisterSchemaChangesResponse;
 	public body: null;
-
-	constructor(uuid?: string, error?: MessageError, from?: string) {
-		super(null, uuid, error, from);
-	}
 }

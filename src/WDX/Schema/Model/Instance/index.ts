@@ -10,6 +10,7 @@ import {LogDate} from './LogDate';
 import {WSProtocol} from './WSProtocol';
 import {ResourceUsage} from './ResourceUsage';
 import {LogLevel} from './LogLevel';
+import {LogMessageBody} from './LogMessageBody';
 import {CronOptions} from './CronOptions';
 import {ExecutionMode} from './ExecutionMode';
 import {ExecutionOptions} from './ExecutionOptions';
@@ -38,6 +39,7 @@ export {
   LogDate,
   WSProtocol,
   ResourceUsage,
+  LogMessageBody,
   LogLevel,
   CronOptions,
   ExecutionMode,

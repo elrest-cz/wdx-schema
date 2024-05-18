@@ -12,9 +12,5 @@ import { RegisterRequestBody } from '../../Model/Data';
 
 export class RegisterRequest extends AbstractMessage {
 	public type: Type = Type.DataRegisterRequest;
-	public body: RegisterRequestBody;
-
-	constructor(path: string, refreshMin?: number, refreshMax?: number, delta?: number, uuid?: string, error?: MessageError, from?: string) {
-		super(new RegisterRequestBody(path, refreshMin, refreshMax, delta), uuid, error, from);
-	}
+	public body: string;
 }

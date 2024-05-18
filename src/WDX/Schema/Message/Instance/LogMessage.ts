@@ -8,10 +8,9 @@
 
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
-import {Log} from '../../Model/Instance/Log';
+import {LogMessageBody} from '../../Model/Instance';
 
 export class LogMessage extends AbstractMessage {
   public type: Type = Type.InstanceLog;
-
-  public body: string[];
+  public body: LogMessageBody;
 }
