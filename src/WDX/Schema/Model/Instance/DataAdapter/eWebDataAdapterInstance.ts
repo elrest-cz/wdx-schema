@@ -12,5 +12,5 @@ import {eWebOptions} from './eWebOptions';
 
 export class eWebDataAdapterInstance extends Instance {
   public code: string = Type.eWebDataAdapter;
-  public eWebOptions: eWebOptions;
+  public eWebOptions: eWebOptions = new eWebOptions();
 }

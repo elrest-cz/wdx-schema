@@ -13,5 +13,5 @@ import {MQTTOptions} from './MQTTOptions';
 export class MQTTDataAdapterInstance extends Instance {
   public code: string = Type.Data;
 
-  public mqttOptions: MQTTOptions;
+  public mqttOptions: MQTTOptions = new MQTTOptions();
 }

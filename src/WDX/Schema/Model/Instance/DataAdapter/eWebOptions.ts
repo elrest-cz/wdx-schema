@@ -8,12 +8,10 @@
 import {WSProtocol} from '../WSProtocol';
 
 export class eWebOptions {
-  constructor(
-      public protocol: WSProtocol = WSProtocol.ws,
-      public host: string,
-      public port: number,
-      public path: string = 'ElrestWS50',
-      public username: string,
-      public password: string,
-  ) {}
+  public protocol: WSProtocol = WSProtocol.ws;
+  public host: string = '127.0.0.1';
+  public port: number = 80;
+  public path: string = 'ElrestWS50';
+  public username: string = 'Aministrator';
+  public password: string = '';
 }

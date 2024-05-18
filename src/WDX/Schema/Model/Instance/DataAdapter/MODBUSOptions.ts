@@ -6,8 +6,6 @@
 'use strict';
 
 export class MODBUSOptions {
-  constructor(
-      public host: string,
-      public port: number,
-  ) {}
+  public host: string = '127.0.0.1';
+  public port: number = 502;
 }

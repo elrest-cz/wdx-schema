@@ -22,7 +22,7 @@ export class Instance {
 
   public udpOptions?: UDPOptions;
 
-  public dataSourceOptions?: DataSourceOptions;
+  public dataSourceOptions?: DataSourceOptions = new DataSourceOptions();
 
   public createdDate: number = Date.now();
 
