@@ -14,6 +14,7 @@ import {DataSourceOptions} from './DataSourceOptions';
 import {TCPOptions} from './TCPOptions';
 import {UDPOptions} from './UDPOptions';
 import {ResourceUsage} from './ResourceUsage';
+import {LogLevel} from './LogLevel';
 
 export class Instance {
   public code: string;
@@ -36,6 +37,15 @@ export class Instance {
 
   public namespace: string|undefined;
 
+  public logOptions: LogOptions = new LogOptions(
+      LogLevel.log,
+      undefined,
+      undefined,
+      undefined,
+      true,
+      'logs/' + this.uuid + '.log',
+  );
+
   constructor(
 
       public uuid: string,
@@ -50,7 +60,7 @@ export class Instance {
 
       public cronOptions?: CronOptions,
 
-      public logOptions?: LogOptions,
+      logOptions?: LogOptions,
 
       public enabled?: boolean,
 
