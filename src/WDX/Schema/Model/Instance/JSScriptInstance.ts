@@ -13,6 +13,7 @@ import {Instance} from './Instance';
 
 export class JSScriptInstance extends Instance {
   public code: string = Type.JSScript;
-
+  public namespace: string = Type.JSScript;
   public script: string;
+
 }

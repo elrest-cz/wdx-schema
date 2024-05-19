@@ -11,4 +11,5 @@ import {Instance} from './Instance';
 
 export class TrendInstance extends Instance {
   public code: string = Type.Trend;
+  public namespace: string = Type.Controller;
 }

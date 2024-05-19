@@ -12,6 +12,6 @@ import {WebSocketServerOptions} from './WebSocketServerOptions';
 
 export class WebSocketServerInstance extends Instance {
   public code: string = Type.WebSocketServer;
-
+  public namespace: string = Type.Controller;
   public webSocketServerOptions: WebSocketServerOptions;
 }

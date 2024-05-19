@@ -11,4 +11,5 @@ import {Instance} from './Instance';
 
 export class DataInstance extends Instance {
   public code: string = Type.Data;
+  public namespace: string = Type.Controller;
 }

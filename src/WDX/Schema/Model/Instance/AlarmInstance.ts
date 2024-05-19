@@ -13,4 +13,5 @@ import {Instance} from './Instance';
 
 export class AlarmInstance extends Instance {
   public code: string = Type.Alarm;
+  public namespace: string = Type.Controller;
 }

@@ -14,6 +14,6 @@ import { NodeREDOptions } from './NodeREDOptions';
 
 export class NodeREDInstance extends Instance {
   public code: string = Type.NodeRED;
-
+  public namespace: string = Type.Controller;
   public nodeREDOptions?: NodeREDOptions;
 }
