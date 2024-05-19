@@ -12,6 +12,6 @@ import {MQTTOptions} from './MQTTOptions';
 
 export class MQTTDataAdapterInstance extends Instance {
   public code: string = Type.MQTTDataAdapter;
-  public namespace: Type.MODBUSDataAdapter;
+  public namespace: string = Type.MODBUSDataAdapter;
   public mqttOptions: MQTTOptions = new MQTTOptions();
 }
