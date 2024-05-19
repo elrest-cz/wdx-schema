@@ -26,13 +26,13 @@ export enum Type {
 
   BACNetDataAdapter = 'BACNet',
 
-  CC100IODataAdapter = 'CC100IO',
+  CC100IODataAdapter = 'CC100-IO',
 
   eWebDataAdapter = 'eWeb',
 
   MODBUSDataAdapter = 'MODBUS',
 
-  MQTTDataAdapter = 'MQTTClient',
+  MQTTDataAdapter = 'MQTT',
 
   ORMDataAdapter = 'ORM',
 
