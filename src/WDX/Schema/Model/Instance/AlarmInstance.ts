@@ -10,8 +10,10 @@
 
 import {Type} from './Type';
 import {Instance} from './Instance';
+import { AlarmExecutionOptions } from './AlarmExecutionOptions';
 
 export class AlarmInstance extends Instance {
   public code: string = Type.Alarm;
   public namespace: string = Type.Controller;
+  public executionOptions?: AlarmExecutionOptions = new AlarmExecutionOptions();
 }

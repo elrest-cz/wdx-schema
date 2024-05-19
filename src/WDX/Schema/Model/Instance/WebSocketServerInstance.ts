@@ -9,9 +9,11 @@
 import {Type} from './Type';
 import {Instance} from './Instance';
 import {WebSocketServerOptions} from './WebSocketServerOptions';
+import { WebSocketServerExecutionOptions } from './WebSocketServerExecutionOptions';
 
 export class WebSocketServerInstance extends Instance {
   public code: string = Type.WebSocketServer;
   public namespace: string = Type.Controller;
   public webSocketServerOptions: WebSocketServerOptions;
+  public executionOptions: WebSocketServerExecutionOptions = new WebSocketServerExecutionOptions();
 }

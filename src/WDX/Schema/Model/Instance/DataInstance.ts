@@ -8,8 +8,10 @@
 
 import {Type} from './Type';
 import {Instance} from './Instance';
+import { DataExecutionOptions } from './DataExecutionOptions';
 
 export class DataInstance extends Instance {
   public code: string = Type.Data;
   public namespace: string = Type.Controller;
+  public executionOptions: DataExecutionOptions = new DataExecutionOptions();
 }

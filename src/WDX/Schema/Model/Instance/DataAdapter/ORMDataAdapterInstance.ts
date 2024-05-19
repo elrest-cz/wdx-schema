@@ -8,8 +8,10 @@
 
 import {Type} from '../Type';
 import {Instance} from '../Instance';
+import { ORMDataAdapterExecutionOptions } from './ORMDataAdapterExecutionOptions';
 
 export class ORMDataAdapterInstance extends Instance {
   public code: string = Type.ORMDataAdapter;
   public namespace: string = Type.ORMDataAdapter;
+  public executionOptions?: ORMDataAdapterExecutionOptions = new ORMDataAdapterExecutionOptions();
 }

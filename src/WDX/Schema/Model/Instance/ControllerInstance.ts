@@ -8,11 +8,14 @@
 
 import {Type} from './Type';
 import {Instance} from './Instance';
+import {ControllerExecutionOptions} from './ControllerExecutionOptions';
 
 export class ControllerInstance extends Instance {
   public code: string = Type.Controller;
 
   public namespace: string = Type.Controller;
+
+  public executionOptions: ControllerExecutionOptions = new ControllerExecutionOptions();
 
   public command?: string;
 

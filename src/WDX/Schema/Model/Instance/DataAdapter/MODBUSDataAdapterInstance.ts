@@ -9,9 +9,11 @@
 import {Type} from '../Type';
 import {Instance} from '../Instance';
 import {MODBUSOptions} from './MODBUSOptions';
+import { MODBUSDataAdapterExecutionOptions } from './MODBUSDataAdapterExecutionOptions';
 
 export class MODBUSDataAdapterInstance extends Instance {
   public code: string = Type.MODBUSDataAdapter;
   public namespace: string=Type.MODBUSDataAdapter;
   public modbusOptions: MODBUSOptions = new MODBUSOptions();
+  public executionOptions?: MODBUSDataAdapterExecutionOptions = new MODBUSDataAdapterExecutionOptions();
 }

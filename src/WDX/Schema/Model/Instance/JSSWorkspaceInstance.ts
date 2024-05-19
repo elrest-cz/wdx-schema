@@ -10,9 +10,11 @@
 
 import {Type} from './Type';
 import {Instance} from './Instance';
+import { JSSWorkspaceExecutionOptions } from './JSSWorkspaceExecutionOptions';
 
 export class JSSWorkspaceInstance extends Instance {
   public code: string = Type.JSWorkspace;
   public namespace: string = Type.Controller;
   public storage: string|undefined;
+  public executionOptions: JSSWorkspaceExecutionOptions = new JSSWorkspaceExecutionOptions();
 }

@@ -33,6 +33,13 @@ import {JSSWorkspaceInstance} from './JSSWorkspaceInstance';
 import {JSScriptInstance} from './JSScriptInstance';
 import {TrendInstance} from './TrendInstance';
 import {WebSocketServerInstance} from './WebSocketServerInstance';
+import {AlarmExecutionOptions} from './AlarmExecutionOptions';
+import {ControllerExecutionOptions} from './ControllerExecutionOptions';
+import {DataExecutionOptions} from './DataExecutionOptions';
+import {JSScriptExecutionOptions} from './JSScriptExecutionOptions';
+import {JSSWorkspaceExecutionOptions} from './JSSWorkspaceExecutionOptions';
+import {NodeREDExecutionOptions} from './NodeREDExecutionOptions';
+import {WebSocketServerExecutionOptions} from './WebSocketServerExecutionOptions';
 
 export {
   Log,
@@ -63,4 +70,11 @@ export {
   JSScriptInstance,
   TrendInstance,
   WebSocketServerInstance,
+  AlarmExecutionOptions,
+  ControllerExecutionOptions,
+  DataExecutionOptions,
+  JSScriptExecutionOptions,
+  JSSWorkspaceExecutionOptions,
+  NodeREDExecutionOptions,
+  WebSocketServerExecutionOptions,
 };
