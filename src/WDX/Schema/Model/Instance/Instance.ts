@@ -38,12 +38,12 @@ export class Instance {
   public namespace: string|undefined;
 
   public logOptions: LogOptions = new LogOptions(
-      LogLevel.log,
+      LogLevel.debug,
       undefined,
       undefined,
       undefined,
       true,
-      'logs/' + this.uuid + '.log',
+      './logs/' + this.uuid + '.log',
   );
 
   constructor(
