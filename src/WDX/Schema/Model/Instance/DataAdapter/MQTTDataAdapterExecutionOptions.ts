@@ -11,6 +11,6 @@ import {ExecutionMode} from '../ExecutionMode';
 
 export class MQTTDataAdapterExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = 'wdx-mqtt';
+  public script: string = './node_modules/.bin/wdx-mqtt';
   public options: SpawnOptions|WorkerOptions;
 }

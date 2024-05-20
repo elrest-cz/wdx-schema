@@ -11,6 +11,6 @@ import {ExecutionMode} from '../ExecutionMode';
 
 export class ORMDataAdapterExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = 'wdx-orm';
+  public script: string = './node_modules/.bin/wdx-orm';
   public options: SpawnOptions|WorkerOptions;
 }

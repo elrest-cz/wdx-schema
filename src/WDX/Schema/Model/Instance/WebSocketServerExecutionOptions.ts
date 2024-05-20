@@ -11,6 +11,6 @@ import {ExecutionMode} from './ExecutionMode';
 
 export class WebSocketServerExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = 'wdx-wss';
+  public script: string = './node_modules/.bin/wdx-wss';
   public options: SpawnOptions|WorkerOptions;
 }

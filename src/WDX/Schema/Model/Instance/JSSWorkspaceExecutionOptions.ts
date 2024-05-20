@@ -10,6 +10,6 @@ import {ExecutionMode} from './ExecutionMode';
 
 export class JSSWorkspaceExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = 'wdx-js-workspace';
+  public script: string = './node_modules/.bin/wdx-js-workspace';
   public options: SpawnOptions|WorkerOptions;
 }

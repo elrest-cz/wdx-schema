@@ -10,6 +10,6 @@ import {ExecutionMode} from './ExecutionMode';
 
 export class DataExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = 'wdx-data';
+  public script: string = './node_modules/.bin/wdx-data';
   public options: SpawnOptions|WorkerOptions;
 }

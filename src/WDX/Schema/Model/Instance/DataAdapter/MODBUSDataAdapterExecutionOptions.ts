@@ -11,6 +11,6 @@ import {ExecutionMode} from '../ExecutionMode';
 
 export class MODBUSDataAdapterExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = 'wdx-modbus';
+  public script: string = './node_modules/.bin/wdx-modbus';
   public options: SpawnOptions|WorkerOptions;
 }

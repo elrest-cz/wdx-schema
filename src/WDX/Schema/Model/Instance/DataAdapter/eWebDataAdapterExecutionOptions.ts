@@ -11,6 +11,6 @@ import {ExecutionMode} from '../ExecutionMode';
 
 export class eWebDataAdapterExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = 'wdx-eweb';
+  public script: string = './node_modules/.bin/wdx-eweb';
   public options: SpawnOptions|WorkerOptions;
 }

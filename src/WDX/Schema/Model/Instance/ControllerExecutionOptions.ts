@@ -10,6 +10,6 @@ import {ExecutionMode} from './ExecutionMode';
 
 export class ControllerExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = 'wdx-daemon';
+  public script: string = './node_modules/.bin/wdx-daemon';
   public options: SpawnOptions|WorkerOptions;
 }

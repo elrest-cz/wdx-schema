@@ -10,6 +10,6 @@ import {ExecutionMode} from '../ExecutionMode';
 
 export class VirtualDataAdapterExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = 'wdx-virtual';
+  public script: string = './node_modules/.bin/wdx-virtual';
   public options: SpawnOptions|WorkerOptions;
 }

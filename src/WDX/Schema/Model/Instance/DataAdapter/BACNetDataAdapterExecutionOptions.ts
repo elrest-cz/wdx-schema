@@ -11,6 +11,6 @@ import {ExecutionMode} from '../ExecutionMode';
 
 export class BACNetDataAdapterExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = 'wdx-bacnet';
+  public script: string = './node_modules/.bin/wdx-bacnet';
   public options: SpawnOptions|WorkerOptions;
 }

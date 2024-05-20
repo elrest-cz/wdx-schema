@@ -11,6 +11,6 @@ import {ExecutionMode} from '../ExecutionMode';
 
 export class CC100IODataAdapterExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = 'wdx-cc100-io';
+  public script: string = './node_modules/.bin/wdx-cc100-io';
   public options: SpawnOptions|WorkerOptions;
 }

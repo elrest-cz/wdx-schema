@@ -11,6 +11,6 @@ import {ExecutionMode} from './ExecutionMode';
 
 export class NodeREDExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = 'wdx-node-red';
+  public script: string = './node_modules/.bin/wdx-node-red';
   public options: SpawnOptions|WorkerOptions;
 }
