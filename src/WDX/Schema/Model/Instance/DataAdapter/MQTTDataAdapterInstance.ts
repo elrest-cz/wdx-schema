@@ -13,7 +13,7 @@ import { MQTTDataAdapterExecutionOptions } from './MQTTDataAdapterExecutionOptio
 
 export class MQTTDataAdapterInstance extends Instance {
   public code: string = Type.MQTTDataAdapter;
-  public namespace: string = Type.MODBUSDataAdapter;
+  public namespace: string = Type.MQTTDataAdapter;
   public mqttOptions: MQTTOptions = new MQTTOptions();
   public executionOptions?: MQTTDataAdapterExecutionOptions = new MQTTDataAdapterExecutionOptions();
 }
