@@ -22,6 +22,7 @@
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
+		"postbuild": "./scripts/postbuild.sh",
 		"build": "npm run build-tsc && npm run docs",
 		"build:dev": "npm run build-tsc",
 		"build-tsc": "npx tsc",
