@@ -13,5 +13,5 @@ import {Instance} from '../../Model/Instance';
 
 export class StopRequest extends AbstractMessage {
   public type: Type = Type.InstanceStopRequest;
-  public body: Instance;
+  declare public body: Instance;
 }

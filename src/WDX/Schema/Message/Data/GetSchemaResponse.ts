@@ -13,6 +13,6 @@ export class GetSchemaResponse extends AbstractMessage {
 
 	public type: Type = Type.DataGetSchemaResponse;
 
-	public body: DataSchema | undefined;
+	declare public body: DataSchema | undefined;
 
 }

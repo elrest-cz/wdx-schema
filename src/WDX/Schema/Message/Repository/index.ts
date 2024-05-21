@@ -52,7 +52,7 @@ export class RepositoryPackage {
  */
 export class ListRequest extends AbstractMessage {
 	public type: Type = Type.RepositoryListRequest;
-	public body: ListRequestBody;
+declare public body: ListRequestBody;
 
 	constructor(status: Status = Status.Any, uuid?: string, error?: MessageError) {
 		super(new ListRequestBody(status), uuid, error);
@@ -61,12 +61,12 @@ export class ListRequest extends AbstractMessage {
 
 export class ListResponse extends AbstractMessage {
 	public type: Type = Type.RepositoryListResponse;
-	public body: Array<Package>;
+declare public body: Array<Package>;
 }
 
 export class InfoRequest extends AbstractMessage {
 	public type: Type = Type.RepositoryInfoRequest;
-	public body: InfoRequestBody;
+declare public body: InfoRequestBody;
 
 	constructor(name: string, version?: string, uuid?: string, error?: MessageError) {
 		super(new InfoRequestBody(name, version), uuid, error);
@@ -75,5 +75,5 @@ export class InfoRequest extends AbstractMessage {
 
 export class InfoResponse extends AbstractMessage {
 	public type: Type = Type.RepositoryInfoResponse;
-	public body: Package | Version;
+declare public body: Package | Version;
 }

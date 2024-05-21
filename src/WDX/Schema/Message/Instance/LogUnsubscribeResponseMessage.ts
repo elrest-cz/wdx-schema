@@ -13,5 +13,5 @@ import {Log} from './../../Model/Instance/Log';
 export class LogUnsubscribeResponseMessage extends AbstractMessage {
   public type: Type = Type.InstanceLogUnsubscribeResponse;
 
-  public body: null;
+  declare public body: null;
 }

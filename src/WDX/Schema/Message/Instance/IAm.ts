@@ -13,5 +13,5 @@ import {Instance} from '../../Model/Instance';
 
 export class IAm extends AbstractMessage {
   public type: Type = Type.InstanceIAm;
-  public body: Instance;
+  declare public body: Instance;
 }

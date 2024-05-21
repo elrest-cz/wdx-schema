@@ -16,5 +16,5 @@ import * as Model from '../../Model';
  */
 export class Monitor extends AbstractMessage {
   public type: Type = Type.RuntimeMonitor;
-  public body: Model.Runtime.Report.Report;
+  declare public body: Model.Runtime.Report.Report;
 }

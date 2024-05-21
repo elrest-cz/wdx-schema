@@ -12,5 +12,5 @@ import {DataSchema} from '../../Model/Data';
 export class RegisterProviderRequest extends AbstractMessage {
   public type: Type = Type.DataRegisterProviderRequest;
 
-  public body: DataSchema;
+  declare public body: DataSchema;
 }

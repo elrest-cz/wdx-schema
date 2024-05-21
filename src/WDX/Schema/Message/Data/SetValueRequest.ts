@@ -13,7 +13,7 @@ import { Type } from './../Type';
 
 export class SetValueRequest extends AbstractMessage {
 	public type: Type = Type.DataSetValueRequest;
-	public body: SetValueRequestBody;
+declare public body: SetValueRequestBody;
 
 	constructor(path: string, value: Data, uuid?: string, error?: MessageError, from?: string) {
 		super(new SetValueRequestBody(path, value), uuid, error, from);

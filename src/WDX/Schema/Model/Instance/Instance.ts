@@ -17,6 +17,8 @@ import {ResourceUsage} from './ResourceUsage';
 import {LogLevel} from './LogLevel';
 
 export class Instance {
+  public uuid: string='';
+
   public code: string;
 
   public tcpOptions?: TCPOptions;
@@ -47,8 +49,7 @@ export class Instance {
   );
 
   constructor(
-
-      public uuid: string,
+      uuid: string = '',
 
       public name?: string,
 
@@ -69,5 +70,7 @@ export class Instance {
       public parentProcessId?: number,
 
       public threadId?: number,
-  ) {}
+  ) {
+    this.uuid = uuid;
+  }
 }

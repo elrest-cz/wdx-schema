@@ -12,5 +12,5 @@ import { AbstractMessage } from './../AbstractMessage';
 
 export class UnregisterSchemaChangesResponse extends AbstractMessage {
 	public type: Type = Type.DataUnregisterSchemaChangesResponse;
-	public body: null;
+declare public body: null;
 }

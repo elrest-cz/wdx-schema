@@ -14,7 +14,7 @@ import {Type} from './../Type';
 
 export class SetValueResponse extends AbstractMessage {
   public type: Type = Type.DataSetValueResponse;
-  public body: Data;
+  declare public body: Data;
 
   constructor(
       path?: string,

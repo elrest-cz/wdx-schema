@@ -12,5 +12,5 @@ import {Type} from './../Type';
 
 export class DeleteSchemaResponse extends AbstractMessage {
   public type: Type = Type.DataDeleteSchemaResponse;
-  public body: DataSchema;
+  declare public body: DataSchema;
 }

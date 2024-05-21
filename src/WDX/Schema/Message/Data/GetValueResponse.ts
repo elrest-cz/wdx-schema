@@ -12,5 +12,5 @@ import { Type } from './../Type';
 
 export class GetValueResponse extends AbstractMessage {
 	public type: Type = Type.DataGetValueResponse;
-	public body: Data;
+	declare public body: Data;
 }

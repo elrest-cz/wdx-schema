@@ -12,5 +12,5 @@ export class StartResponse extends AbstractMessage {
 
 	public type: Type = Type.TrendingStartResponse;
 
-	public body: string;
+declare public body: string;
 }

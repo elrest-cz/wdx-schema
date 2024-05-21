@@ -13,5 +13,5 @@ export class SetSchemaRequest extends AbstractMessage {
 
 	public type: Type = Type.DataSetSchemaRequest;
 
-	public body: DataSchema;
+declare public body: DataSchema;
 }

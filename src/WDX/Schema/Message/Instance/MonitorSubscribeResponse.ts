@@ -13,5 +13,5 @@ import {Instance} from '../../Model/Instance/Instance';
 
 export class MonitorSubscribeResponse extends AbstractMessage {
   public type: Type = Type.InstanceMonitorSubscribeResponse;
-  public body: Instance;
+  declare public body: Instance;
 }

@@ -10,5 +10,5 @@ import { Type } from './../Type';
 
 export class StopRequest extends AbstractMessage {
 	public type: Type = Type.TrendingStopRequest;
-	public body: string;
+declare public body: string;
 }

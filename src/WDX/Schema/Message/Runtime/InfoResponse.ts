@@ -16,5 +16,5 @@ import * as Model from '../../Model';
  */
 export class InfoResponse extends AbstractMessage {
 	public type: Type = Type.RuntimeInfoResponse;
-	public body: Model.Runtime.Runtime;
+declare public body: Model.Runtime.Runtime;
 }

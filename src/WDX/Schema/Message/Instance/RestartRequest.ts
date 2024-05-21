@@ -13,5 +13,5 @@ import {Instance} from '../../Model/Instance';
 
 export class RestartRequest extends AbstractMessage {
   public type: Type = Type.InstanceRestartRequest;
-  public body: Instance;
+  declare public body: Instance;
 }

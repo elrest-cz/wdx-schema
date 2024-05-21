@@ -16,7 +16,7 @@ export abstract class AbstractMessage {
 
   public uuid: string;
 
-  public body?: any|null;
+ declare public body?: any|null;
 
   public error?: MessageError|null;
 

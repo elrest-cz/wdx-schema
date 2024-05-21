@@ -15,5 +15,5 @@ import { Type } from './../Type';
  */
 export class InfoRequest extends AbstractMessage {
 	public type: Type = Type.RuntimeInfoRequest;
-	public body: undefined;
+declare public body: undefined;
 }

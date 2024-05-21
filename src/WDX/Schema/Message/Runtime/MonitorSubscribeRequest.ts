@@ -13,5 +13,5 @@ import { Type } from './../Type';
 
 export class MonitorSubscribeRequest extends AbstractMessage {
 	public type: Type = Type.RuntimeMonitorSubscribeRequest;
-	public body: null;
+declare public body: null;
 }

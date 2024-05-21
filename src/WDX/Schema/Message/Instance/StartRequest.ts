@@ -14,6 +14,6 @@ import {Instance} from '../../Model/Instance';
 
 export class StartRequest extends AbstractMessage {
     public type: Type = Type.InstanceStartRequest;
-    public body: Instance;
+    declare public body: Instance;
   }
   

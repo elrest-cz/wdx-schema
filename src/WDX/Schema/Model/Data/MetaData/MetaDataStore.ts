@@ -15,7 +15,7 @@ export class MetaDataStore extends AbstractMetaData {
 
 	public type: MetaDataType = MetaDataType.VIRTUAL;
 
-	public id?: number;
+	declare public id?: number;
 
-	public parentId?: number;
+	declare public parentId?: number;
 }

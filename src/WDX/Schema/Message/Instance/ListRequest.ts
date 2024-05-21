@@ -15,7 +15,7 @@ import {Status} from '../../Model/Instance/Status';
 
 export class ListRequest extends AbstractMessage {
   public type: Type = Type.InstanceListRequest;
-  public body: Array<Instance>;
+  declare public body: Array<Instance>;
 
   constructor(
       status?: Status,

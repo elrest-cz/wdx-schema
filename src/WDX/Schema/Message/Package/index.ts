@@ -26,7 +26,7 @@ import {
  */
 export class InstallRequest extends AbstractMessage {
 	public type: Type = Type.PackageInstallRequest;
-	public body: Package;
+declare public body: Package;
 }
 
 /**
@@ -35,7 +35,7 @@ export class InstallRequest extends AbstractMessage {
  */
 export class InstallResponse extends AbstractMessage {
 	public type: Type = Type.PackageInstallResponse;
-	public body: Package;
+declare public body: Package;
 }
 
 
@@ -45,7 +45,7 @@ export class InstallResponse extends AbstractMessage {
  */
 export class UninstallRequest extends AbstractMessage {
 	public type: Type = Type.PackageUninstallRequest;
-	public body: Package;
+declare public body: Package;
 }
 
 /**
@@ -54,7 +54,7 @@ export class UninstallRequest extends AbstractMessage {
  */
 export class UninstallResponse extends AbstractMessage {
 	public type: Type = Type.PackageUninstallResponse;
-	public body: Package;
+declare public body: Package;
 }
 
 
@@ -65,7 +65,7 @@ export class UninstallResponse extends AbstractMessage {
 export class ListRequest extends AbstractMessage {
 
 	public type: Type = Type.RepositoryListRequest;
-	public body: ListRequestBody;
+declare public body: ListRequestBody;
 
 	constructor(status: Status = Status.Any, uuid?: string, error?: MessageError, from?: string) {
 		super(new ListRequestBody(status), uuid, error, from);
@@ -78,12 +78,12 @@ export class ListRequest extends AbstractMessage {
  */
 export class ListResponse extends AbstractMessage {
 	public type: Type = Type.RepositoryListResponse;
-	public body: Array<Package>;
+declare public body: Array<Package>;
 }
 
 export class InfoRequest extends AbstractMessage {
 	public type: Type = Type.RepositoryInfoRequest;
-	public body: InfoRequestBody;
+declare public body: InfoRequestBody;
 
 	constructor(name: string, version?: string, uuid?: string, error?: MessageError, from?: string) {
 		super(new InfoRequestBody(name, version), uuid, error, from);
@@ -92,6 +92,6 @@ export class InfoRequest extends AbstractMessage {
 
 export class InfoResponse extends AbstractMessage {
 	public type: Type = Type.RepositoryInfoResponse;
-	public body: Package;
+declare public body: Package;
 }
 

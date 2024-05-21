@@ -13,5 +13,5 @@ export class DataUpdate extends AbstractMessage {
 
 	public type: Type = Type.DataUpdate;
 
-	public body: Data;
+	declare public body: Data;
 }

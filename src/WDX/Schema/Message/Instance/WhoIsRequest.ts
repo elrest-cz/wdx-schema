@@ -12,5 +12,5 @@ import {Type} from '../Type';
 
 export class WhoIsRequest extends AbstractMessage {
   public type: Type = Type.InstanceWhoIsRequest;
-  public body: string;
+  declare public body: string;
 }

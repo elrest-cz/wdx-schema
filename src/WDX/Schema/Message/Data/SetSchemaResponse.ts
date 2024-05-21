@@ -11,5 +11,5 @@ import { Type } from './../Type';
 
 export class SetSchemaResponse extends AbstractMessage {
 	public type: Type = Type.DataSetSchemaResponse;
-	public body: DataSchema;
+declare public body: DataSchema;
 }

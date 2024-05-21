@@ -13,5 +13,5 @@ import { Type } from './../Type';
 export class DeleteSchemaRequest extends AbstractMessage {
 
 	public type: Type = Type.DataDeleteSchemaRequest;
-	public body: string;
+	declare public body: string;
 }

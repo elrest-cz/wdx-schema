@@ -12,5 +12,5 @@ import {LogMessageBody} from '../../Model/Instance';
 
 export class LogMessage extends AbstractMessage {
   public type: Type = Type.InstanceLog;
-  public body: LogMessageBody;
+  declare public body: LogMessageBody;
 }

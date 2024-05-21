@@ -14,5 +14,5 @@ import {Instance} from '../../Model/Instance';
 
 export class SaveRequest extends AbstractMessage {
     public type: Type = Type.InstanceSaveRequest;
-    public body: Instance;
+    declare public body: Instance;
   }

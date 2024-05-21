@@ -12,7 +12,7 @@ import { Type } from './../Type';
 
 export class UnregisterResponse extends AbstractMessage {
 	public type: Type = Type.DataUnregisterResponse;
-	public body: UnregisterResponseBody;
+declare public body: UnregisterResponseBody;
 
 	constructor(path: string, uuid?: string, error?: MessageError, from?: string) {
 		super(new UnregisterResponseBody(path), uuid, error, from);

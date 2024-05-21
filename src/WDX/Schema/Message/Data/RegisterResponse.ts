@@ -12,5 +12,5 @@ import { Data } from '../../Model/Data';
 
 export class RegisterResponse extends AbstractMessage {
 	public type: Type = Type.DataRegisterResponse;
-	public body: Data;
+declare public body: Data;
 }

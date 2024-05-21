@@ -13,5 +13,5 @@ import {Instance} from '../../Model/Instance';
 
 export class WhoIsResponse extends AbstractMessage {
   public type: Type = Type.InstanceWhoIsResponse;
-  public body: Instance;
+  declare public body: Instance;
 }

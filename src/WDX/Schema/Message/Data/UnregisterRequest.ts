@@ -13,5 +13,5 @@ import {Type} from './../Type';
 
 export class UnregisterRequest extends AbstractMessage {
   public type: Type = Type.DataUnregisterRequest;
-  public body: string;
+  declare public body: string;
 }

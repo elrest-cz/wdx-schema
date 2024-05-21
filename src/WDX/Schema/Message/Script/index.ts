@@ -16,7 +16,7 @@ export class BrowseRequest extends AbstractMessage {
 
 	public type: Type = Type.ScriptBrowseRequest;
 
-	public body: BrowseRequestBody;
+declare public body: BrowseRequestBody;
 
 	constructor(path: string, level?: number, uuid?: string, error?: MessageError) {
 		super(new BrowseRequestBody(path, level), uuid, error);
@@ -27,34 +27,34 @@ export class BrowseResponse extends AbstractMessage {
 
 	public type: Type = Type.ScriptBrowseResponse;
 
-	public body: Entry;
+declare public body: Entry;
 }
 
 export class SaveRequest extends AbstractMessage {
 
 	public type: Type = Type.ScriptSaveRequest;
 
-	public body: Entry;
+declare public body: Entry;
 }
 
 export class SaveResponse extends AbstractMessage {
 
 	public type: Type = Type.ScriptSaveResponse;
 
-	public body: Entry;
+declare public body: Entry;
 }
 
 export class DeleteRequest extends AbstractMessage {
 
 	public type: Type = Type.ScriptDeleteRequest;
 
-	public body: Entry;
+declare public body: Entry;
 }
 
 export class DeleteResponse extends AbstractMessage {
 
 	public type: Type = Type.ScriptDeleteResponse;
 
-	public body: Entry;
+declare public body: Entry;
 }
 

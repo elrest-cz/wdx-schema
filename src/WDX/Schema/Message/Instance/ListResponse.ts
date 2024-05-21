@@ -13,5 +13,5 @@ import {Instance} from '../../Model/Instance';
 
 export class ListResponse extends AbstractMessage {
   public type: Type = Type.InstanceListResponse;
-  public body: Array<Instance>;
+  declare public body: Array<Instance>;
 }

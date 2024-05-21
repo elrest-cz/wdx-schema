@@ -12,5 +12,5 @@ import { Type } from './../Type';
 
 export class StartRequest extends AbstractMessage {
 	public type: Type = Type.RuntimeStartRequest;
-	public body: null;
+declare public body: null;
 }

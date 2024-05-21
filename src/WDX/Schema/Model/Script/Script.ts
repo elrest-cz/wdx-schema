@@ -12,10 +12,10 @@ import {ExecutionMode, Instance} from './../Instance';
 import {INSTANCE_NAMESPACE} from './index';
 
 export class Script extends File {
-  public name: string;
-  public path: string;
-  public stats?: fs.Stats;
-  public content?: string;
-  public mime?: string;
+  declare public name: string;
+  declare public path: string;
+  declare public stats?: fs.Stats;
+  declare public content?: string;
+  declare public mime?: string;
   public instance?: Instance;
 }

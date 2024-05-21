@@ -13,5 +13,5 @@ import {Instance} from '../../Model/Instance';
 
 export class DeleteRequest extends AbstractMessage {
     public type: Type = Type.InstanceDeleteRequest;
-    public body: Instance;
+    declare public body: Instance;
   }

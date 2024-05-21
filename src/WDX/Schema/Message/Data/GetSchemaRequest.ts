@@ -13,7 +13,7 @@ import { Type } from './../Type';
 export class GetSchemaRequest extends AbstractMessage {
 
 	public type: Type = Type.DataGetSchemaRequest;
-	public body: GetSchemaRequestBody;
+	declare public body: GetSchemaRequestBody;
 
 	constructor(
 		path: string,

@@ -13,5 +13,5 @@ export class RegisterProviderResponse extends AbstractMessage {
 
 	public type: Type = Type.DataRegisterProviderResponse;
 
-	public body: undefined;
+declare public body: undefined;
 }

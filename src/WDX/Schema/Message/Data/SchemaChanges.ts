@@ -15,5 +15,5 @@ import {AbstractMessage} from './../AbstractMessage';
 export class SchemaChanges extends AbstractMessage {
   public type: Type = Type.DataSchemaChanges;
 
-  public body?: DataSchema;
+ declare public body?: DataSchema;
 }
