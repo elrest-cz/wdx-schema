@@ -9,9 +9,11 @@
 import {Type} from '../Type';
 import {Instance} from '../Instance';
 import { VirtualDataAdapterExecutionOptions } from './VirtualDataAdapterExecutionOptions';
+import { DataSourceOptions } from '../DataSourceOptions';
 
 export class VirtualDataAdapterInstance extends Instance {
   public code: string = Type.VirtualDataAdapter;
   public namespace: string = Type.VirtualDataAdapter;
   public executionOptions: VirtualDataAdapterExecutionOptions = new VirtualDataAdapterExecutionOptions();
+  public dataSourceOptions?: DataSourceOptions = new DataSourceOptions('default');
 }

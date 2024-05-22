@@ -10,10 +10,12 @@ import {Type} from '../Type';
 import {Instance} from '../Instance';
 import {BACNetOptions} from './BACNetOptions';
 import { BACNetDataAdapterExecutionOptions } from './BACNetDataAdapterExecutionOptions';
+import { DataSourceOptions } from '../DataSourceOptions';
 
 export class BACNetDataAdapterInstance extends Instance {
   public code: string = Type.BACNetDataAdapter;
   public namespace:string = Type.BACNetDataAdapter;
   public bacnetOptions: BACNetOptions = new BACNetOptions();
   public executionOptions?: BACNetDataAdapterExecutionOptions = new BACNetDataAdapterExecutionOptions();
+  public dataSourceOptions?: DataSourceOptions = new DataSourceOptions('default');
 }

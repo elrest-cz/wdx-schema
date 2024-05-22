@@ -9,9 +9,11 @@
 import {Type} from '../Type';
 import {Instance} from '../Instance';
 import { ORMDataAdapterExecutionOptions } from './ORMDataAdapterExecutionOptions';
+import { DataSourceOptions } from '../DataSourceOptions';
 
 export class ORMDataAdapterInstance extends Instance {
   public code: string = Type.ORMDataAdapter;
   public namespace: string = Type.ORMDataAdapter;
   public executionOptions?: ORMDataAdapterExecutionOptions = new ORMDataAdapterExecutionOptions();
+  public dataSourceOptions?: DataSourceOptions = new DataSourceOptions('default');
 }
