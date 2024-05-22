@@ -17,7 +17,7 @@ import {ResourceUsage} from './ResourceUsage';
 import {LogLevel} from './LogLevel';
 
 export class Instance {
-  public uuid: string='';
+  public uuid: string = '';
 
   public code: string;
 
@@ -39,14 +39,7 @@ export class Instance {
 
   public namespace: string|undefined;
 
-  public logOptions: LogOptions = new LogOptions(
-      LogLevel.debug,
-      undefined,
-      undefined,
-      undefined,
-      true,
-      './logs/' + this.uuid + '.log',
-  );
+  public logOptions: LogOptions;
 
   constructor(
       uuid: string = '',
@@ -72,5 +65,17 @@ export class Instance {
       public threadId?: number,
   ) {
     this.uuid = uuid;
+    if (logOptions) {
+      this.logOptions = logOptions;
+    } else {
+      this.logOptions = new LogOptions(
+          LogLevel.debug,
+          undefined,
+          undefined,
+          undefined,
+          true,
+          './logs/' + uuid + '.log',
+      );
+    }
   }
 }
