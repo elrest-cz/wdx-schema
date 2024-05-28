@@ -14,4 +14,5 @@ export class eWebOptions {
   public path: string = 'ElrestWS50';
   public username: string = 'Aministrator';
   public password: string = '';
+  public reconnectTimeout: number = 5000;
 }
