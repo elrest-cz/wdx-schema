@@ -10,6 +10,6 @@ import {ExecutionMode} from './ExecutionMode';
 
 export class JSScriptExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = './node_modules/.bin/wdx-js';
+  public script: string = './node_modules/.bin/wdx-js-script';
   public options: SpawnOptions|WorkerOptions;
 }
