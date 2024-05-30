@@ -15,9 +15,5 @@ export class GetValueRequest extends AbstractMessage {
 
 	public type: Type = Type.DataGetValueRequest;
 
-	declare public body: GetRequestBody;
-
-	constructor(path: string, uuid?: string, error?: MessageError, from?: string) {
-		super(new GetRequestBody(path), uuid, error, from);
-	}
+	declare public body: string;
 }
