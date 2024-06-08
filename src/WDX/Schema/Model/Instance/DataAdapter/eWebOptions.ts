@@ -10,9 +10,9 @@ import {WSProtocol} from '../WSProtocol';
 export class eWebOptions {
   public protocol: WSProtocol = WSProtocol.ws;
   public host: string = '127.0.0.1';
-  public port: number = 80;
+  public port: number = 82;
   public path: string = 'ElrestWS50';
-  public username: string = 'Aministrator';
+  public username: string = 'Administrator';
   public password: string = '';
-  public reconnectTimeout: number = 5000;
+  public reconnectTimeout: number = 2000;
 }
