@@ -1,12 +1,11 @@
 {
 	"compilerOptions": {
 		"strictPropertyInitialization": false,
-		"tsBuildInfoFile": ".build.json",
 		"alwaysStrict": false,
-		"target": "ES2022",
+		"target": "es2018",
 		"module": "CommonJS",
 		"lib": [
-			"ES2015"
+			"es2018"
 		],
 		"allowJs": true,
 		"outDir": "build",
