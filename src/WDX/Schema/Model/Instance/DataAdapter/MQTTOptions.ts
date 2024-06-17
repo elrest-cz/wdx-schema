@@ -5,10 +5,11 @@
  */
 'use strict';
 
-import {WSProtocol} from '../WSProtocol';
+import { MQTTProtocol } from "./MQTTProtocol";
+
 
 export class MQTTOptions {
-  public protocol: WSProtocol = WSProtocol.ws;
+  public protocol: MQTTProtocol = MQTTProtocol.ws;
 
   public port?: number;
 

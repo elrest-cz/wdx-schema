@@ -10,6 +10,7 @@ import {BACNetOptions} from './BACNetOptions';
 import {eWebOptions} from './eWebOptions';
 import {MODBUSOptions} from './MODBUSOptions';
 import {MQTTOptions} from './MQTTOptions';
+import {MQTTProtocol} from './MQTTProtocol';
 import {BACNetDataAdapterInstance} from './BACNetDataAdapterInstance';
 import {CC100IODataAdapterInstance} from './CC100IODataAdapterInstance';
 import {eWebDataAdapterInstance} from './eWebDataAdapterInstance';
@@ -28,6 +29,7 @@ export {
   BACNetOptions,
   eWebOptions,
   MODBUSOptions,
+  MQTTProtocol,
   MQTTOptions,
   BACNetDataAdapterInstance,
   CC100IODataAdapterInstance,
