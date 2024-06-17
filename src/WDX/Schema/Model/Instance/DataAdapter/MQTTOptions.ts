@@ -11,7 +11,7 @@ import { MQTTProtocol } from "./MQTTProtocol";
 export class MQTTOptions {
   public protocol: MQTTProtocol = MQTTProtocol.ws;
 
-  public port?: number;
+  public port?: number = 1883;
 
   public host?: string;
 
