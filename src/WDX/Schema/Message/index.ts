@@ -17,6 +17,7 @@ import * as Runtime from './Runtime';
 import * as Script from './Script';
 import * as Trending from './Trending';
 import {MESSAGE_SEPARATOR} from './Separator';
+import {MESSAGE_SEPARATOR_LENGTH} from './Separator';
 
 export {
   AbstractMessage,
@@ -31,4 +32,5 @@ export {
   Script,
   Trending,
   MESSAGE_SEPARATOR,
+  MESSAGE_SEPARATOR_LENGTH,
 };
