@@ -7,7 +7,7 @@
 
 export class BACNetOptions {
   public apduTimeout: number = 1000;
-  public port: number = 47809;
-  public listenAddress: string = '0.0.0.0';
+  public port: number = 47808;
+  public interface: string = '0.0.0.0';
   public broadcastAddress: string;
 }
