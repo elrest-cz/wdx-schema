@@ -26,6 +26,7 @@ import {TCPOptions} from './TCPOptions';
 import {UDPOptions} from './UDPOptions';
 import {DataSourceOptions} from './DataSourceOptions';
 import {NodeREDInstance} from './NodeREDInstance';
+import {AlarmOptions} from './AlarmOptions';
 import {AlarmInstance} from './AlarmInstance';
 import {ControllerInstance} from './ControllerInstance';
 import {DataInstance} from './DataInstance';
@@ -77,4 +78,5 @@ export {
   JSSWorkspaceExecutionOptions,
   NodeREDExecutionOptions,
   WebSocketServerExecutionOptions,
+  AlarmOptions,
 };
