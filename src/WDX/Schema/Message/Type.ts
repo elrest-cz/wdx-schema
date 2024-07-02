@@ -166,4 +166,18 @@ export enum Type {
   TrendingStartResponse = 'TrendingStartResponse',
   TrendingStopRequest = 'TrendingStopRequest',
   TrendingStopResponse = 'TrendingStopResponse',
+
+
+  /**
+   * Alarming
+   */
+  AlarmingListRequest = 'AlarmingListRequest',
+  AlarmingListResponse = 'AlarmingListResponse',
+
+  AlarmingSetRequest = 'AlarmingSetRequest',
+  AlarmingSetResponse = 'AlarmingSetResponse',
+
+  AlarmingDeleteRequest = 'AlarmingDeleteRequest',
+  AlarmingDeleteResponse = 'AlarmingDeleteResponse',
+
 }
