@@ -16,6 +16,7 @@ import * as Repository from './Repository';
 import * as Runtime from './Runtime';
 import * as Script from './Script';
 import * as Trending from './Trending';
+import * as Alarm from './Alarm';
 import {MESSAGE_SEPARATOR} from './Separator';
 import {MESSAGE_SEPARATOR_LENGTH} from './Separator';
 
@@ -33,4 +34,5 @@ export {
   Trending,
   MESSAGE_SEPARATOR,
   MESSAGE_SEPARATOR_LENGTH,
+  Alarm,
 };
