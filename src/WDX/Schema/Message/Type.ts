@@ -22,11 +22,11 @@ export enum Type {
   DataProviderRequest = 'DataProviderRequest',
   DataProviderResponse = 'DataProviderResponse',
 
-  DataRegisterRequest = 'DataRegisterRequest',
-  DataRegisterResponse = 'DataRegisterResponse',
+  DataRegisterValueRequest = 'DataRegisterValueRequest',
+  DataRegisterValueResponse = 'DataRegisterValueResponse',
 
-  DataUnregisterRequest = 'DataUnregisterRequest',
-  DataUnregisterResponse = 'DataUnregisterResponse',
+  DataUnregisterValueRequest = 'DataUnregisterValueRequest',
+  DataUnregisterValueResponse = 'DataUnregisterValueResponse',
 
   DataRegisterSchemaChangesRequest = 'DataRegisterSchemaChangesRequest',
   DataRegisterSchemaChangesResponse = 'DataRegisterSchemaChangesResponse',
@@ -65,15 +65,6 @@ export enum Type {
 
   InstanceListRequest = 'InstanceListRequest',
   InstanceListResponse = 'InstanceListResponse',
-
-  /** Instance Monitor */
-  InstanceMonitor = 'InstanceMonitor',
-
-  InstanceMonitorSubscribeRequest = 'InstanceMonitorSubscribeRequest',
-  InstanceMonitorSubscribeResponse = 'InstanceMonitorSubscribeResponse',
-
-  InstanceMonitorUnsubscribeRequest = 'InstanceMonitorUnsubscribeRequest',
-  InstanceMonitorUnsubscribeResponse = 'InstanceMonitorUnsubscribeResponse',
 
   /** Instance Logs */
   InstanceLog = 'InstanceLog',

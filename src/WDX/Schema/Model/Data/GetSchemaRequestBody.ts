@@ -7,11 +7,11 @@
 
 export class GetSchemaRequestBody {
 
-	public static UNLIMITED_LEVEL: number = 1;
+	public static DEFAULT_LEVEL: number = 1;
 
 	constructor(
 		public path: string,
-		public level: number = GetSchemaRequestBody.UNLIMITED_LEVEL
+		public level: number = GetSchemaRequestBody.DEFAULT_LEVEL
 	) {
 	}
 }

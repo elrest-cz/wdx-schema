@@ -9,11 +9,13 @@
 
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
-import {Instance} from '../../Model/Instance';
 
 
 export class StartRequest extends AbstractMessage {
-    public type: Type = Type.InstanceStartRequest;
-    declare public body: Instance;
-  }
-  
+  public type: Type = Type.InstanceStartRequest;
+
+  /**
+   * Instance UUID
+   */
+  declare public body: string;
+}

@@ -7,22 +7,10 @@
 
 'use strict';
 
-import {MessageError} from '../MessageError';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
-import {Instance} from '../../Model/Instance';
-import {Status} from '../../Model/Instance/Status';
 
 export class ListRequest extends AbstractMessage {
   public type: Type = Type.InstanceListRequest;
-  declare public body: Array<Instance>;
-
-  constructor(
-      status?: Status,
-      namespace?: string,
-      uuid?: string,
-      error?: MessageError,
-  ) {
-    super(new Array<Instance>, uuid, error);
-  }
+  declare public body: null;
 }

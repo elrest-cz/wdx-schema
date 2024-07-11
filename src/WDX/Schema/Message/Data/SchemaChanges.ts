@@ -7,13 +7,10 @@
 'use strict';
 
 import {DataSchema} from '../../Model/Data';
-import {MessageError} from '../MessageError';
 import {Type} from '../Type';
 import {AbstractMessage} from './../AbstractMessage';
 
-
 export class SchemaChanges extends AbstractMessage {
   public type: Type = Type.DataSchemaChanges;
-
- declare public body?: DataSchema;
+  declare public body?: DataSchema;
 }

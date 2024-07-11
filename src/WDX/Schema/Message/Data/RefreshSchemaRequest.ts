@@ -5,12 +5,14 @@
  */
 'use strict';
 
-import {MessageError} from '../MessageError';
 import {AbstractMessage} from './../AbstractMessage';
 import {Type} from './../Type';
 
 export class RefreshSchemaRequest extends AbstractMessage {
   public type: Type = Type.DataRefreshSchemaRequest;
 
+  /**
+   * Data schema path
+   */
   declare public body: string;
 }

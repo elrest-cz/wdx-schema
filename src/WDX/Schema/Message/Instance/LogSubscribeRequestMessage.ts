@@ -8,8 +8,11 @@
 
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
-import {Instance} from '../../Model/Instance';
 export class LogSubscribeRequestMessage extends AbstractMessage {
   public type: Type = Type.InstanceLogSubscribeRequest;
-  declare public body: Instance;
+
+  /**
+   * Instance UUID
+   */
+  declare public body: string;
 }
