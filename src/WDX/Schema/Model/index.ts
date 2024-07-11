@@ -16,6 +16,7 @@ import * as Package from './Package';
 import * as Repository from './Repository';
 import * as Runtime from './Runtime';
 import * as Script from './Script';
+import * as Alarm from './Alarm';
 
 export {
   Data,
@@ -27,4 +28,5 @@ export {
   Repository,
   Runtime,
   Script,
+  Alarm,
 };

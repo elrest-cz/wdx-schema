@@ -6,11 +6,6 @@
 
 'use strict';
 
-import {MonitorInstance} from './MonitorInstance';
-import {MonitorSubscribeRequest} from './MonitorSubscribeRequest';
-import {MonitorSubscribeResponse} from './MonitorSubscribeResponse';
-import {MonitorUnsubscribeRequest} from './MonitorUnsubscribeRequest'
-import {MonitorUnsubscribeResponse} from './MonitorUnsubscribeResponse';
 import {IAm} from './IAm';
 import {InfoRequest} from './InfoRequest';
 import {InfoResponse} from './InfoResponse';
@@ -35,11 +30,6 @@ import {WhoIsRequest} from './WhoIsRequest';
 import {WhoIsResponse} from './WhoIsResponse';
 
 export {
-  MonitorInstance,
-  MonitorSubscribeRequest,
-  MonitorSubscribeResponse,
-  MonitorUnsubscribeRequest,
-  MonitorUnsubscribeResponse,
   IAm,
   InfoRequest,
   InfoResponse,

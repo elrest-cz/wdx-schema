@@ -7,11 +7,11 @@
 
 import { AbstractMessage } from './../AbstractMessage';
 import { Type } from './../Type';
-import { Data } from '../../Model/Data';
+import { Data, DataValue } from '../../Model/Data';
 
 export class DataUpdate extends AbstractMessage {
 
 	public type: Type = Type.DataUpdate;
 
-	declare public body: Data;
+	declare public body: DataValue;
 }

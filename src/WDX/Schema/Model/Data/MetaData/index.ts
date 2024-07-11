@@ -35,6 +35,9 @@ import {MetaDataMQTT} from './MetaDataMQTT';
 import {MetaDataMQTTAdapter} from './MetaDataMQTTAdapter';
 import {MetaDataMQTTProvider} from './MetaDataMQTTProvider';
 import {MetaDataROOT} from './MetaDataROOT';
+import {MetaDataAlarm} from './MetaDataAlarm';
+import {MetaDataAlarmAdapter} from './MetaDataAlarmAdapter';
+import {MetaDataAlarmProvider} from './MetaDataAlarmProvider';
 
 export {
   AbstractMetaData,
@@ -65,4 +68,7 @@ export {
   MetaDataMQTTAdapter,
   MetaDataMQTTProvider,
   MetaDataROOT,
+  MetaDataAlarm,
+  MetaDataAlarmAdapter,
+  MetaDataAlarmProvider,
 };

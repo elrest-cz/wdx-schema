@@ -12,10 +12,10 @@ import {UnregisterSchemaChangesRequest} from './UnregisterSchemaChangesRequest';
 import {UnregisterSchemaChangesResponse} from './UnregisterSchemaChangesResponse';
 import {RegisterProviderRequest} from './RegisterProviderRequest';
 import {RegisterProviderResponse} from './RegisterProviderResponse';
-import {RegisterRequest} from './RegisterRequest';
-import {RegisterResponse} from './RegisterResponse';
-import {UnregisterRequest} from './UnregisterRequest';
-import {UnregisterResponse} from './UnregisterResponse';
+import {RegisterValueRequest} from './RegisterValueRequest';
+import {RegisterValueResponse} from './RegisterValueResponse';
+import {UnregisterValueRequest} from './UnregisterValueRequest';
+import {UnregisterValueResponse} from './UnregisterValueResponse';
 import {SetValueRequest} from './SetValueRequest';
 import {SetValueResponse} from './SetValueResponse';
 import {GetValueRequest} from './GetValueRequest';
@@ -34,12 +34,12 @@ export {
   DataUpdate,
   RegisterProviderRequest,
   RegisterProviderResponse,
-  RegisterRequest,
-  RegisterResponse,
+  RegisterValueRequest,
+  RegisterValueResponse,
   RegisterSchemaChangesRequest,
   RegisterSchemaChangesResponse,
-  UnregisterRequest,
-  UnregisterResponse,
+  UnregisterValueRequest,
+  UnregisterValueResponse,
   UnregisterSchemaChangesRequest,
   UnregisterSchemaChangesResponse,
   SetValueRequest,
