@@ -41,6 +41,7 @@ import {JSScriptExecutionOptions} from './JSScriptExecutionOptions';
 import {JSSWorkspaceExecutionOptions} from './JSSWorkspaceExecutionOptions';
 import {NodeREDExecutionOptions} from './NodeREDExecutionOptions';
 import {WebSocketServerExecutionOptions} from './WebSocketServerExecutionOptions';
+import {InstanceOrigin} from './InstanceOrigin';
 
 export {
   Log,
@@ -79,4 +80,5 @@ export {
   NodeREDExecutionOptions,
   WebSocketServerExecutionOptions,
   AlarmOptions,
+  InstanceOrigin,
 };
