@@ -46,7 +46,7 @@ export class Instance {
 
       public name?: string,
 
-      public status?: Status,
+      public status: Status = Status.Offline,
 
       public executionOptions?: ExecutionOptions,
 
