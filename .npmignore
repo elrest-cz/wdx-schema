@@ -13,3 +13,4 @@ docs
 package-lock.json
 .eslintrc.js
 tsconfig.tsbuildinfo
+scripts
