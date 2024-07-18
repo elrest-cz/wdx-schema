@@ -7,9 +7,8 @@
 import {SpawnOptions} from 'child_process';
 import {WorkerOptions} from 'worker_threads';
 import {ExecutionMode} from './ExecutionMode';
-
-export class DataExecutionOptions {
+export class ExecutionOptions {
   public mode: ExecutionMode = ExecutionMode.worker;
-  public script: string = 'wdx-data';
-  public options: SpawnOptions|WorkerOptions;
+  public script: string;
+  public options: SpawnOptions|WorkerOptions|undefined;
 }
