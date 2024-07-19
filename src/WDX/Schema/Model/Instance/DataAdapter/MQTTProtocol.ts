@@ -10,8 +10,8 @@ export enum MQTTProtocol {
   wss = 'wss',
   mqtt = 'mqtt',
   mqtts = 'mqtts',
-  tcp = 'tcp',
-  ssl = 'ssl',
-  wx = 'wx',
-  wxs = 'wxs',
+  //tcp = 'tcp',
+  //ssl = 'ssl',
+  //wx = 'wx',
+  //wxs = 'wxs',
 }
