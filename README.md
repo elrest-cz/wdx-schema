@@ -1,3 +1,3 @@
-# eDesign Runtime IPC Typescript
+# WDX Schema Package
 
 (C) Copyright 2024 Elrest Automations Systeme GMBH

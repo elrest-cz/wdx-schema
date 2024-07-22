@@ -1,23 +1,24 @@
 {
 	"compilerOptions": {
 		"strictPropertyInitialization": false,
-		"tsBuildInfoFile": ".build.json",
 		"alwaysStrict": false,
-		"target": "ES2015",
+		"target": "ES2022",
 		"module": "CommonJS",
 		"lib": [
-			"ES2015"
+			"ES2022"
 		],
 		"allowJs": true,
 		"outDir": "build",
 		"rootDir": "src",
-		"strict": true,
+		"strict": false,
 		"noImplicitAny": true,
 		"esModuleInterop": true,
 		"resolveJsonModule": true,
 		"declaration": true,
 		"sourceMap": true,
 		"composite": true,
+		"removeComments": false,
+		"tsBuildInfoFile": ".build.json"
 	},
 	"exclude": [
 		"logs",
