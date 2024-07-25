@@ -6,6 +6,9 @@
  */
 'use strict';
 
+import {MQProtocol} from './MQProtocol';
+import {MQOptions} from './MQOptions';
+import {MQDataAdapterExecutionOptions} from './MQDataAdapterExecutionOptions';
 import {BACNetOptions} from './BACNetOptions';
 import {eWebOptions} from './eWebOptions';
 import {MODBUSOptions} from './MODBUSOptions';
@@ -26,6 +29,9 @@ import {ORMDataAdapterExecutionOptions} from './ORMDataAdapterExecutionOptions';
 import {VirtualDataAdapterExecutionOptions} from './VirtualDataAdapterExecutionOptions';
 
 export {
+  MQProtocol,
+  MQOptions,
+  MQDataAdapterExecutionOptions,
   BACNetOptions,
   eWebOptions,
   MODBUSOptions,

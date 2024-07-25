@@ -37,4 +37,6 @@ export enum Type {
   ORMDataAdapter = 'ORM',
 
   VirtualDataAdapter = 'Virtual',
+
+  MQDataAdapter = 'MessageQueue',
 }
