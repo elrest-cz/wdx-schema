@@ -9,6 +9,7 @@
 import {MQProtocol} from './MQProtocol';
 import {MQOptions} from './MQOptions';
 import {MQDataAdapterExecutionOptions} from './MQDataAdapterExecutionOptions';
+import {MQDataAdapterInstance} from './MQDataAdapterInstance';
 import {BACNetOptions} from './BACNetOptions';
 import {eWebOptions} from './eWebOptions';
 import {MODBUSOptions} from './MODBUSOptions';
@@ -32,6 +33,7 @@ export {
   MQProtocol,
   MQOptions,
   MQDataAdapterExecutionOptions,
+  MQDataAdapterInstance,
   BACNetOptions,
   eWebOptions,
   MODBUSOptions,
