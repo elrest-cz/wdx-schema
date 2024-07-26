@@ -11,4 +11,7 @@ export class MQOptions {
   public protocol: MQProtocol = MQProtocol.amqp;
   public host: string = '127.0.0.1';
   public port?: number;
+  public path?: string;
+  public user?: string;
+  public password?: string;
 }
