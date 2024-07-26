@@ -15,7 +15,7 @@ import {DataSourceOptions} from '../DataSourceOptions';
 export class MQDataAdapterInstance extends Instance {
   public code: string = Type.MQDataAdapter;
   public namespace: string = Type.MQDataAdapter;
-  public modbusOptions: MQOptions = new MQOptions();
+  public mqOptions: MQOptions = new MQOptions();
   public executionOptions?: MQDataAdapterExecutionOptions =
       new MQDataAdapterExecutionOptions();
   public dataSourceOptions?: DataSourceOptions =
