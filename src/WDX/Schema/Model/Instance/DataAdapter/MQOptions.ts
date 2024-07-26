@@ -10,7 +10,7 @@ import {MQProtocol} from './MQProtocol';
 export class MQOptions {
   public protocol: MQProtocol = MQProtocol.amqp;
   public host: string = '127.0.0.1';
-  public port?: number;
+  public port: number = 5672;
   public path?: string;
   public user?: string;
   public password?: string;
