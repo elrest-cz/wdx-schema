@@ -41,4 +41,6 @@ export enum Type {
   MQDataAdapter = 'MQ',
 
   OPCUADataAdapter = 'OPCUA',
+
+  APIServer = 'API',
 }
