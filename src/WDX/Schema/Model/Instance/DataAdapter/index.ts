@@ -28,6 +28,10 @@ import {MODBUSDataAdapterExecutionOptions} from './MODBUSDataAdapterExecutionOpt
 import {MQTTDataAdapterExecutionOptions} from './MQTTDataAdapterExecutionOptions';
 import {ORMDataAdapterExecutionOptions} from './ORMDataAdapterExecutionOptions';
 import {VirtualDataAdapterExecutionOptions} from './VirtualDataAdapterExecutionOptions';
+import {OPCUADataAdapterInstance} from './OPCUADataAdapterInstance';
+import {OPCUAOptions} from './OPCUAOptions';
+import {OPCUADataAdapterExecutionOptions} from './OPCUADataAdapterExecutionOptions';
+import {OPCUAProtocol} from './OPCUAProtocol';
 
 export {
   MQProtocol,
@@ -52,4 +56,8 @@ export {
   MQTTDataAdapterExecutionOptions,
   ORMDataAdapterExecutionOptions,
   VirtualDataAdapterExecutionOptions,
+  OPCUADataAdapterInstance,
+  OPCUAOptions,
+  OPCUADataAdapterExecutionOptions,
+  OPCUAProtocol,
 }

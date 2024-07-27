@@ -38,5 +38,7 @@ export enum Type {
 
   VirtualDataAdapter = 'Virtual',
 
-  MQDataAdapter = 'MessageQueue',
+  MQDataAdapter = 'MQ',
+
+  OPCUADataAdapter = 'OPCUA',
 }
