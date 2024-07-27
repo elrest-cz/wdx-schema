@@ -14,7 +14,7 @@ import {APIServerExecutionOptions} from './APIServerExecutionOptions';
 export class APIServerInstance extends Instance {
   public code: string = Type.APIServer;
   public namespace: string = Type.APIServer;
-  public webSocketServerOptions: APIServerOptions;
+  public options: APIServerOptions;
   public executionOptions: APIServerExecutionOptions =
       new APIServerExecutionOptions();
 }
