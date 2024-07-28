@@ -7,7 +7,6 @@
 
 export const PATH_SEPARATOR = '.';
 
-import { Data } from './Data';
 import { DataSchema } from './DataSchema';
 import * as MetaData from './MetaData';
 import { DataType } from './DataType';
@@ -19,7 +18,6 @@ import { UnregisterRequestBody } from './UnregisterRequestBody';
 import { UnregisterResponseBody } from './UnregisterResponseBody';
 
 export {
-	Data,
 	DataSchema,
 	MetaData,
 	DataType,
