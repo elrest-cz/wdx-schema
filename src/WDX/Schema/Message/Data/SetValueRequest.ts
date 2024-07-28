@@ -5,7 +5,7 @@
  */
 'use strict';
 
-import {Data, DataValue} from '../../Model/Data';
+import {DataValue} from '../../Model/Data';
 import {AbstractMessage} from './../AbstractMessage';
 import {Type} from './../Type';
 
