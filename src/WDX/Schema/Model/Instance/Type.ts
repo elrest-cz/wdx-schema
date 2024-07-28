@@ -37,4 +37,10 @@ export enum Type {
   ORMDataAdapter = 'ORM',
 
   VirtualDataAdapter = 'Virtual',
+
+  MQDataAdapter = 'MQ',
+
+  OPCUADataAdapter = 'OPCUA',
+
+  APIServer = 'API',
 }
