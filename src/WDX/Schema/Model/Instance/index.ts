@@ -45,6 +45,7 @@ import {InstanceOrigin} from './InstanceOrigin';
 import {APIServerInstance} from './APIServerInstance';
 import {APIServerOptions} from './APIServerOptions';
 import {APIServerExecutionOptions} from './APIServerExecutionOptions';
+import {InstanceMonitor} from './InstanceMonitor';
 
 export {
   APIServerInstance,
@@ -87,4 +88,5 @@ export {
   WebSocketServerExecutionOptions,
   AlarmOptions,
   InstanceOrigin,
+  InstanceMonitor,
 };
