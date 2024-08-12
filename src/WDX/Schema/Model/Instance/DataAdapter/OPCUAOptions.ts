@@ -5,10 +5,9 @@
  */
 'use strict';
 
-import { OPCUAProtocol } from "./OPCUAProtocol";
-
+import {OPCUAProtocol} from './OPCUAProtocol';
 export class OPCUAOptions {
-    public protocol: OPCUAProtocol = OPCUAProtocol.opctcp;
-    public host: string = '127.0.0.1';
-    public port: number = 26543;
+  public protocol: OPCUAProtocol = OPCUAProtocol.opctcp;
+  public host: string = '127.0.0.1';
+  public port: number = 49947;
 }
