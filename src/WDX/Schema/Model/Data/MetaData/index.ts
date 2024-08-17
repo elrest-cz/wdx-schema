@@ -38,9 +38,15 @@ import {MetaDataROOT} from './MetaDataROOT';
 import {MetaDataAlarm} from './MetaDataAlarm';
 import {MetaDataAlarmAdapter} from './MetaDataAlarmAdapter';
 import {MetaDataAlarmProvider} from './MetaDataAlarmProvider';
+import {MetaDataOPCUA} from './MetaDataOPCUA';
+import {MetaDataOPCUAAdapter} from './MetaDataOPCUAAdapter';
+import {MetaDataOPCUAProvider} from './MetaDataOPCUAProvider';
 
 export {
   AbstractMetaData,
+  MetaDataOPCUA,
+  MetaDataOPCUAAdapter,
+  MetaDataOPCUAProvider,
   MetaDataType,
   MetaDataAbstractAdapter,
   MetaDataAbstractProvider,

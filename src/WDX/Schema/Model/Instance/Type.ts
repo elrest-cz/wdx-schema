@@ -43,4 +43,6 @@ export enum Type {
   OPCUADataAdapter = 'OPCUA',
 
   APIServer = 'API',
+
+  BPMN = 'BPMN',
 }
