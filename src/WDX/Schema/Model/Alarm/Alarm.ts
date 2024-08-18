@@ -5,6 +5,8 @@
  */
 'use strict';
 
+import {AlarmCondition} from './AlarmCondition';
+
 export class Alarm {
   constructor(
       public id?: number,
@@ -13,6 +15,6 @@ export class Alarm {
       public status?: string,
       public createDateTime?: number,
       public updatedDateTime?: number,
-
+      public conditions?: AlarmCondition[],
   ) {}
 }

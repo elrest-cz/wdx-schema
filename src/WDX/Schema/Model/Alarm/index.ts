@@ -7,8 +7,12 @@
 
 import {Alarm} from './Alarm';
 import {Status} from './Status';
+import {AlarmCondition} from './AlarmCondition';
+import {AlarmConditionExpression} from './AlarmConditionExpression';
 
 export {
   Alarm,
   Status,
+  AlarmCondition,
+  AlarmConditionExpression,
 };
