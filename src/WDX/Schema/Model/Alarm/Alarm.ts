@@ -7,11 +7,12 @@
 
 export class Alarm {
   constructor(
-      public id: number,
-      public name: string,
-      public status: string,
-      public createDateTime: number,
-      public updatedDateTime: number,
+      public id?: number,
+      public name?: string,
+      public active?: boolean,
+      public status?: string,
+      public createDateTime?: number,
+      public updatedDateTime?: number,
 
   ) {}
 }
