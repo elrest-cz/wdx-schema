@@ -1,5 +1,5 @@
 /**
- * Elrest eDesign Runtime IPC Typescript Model Data
+ * Elrest eDesign Runtime IPC Typescript Model Alarm
  *
  * @copyright 2024 Elrest Automations Systeme GMBH
  */
