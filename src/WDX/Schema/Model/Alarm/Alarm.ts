@@ -7,6 +7,11 @@
 
 export class Alarm {
   constructor(
+      public id: number,
+      public name: string,
+      public status: string,
+      public createDateTime: number,
+      public updatedDateTime: number,
 
   ) {}
 }
