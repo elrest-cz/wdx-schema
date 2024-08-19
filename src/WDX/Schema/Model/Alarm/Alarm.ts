@@ -15,6 +15,9 @@ export class Alarm {
       public status?: string,
       public createDateTime: number = Date.now(),
       public updatedDateTime: number = createDateTime,
-      public conditions: AlarmCondition[] = [],
+      public conditions: AlarmCondition[] =
+          [
+            new AlarmCondition(),
+          ],
   ) {}
 }
