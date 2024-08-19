@@ -15,8 +15,8 @@ export class Trend {
       public name?: string,
       public active?: boolean,
 
-      public showLines?: boolean,
-      public showLabels?: boolean,
+      public showLines: boolean = true,
+      public showLabels: boolean = true,
 
       public intervalPicker?: boolean,
       public exportCurrentViewButton?: boolean,
@@ -29,8 +29,8 @@ export class Trend {
       public extendedTouchFeatures?: boolean,
       public zoom?: boolean,
 
-      public xAxis?: XAxis,
-      public yAxis?: YAxis[],
+      public xAxis: XAxis = new XAxis(),
+      public yAxis: YAxis[] = [new YAxis()],
 
   ) {}
 }
