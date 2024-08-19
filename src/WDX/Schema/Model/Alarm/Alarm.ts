@@ -13,8 +13,8 @@ export class Alarm {
       public name?: string,
       public active?: boolean,
       public status?: string,
-      public createDateTime?: number,
-      public updatedDateTime?: number,
-      public conditions?: AlarmCondition[],
+      public createDateTime: number = Date.now(),
+      public updatedDateTime: number = createDateTime,
+      public conditions: AlarmCondition[] = [],
   ) {}
 }
