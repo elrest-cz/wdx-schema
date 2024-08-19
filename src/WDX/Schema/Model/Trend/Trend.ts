@@ -32,8 +32,8 @@ export class Trend {
       public xAxis: XAxis = new XAxis(),
       public yAxis: YAxis[] = [new YAxis()],
 
-      public createDateTime?:number,
-      public updatedDateTime?:number,
+      public createDateTime: number = Date.now(),
+      public updatedDateTime: number = createDateTime,
 
   ) {}
 }
