@@ -9,8 +9,8 @@ import {AlarmConditionExpression} from './AlarmConditionExpression';
 
 export class AlarmCondition {
   constructor(
-      public path?: number,
-      public expression?: AlarmConditionExpression,
-      public value?: string,
+      public path: string,
+      public expression: AlarmConditionExpression,
+      public value: string,
   ) {}
 }
