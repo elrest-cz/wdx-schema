@@ -12,7 +12,9 @@ export class Alarm {
       public id?: number,
       public name?: string,
       public active?: boolean,
-      public status?: string,
+      public classification?: number,
+      public message?: string,
+      public number?: number,
       public createDateTime: number = Date.now(),
       public updatedDateTime: number = createDateTime,
       public conditions: AlarmCondition[] =
