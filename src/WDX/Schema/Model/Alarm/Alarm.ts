@@ -11,8 +11,7 @@ export class Alarm {
   constructor(
       public id?: number,
       public name?: string,
-      public active?: boolean,
-      public classification?: number,
+      public active: boolean = true,
       public message?: string,
       public number?: number,
       public createDateTime: number = Date.now(),
