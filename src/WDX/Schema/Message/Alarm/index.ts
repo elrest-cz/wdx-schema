@@ -11,6 +11,11 @@ import {DeleteRequest} from './DeleteRequest';
 import {DeleteResponse} from './DeleteResponse';
 import {SetRequest} from './SetRequest';
 import {SetResponse} from './SetResponse';
+import {Update} from './Update';
+import {SubscribeRequest} from './SubscribeRequest';
+import {SubscribeResponse} from './SubscribeResponse';
+import {UnsubscribeRequest} from './UnsubscribeRequest';
+import {UnsubscribeResponse} from './UnsubscribeResponse';
 
 export {
   ListRequest,
@@ -19,4 +24,9 @@ export {
   DeleteResponse,
   SetRequest,
   SetResponse,
+  SubscribeRequest,
+  SubscribeResponse,
+  UnsubscribeRequest,
+  UnsubscribeResponse,
+  Update,
 };

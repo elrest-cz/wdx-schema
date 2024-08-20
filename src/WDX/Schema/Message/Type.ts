@@ -153,6 +153,15 @@ export enum Type {
   /**
    * Trending
    */
+  TrendingListRequest = 'TrendingListRequest',
+  TrendingListResponse = 'TrendingListResponse',
+
+  TrendingSaveRequest = 'TrendingSaveRequest',
+  TrendingSaveResponse = 'TrendingSaveResponse',
+
+  TrendingDeleteRequest = 'TrendingDeleteRequest',
+  TrendingDeleteResponse = 'TrendingDeleteResponse',
+
   TrendingStartRequest = 'TrendingStartRequest',
   TrendingStartResponse = 'TrendingStartResponse',
   TrendingStopRequest = 'TrendingStopRequest',
@@ -170,5 +179,13 @@ export enum Type {
 
   AlarmingDeleteRequest = 'AlarmingDeleteRequest',
   AlarmingDeleteResponse = 'AlarmingDeleteResponse',
+
+  AlarmingSubscribeRequest = 'AlarmingSubscribeRequest',
+  AlarmingSubscribeResponse = 'AlarmingSubscribeResponse',
+
+  AlarmingUnsubscribeRequest = 'AlarmingUnsubscribeRequest',
+  AlarmingUnsubscribeResponse = 'AlarmingUnsubscribeResponse',
+
+  AlarmingUpdate = 'AlarmingUpdate',
 
 }
