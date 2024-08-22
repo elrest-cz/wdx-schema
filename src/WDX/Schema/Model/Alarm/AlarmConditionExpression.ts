@@ -12,5 +12,6 @@ export enum AlarmConditionExpression {
   LESS_EQUAL = '<=',
   GREATER = '>',
   GREATER_EQUAL = '>=',
-  REGEXP = 'Reg. expr.'
+  REGEXP = 'Reg. expr.',
+  IS_EMPTY = 'IS EMPTY',
 }

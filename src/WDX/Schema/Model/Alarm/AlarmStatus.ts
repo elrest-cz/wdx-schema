@@ -5,6 +5,7 @@
  */
 'use strict';
 
-export enum Status {
-	Confirmed = 'confirmed',
+export enum AlarmStatus {
+	Confirmed = 'Confirmed',
+	Unconfirmed = 'Unconfirmed',
 }
