@@ -174,6 +174,9 @@ export enum Type {
   AlarmingListRequest = 'AlarmingListRequest',
   AlarmingListResponse = 'AlarmingListResponse',
 
+  AlarmingListHistoryRequest = 'AlarmingListHistoryRequest',
+  AlarmingListHistoryResponse = 'AlarmingListHistoryResponse',
+
   AlarmingSetRequest = 'AlarmingSetRequest',
   AlarmingSetResponse = 'AlarmingSetResponse',
 

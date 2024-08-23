@@ -5,11 +5,12 @@
  */
 'use strict';
 
+import { Alarm } from './Alarm';
 import {AlarmCondition} from './AlarmCondition';
 import { AlarmStatus } from './AlarmStatus';
 import { AlarmType } from './AlarmType';
 
-export class AlarmHistory {
+export class AlarmHistory extends Alarm{
   constructor(
     public id?: number,
     public alarmId?: number,
@@ -29,5 +30,7 @@ export class AlarmHistory {
         [
           new AlarmCondition(),
         ],
-) {}
+) {
+  super();
+}
 }
