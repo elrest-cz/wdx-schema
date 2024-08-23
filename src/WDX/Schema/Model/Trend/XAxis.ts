@@ -5,9 +5,12 @@
  */
 'use strict';
 
+import {DefaultFormat} from './DefaultFormat';
+
 export class XAxis {
   constructor(
       public label?: string,
       public format?: string,
+      public defaultFormat: DefaultFormat = DefaultFormat.HumanReadable,
   ) {}
 }
