@@ -6,6 +6,7 @@
 'use strict';
 
 import {Alarm} from './Alarm';
+import {AlarmHistory} from './AlarmHistory';
 import {AlarmStatus} from './AlarmStatus';
 import {AlarmType} from './AlarmType';
 import {AlarmCondition} from './AlarmCondition';
@@ -13,6 +14,7 @@ import {AlarmConditionExpression} from './AlarmConditionExpression';
 
 export {
   Alarm,
+  AlarmHistory,
   AlarmStatus,
   AlarmCondition,
   AlarmType,

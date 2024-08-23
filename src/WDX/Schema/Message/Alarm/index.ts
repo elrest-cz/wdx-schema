@@ -7,6 +7,8 @@
 
 import {ListRequest} from './ListRequest';
 import {ListResponse} from './ListResponse';
+import {ListHistoryRequest} from './ListHistoryRequest';
+import {ListHistoryResponse} from './ListHistoryResponse';
 import {DeleteRequest} from './DeleteRequest';
 import {DeleteResponse} from './DeleteResponse';
 import {SetRequest} from './SetRequest';
@@ -20,6 +22,8 @@ import {UnsubscribeResponse} from './UnsubscribeResponse';
 export {
   ListRequest,
   ListResponse,
+  ListHistoryRequest,
+  ListHistoryResponse,
   DeleteRequest,
   DeleteResponse,
   SetRequest,
