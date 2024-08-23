@@ -162,11 +162,11 @@ export enum Type {
   TrendingDeleteRequest = 'TrendingDeleteRequest',
   TrendingDeleteResponse = 'TrendingDeleteResponse',
 
-  TrendingStartRequest = 'TrendingStartRequest',
-  TrendingStartResponse = 'TrendingStartResponse',
-  TrendingStopRequest = 'TrendingStopRequest',
-  TrendingStopResponse = 'TrendingStopResponse',
+  TrendingSubscribeRequest = 'TrendingSubscribeRequest',
+  TrendingSubscribeResponse = 'TrendingSubscribeResponse',
 
+  TrendingUnsubscribeRequest = 'TrendingUnsubscribeRequest',
+  TrendingUnsubscribeResponse = 'TrendingUnsubscribeResponse',
 
   /**
    * Alarming
