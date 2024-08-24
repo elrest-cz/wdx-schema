@@ -11,7 +11,7 @@ import {Type} from '../Type';
 
 
 export class ListResponse extends AbstractMessage {
-  public type: Type = Type.AlarmingListResponse;
+  public type: Type = Type.TrendingListResponse;
 
   declare public body: Array<Trend>;
 }
