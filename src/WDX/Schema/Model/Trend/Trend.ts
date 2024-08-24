@@ -13,7 +13,7 @@ export class Trend {
   constructor(
       public id?: number,
       public name?: string,
-      public active?: boolean,
+      public active: boolean =true,
 
       public showLines: boolean = true,
       public showLabels: boolean = true,
