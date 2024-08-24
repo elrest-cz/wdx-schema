@@ -17,6 +17,6 @@ export class YAxis {
       public position: YAxisPostion = YAxisPostion.LEFT,
       public format?: string,
       public color?: string,
-      public visible?: boolean,
+      public visible: boolean = true,
   ) {}
 }
