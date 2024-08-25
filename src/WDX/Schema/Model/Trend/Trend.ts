@@ -21,7 +21,6 @@ export class Trend {
       public intervalPicker?: boolean,
       public exportCurrentViewButton?: boolean,
       public exportFullDataButton?: boolean,
-      public configureDatasets?: boolean,
       public resetButton?: boolean,
 
       public legend?: boolean,
