@@ -7,13 +7,18 @@
 
 import {XAxis} from './XAxis';
 import {YAxis} from './YAxis';
+import {DataSet} from './DataSet';
 
 
 export class Trend {
   constructor(
       public id?: number,
       public name?: string,
-      public active: boolean =true,
+      /**
+       * Data pool interval
+       */
+      public dataPoolInterval: number = 1,
+      public active: boolean = true,
 
       public showLines: boolean = true,
       public showLabels: boolean = true,
@@ -30,6 +35,7 @@ export class Trend {
 
       public xAxis: XAxis = new XAxis(),
       public yAxis: YAxis[] = [new YAxis()],
+      public dataSet: DataSet[] = [new DataSet()],
 
       public createDateTime: number = Date.now(),
       public updatedDateTime: number = createDateTime,

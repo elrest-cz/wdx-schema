@@ -5,18 +5,14 @@
  */
 'use strict';
 
-import {YAxisPostion} from './YAxisPostion';
-
-export class YAxis {
+export class DataSet {
   constructor(
       public id?: number,
       public name?: string,
       public label?: string,
-      public min?: number,
-      public max?: number,
-      public position: YAxisPostion = YAxisPostion.LEFT,
-      public format?: string,
       public color?: string,
-      public visible: boolean = true,
+      public yAxis?: number,
+      public enabled: boolean = false,
+      public visible: boolean = false,
   ) {}
 }
