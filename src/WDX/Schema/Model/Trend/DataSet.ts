@@ -10,6 +10,7 @@ export class DataSet {
       public id?: number,
       public name?: string,
       public label?: string,
+      public dataSchemaPath?: string,
       public color?: string,
       public yAxis?: number,
       public enabled: boolean = false,
