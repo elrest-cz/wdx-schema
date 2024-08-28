@@ -6,6 +6,9 @@
 'use strict';
 
 export enum AlarmStatus {
-	Confirmed = 'Confirmed',
-	Unconfirmed = 'Unconfirmed',
+	COMES = 'COMES',
+	GONE = 'GONE',
+	GONENOTACK = 'GONE',
+	ACKNOTGONE= 'ACKNOTGONE',
+	GONEANDACK='GONEANDACK',
 }

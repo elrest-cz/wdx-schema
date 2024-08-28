@@ -9,7 +9,6 @@ import {XAxis} from './XAxis';
 import {YAxis} from './YAxis';
 import {DataSet} from './DataSet';
 
-
 export class Trend {
   constructor(
       public id?: number,
@@ -17,7 +16,7 @@ export class Trend {
       /**
        * Data pool interval
        */
-      public dataPoolInterval: number = 1,
+      public dataPoolInterval: number = 1000,
       public active: boolean = true,
 
       public showLines: boolean = true,
@@ -39,6 +38,5 @@ export class Trend {
 
       public createDateTime: number = Date.now(),
       public updatedDateTime: number = createDateTime,
-
   ) {}
 }

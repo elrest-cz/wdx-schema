@@ -11,9 +11,11 @@ import {AlarmStatus} from './AlarmStatus';
 import {AlarmType} from './AlarmType';
 import {AlarmCondition} from './AlarmCondition';
 import {AlarmConditionExpression} from './AlarmConditionExpression';
+import {AlarmUpdate} from './AlarmUpdate';
 
 export {
   Alarm,
+  AlarmUpdate,
   AlarmHistory,
   AlarmStatus,
   AlarmCondition,
