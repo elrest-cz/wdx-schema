@@ -24,9 +24,6 @@ export class Alarm {
       public correction?: string,
       public createDateTime: number = Date.now(),
       public updatedDateTime: number = createDateTime,
-      public conditions: AlarmCondition[] =
-          [
-            new AlarmCondition(),
-          ],
+      public conditions: AlarmCondition[] = [],
   ) {}
 }
