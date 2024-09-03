@@ -7,13 +7,10 @@
 
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
+import {Trend} from '../../Model/Trend';
 
+export class SetRequest extends AbstractMessage {
+  public type: Type = Type.TrendingSaveRequest;
 
-export class ListRequest extends AbstractMessage {
-  public type: Type = Type.AlarmingListRequest;
-
-  /**
-   * Indicates alarm active true|false or undefined
-   */
-  declare public body:boolean|undefined;
+  declare public body: Trend;
 }

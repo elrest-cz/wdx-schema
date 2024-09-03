@@ -5,15 +5,13 @@
  */
 'use strict';
 
+import {Trend} from '../../Model/Trend';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
 
-export class ListRequest extends AbstractMessage {
-  public type: Type = Type.AlarmingListRequest;
+export class ListResponse extends AbstractMessage {
+  public type: Type = Type.TrendingListResponse;
 
-  /**
-   * Indicates alarm active true|false or undefined
-   */
-  declare public body:boolean|undefined;
+  declare public body: Array<Trend>;
 }

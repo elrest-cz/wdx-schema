@@ -9,11 +9,8 @@ import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
 
-export class ListRequest extends AbstractMessage {
-  public type: Type = Type.AlarmingListRequest;
+export class DeleteRequest extends AbstractMessage {
+  public type: Type = Type.TrendingDeleteRequest;
 
-  /**
-   * Indicates alarm active true|false or undefined
-   */
-  declare public body:boolean|undefined;
+  declare public body: number;
 }
