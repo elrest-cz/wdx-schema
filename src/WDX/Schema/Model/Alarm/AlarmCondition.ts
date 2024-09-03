@@ -9,8 +9,11 @@ import {AlarmConditionExpression} from './AlarmConditionExpression';
 
 export class AlarmCondition {
   constructor(
+      public id?: number,
       public path?: string,
       public expression?: AlarmConditionExpression,
       public value?: string,
+      public createDateTime: number = Date.now(),
+      public updatedDateTime: number = createDateTime,
   ) {}
 }

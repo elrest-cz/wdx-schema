@@ -6,6 +6,7 @@
 'use strict';
 
 import {AlarmCondition} from './AlarmCondition';
+import { AlarmHistory } from './AlarmHistory';
 import {AlarmStatus} from './AlarmStatus';
 import {AlarmType} from './AlarmType';
 
@@ -25,5 +26,6 @@ export class Alarm {
       public createDateTime: number = Date.now(),
       public updatedDateTime: number = createDateTime,
       public conditions: AlarmCondition[] = [],
+      public history: AlarmHistory[] = [],
   ) {}
 }

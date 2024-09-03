@@ -9,6 +9,7 @@ import {YAxisPostion} from './YAxisPostion';
 
 export class YAxis {
   constructor(
+      public uuid?: string,
       public id?: number,
       public name?: string,
       public label?: string,
