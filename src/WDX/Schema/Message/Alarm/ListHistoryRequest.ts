@@ -7,8 +7,6 @@
 
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
-
-
 export class ListHistoryRequest extends AbstractMessage {
   public type: Type = Type.AlarmingListHistoryRequest;
   declare public body: number|undefined;

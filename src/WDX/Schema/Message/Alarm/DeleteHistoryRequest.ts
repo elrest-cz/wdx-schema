@@ -5,11 +5,10 @@
  */
 'use strict';
 
-import {AlarmHistory} from '../../Model/Alarm/AlarmHistory';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
-export class ListHistoryResponse extends AbstractMessage {
-  public type: Type = Type.AlarmingListHistoryResponse;
 
-  declare public body: Array<AlarmHistory>;
+export class DeleteHistoryRequest extends AbstractMessage {
+  public type: Type = Type.AlarmingDeleteHistoryRequest;
+  declare public body: number|undefined;
 }
