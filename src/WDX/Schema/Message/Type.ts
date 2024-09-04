@@ -153,11 +153,20 @@ export enum Type {
   /**
    * Trending
    */
-  TrendingStartRequest = 'TrendingStartRequest',
-  TrendingStartResponse = 'TrendingStartResponse',
-  TrendingStopRequest = 'TrendingStopRequest',
-  TrendingStopResponse = 'TrendingStopResponse',
+  TrendingListRequest = 'TrendingListRequest',
+  TrendingListResponse = 'TrendingListResponse',
 
+  TrendingSaveRequest = 'TrendingSaveRequest',
+  TrendingSaveResponse = 'TrendingSaveResponse',
+
+  TrendingDeleteRequest = 'TrendingDeleteRequest',
+  TrendingDeleteResponse = 'TrendingDeleteResponse',
+
+  TrendingSubscribeRequest = 'TrendingSubscribeRequest',
+  TrendingSubscribeResponse = 'TrendingSubscribeResponse',
+
+  TrendingUnsubscribeRequest = 'TrendingUnsubscribeRequest',
+  TrendingUnsubscribeResponse = 'TrendingUnsubscribeResponse',
 
   /**
    * Alarming
@@ -165,10 +174,24 @@ export enum Type {
   AlarmingListRequest = 'AlarmingListRequest',
   AlarmingListResponse = 'AlarmingListResponse',
 
+  AlarmingListHistoryRequest = 'AlarmingListHistoryRequest',
+  AlarmingListHistoryResponse = 'AlarmingListHistoryResponse',
+
+  AlarmingDeleteHistoryRequest = 'AlarmingDeleteHistoryRequest',
+  AlarmingDeleteHistoryResponse = 'AlarmingDeleteHistoryResponse',
+
   AlarmingSetRequest = 'AlarmingSetRequest',
   AlarmingSetResponse = 'AlarmingSetResponse',
 
   AlarmingDeleteRequest = 'AlarmingDeleteRequest',
   AlarmingDeleteResponse = 'AlarmingDeleteResponse',
+
+  AlarmingSubscribeRequest = 'AlarmingSubscribeRequest',
+  AlarmingSubscribeResponse = 'AlarmingSubscribeResponse',
+
+  AlarmingUnsubscribeRequest = 'AlarmingUnsubscribeRequest',
+  AlarmingUnsubscribeResponse = 'AlarmingUnsubscribeResponse',
+
+  AlarmingUpdate = 'AlarmingUpdate',
 
 }

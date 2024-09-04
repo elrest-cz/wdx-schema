@@ -6,6 +6,10 @@
  */
 'use strict';
 
+import {MQProtocol} from './MQProtocol';
+import {MQOptions} from './MQOptions';
+import {MQDataAdapterExecutionOptions} from './MQDataAdapterExecutionOptions';
+import {MQDataAdapterInstance} from './MQDataAdapterInstance';
 import {BACNetOptions} from './BACNetOptions';
 import {eWebOptions} from './eWebOptions';
 import {MODBUSOptions} from './MODBUSOptions';
@@ -24,8 +28,16 @@ import {MODBUSDataAdapterExecutionOptions} from './MODBUSDataAdapterExecutionOpt
 import {MQTTDataAdapterExecutionOptions} from './MQTTDataAdapterExecutionOptions';
 import {ORMDataAdapterExecutionOptions} from './ORMDataAdapterExecutionOptions';
 import {VirtualDataAdapterExecutionOptions} from './VirtualDataAdapterExecutionOptions';
+import {OPCUADataAdapterInstance} from './OPCUADataAdapterInstance';
+import {OPCUAOptions} from './OPCUAOptions';
+import {OPCUADataAdapterExecutionOptions} from './OPCUADataAdapterExecutionOptions';
+import {OPCUAProtocol} from './OPCUAProtocol';
 
 export {
+  MQProtocol,
+  MQOptions,
+  MQDataAdapterExecutionOptions,
+  MQDataAdapterInstance,
   BACNetOptions,
   eWebOptions,
   MODBUSOptions,
@@ -44,4 +56,8 @@ export {
   MQTTDataAdapterExecutionOptions,
   ORMDataAdapterExecutionOptions,
   VirtualDataAdapterExecutionOptions,
+  OPCUADataAdapterInstance,
+  OPCUAOptions,
+  OPCUADataAdapterExecutionOptions,
+  OPCUAProtocol,
 }

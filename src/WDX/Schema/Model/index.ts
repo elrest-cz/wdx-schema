@@ -17,6 +17,7 @@ import * as Repository from './Repository';
 import * as Runtime from './Runtime';
 import * as Script from './Script';
 import * as Alarm from './Alarm';
+import * as Trend from './Trend';
 
 export {
   Data,
@@ -29,4 +30,5 @@ export {
   Runtime,
   Script,
   Alarm,
+  Trend,
 };

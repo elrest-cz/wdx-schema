@@ -55,4 +55,10 @@ export enum MetaDataType {
 
   ANY = 'any',
 
+  OPCUA = 'OPCUA',
+
+  OPCUA_ADAPTER = 'OPCUA_ADAPTER',
+
+  OPCUA_PROVIDER = 'OPCUA_PROVIDER',
+
 }

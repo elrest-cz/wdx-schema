@@ -42,8 +42,15 @@ import {JSSWorkspaceExecutionOptions} from './JSSWorkspaceExecutionOptions';
 import {NodeREDExecutionOptions} from './NodeREDExecutionOptions';
 import {WebSocketServerExecutionOptions} from './WebSocketServerExecutionOptions';
 import {InstanceOrigin} from './InstanceOrigin';
+import {APIServerInstance} from './APIServerInstance';
+import {APIServerOptions} from './APIServerOptions';
+import {APIServerExecutionOptions} from './APIServerExecutionOptions';
+import {InstanceMonitor} from './InstanceMonitor';
 
 export {
+  APIServerInstance,
+  APIServerOptions,
+  APIServerExecutionOptions,
   Log,
   LogDate,
   WSProtocol,
@@ -81,4 +88,5 @@ export {
   WebSocketServerExecutionOptions,
   AlarmOptions,
   InstanceOrigin,
+  InstanceMonitor,
 };

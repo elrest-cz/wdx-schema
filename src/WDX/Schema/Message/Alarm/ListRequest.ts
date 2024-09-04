@@ -12,5 +12,8 @@ import {Type} from '../Type';
 export class ListRequest extends AbstractMessage {
   public type: Type = Type.AlarmingListRequest;
 
-  declare public body:null;
+  /**
+   * Indicates alarm active true|false or undefined
+   */
+  declare public body:boolean|undefined;
 }
