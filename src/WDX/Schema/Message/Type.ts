@@ -183,6 +183,9 @@ export enum Type {
   AlarmingSetRequest = 'AlarmingSetRequest',
   AlarmingSetResponse = 'AlarmingSetResponse',
 
+  AlarmingConfirmRequest = 'AlarmingConfirmRequest',
+  AlarmingConfirmResponse = 'AlarmingConfirmResponse',
+
   AlarmingDeleteRequest = 'AlarmingDeleteRequest',
   AlarmingDeleteResponse = 'AlarmingDeleteResponse',
 
