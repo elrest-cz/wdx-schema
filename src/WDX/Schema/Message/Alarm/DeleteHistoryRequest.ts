@@ -10,5 +10,8 @@ import {Type} from '../Type';
 
 export class DeleteHistoryRequest extends AbstractMessage {
   public type: Type = Type.AlarmingDeleteHistoryRequest;
-  declare public body: number|undefined;
+  declare public body: {
+    alarmId?: number,
+    alarmHistoryId?: number,
+  };
 }
