@@ -5,6 +5,8 @@
  */
 'use strict';
 
+import {ConfirmRequest} from './ConfirmRequest';
+import {ConfirmResponse} from './ConfirmResponse';
 import {ListRequest} from './ListRequest';
 import {ListResponse} from './ListResponse';
 import {ListHistoryRequest} from './ListHistoryRequest';
@@ -22,6 +24,8 @@ import {UnsubscribeRequest} from './UnsubscribeRequest';
 import {UnsubscribeResponse} from './UnsubscribeResponse';
 
 export {
+  ConfirmRequest,
+  ConfirmResponse,
   ListRequest,
   ListResponse,
   ListHistoryRequest,
