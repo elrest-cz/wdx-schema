@@ -8,10 +8,8 @@
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
-export class DeleteHistoryRequest extends AbstractMessage {
-  public type: Type = Type.AlarmingDeleteHistoryRequest;
-  declare public body: {
-    alarmId?: number,
-    alarmHistoryId?: number,
-  };
+
+export class ConfirmRequest extends AbstractMessage {
+  public type: Type = Type.AlarmingConfirmRequest;
+  declare public body: number|undefined;
 }

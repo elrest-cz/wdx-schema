@@ -14,9 +14,6 @@ export class AlarmHistory {
       public id?: number,
       public alarmId?: number,
       public name?: string,
-      public active: boolean = true,
-      public message?: string,
-      public messageOff?: string,
       public number?: number,
       public type?: AlarmType,
       public status?: AlarmStatus,
@@ -25,9 +22,5 @@ export class AlarmHistory {
       public correction?: string,
       public createDateTime: number = Date.now(),
       public updatedDateTime: number = createDateTime,
-      public conditions: AlarmCondition[] =
-          [
-            new AlarmCondition(),
-          ],
   ) {}
 }
