@@ -5,11 +5,12 @@
  */
 'use strict';
 
+import {v4 as uuidv4} from 'uuid';
 import {YAxisPostion} from './YAxisPostion';
 
 export class YAxis {
   constructor(
-      public uuid?: string,
+      public uuid: string = uuidv4(),
       public id?: number,
       public name?: string,
       public label?: string,

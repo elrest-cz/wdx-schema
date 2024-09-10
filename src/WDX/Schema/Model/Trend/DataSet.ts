@@ -12,6 +12,9 @@ export class DataSet {
       public label?: string,
       public dataSchemaPath?: string,
       public color?: string,
+      /**
+       * Y-Axis uuid
+       */
       public yAxis?: string,
       public enabled: boolean = false,
       public visible: boolean = false,
