@@ -5,7 +5,7 @@
  */
 'use strict';
 
-import { MQTTProtocol } from "./MQTTProtocol";
+import {MQTTProtocol} from './MQTTProtocol';
 
 
 export class MQTTOptions {

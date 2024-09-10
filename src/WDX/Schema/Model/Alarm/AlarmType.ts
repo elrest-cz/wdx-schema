@@ -19,4 +19,10 @@ export enum AlarmType {
 
   ERROR_WITHOUT_ACK = 'error-no-ack',
 
+  ERROR_GONE_WITH_ACK = 'error-gone-with-ack',
+
+  WARNING_GONE_WITH_ACK = 'warning-gone-with-ack',
+
+  INFO_GONE_WITH_ACK = 'info-gone-with-ack',
+
 }
