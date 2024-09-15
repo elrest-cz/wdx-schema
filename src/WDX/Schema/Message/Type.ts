@@ -168,6 +168,8 @@ export enum Type {
   TrendingUnsubscribeRequest = 'TrendingUnsubscribeRequest',
   TrendingUnsubscribeResponse = 'TrendingUnsubscribeResponse',
 
+  TrendingUpdate = 'TrendingUpdate',
+
   /**
    * Alarming
    */
