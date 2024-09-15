@@ -11,8 +11,10 @@ import {YAxis} from './YAxis';
 import {DataSet} from './DataSet';
 import {YAxisPostion} from './YAxisPostion';
 import {DefaultFormat} from './DefaultFormat';
+import * as Graph from './Graph';
 
 export {
+  Graph,
   Trend,
   XAxis,
   YAxis,

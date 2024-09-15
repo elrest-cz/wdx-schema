@@ -15,6 +15,7 @@ import {SubscribeRequest} from './SubscribeRequest';
 import {SubscribeResponse} from './SubscribeResponse';
 import {UnsubscribeRequest} from './UnsubscribeRequest';
 import {UnsubscribeResponse} from './UnsubscribeResponse';
+import {Update} from './Update';
 
 export {
   DeleteRequest,
@@ -27,4 +28,5 @@ export {
   SubscribeResponse,
   UnsubscribeRequest,
   UnsubscribeResponse,
+  Update,
 }

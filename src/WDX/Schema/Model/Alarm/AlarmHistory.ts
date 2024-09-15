@@ -21,6 +21,5 @@ export class AlarmHistory {
       public reaction?: string,
       public correction?: string,
       public createDateTime: number = Date.now(),
-      public updatedDateTime: number = createDateTime,
   ) {}
 }

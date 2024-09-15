@@ -21,5 +21,6 @@ export class DataSet {
       public yAxis?: string,
       public enabled: boolean = false,
       public visible: boolean = false,
+      public valueSnapshot?: string|undefined,
   ) {}
 }
