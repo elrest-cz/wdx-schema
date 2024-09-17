@@ -14,6 +14,7 @@ export class AlarmHistory {
       public id?: number,
       public alarmId?: number,
       public name?: string,
+      public active?: boolean,
       public number?: number,
       public type?: AlarmType,
       public status?: AlarmStatus,
