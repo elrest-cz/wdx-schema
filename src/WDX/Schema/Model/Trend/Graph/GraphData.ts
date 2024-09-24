@@ -9,7 +9,7 @@ import { GraphDataSet } from "./GraphDataSet";
 
 export class GraphData {
   constructor(
-     labels: string[],
-     datasets:GraphDataSet[]
+     public labels: string[],
+     public datasets:GraphDataSet[]
   ) {}
 }
