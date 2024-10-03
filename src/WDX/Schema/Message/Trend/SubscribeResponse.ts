@@ -5,11 +5,11 @@
  */
 'use strict';
 
+import {GraphData} from '../../Model/Trend/Graph/GraphData';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
 export class SubscribeResponse extends AbstractMessage {
   public type: Type = Type.TrendingSubscribeResponse;
-
-  declare public body: null;
+  declare public body?: GraphData;
 }
