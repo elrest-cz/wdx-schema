@@ -7,5 +7,7 @@
 
 export class GraphDataSet {
   constructor(
+      public uuid: string,
+      public data: Array<any>,
   ) {}
 }

@@ -5,11 +5,12 @@
  */
 'use strict';
 
-import { GraphDataSet } from "./GraphDataSet";
+import {GraphDataSet} from './GraphDataSet';
 
 export class GraphData {
   constructor(
-     labels: string[],
-     datasets:GraphDataSet[]
+      public trendId: number,
+      public labels: string[],
+      public datasets: GraphDataSet[],
   ) {}
 }
