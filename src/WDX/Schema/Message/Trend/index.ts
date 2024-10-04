@@ -16,6 +16,8 @@ import {SubscribeResponse} from './SubscribeResponse';
 import {UnsubscribeRequest} from './UnsubscribeRequest';
 import {UnsubscribeResponse} from './UnsubscribeResponse';
 import {Update} from './Update';
+import {GraphConfigurationRequest} from './GraphConfigurationRequest';
+import {GraphConfigurationResponse} from './GraphConfigurationResponse';
 
 export {
   DeleteRequest,
@@ -29,4 +31,6 @@ export {
   UnsubscribeRequest,
   UnsubscribeResponse,
   Update,
+  GraphConfigurationRequest,
+  GraphConfigurationResponse,
 }
