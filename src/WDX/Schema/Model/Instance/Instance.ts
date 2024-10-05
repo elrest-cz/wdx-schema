@@ -5,6 +5,7 @@
  */
 'use strict'
 
+import {v4 as uuidv4} from 'uuid';
 import{Status} from './Status';
 import {ExecutionOptions} from './ExecutionOptions';
 import {RestartOptions} from './RestartOptions';
@@ -17,7 +18,7 @@ import {ResourceUsage} from './ResourceUsage';
 import {LogLevel} from './LogLevel';
 
 export class Instance {
-  public uuid: string = '';
+  public uuid: string;
 
   public code: string;
 
@@ -42,7 +43,7 @@ export class Instance {
   public logOptions: LogOptions;
 
   constructor(
-      uuid: string = '',
+      uuid: string =  uuidv4(),
 
       public name?: string,
 
