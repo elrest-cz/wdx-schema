@@ -170,8 +170,14 @@ export enum Type {
 
   TrendingUpdate = 'TrendingUpdate',
 
-  TrenddingGraphConfigurationRequest = 'TrenddingGraphConfigurationRequest',
-  TrenddingGraphConfigurationResponse = 'TrenddingGraphConfigurationResponse',
+  TrendingGraphConfigurationRequest = 'TrendingGraphConfigurationRequest',
+  TrendingGraphConfigurationResponse = 'TrendingGraphConfigurationResponse',
+
+  TrendingGraphDataRequest = 'TrendingGraphDataRequest',
+  TrendingGraphDataResponse = 'TrendingGraphDataResponse',
+
+  TrendingExportRequest = 'TrendingExportRequest',
+  TrendingExportResponse = 'TrendingExportResponse',
 
   /**
    * Alarming

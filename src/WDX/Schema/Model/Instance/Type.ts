@@ -8,6 +8,8 @@
 
 export enum Type {
 
+  AuthServer = 'AuthServer',
+
   Alarm = 'Alarm',
 
   Controller = 'WDX',

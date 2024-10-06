@@ -18,6 +18,10 @@ import {UnsubscribeResponse} from './UnsubscribeResponse';
 import {Update} from './Update';
 import {GraphConfigurationRequest} from './GraphConfigurationRequest';
 import {GraphConfigurationResponse} from './GraphConfigurationResponse';
+import {GraphDataRequest} from './GraphDataRequest';
+import {GraphDataResponse} from './GraphDataResponse';
+import {TrendExportRequest} from './TrendExportRequest';
+import {TrendExportResponse} from './TrendExportResponse';
 
 export {
   DeleteRequest,
@@ -33,4 +37,8 @@ export {
   Update,
   GraphConfigurationRequest,
   GraphConfigurationResponse,
+  GraphDataRequest,
+  GraphDataResponse,
+  TrendExportRequest,
+  TrendExportResponse,
 }
