@@ -13,6 +13,7 @@ import {YAxisPostion} from './YAxisPostion';
 import {DefaultFormat} from './DefaultFormat';
 import * as Graph from './Graph';
 import * as Export from './Export';
+import {ExportRequestBody} from './ExportRequestBody';
 
 export {
   Graph,
@@ -23,4 +24,5 @@ export {
   DataSet,
   YAxisPostion,
   DefaultFormat,
+  ExportRequestBody,
 };
