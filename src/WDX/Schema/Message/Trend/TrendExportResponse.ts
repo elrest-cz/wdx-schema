@@ -9,6 +9,6 @@ import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
 export class TrendExportResponse extends AbstractMessage {
-  public type: Type = Type.TrendingExportRequest;
+  public type: Type = Type.TrendingExportResponse;
   declare public body: string;
 }
