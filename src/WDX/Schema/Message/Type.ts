@@ -208,4 +208,21 @@ export enum Type {
 
   AlarmingUpdate = 'AlarmingUpdate',
 
+  AuthLogin = 'AuthLogin',
+  AuthLogout = 'AuthLogout',
+
+  AccessUserListRequest = 'AccessUserListRequest',
+  AccessUserListResponse = 'AccessUserListResponse',
+  AccessUserSaveRequest = 'AccessUserSaveRequest',
+  AccessUserSaveResponse = 'AccessUserSaveResponse',
+  AccessUserDeleteRequest = 'AccessUserDeleteRequest',
+  AccessUserDeleteResponse = 'AccessUserDeleteResponse',
+
+  AccessRoleListRequest = 'AccessRoleListRequest',
+  AccessRoleListResponse = 'AccessRoleListResponse',
+  AccessRoleSaveRequest = 'AccessRoleSaveRequest',
+  AccessRoleSaveResponse = 'AccessRoleSaveResponse',
+  AccessRoleDeleteRequest = 'AccessRoleDeleteRequest',
+  AccessRoleDeleteResponse = 'AccessRoleDeleteResponse',
+
 }
