@@ -7,9 +7,6 @@
 
 'use strict';
 
-
-'use strict';
-
 import * as User from './User';
 import * as Role from './Role';
 import * as Resource from './Resource';

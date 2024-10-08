@@ -5,20 +5,23 @@
  */
 'use strict';
 
-import {Type} from './Type';
+import {MESSAGE_SEPARATOR} from './Separator';
+import {MESSAGE_SEPARATOR_LENGTH} from './Separator';
 import {AbstractMessage} from './AbstractMessage';
-import {KeepAlive} from './KeepAlive';
 import {MessageError} from './MessageError';
+import {KeepAlive} from './KeepAlive';
+import {Type} from './Type';
 import * as Data from './Data';
 import * as Instance from './Instance';
 import * as Runtime from './Runtime';
 import * as Script from './Script';
 import * as Trend from './Trend';
 import * as Alarm from './Alarm';
-import {MESSAGE_SEPARATOR} from './Separator';
-import {MESSAGE_SEPARATOR_LENGTH} from './Separator';
+import * as Access from './Access';
 
 export {
+  MESSAGE_SEPARATOR,
+  MESSAGE_SEPARATOR_LENGTH,
   AbstractMessage,
   MessageError,
   KeepAlive,
@@ -28,7 +31,6 @@ export {
   Runtime,
   Script,
   Trend,
-  MESSAGE_SEPARATOR,
-  MESSAGE_SEPARATOR_LENGTH,
   Alarm,
+  Access,
 };
