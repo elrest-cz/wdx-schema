@@ -11,7 +11,7 @@ import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 import {Instance} from '../../Model/Instance';
 
-export class InfoResponse extends AbstractMessage {
-  public type: Type = Type.InstanceInfoResponse;
+export class DetailResponse extends AbstractMessage {
+  public type: Type = Type.InstanceDetailResponse;
   declare public body: Instance;
 }

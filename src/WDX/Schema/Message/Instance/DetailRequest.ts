@@ -10,8 +10,8 @@
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
-export class InfoRequest extends AbstractMessage {
-  public type: Type = Type.InstanceInfoRequest;
+export class DetailRequest extends AbstractMessage {
+  public type: Type = Type.InstanceDetailRequest;
 
   /**
    * Instance UUID

@@ -60,8 +60,8 @@ export enum Type {
 
   InstanceIAm = 'InstanceIAm',
 
-  InstanceInfoRequest = 'InstanceInfoRequest',
-  InstanceInfoResponse = 'InstanceInfoResponse',
+  InstanceDetailRequest = 'InstanceDetailRequest',
+  InstanceDetailResponse = 'InstanceDetailResponse',
 
   InstanceListRequest = 'InstanceListRequest',
   InstanceListResponse = 'InstanceListResponse',
