@@ -22,6 +22,8 @@ import {GraphDataRequest} from './GraphDataRequest';
 import {GraphDataResponse} from './GraphDataResponse';
 import {TrendExportRequest} from './TrendExportRequest';
 import {TrendExportResponse} from './TrendExportResponse';
+import {DetailRequest} from './DetailRequest';
+import {DetailResponse} from './DetailResponse';
 
 export {
   DeleteRequest,
@@ -41,4 +43,6 @@ export {
   GraphDataResponse,
   TrendExportRequest,
   TrendExportResponse,
+  DetailRequest,
+  DetailResponse,
 }

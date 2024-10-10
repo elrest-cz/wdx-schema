@@ -156,6 +156,9 @@ export enum Type {
   TrendingListRequest = 'TrendingListRequest',
   TrendingListResponse = 'TrendingListResponse',
 
+  TrendingDetailRequest = 'TrendingDetailRequest',
+  TrendingDetailResponse = 'TrendingDetailResponse',
+
   TrendingSaveRequest = 'TrendingSaveRequest',
   TrendingSaveResponse = 'TrendingSaveResponse',
 
@@ -184,6 +187,9 @@ export enum Type {
    */
   AlarmingListRequest = 'AlarmingListRequest',
   AlarmingListResponse = 'AlarmingListResponse',
+
+  AlarmingDetailRequest = 'AlarmingDetailRequest',
+  AlarmingDetailResponse = 'AlarmingDetailResponse',
 
   AlarmingListHistoryRequest = 'AlarmingListHistoryRequest',
   AlarmingListHistoryResponse = 'AlarmingListHistoryResponse',
