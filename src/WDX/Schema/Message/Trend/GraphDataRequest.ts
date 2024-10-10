@@ -5,15 +5,12 @@
  */
 'use strict';
 
+import {GraphDataRequestBody} from '../../Model/Trend/Graph/GraphDataRequestBody';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
 
-export class GraphConfigurationRequest extends AbstractMessage {
-  public type: Type = Type.TrendingGraphConfigurationRequest;
-
-  /**
-   * Trend id
-   */
-  declare public body: number;
+export class GraphDataRequest extends AbstractMessage {
+  public type: Type = Type.TrendingGraphDataRequest;
+  declare public body: GraphDataRequestBody;
 }

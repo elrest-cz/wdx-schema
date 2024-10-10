@@ -9,6 +9,8 @@ import {ConfirmRequest} from './ConfirmRequest';
 import {ConfirmResponse} from './ConfirmResponse';
 import {ListRequest} from './ListRequest';
 import {ListResponse} from './ListResponse';
+import {DetailRequest} from './DetailRequest';
+import {DetailResponse} from './DetailResponse';
 import {ListHistoryRequest} from './ListHistoryRequest';
 import {ListHistoryResponse} from './ListHistoryResponse';
 import {DeleteHistoryRequest} from './DeleteHistoryRequest';
@@ -24,6 +26,8 @@ import {UnsubscribeRequest} from './UnsubscribeRequest';
 import {UnsubscribeResponse} from './UnsubscribeResponse';
 
 export {
+  DetailRequest,
+  DetailResponse,
   ConfirmRequest,
   ConfirmResponse,
   ListRequest,

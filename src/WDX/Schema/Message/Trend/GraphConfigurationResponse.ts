@@ -11,7 +11,7 @@ import {Type} from '../Type';
 
 
 export class GraphConfigurationResponse extends AbstractMessage {
-  public type: Type = Type.TrenddingGraphConfigurationResponse;
+  public type: Type = Type.TrendingGraphConfigurationResponse;
 
   declare public body: Graph;
 }

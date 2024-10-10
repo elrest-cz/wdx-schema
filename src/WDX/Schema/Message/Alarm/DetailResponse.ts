@@ -4,16 +4,12 @@
  * @copyright 2024 Elrest Automations Systeme GMBH
  */
 'use strict';
-
+import {Alarm} from '../../Model/Alarm/Alarm';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
+export class DetailResponse extends AbstractMessage {
+  public type: Type = Type.AlarmingDetailResponse;
 
-export class GraphConfigurationRequest extends AbstractMessage {
-  public type: Type = Type.TrendingGraphConfigurationRequest;
-
-  /**
-   * Trend id
-   */
-  declare public body: number;
+  declare public body: Alarm;
 }

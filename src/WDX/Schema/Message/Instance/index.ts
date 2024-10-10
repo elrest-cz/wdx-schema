@@ -7,8 +7,8 @@
 'use strict';
 
 import {IAm} from './IAm';
-import {InfoRequest} from './InfoRequest';
-import {InfoResponse} from './InfoResponse';
+import {DetailRequest} from './DetailRequest';
+import {DetailResponse} from './DetailResponse';
 import {ListRequest} from './ListRequest';
 import {ListResponse} from './ListResponse';
 import {LogMessage} from './LogMessage';
@@ -31,8 +31,8 @@ import {WhoIsResponse} from './WhoIsResponse';
 
 export {
   IAm,
-  InfoRequest,
-  InfoResponse,
+  DetailRequest,
+  DetailResponse,
   ListRequest,
   ListResponse,
   LogMessage,

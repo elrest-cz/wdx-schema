@@ -9,11 +9,7 @@ import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
 
-export class GraphConfigurationRequest extends AbstractMessage {
-  public type: Type = Type.TrendingGraphConfigurationRequest;
-
-  /**
-   * Trend id
-   */
+export class DetailRequest extends AbstractMessage {
+  public type: Type = Type.AlarmingDetailRequest;
   declare public body: number;
 }

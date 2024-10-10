@@ -12,13 +12,17 @@ import {DataSet} from './DataSet';
 import {YAxisPostion} from './YAxisPostion';
 import {DefaultFormat} from './DefaultFormat';
 import * as Graph from './Graph';
+import * as Export from './Export';
+import {ExportRequestBody} from './ExportRequestBody';
 
 export {
   Graph,
+  Export,
   Trend,
   XAxis,
   YAxis,
   DataSet,
   YAxisPostion,
   DefaultFormat,
+  ExportRequestBody,
 };
