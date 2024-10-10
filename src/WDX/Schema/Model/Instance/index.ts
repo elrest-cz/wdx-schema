@@ -46,8 +46,14 @@ import {APIServerInstance} from './APIServerInstance';
 import {APIServerOptions} from './APIServerOptions';
 import {APIServerExecutionOptions} from './APIServerExecutionOptions';
 import {InstanceMonitor} from './InstanceMonitor';
+import {AuthServerOptions} from './AuthServerOptions';
+import {AuthServerExecutionOptions} from './AuthServerExecutionOptions';
+import {AuthServerInstance} from './AuthServerInstance';
 
 export {
+  AuthServerOptions,
+  AuthServerExecutionOptions,
+  AuthServerInstance,
   APIServerInstance,
   APIServerOptions,
   APIServerExecutionOptions,

@@ -6,13 +6,13 @@
 'use strict';
 
 export enum AlarmConditionExpression {
-  EQUALS = '=',
-  NOT_EQUALS = '!=',
-  LESS = '<',
-  LESS_EQUAL = '<=',
-  GREATER = '>',
-  GREATER_EQUAL = '>=',
-  REGEXP = 'Reg. expr.',
-  IS_EMPTY = 'IS EMPTY',
-  IS_NOT_EMPTY = 'IS NOT EMPTY',
+  EQUALS = 'EQUALS',
+  NOT_EQUALS = 'NOT_EQUALS',
+  LESS = 'LESS',
+  LESS_EQUAL = 'LESS_EQUAL',
+  GREATER = 'GREATER',
+  GREATER_EQUAL = 'GREATER_EQUAL',
+  REGEXP = 'REGEXP',
+  IS_EMPTY = 'IS_EMPTY',
+  IS_NOT_EMPTY = 'IS_NOT_EMPTY',
 }

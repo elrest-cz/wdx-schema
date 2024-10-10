@@ -4,16 +4,12 @@
  * @copyright 2024 Elrest Automations Systeme GMBH
  */
 'use strict';
-
+import {Trend} from '../../Model/Trend';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
+export class DetailResponse extends AbstractMessage {
+  public type: Type = Type.TrendingDetailResponse;
 
-export class GraphConfigurationRequest extends AbstractMessage {
-  public type: Type = Type.TrendingGraphConfigurationRequest;
-
-  /**
-   * Trend id
-   */
-  declare public body: number;
+  declare public body: Trend;
 }

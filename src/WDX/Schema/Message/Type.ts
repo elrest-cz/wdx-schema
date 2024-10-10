@@ -60,8 +60,8 @@ export enum Type {
 
   InstanceIAm = 'InstanceIAm',
 
-  InstanceInfoRequest = 'InstanceInfoRequest',
-  InstanceInfoResponse = 'InstanceInfoResponse',
+  InstanceDetailRequest = 'InstanceDetailRequest',
+  InstanceDetailResponse = 'InstanceDetailResponse',
 
   InstanceListRequest = 'InstanceListRequest',
   InstanceListResponse = 'InstanceListResponse',
@@ -156,6 +156,9 @@ export enum Type {
   TrendingListRequest = 'TrendingListRequest',
   TrendingListResponse = 'TrendingListResponse',
 
+  TrendingDetailRequest = 'TrendingDetailRequest',
+  TrendingDetailResponse = 'TrendingDetailResponse',
+
   TrendingSaveRequest = 'TrendingSaveRequest',
   TrendingSaveResponse = 'TrendingSaveResponse',
 
@@ -170,14 +173,23 @@ export enum Type {
 
   TrendingUpdate = 'TrendingUpdate',
 
-  TrenddingGraphConfigurationRequest = 'TrenddingGraphConfigurationRequest',
-  TrenddingGraphConfigurationResponse = 'TrenddingGraphConfigurationResponse',
+  TrendingGraphConfigurationRequest = 'TrendingGraphConfigurationRequest',
+  TrendingGraphConfigurationResponse = 'TrendingGraphConfigurationResponse',
+
+  TrendingGraphDataRequest = 'TrendingGraphDataRequest',
+  TrendingGraphDataResponse = 'TrendingGraphDataResponse',
+
+  TrendingExportRequest = 'TrendingExportRequest',
+  TrendingExportResponse = 'TrendingExportResponse',
 
   /**
    * Alarming
    */
   AlarmingListRequest = 'AlarmingListRequest',
   AlarmingListResponse = 'AlarmingListResponse',
+
+  AlarmingDetailRequest = 'AlarmingDetailRequest',
+  AlarmingDetailResponse = 'AlarmingDetailResponse',
 
   AlarmingListHistoryRequest = 'AlarmingListHistoryRequest',
   AlarmingListHistoryResponse = 'AlarmingListHistoryResponse',
@@ -201,5 +213,22 @@ export enum Type {
   AlarmingUnsubscribeResponse = 'AlarmingUnsubscribeResponse',
 
   AlarmingUpdate = 'AlarmingUpdate',
+
+  AuthLogin = 'AuthLogin',
+  AuthLogout = 'AuthLogout',
+
+  AccessUserListRequest = 'AccessUserListRequest',
+  AccessUserListResponse = 'AccessUserListResponse',
+  AccessUserSaveRequest = 'AccessUserSaveRequest',
+  AccessUserSaveResponse = 'AccessUserSaveResponse',
+  AccessUserDeleteRequest = 'AccessUserDeleteRequest',
+  AccessUserDeleteResponse = 'AccessUserDeleteResponse',
+
+  AccessRoleListRequest = 'AccessRoleListRequest',
+  AccessRoleListResponse = 'AccessRoleListResponse',
+  AccessRoleSaveRequest = 'AccessRoleSaveRequest',
+  AccessRoleSaveResponse = 'AccessRoleSaveResponse',
+  AccessRoleDeleteRequest = 'AccessRoleDeleteRequest',
+  AccessRoleDeleteResponse = 'AccessRoleDeleteResponse',
 
 }
