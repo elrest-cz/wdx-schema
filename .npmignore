@@ -9,7 +9,6 @@ typedoc.json
 .build.json
 .gitlab-ci.yml
 .git
-docs
 package-lock.json
 .eslintrc.js
 tsconfig.tsbuildinfo
