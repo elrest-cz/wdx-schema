@@ -1,13 +1,13 @@
 # WDX - Schema
 
-A TypeScript model Library library for handling class models as schema library distributed with exported classes, interfaces, and enumerations. This library allows you to use WDX Schema models using TypeScript classes and reference models in a structured manner.
+A TypeScript model library for handling class models as schema library distributed with exported classes, interfaces, and enumerations. This library allows you to use WDX Schema models using TypeScript classes and reference models in a structured manner.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
   - [Using Models](#using-models)
-- [API](docs/modules.md)
+- [API](https://raw.githubusercontent.com/elrest-cz/wdx-schema/refs/heads/master/docs/modules.md)
 - [Requirements](#Requirements)
 - [License](#license)
 

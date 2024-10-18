@@ -18,7 +18,7 @@
 	],
 	"license": "MIT",
 	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
-	"version": "15.0.0",
+	"version": "15.3.0",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
@@ -40,6 +40,10 @@
 		"cover:unit": "nyc --silent npm run test:unit",
 		"cover:integration": "nyc --silent --no-clean npm run test:integration",
 		"cover:report": "nyc report --reporter=lcov --reporter=text"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com:elrest-cz/wdx-schema.git"
 	},
 	"devDependencies": {
 		"@types/node": "^20.10.1",
