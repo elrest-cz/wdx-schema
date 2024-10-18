@@ -1,3 +1,11 @@
+/**
+ * Elrest - WDX - WS - Client - JS - Example - Data Delete Schema
+ * 
+ * Deletes schema for given path and retrieve deleted schema from WDX with WS client.
+ *
+ * @copyright 2024 Elrest AutomationsSysteme GMBH
+ */
+
 'use strict';
 
 import * as WDXSchema from '@wago/wdx-schema';
