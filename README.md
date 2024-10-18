@@ -7,7 +7,7 @@ A TypeScript model library for handling class models as schema library distribut
 - [Installation](#installation)
 - [Usage](#usage)
   - [Using Models](#using-models)
-- [API](https://raw.githubusercontent.com/elrest-cz/wdx-schema/refs/heads/master/docs/modules.md)
+- [API](https://github.com/elrest-cz/wdx-schema/blob/master/docs/modules.md)
 - [Requirements](#Requirements)
 - [License](#license)
 
@@ -58,11 +58,11 @@ const dataValue = new WDXSchema.WDX.Schema.Model.Data.DataValue(
 );
 ```
 
-For more examples, see github repository example [directory](examples).
+For more examples, see github repository example [directory](https://github.com/elrest-cz/wdx-schema/tree/master/examples).
 
 ## License
 
-This library is licensed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License). See the [LICENSE.md](LICENSE.md) file for more details.
+This library is licensed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License). See the [LICENSE.md](https://github.com/elrest-cz/wdx-schema/blob/master/LICENSE.md) file for more details.
 
 © 2024 
 
