@@ -41,6 +41,10 @@
 		"cover:integration": "nyc --silent --no-clean npm run test:integration",
 		"cover:report": "nyc report --reporter=lcov --reporter=text"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com:elrest-cz/wdx-schema.git"
+	},
 	"devDependencies": {
 		"@types/node": "^20.10.1",
 		"@types/uuid": "^9.0.x",
