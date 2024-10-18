@@ -19,6 +19,7 @@ import * as Script from './Script';
 import * as Alarm from './Alarm';
 import * as Trend from './Trend';
 import * as Access from './Access';
+import * as Translation from './Translation';
 
 export {
   Access,
@@ -33,4 +34,5 @@ export {
   Script,
   Alarm,
   Trend,
+  Translation,
 };

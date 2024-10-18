@@ -15,6 +15,7 @@ import {eWebOptions} from './eWebOptions';
 import {MODBUSOptions} from './MODBUSOptions';
 import {MQTTOptions} from './MQTTOptions';
 import {MQTTProtocol} from './MQTTProtocol';
+import {eWebDataAdapterExecutionOptions} from './eWebDataAdapterExecutionOptions';
 import {BACNetDataAdapterInstance} from './BACNetDataAdapterInstance';
 import {CC100IODataAdapterInstance} from './CC100IODataAdapterInstance';
 import {eWebDataAdapterInstance} from './eWebDataAdapterInstance';
@@ -37,6 +38,7 @@ export {
   MQProtocol,
   MQOptions,
   MQDataAdapterExecutionOptions,
+  eWebDataAdapterExecutionOptions,
   MQDataAdapterInstance,
   BACNetOptions,
   eWebOptions,

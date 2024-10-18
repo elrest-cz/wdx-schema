@@ -9,6 +9,7 @@ import {GraphType} from './GraphType';
 import {GraphOptions} from './GraphOptions';
 import {GraphData} from './GraphData';
 import {GraphDataSet} from './GraphDataSet';
+import {GraphScale} from './GraphScale';
 import {Graph} from './Graph';
 import {GraphDataRequestBody} from './GraphDataRequestBody';
 
@@ -17,6 +18,7 @@ export {
   GraphOptions,
   GraphData,
   GraphDataSet,
+  GraphScale,
   Graph,
   GraphDataRequestBody,
 };
