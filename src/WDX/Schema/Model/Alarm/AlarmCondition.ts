@@ -5,15 +5,17 @@
  */
 'use strict';
 
+import {v4 as uuidv4} from 'uuid';
 import {AlarmConditionExpression} from './AlarmConditionExpression';
 
 export class AlarmCondition {
   constructor(
-      public id?: number,
       public path?: string,
       public expression?: AlarmConditionExpression,
       public value?: string,
+      public uuid: string = uuidv4(),
       public createDateTime: number = Date.now(),
       public updatedDateTime: number = createDateTime,
+      public id?: number,
   ) {}
 }
