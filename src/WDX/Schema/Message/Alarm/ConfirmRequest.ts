@@ -11,5 +11,9 @@ import {Type} from '../Type';
 
 export class ConfirmRequest extends AbstractMessage {
   public type: Type = Type.AlarmingConfirmRequest;
-  declare public body: number|undefined;
+  
+  /**
+   * Alarm - UUID or undefined.
+   */
+  declare public body: string|undefined;
 }

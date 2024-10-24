@@ -13,8 +13,6 @@ import {DetailRequest} from './DetailRequest';
 import {DetailResponse} from './DetailResponse';
 import {ListHistoryRequest} from './ListHistoryRequest';
 import {ListHistoryResponse} from './ListHistoryResponse';
-import {DeleteHistoryRequest} from './DeleteHistoryRequest';
-import {DeleteHistoryResponse} from './DeleteHistoryResponse';
 import {DeleteRequest} from './DeleteRequest';
 import {DeleteResponse} from './DeleteResponse';
 import {SetRequest} from './SetRequest';
@@ -34,8 +32,6 @@ export {
   ListResponse,
   ListHistoryRequest,
   ListHistoryResponse,
-  DeleteHistoryRequest,
-  DeleteHistoryResponse,
   DeleteRequest,
   DeleteResponse,
   SetRequest,

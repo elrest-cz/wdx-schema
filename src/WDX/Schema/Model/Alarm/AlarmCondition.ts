@@ -14,8 +14,8 @@ export class AlarmCondition {
       public expression?: AlarmConditionExpression,
       public value?: string,
       public uuid: string = uuidv4(),
+      public id?: number,
       public createDateTime: number = Date.now(),
       public updatedDateTime: number = createDateTime,
-      public id?: number,
   ) {}
 }

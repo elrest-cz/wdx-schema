@@ -13,7 +13,7 @@ export class GraphConfigurationRequest extends AbstractMessage {
   public type: Type = Type.TrendingGraphConfigurationRequest;
 
   /**
-   * Trend id
+   * Trend UUID
    */
-  declare public body: number;
+  declare public body: string;
 }

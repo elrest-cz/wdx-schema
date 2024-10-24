@@ -10,8 +10,10 @@ import {GraphScale} from './GraphScale';
 export class GraphOptions {
   constructor(
       public responsive: boolean = true,
+      public plugins: any = {},
+      public animation: boolean = false,
       public scales: {
-        [key: string]: GraphScale,
+        [key: string]: any,
       } = {},
   ) {}
 }

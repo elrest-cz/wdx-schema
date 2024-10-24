@@ -20,14 +20,14 @@ export class Alarm {
       public conditions: AlarmCondition[] = [],
       public message?: string,
       public messageOff?: string,
+      public uuid: string = uuidv4(),
+      public id?: number,
       public status?: AlarmStatus,
+      public history: AlarmHistory[] = [],
       public cause?: string,
       public reaction?: string,
       public correction?: string,
-      public history: AlarmHistory[] = [],
-      public uuid: string = uuidv4(),
       public createDateTime: number = Date.now(),
       public updatedDateTime: number = createDateTime,
-      public id?: number,
   ) {}
 }

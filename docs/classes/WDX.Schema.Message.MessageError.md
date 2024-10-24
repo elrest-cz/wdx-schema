@@ -14,19 +14,19 @@
 
 - [code](WDX.Schema.Message.MessageError.md#code)
 - [message](WDX.Schema.Message.MessageError.md#message)
+- [stack](WDX.Schema.Message.MessageError.md#stack)
 
 ## Constructors
 
 ### constructor
 
-• **new MessageError**(`code`, `message`): [`MessageError`](WDX.Schema.Message.MessageError.md)
+• **new MessageError**(`error`): [`MessageError`](WDX.Schema.Message.MessageError.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `code` | `number` |
-| `message` | `string` |
+| `error` | `any` |
 
 #### Returns
 
@@ -34,7 +34,7 @@
 
 #### Defined in
 
-WDX/Schema/Message/MessageError.ts:10
+WDX/Schema/Message/MessageError.ts:13
 
 ## Properties
 
@@ -44,7 +44,7 @@ WDX/Schema/Message/MessageError.ts:10
 
 #### Defined in
 
-WDX/Schema/Message/MessageError.ts:11
+WDX/Schema/Message/MessageError.ts:9
 
 ___
 
@@ -54,4 +54,14 @@ ___
 
 #### Defined in
 
-WDX/Schema/Message/MessageError.ts:12
+WDX/Schema/Message/MessageError.ts:10
+
+___
+
+### stack
+
+• **stack**: `string`
+
+#### Defined in
+
+WDX/Schema/Message/MessageError.ts:11

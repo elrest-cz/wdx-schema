@@ -14,21 +14,21 @@
 
 - [datasets](WDX.Schema.Model.Trend.Graph.GraphData.md#datasets)
 - [labels](WDX.Schema.Model.Trend.Graph.GraphData.md#labels)
-- [trendId](WDX.Schema.Model.Trend.Graph.GraphData.md#trendid)
+- [trendUuid](WDX.Schema.Model.Trend.Graph.GraphData.md#trenduuid)
 
 ## Constructors
 
 ### constructor
 
-• **new GraphData**(`trendId`, `labels`, `datasets`): [`GraphData`](WDX.Schema.Model.Trend.Graph.GraphData.md)
+• **new GraphData**(`labels?`, `datasets?`, `trendUuid?`): [`GraphData`](WDX.Schema.Model.Trend.Graph.GraphData.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `trendId` | `number` |
-| `labels` | `string`[] |
-| `datasets` | [`GraphDataSet`](WDX.Schema.Model.Trend.Graph.GraphDataSet.md)[] |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `labels` | `string`[] | `[]` |
+| `datasets` | [`GraphDataSet`](WDX.Schema.Model.Trend.Graph.GraphDataSet.md)[] | `[]` |
+| `trendUuid` | `string` | `undefined` |
 
 #### Returns
 
@@ -36,13 +36,13 @@
 
 #### Defined in
 
-WDX/Schema/Model/Trend/Graph/GraphData.ts:11
+WDX/Schema/Model/Trend/Graph/GraphData.ts:12
 
 ## Properties
 
 ### datasets
 
-• **datasets**: [`GraphDataSet`](WDX.Schema.Model.Trend.Graph.GraphDataSet.md)[]
+• **datasets**: [`GraphDataSet`](WDX.Schema.Model.Trend.Graph.GraphDataSet.md)[] = `[]`
 
 #### Defined in
 
@@ -52,7 +52,7 @@ ___
 
 ### labels
 
-• **labels**: `string`[]
+• **labels**: `string`[] = `[]`
 
 #### Defined in
 
@@ -60,10 +60,10 @@ WDX/Schema/Model/Trend/Graph/GraphData.ts:13
 
 ___
 
-### trendId
+### trendUuid
 
-• **trendId**: `number`
+• **trendUuid**: `string`
 
 #### Defined in
 
-WDX/Schema/Model/Trend/Graph/GraphData.ts:12
+WDX/Schema/Model/Trend/Graph/GraphData.ts:15

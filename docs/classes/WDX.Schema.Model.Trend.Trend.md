@@ -28,6 +28,7 @@
 - [showLines](WDX.Schema.Model.Trend.Trend.md#showlines)
 - [tooltips](WDX.Schema.Model.Trend.Trend.md#tooltips)
 - [updatedDateTime](WDX.Schema.Model.Trend.Trend.md#updateddatetime)
+- [uuid](WDX.Schema.Model.Trend.Trend.md#uuid)
 - [xAxis](WDX.Schema.Model.Trend.Trend.md#xaxis)
 - [yAxis](WDX.Schema.Model.Trend.Trend.md#yaxis)
 - [zoom](WDX.Schema.Model.Trend.Trend.md#zoom)
@@ -36,13 +37,12 @@
 
 ### constructor
 
-• **new Trend**(`id?`, `name?`, `dataPoolInterval?`, `active?`, `showLines?`, `showLabels?`, `intervalPicker?`, `exportCurrentViewButton?`, `exportFullDataButton?`, `resetButton?`, `legend?`, `tooltips?`, `extendedTouchFeatures?`, `zoom?`, `xAxis?`, `yAxis?`, `dataSet?`, `createDateTime?`, `updatedDateTime?`): [`Trend`](WDX.Schema.Model.Trend.Trend.md)
+• **new Trend**(`name?`, `dataPoolInterval?`, `active?`, `showLines?`, `showLabels?`, `intervalPicker?`, `exportCurrentViewButton?`, `exportFullDataButton?`, `resetButton?`, `legend?`, `tooltips?`, `extendedTouchFeatures?`, `zoom?`, `xAxis?`, `yAxis?`, `dataSet?`, `createDateTime?`, `updatedDateTime?`, `uuid?`, `id?`): [`Trend`](WDX.Schema.Model.Trend.Trend.md)
 
 #### Parameters
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `id?` | `number` | `undefined` | - |
 | `name?` | `string` | `undefined` | - |
 | `dataPoolInterval` | `number` | `1000` | Data pool interval |
 | `active` | `boolean` | `true` | - |
@@ -61,6 +61,8 @@
 | `dataSet` | [`DataSet`](WDX.Schema.Model.Trend.DataSet.md)[] | `undefined` | - |
 | `createDateTime` | `number` | `undefined` | - |
 | `updatedDateTime` | `number` | `createDateTime` | - |
+| `uuid` | `string` | `undefined` | - |
+| `id?` | `number` | `undefined` | - |
 
 #### Returns
 
@@ -68,7 +70,7 @@
 
 #### Defined in
 
-WDX/Schema/Model/Trend/Trend.ts:13
+WDX/Schema/Model/Trend/Trend.ts:14
 
 ## Properties
 
@@ -150,7 +152,7 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Trend/Trend.ts:14
+WDX/Schema/Model/Trend/Trend.ts:43
 
 ___
 
@@ -231,6 +233,16 @@ ___
 #### Defined in
 
 WDX/Schema/Model/Trend/Trend.ts:40
+
+___
+
+### uuid
+
+• **uuid**: `string`
+
+#### Defined in
+
+WDX/Schema/Model/Trend/Trend.ts:42
 
 ___
 

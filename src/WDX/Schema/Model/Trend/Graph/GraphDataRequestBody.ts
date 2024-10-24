@@ -7,7 +7,10 @@
 
 export class GraphDataRequestBody {
   constructor(
-      public trendId: number,
+      /**
+       * Trend UUID
+       */
+      public trendUuid: string,
       public dateFrom?: number,
       public dateTo?: number,
   ) {}

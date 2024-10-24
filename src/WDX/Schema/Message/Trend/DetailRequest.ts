@@ -11,5 +11,8 @@ import {Type} from '../Type';
 
 export class DetailRequest extends AbstractMessage {
   public type: Type = Type.TrendingDetailRequest;
-  declare public body: number;
+  /**
+   * Trend UUID
+   */
+  declare public body: string;
 }

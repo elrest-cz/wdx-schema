@@ -12,5 +12,8 @@ import {Type} from '../Type';
 export class DeleteRequest extends AbstractMessage {
   public type: Type = Type.TrendingDeleteRequest;
 
-  declare public body: number;
+  /**
+   * Trend UUID
+   */
+  declare public body: string;
 }

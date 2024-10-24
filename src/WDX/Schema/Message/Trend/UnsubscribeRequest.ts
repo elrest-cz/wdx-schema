@@ -10,5 +10,9 @@ import {Type} from '../Type';
 
 export class UnsubscribeRequest extends AbstractMessage {
   public type: Type = Type.TrendingUnsubscribeRequest;
-  declare public body: number;
+
+  /**
+   * Trend UUID
+   */
+  declare public body: string;
 }

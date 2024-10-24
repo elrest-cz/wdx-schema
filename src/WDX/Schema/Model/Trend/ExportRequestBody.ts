@@ -9,7 +9,7 @@ import {Type} from './Export/Type';
 
 export class ExportRequestBody {
   constructor(
-      public trendId: number,
+      public trendUuid: string,
       public type: Type,
       public dateFrom?: number,
       public dateTo?: number,

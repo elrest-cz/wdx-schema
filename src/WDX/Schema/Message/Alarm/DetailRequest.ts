@@ -11,5 +11,9 @@ import {Type} from '../Type';
 
 export class DetailRequest extends AbstractMessage {
   public type: Type = Type.AlarmingDetailRequest;
-  declare public body: number;
+
+  /**
+   * Alarm - UUID
+   */
+  declare public body: string;
 }
