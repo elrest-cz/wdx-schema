@@ -194,10 +194,6 @@
 
   ↳ [`ListHistoryResponse`](WDX.Schema.Message.Alarm.ListHistoryResponse.md)
 
-  ↳ [`DeleteHistoryRequest`](WDX.Schema.Message.Alarm.DeleteHistoryRequest.md)
-
-  ↳ [`DeleteHistoryResponse`](WDX.Schema.Message.Alarm.DeleteHistoryResponse.md)
-
   ↳ [`DeleteRequest`](WDX.Schema.Message.Alarm.DeleteRequest.md)
 
   ↳ [`DeleteResponse`](WDX.Schema.Message.Alarm.DeleteResponse.md)

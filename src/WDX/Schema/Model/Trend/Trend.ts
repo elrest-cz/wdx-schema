@@ -8,10 +8,10 @@
 import {XAxis} from './XAxis';
 import {YAxis} from './YAxis';
 import {DataSet} from './DataSet';
+import {v4 as uuidv4} from 'uuid';
 
 export class Trend {
   constructor(
-      public id?: number,
       public name?: string,
       /**
        * Data pool interval
@@ -38,5 +38,8 @@ export class Trend {
 
       public createDateTime: number = Date.now(),
       public updatedDateTime: number = createDateTime,
+
+      public uuid: string = uuidv4(),
+      public id?: number,
   ) {}
 }

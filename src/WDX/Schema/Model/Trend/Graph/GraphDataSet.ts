@@ -7,7 +7,14 @@
 
 export class GraphDataSet {
   constructor(
-      public uuid: string,
-      public data: Array<any>,
+      public label: string = '',
+      public uuid: string = '',
+      public borderColor: string = '',
+      public backgroundColor: string = '',
+      public pointBackgroundColor: string = '',
+      public pointBorderColor: string = '',
+      public hidden: boolean = false,
+      public showLine: boolean = true,
+      public data: Array<any> =[],
   ) {}
 }

@@ -27,32 +27,34 @@
 - [status](WDX.Schema.Model.Alarm.Alarm.md#status)
 - [type](WDX.Schema.Model.Alarm.Alarm.md#type)
 - [updatedDateTime](WDX.Schema.Model.Alarm.Alarm.md#updateddatetime)
+- [uuid](WDX.Schema.Model.Alarm.Alarm.md#uuid)
 
 ## Constructors
 
 ### constructor
 
-• **new Alarm**(`id?`, `name?`, `active?`, `message?`, `messageOff?`, `number?`, `type?`, `status?`, `cause?`, `reaction?`, `correction?`, `createDateTime?`, `updatedDateTime?`, `conditions?`, `history?`): [`Alarm`](WDX.Schema.Model.Alarm.Alarm.md)
+• **new Alarm**(`name`, `active?`, `number`, `type`, `conditions?`, `message?`, `messageOff?`, `uuid?`, `id?`, `status?`, `history?`, `cause?`, `reaction?`, `correction?`, `createDateTime?`, `updatedDateTime?`): [`Alarm`](WDX.Schema.Model.Alarm.Alarm.md)
 
 #### Parameters
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `id?` | `number` | `undefined` |
-| `name?` | `string` | `undefined` |
+| `name` | `string` | `undefined` |
 | `active` | `boolean` | `true` |
+| `number` | `number` | `undefined` |
+| `type` | [`AlarmType`](../enums/WDX.Schema.Model.Alarm.AlarmType.md) | `undefined` |
+| `conditions` | [`AlarmCondition`](WDX.Schema.Model.Alarm.AlarmCondition.md)[] | `[]` |
 | `message?` | `string` | `undefined` |
 | `messageOff?` | `string` | `undefined` |
-| `number?` | `number` | `undefined` |
-| `type?` | [`AlarmType`](../enums/WDX.Schema.Model.Alarm.AlarmType.md) | `undefined` |
+| `uuid` | `string` | `undefined` |
+| `id?` | `number` | `undefined` |
 | `status?` | [`AlarmStatus`](../enums/WDX.Schema.Model.Alarm.AlarmStatus.md) | `undefined` |
+| `history` | [`AlarmHistory`](WDX.Schema.Model.Alarm.AlarmHistory.md)[] | `[]` |
 | `cause?` | `string` | `undefined` |
 | `reaction?` | `string` | `undefined` |
 | `correction?` | `string` | `undefined` |
 | `createDateTime` | `number` | `undefined` |
 | `updatedDateTime` | `number` | `createDateTime` |
-| `conditions` | [`AlarmCondition`](WDX.Schema.Model.Alarm.AlarmCondition.md)[] | `[]` |
-| `history` | [`AlarmHistory`](WDX.Schema.Model.Alarm.AlarmHistory.md)[] | `[]` |
 
 #### Returns
 
@@ -60,7 +62,7 @@
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:14
+WDX/Schema/Model/Alarm/Alarm.ts:15
 
 ## Properties
 
@@ -80,7 +82,7 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:23
+WDX/Schema/Model/Alarm/Alarm.ts:27
 
 ___
 
@@ -90,7 +92,7 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:28
+WDX/Schema/Model/Alarm/Alarm.ts:20
 
 ___
 
@@ -100,7 +102,7 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:25
+WDX/Schema/Model/Alarm/Alarm.ts:29
 
 ___
 
@@ -110,7 +112,7 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:26
+WDX/Schema/Model/Alarm/Alarm.ts:30
 
 ___
 
@@ -120,7 +122,7 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:29
+WDX/Schema/Model/Alarm/Alarm.ts:26
 
 ___
 
@@ -130,7 +132,7 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:15
+WDX/Schema/Model/Alarm/Alarm.ts:24
 
 ___
 
@@ -140,7 +142,7 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:18
+WDX/Schema/Model/Alarm/Alarm.ts:21
 
 ___
 
@@ -150,13 +152,13 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:19
+WDX/Schema/Model/Alarm/Alarm.ts:22
 
 ___
 
 ### name
 
-• `Optional` **name**: `string`
+• **name**: `string`
 
 #### Defined in
 
@@ -166,11 +168,11 @@ ___
 
 ### number
 
-• `Optional` **number**: `number`
+• **number**: `number`
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:20
+WDX/Schema/Model/Alarm/Alarm.ts:18
 
 ___
 
@@ -180,7 +182,7 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:24
+WDX/Schema/Model/Alarm/Alarm.ts:28
 
 ___
 
@@ -190,17 +192,17 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:22
+WDX/Schema/Model/Alarm/Alarm.ts:25
 
 ___
 
 ### type
 
-• `Optional` **type**: [`AlarmType`](../enums/WDX.Schema.Model.Alarm.AlarmType.md)
+• **type**: [`AlarmType`](../enums/WDX.Schema.Model.Alarm.AlarmType.md)
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:21
+WDX/Schema/Model/Alarm/Alarm.ts:19
 
 ___
 
@@ -210,4 +212,14 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/Alarm.ts:27
+WDX/Schema/Model/Alarm/Alarm.ts:31
+
+___
+
+### uuid
+
+• **uuid**: `string`
+
+#### Defined in
+
+WDX/Schema/Model/Alarm/Alarm.ts:23

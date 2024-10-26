@@ -12,7 +12,7 @@ import {AlarmType} from './AlarmType';
 export class AlarmHistory {
   constructor(
       public id?: number,
-      public alarmId?: number,
+      public alarmUuid?: string,
       public name?: string,
       public active?: boolean,
       public number?: number,

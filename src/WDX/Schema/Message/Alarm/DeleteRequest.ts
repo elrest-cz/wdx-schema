@@ -12,5 +12,8 @@ import {Type} from '../Type';
 export class DeleteRequest extends AbstractMessage {
   public type: Type = Type.AlarmingDeleteRequest;
 
-  declare public body: number;
+  /**
+   * Alarm - UUID
+   */
+  declare public body: string;
 }

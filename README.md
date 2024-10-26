@@ -8,7 +8,6 @@ A TypeScript model library for handling class models as schema library distribut
 - [Usage](#usage)
   - [Using Models](#using-models)
 - [API](https://github.com/elrest-cz/wdx-schema/blob/master/docs/modules.md)
-- [Requirements](#Requirements)
 - [License](#license)
 
 ## Installation

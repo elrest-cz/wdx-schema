@@ -10,8 +10,6 @@
 
 - [ConfirmRequest](../classes/WDX.Schema.Message.Alarm.ConfirmRequest.md)
 - [ConfirmResponse](../classes/WDX.Schema.Message.Alarm.ConfirmResponse.md)
-- [DeleteHistoryRequest](../classes/WDX.Schema.Message.Alarm.DeleteHistoryRequest.md)
-- [DeleteHistoryResponse](../classes/WDX.Schema.Message.Alarm.DeleteHistoryResponse.md)
 - [DeleteRequest](../classes/WDX.Schema.Message.Alarm.DeleteRequest.md)
 - [DeleteResponse](../classes/WDX.Schema.Message.Alarm.DeleteResponse.md)
 - [DetailRequest](../classes/WDX.Schema.Message.Alarm.DetailRequest.md)

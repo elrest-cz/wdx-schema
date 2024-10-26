@@ -14,20 +14,20 @@
 
 - [dateFrom](WDX.Schema.Model.Trend.ExportRequestBody.md#datefrom)
 - [dateTo](WDX.Schema.Model.Trend.ExportRequestBody.md#dateto)
-- [trendId](WDX.Schema.Model.Trend.ExportRequestBody.md#trendid)
+- [trendUuid](WDX.Schema.Model.Trend.ExportRequestBody.md#trenduuid)
 - [type](WDX.Schema.Model.Trend.ExportRequestBody.md#type)
 
 ## Constructors
 
 ### constructor
 
-• **new ExportRequestBody**(`trendId`, `type`, `dateFrom?`, `dateTo?`): [`ExportRequestBody`](WDX.Schema.Model.Trend.ExportRequestBody.md)
+• **new ExportRequestBody**(`trendUuid`, `type`, `dateFrom?`, `dateTo?`): [`ExportRequestBody`](WDX.Schema.Model.Trend.ExportRequestBody.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `trendId` | `number` |
+| `trendUuid` | `string` |
 | `type` | [`Type`](../enums/WDX.Schema.Model.Trend.Export.Type.md) |
 | `dateFrom?` | `number` |
 | `dateTo?` | `number` |
@@ -62,9 +62,9 @@ WDX/Schema/Model/Trend/ExportRequestBody.ts:15
 
 ___
 
-### trendId
+### trendUuid
 
-• **trendId**: `number`
+• **trendUuid**: `string`
 
 #### Defined in
 
