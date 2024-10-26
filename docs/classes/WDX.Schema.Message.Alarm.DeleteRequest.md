@@ -60,7 +60,9 @@ WDX/Schema/Message/AbstractMessage.ts:30
 
 ### body
 
-• **body**: `number`
+• **body**: `string`
+
+Alarm - UUID
 
 #### Overrides
 
@@ -68,7 +70,7 @@ WDX/Schema/Message/AbstractMessage.ts:30
 
 #### Defined in
 
-WDX/Schema/Message/Alarm/DeleteRequest.ts:15
+WDX/Schema/Message/Alarm/DeleteRequest.ts:18
 
 ___
 

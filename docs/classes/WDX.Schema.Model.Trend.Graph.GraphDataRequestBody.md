@@ -14,21 +14,21 @@
 
 - [dateFrom](WDX.Schema.Model.Trend.Graph.GraphDataRequestBody.md#datefrom)
 - [dateTo](WDX.Schema.Model.Trend.Graph.GraphDataRequestBody.md#dateto)
-- [trendId](WDX.Schema.Model.Trend.Graph.GraphDataRequestBody.md#trendid)
+- [trendUuid](WDX.Schema.Model.Trend.Graph.GraphDataRequestBody.md#trenduuid)
 
 ## Constructors
 
 ### constructor
 
-• **new GraphDataRequestBody**(`trendId`, `dateFrom?`, `dateTo?`): [`GraphDataRequestBody`](WDX.Schema.Model.Trend.Graph.GraphDataRequestBody.md)
+• **new GraphDataRequestBody**(`trendUuid`, `dateFrom?`, `dateTo?`): [`GraphDataRequestBody`](WDX.Schema.Model.Trend.Graph.GraphDataRequestBody.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `trendId` | `number` |
-| `dateFrom?` | `number` |
-| `dateTo?` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `trendUuid` | `string` | Trend UUID |
+| `dateFrom?` | `number` | - |
+| `dateTo?` | `number` | - |
 
 #### Returns
 
@@ -46,7 +46,7 @@ WDX/Schema/Model/Trend/Graph/GraphDataRequestBody.ts:9
 
 #### Defined in
 
-WDX/Schema/Model/Trend/Graph/GraphDataRequestBody.ts:11
+WDX/Schema/Model/Trend/Graph/GraphDataRequestBody.ts:14
 
 ___
 
@@ -56,14 +56,16 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Trend/Graph/GraphDataRequestBody.ts:12
+WDX/Schema/Model/Trend/Graph/GraphDataRequestBody.ts:15
 
 ___
 
-### trendId
+### trendUuid
 
-• **trendId**: `number`
+• **trendUuid**: `string`
+
+Trend UUID
 
 #### Defined in
 
-WDX/Schema/Model/Trend/Graph/GraphDataRequestBody.ts:10
+WDX/Schema/Model/Trend/Graph/GraphDataRequestBody.ts:13

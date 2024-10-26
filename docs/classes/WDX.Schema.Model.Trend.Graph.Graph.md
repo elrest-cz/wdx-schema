@@ -12,6 +12,7 @@
 
 ### Properties
 
+- [data](WDX.Schema.Model.Trend.Graph.Graph.md#data)
 - [options](WDX.Schema.Model.Trend.Graph.Graph.md#options)
 - [type](WDX.Schema.Model.Trend.Graph.Graph.md#type)
 
@@ -19,13 +20,14 @@
 
 ### constructor
 
-• **new Graph**(`type?`, `options?`): [`Graph`](WDX.Schema.Model.Trend.Graph.Graph.md)
+• **new Graph**(`type?`, `data?`, `options?`): [`Graph`](WDX.Schema.Model.Trend.Graph.Graph.md)
 
 #### Parameters
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
 | `type` | [`line`](../enums/WDX.Schema.Model.Trend.Graph.GraphType.md#line) | `GraphType.line` |
+| `data` | [`GraphData`](WDX.Schema.Model.Trend.Graph.GraphData.md) | `undefined` |
 | `options` | [`GraphOptions`](WDX.Schema.Model.Trend.Graph.GraphOptions.md) | `undefined` |
 
 #### Returns
@@ -34,9 +36,19 @@
 
 #### Defined in
 
-WDX/Schema/Model/Trend/Graph/Graph.ts:13
+WDX/Schema/Model/Trend/Graph/Graph.ts:14
 
 ## Properties
+
+### data
+
+• **data**: [`GraphData`](WDX.Schema.Model.Trend.Graph.GraphData.md)
+
+#### Defined in
+
+WDX/Schema/Model/Trend/Graph/Graph.ts:16
+
+___
 
 ### options
 
@@ -44,7 +56,7 @@ WDX/Schema/Model/Trend/Graph/Graph.ts:13
 
 #### Defined in
 
-WDX/Schema/Model/Trend/Graph/Graph.ts:15
+WDX/Schema/Model/Trend/Graph/Graph.ts:17
 
 ___
 
@@ -54,4 +66,4 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Trend/Graph/Graph.ts:14
+WDX/Schema/Model/Trend/Graph/Graph.ts:15

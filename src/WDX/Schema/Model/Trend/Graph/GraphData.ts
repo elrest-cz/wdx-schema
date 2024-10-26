@@ -6,11 +6,12 @@
 'use strict';
 
 import {GraphDataSet} from './GraphDataSet';
+import {v4 as uuidv4} from 'uuid';
 
 export class GraphData {
   constructor(
-      public trendId: number,
-      public labels: string[],
-      public datasets: GraphDataSet[],
+      public labels: string[] =[],
+      public datasets: GraphDataSet[] = [],
+      public trendUuid: string = uuidv4(),
   ) {}
 }

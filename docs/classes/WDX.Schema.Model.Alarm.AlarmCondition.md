@@ -17,22 +17,24 @@
 - [id](WDX.Schema.Model.Alarm.AlarmCondition.md#id)
 - [path](WDX.Schema.Model.Alarm.AlarmCondition.md#path)
 - [updatedDateTime](WDX.Schema.Model.Alarm.AlarmCondition.md#updateddatetime)
+- [uuid](WDX.Schema.Model.Alarm.AlarmCondition.md#uuid)
 - [value](WDX.Schema.Model.Alarm.AlarmCondition.md#value)
 
 ## Constructors
 
 ### constructor
 
-• **new AlarmCondition**(`id?`, `path?`, `expression?`, `value?`, `createDateTime?`, `updatedDateTime?`): [`AlarmCondition`](WDX.Schema.Model.Alarm.AlarmCondition.md)
+• **new AlarmCondition**(`path?`, `expression?`, `value?`, `uuid?`, `id?`, `createDateTime?`, `updatedDateTime?`): [`AlarmCondition`](WDX.Schema.Model.Alarm.AlarmCondition.md)
 
 #### Parameters
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `id?` | `number` | `undefined` |
 | `path?` | `string` | `undefined` |
 | `expression?` | [`AlarmConditionExpression`](../enums/WDX.Schema.Model.Alarm.AlarmConditionExpression.md) | `undefined` |
 | `value?` | `string` | `undefined` |
+| `uuid` | `string` | `undefined` |
+| `id?` | `number` | `undefined` |
 | `createDateTime` | `number` | `undefined` |
 | `updatedDateTime` | `number` | `createDateTime` |
 
@@ -42,7 +44,7 @@
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/AlarmCondition.ts:11
+WDX/Schema/Model/Alarm/AlarmCondition.ts:12
 
 ## Properties
 
@@ -52,7 +54,7 @@ WDX/Schema/Model/Alarm/AlarmCondition.ts:11
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/AlarmCondition.ts:16
+WDX/Schema/Model/Alarm/AlarmCondition.ts:18
 
 ___
 
@@ -72,7 +74,7 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/AlarmCondition.ts:12
+WDX/Schema/Model/Alarm/AlarmCondition.ts:17
 
 ___
 
@@ -92,7 +94,17 @@ ___
 
 #### Defined in
 
-WDX/Schema/Model/Alarm/AlarmCondition.ts:17
+WDX/Schema/Model/Alarm/AlarmCondition.ts:19
+
+___
+
+### uuid
+
+• **uuid**: `string`
+
+#### Defined in
+
+WDX/Schema/Model/Alarm/AlarmCondition.ts:16
 
 ___
 

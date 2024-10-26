@@ -60,9 +60,9 @@ WDX/Schema/Message/AbstractMessage.ts:30
 
 ### body
 
-• **body**: `number`
+• **body**: `string`
 
-Trend id
+Trend UUID
 
 #### Overrides
 

@@ -60,7 +60,9 @@ WDX/Schema/Message/AbstractMessage.ts:30
 
 ### body
 
-• **body**: `number`
+• **body**: `string`
+
+Trend UUID
 
 #### Overrides
 
@@ -68,7 +70,7 @@ WDX/Schema/Message/AbstractMessage.ts:30
 
 #### Defined in
 
-WDX/Schema/Message/Trend/DetailRequest.ts:14
+WDX/Schema/Message/Trend/DetailRequest.ts:17
 
 ___
 

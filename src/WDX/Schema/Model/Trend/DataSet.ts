@@ -10,17 +10,17 @@ import {v4 as uuidv4} from 'uuid';
 export class DataSet {
   constructor(
       public uuid: string = uuidv4(),
-      public id?: number,
-      public name?: string,
-      public label?: string,
-      public dataSchemaPath?: string,
-      public color?: string,
+      public name: string = '',
+      public label: string = '',
+      public dataSchemaPath: string = '',
+      public color: string = '',
       /**
        * Y-Axis uuid
        */
-      public yAxis?: string,
+      public yAxis: string = '',
       public enabled: boolean = false,
       public visible: boolean = false,
+      public id?: number,
       public valueSnapshot?: string|undefined,
   ) {}
 }
