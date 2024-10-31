@@ -63,6 +63,6 @@ For more examples, see github repository example [directory](https://github.com/
 
 This library is licensed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License). See the [LICENSE.md](https://github.com/elrest-cz/wdx-schema/blob/master/LICENSE.md) file for more details.
 
-© 2024 
+© 2024 Elrest Automations Systeme GMBH
 
 This `README.md` provides a clear introduction to the TypeScript model schema library, with examples of how to use it, and includes the required copyright and licensing information under the MIT License.
