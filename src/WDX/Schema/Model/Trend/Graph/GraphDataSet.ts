@@ -15,6 +15,7 @@ export class GraphDataSet {
       public pointBorderColor: string = '',
       public hidden: boolean = false,
       public showLine: boolean = true,
-      public data: Array<any> =[],
+      public yAxisID: string = '',
+      public data: Array<any> = [],
   ) {}
 }
