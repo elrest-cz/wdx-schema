@@ -7,9 +7,9 @@
 
 import {v4 as uuidv4} from 'uuid';
 import {Type} from './Type';
-import {MessageError} from './MessageError';
 import {Instance} from './../Model/Instance';
 import {InstanceOrigin} from '../Model/Instance/InstanceOrigin';
+import { AbstractException } from '../Model/Exception/AbstractException';
 export abstract class AbstractMessage {
   public abstract type: Type;
 
@@ -19,7 +19,7 @@ export abstract class AbstractMessage {
 
   declare public body?: any|null;
 
-  public error?: MessageError|null;
+  public error?: AbstractException|null;
 
   public topic?: string;
 
@@ -30,13 +30,13 @@ export abstract class AbstractMessage {
   constructor(
       body?: any,
       uuid?: string,
-      error?: MessageError,
+      error?: AbstractException,
       topic?: string,
       target?: Instance|InstanceOrigin|string,
       origin?: Instance|InstanceOrigin,
   ) {
     if (body) this.body = body;
-    this.uuid = uuid ? uuid : uuidv4();
+    this.uuid = uuid ?? uuidv4();
     if (error) this.error = error;
     this.topic = topic ?? undefined;
     if (target) this.target = target;

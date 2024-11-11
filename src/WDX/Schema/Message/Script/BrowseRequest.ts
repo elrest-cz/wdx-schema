@@ -6,9 +6,9 @@
 
 'use strict';
 
+import { AbstractException } from '../../Model/Exception/AbstractException';
 import {BrowseRequestBody} from '../../Model/Script';
 import {AbstractMessage} from './../AbstractMessage';
-import {MessageError} from './../MessageError';
 import {Type} from './../Type';
 
 export class BrowseRequest extends AbstractMessage {
@@ -17,7 +17,7 @@ export class BrowseRequest extends AbstractMessage {
   declare public body: BrowseRequestBody;
 
   constructor(
-      path: string, level?: number, uuid?: string, error?: MessageError) {
+      path: string, level?: number, uuid?: string, error?: AbstractException) {
     super(new BrowseRequestBody(path, level), uuid, error);
   }
 }
