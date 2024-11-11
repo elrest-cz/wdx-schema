@@ -6,7 +6,6 @@
 'use strict';
 
 import {DataSchema} from '../../Model/Data';
-import {MessageError} from '../MessageError';
 import {AbstractMessage} from './../AbstractMessage';
 import {Type} from './../Type';
 

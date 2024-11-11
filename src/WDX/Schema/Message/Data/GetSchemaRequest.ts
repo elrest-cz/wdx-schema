@@ -6,7 +6,7 @@
 'use strict';
 
 import {GetSchemaRequestBody} from '../../Model/Data';
-import {MessageError} from '../MessageError';
+import { AbstractException } from '../../Model/Exception/AbstractException';
 import {AbstractMessage} from './../AbstractMessage';
 import {Type} from './../Type';
 
@@ -17,7 +17,7 @@ export class GetSchemaRequest extends AbstractMessage {
 
   constructor(
       path: string, level: number = GetSchemaRequestBody.DEFAULT_LEVEL,
-      uuid?: string, error?: MessageError, from?: string) {
+      uuid?: string, error?: AbstractException, from?: string) {
     super(new GetSchemaRequestBody(path, level), uuid, error, from);
   }
 }

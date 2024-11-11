@@ -8,7 +8,6 @@
 import {MESSAGE_SEPARATOR} from './Separator';
 import {MESSAGE_SEPARATOR_LENGTH} from './Separator';
 import {AbstractMessage} from './AbstractMessage';
-import {MessageError} from './MessageError';
 import {KeepAlive} from './KeepAlive';
 import {Type} from './Type';
 import * as Data from './Data';
@@ -23,7 +22,6 @@ export {
   MESSAGE_SEPARATOR,
   MESSAGE_SEPARATOR_LENGTH,
   AbstractMessage,
-  MessageError,
   KeepAlive,
   Data,
   Instance,
