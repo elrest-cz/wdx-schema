@@ -5,7 +5,6 @@
  */
 'use strict';
 
-import { MessageError } from '../MessageError';
 import { Type } from '../Type';
 import { AbstractMessage } from './../AbstractMessage';
 

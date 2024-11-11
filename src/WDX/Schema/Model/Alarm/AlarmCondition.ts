@@ -10,9 +10,9 @@ import {AlarmConditionExpression} from './AlarmConditionExpression';
 
 export class AlarmCondition {
   constructor(
-      public path?: string,
-      public expression?: AlarmConditionExpression,
-      public value?: string,
+      public path: string ='',
+      public expression: AlarmConditionExpression|undefined = null,
+      public value: any | undefined = undefined,
       public uuid: string = uuidv4(),
       public id?: number,
       public createDateTime: number = Date.now(),

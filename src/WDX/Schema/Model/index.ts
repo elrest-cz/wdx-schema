@@ -9,6 +9,7 @@
 
 import * as Data from './Data';
 import * as Device from './Device';
+import * as Exception from './Exception';
 import * as Filesystem from './Filesystem';
 import * as Host from './Host';
 import * as Instance from './Instance';
@@ -25,6 +26,7 @@ export {
   Access,
   Data,
   Device,
+  Exception,
   Filesystem,
   Host,
   Package,

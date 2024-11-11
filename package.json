@@ -18,7 +18,7 @@
 	],
 	"license": "MIT",
 	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
-	"version": "19.1.0",
+	"version": "19.1.5",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
@@ -39,7 +39,8 @@
 		"cover": "npm run cover:unit && npm run cover:integration && npm run cover:report",
 		"cover:unit": "nyc --silent npm run test:unit",
 		"cover:integration": "nyc --silent --no-clean npm run test:integration",
-		"cover:report": "nyc report --reporter=lcov --reporter=text"
+		"cover:report": "nyc report --reporter=lcov --reporter=text",
+		"version": "npx update-changelog && git add CHANGELOG.md"
 	},
 	"repository": {
 		"type": "git",
@@ -56,7 +57,8 @@
 		"ts-node": "^10.9.2",
 		"typedoc": "^0.25.7",
 		"typedoc-plugin-markdown": "^3.17.1",
-		"typescript": "^5.3.3"
+		"typescript": "^5.3.3",
+		"update-changelog": "^1.0.2"
 	},
 	"dependencies": {
 		"uuid": "^10.0.0"
