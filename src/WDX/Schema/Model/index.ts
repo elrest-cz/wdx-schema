@@ -7,9 +7,9 @@
 
 'use strict';
 
-import * as Application from './Application';
 import * as Data from './Data';
 import * as Device from './Device';
+import * as Exception from './Exception';
 import * as Filesystem from './Filesystem';
 import * as Host from './Host';
 import * as Instance from './Instance';
@@ -17,11 +17,16 @@ import * as Package from './Package';
 import * as Repository from './Repository';
 import * as Runtime from './Runtime';
 import * as Script from './Script';
+import * as Alarm from './Alarm';
+import * as Trend from './Trend';
+import * as Access from './Access';
+import * as Translation from './Translation';
 
 export {
-  Application,
+  Access,
   Data,
   Device,
+  Exception,
   Filesystem,
   Host,
   Package,
@@ -29,4 +34,7 @@ export {
   Repository,
   Runtime,
   Script,
+  Alarm,
+  Trend,
+  Translation,
 };

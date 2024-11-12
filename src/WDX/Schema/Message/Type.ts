@@ -22,11 +22,11 @@ export enum Type {
   DataProviderRequest = 'DataProviderRequest',
   DataProviderResponse = 'DataProviderResponse',
 
-  DataRegisterRequest = 'DataRegisterRequest',
-  DataRegisterResponse = 'DataRegisterResponse',
+  DataRegisterValueRequest = 'DataRegisterValueRequest',
+  DataRegisterValueResponse = 'DataRegisterValueResponse',
 
-  DataUnregisterRequest = 'DataUnregisterRequest',
-  DataUnregisterResponse = 'DataUnregisterResponse',
+  DataUnregisterValueRequest = 'DataUnregisterValueRequest',
+  DataUnregisterValueResponse = 'DataUnregisterValueResponse',
 
   DataRegisterSchemaChangesRequest = 'DataRegisterSchemaChangesRequest',
   DataRegisterSchemaChangesResponse = 'DataRegisterSchemaChangesResponse',
@@ -60,20 +60,11 @@ export enum Type {
 
   InstanceIAm = 'InstanceIAm',
 
-  InstanceInfoRequest = 'InstanceInfoRequest',
-  InstanceInfoResponse = 'InstanceInfoResponse',
+  InstanceDetailRequest = 'InstanceDetailRequest',
+  InstanceDetailResponse = 'InstanceDetailResponse',
 
   InstanceListRequest = 'InstanceListRequest',
   InstanceListResponse = 'InstanceListResponse',
-
-  /** Instance Monitor */
-  InstanceMonitor = 'InstanceMonitor',
-
-  InstanceMonitorSubscribeRequest = 'InstanceMonitorSubscribeRequest',
-  InstanceMonitorSubscribeResponse = 'InstanceMonitorSubscribeResponse',
-
-  InstanceMonitorUnsubscribeRequest = 'InstanceMonitorUnsubscribeRequest',
-  InstanceMonitorUnsubscribeResponse = 'InstanceMonitorUnsubscribeResponse',
 
   /** Instance Logs */
   InstanceLog = 'InstanceLog',
@@ -162,8 +153,82 @@ export enum Type {
   /**
    * Trending
    */
-  TrendingStartRequest = 'TrendingStartRequest',
-  TrendingStartResponse = 'TrendingStartResponse',
-  TrendingStopRequest = 'TrendingStopRequest',
-  TrendingStopResponse = 'TrendingStopResponse',
+  TrendingListRequest = 'TrendingListRequest',
+  TrendingListResponse = 'TrendingListResponse',
+
+  TrendingDetailRequest = 'TrendingDetailRequest',
+  TrendingDetailResponse = 'TrendingDetailResponse',
+
+  TrendingSaveRequest = 'TrendingSaveRequest',
+  TrendingSaveResponse = 'TrendingSaveResponse',
+
+  TrendingDeleteRequest = 'TrendingDeleteRequest',
+  TrendingDeleteResponse = 'TrendingDeleteResponse',
+
+  TrendingSubscribeRequest = 'TrendingSubscribeRequest',
+  TrendingSubscribeResponse = 'TrendingSubscribeResponse',
+
+  TrendingUnsubscribeRequest = 'TrendingUnsubscribeRequest',
+  TrendingUnsubscribeResponse = 'TrendingUnsubscribeResponse',
+
+  TrendingUpdate = 'TrendingUpdate',
+
+  TrendingGraphConfigurationRequest = 'TrendingGraphConfigurationRequest',
+  TrendingGraphConfigurationResponse = 'TrendingGraphConfigurationResponse',
+
+  TrendingGraphDataRequest = 'TrendingGraphDataRequest',
+  TrendingGraphDataResponse = 'TrendingGraphDataResponse',
+
+  TrendingExportRequest = 'TrendingExportRequest',
+  TrendingExportResponse = 'TrendingExportResponse',
+
+  /**
+   * Alarming
+   */
+  AlarmingListRequest = 'AlarmingListRequest',
+  AlarmingListResponse = 'AlarmingListResponse',
+
+  AlarmingDetailRequest = 'AlarmingDetailRequest',
+  AlarmingDetailResponse = 'AlarmingDetailResponse',
+
+  AlarmingListHistoryRequest = 'AlarmingListHistoryRequest',
+  AlarmingListHistoryResponse = 'AlarmingListHistoryResponse',
+
+  AlarmingDeleteHistoryRequest = 'AlarmingDeleteHistoryRequest',
+  AlarmingDeleteHistoryResponse = 'AlarmingDeleteHistoryResponse',
+
+  AlarmingSetRequest = 'AlarmingSetRequest',
+  AlarmingSetResponse = 'AlarmingSetResponse',
+
+  AlarmingConfirmRequest = 'AlarmingConfirmRequest',
+  AlarmingConfirmResponse = 'AlarmingConfirmResponse',
+
+  AlarmingDeleteRequest = 'AlarmingDeleteRequest',
+  AlarmingDeleteResponse = 'AlarmingDeleteResponse',
+
+  AlarmingSubscribeRequest = 'AlarmingSubscribeRequest',
+  AlarmingSubscribeResponse = 'AlarmingSubscribeResponse',
+
+  AlarmingUnsubscribeRequest = 'AlarmingUnsubscribeRequest',
+  AlarmingUnsubscribeResponse = 'AlarmingUnsubscribeResponse',
+
+  AlarmingUpdate = 'AlarmingUpdate',
+
+  AuthLogin = 'AuthLogin',
+  AuthLogout = 'AuthLogout',
+
+  AccessUserListRequest = 'AccessUserListRequest',
+  AccessUserListResponse = 'AccessUserListResponse',
+  AccessUserSaveRequest = 'AccessUserSaveRequest',
+  AccessUserSaveResponse = 'AccessUserSaveResponse',
+  AccessUserDeleteRequest = 'AccessUserDeleteRequest',
+  AccessUserDeleteResponse = 'AccessUserDeleteResponse',
+
+  AccessRoleListRequest = 'AccessRoleListRequest',
+  AccessRoleListResponse = 'AccessRoleListResponse',
+  AccessRoleSaveRequest = 'AccessRoleSaveRequest',
+  AccessRoleSaveResponse = 'AccessRoleSaveResponse',
+  AccessRoleDeleteRequest = 'AccessRoleDeleteRequest',
+  AccessRoleDeleteResponse = 'AccessRoleDeleteResponse',
+
 }

@@ -9,9 +9,12 @@
 
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
-import {Instance} from '../../Model/Instance';
 
 export class StopRequest extends AbstractMessage {
   public type: Type = Type.InstanceStopRequest;
-  public body: Instance;
+
+  /**
+   * Instance UUID
+   */
+  declare public body: string;
 }

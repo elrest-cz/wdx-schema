@@ -6,5 +6,4 @@
 .build.json
 package-lock.json
 .npmrc
-docs
 tsconfig.tsbuildinfo

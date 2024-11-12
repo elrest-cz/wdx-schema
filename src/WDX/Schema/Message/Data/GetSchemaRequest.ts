@@ -1,27 +1,23 @@
 /**
  * Elrest eDesign Runtime IPC Typescript Messages Data Get Schema Request
- * 
+ *
  * @copyright 2024 Elrest Automations Systeme GMBH
  */
 'use strict';
 
-import { GetSchemaRequestBody } from '../../Model/Data';
-import { MessageError } from '../MessageError';
-import { AbstractMessage } from './../AbstractMessage';
-import { Type } from './../Type';
+import {GetSchemaRequestBody} from '../../Model/Data';
+import { AbstractException } from '../../Model/Exception/AbstractException';
+import {AbstractMessage} from './../AbstractMessage';
+import {Type} from './../Type';
 
 export class GetSchemaRequest extends AbstractMessage {
+  public type: Type = Type.DataGetSchemaRequest;
 
-	public type: Type = Type.DataGetSchemaRequest;
-	public body: GetSchemaRequestBody;
+  declare public body: GetSchemaRequestBody;
 
-	constructor(
-		path: string,
-		level: number = GetSchemaRequestBody.UNLIMITED_LEVEL,
-		uuid?: string,
-		error?: MessageError,
-		from?: string
-	) {
-		super(new GetSchemaRequestBody(path, level), uuid, error, from);
-	}
+  constructor(
+      path: string, level: number = GetSchemaRequestBody.DEFAULT_LEVEL,
+      uuid?: string, error?: AbstractException, from?: string) {
+    super(new GetSchemaRequestBody(path, level), uuid, error, from);
+  }
 }

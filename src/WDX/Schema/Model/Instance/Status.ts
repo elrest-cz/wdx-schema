@@ -7,9 +7,9 @@
 
 export enum Status {
 	Any = 'any',
-	Online = 'online',
-	Starting = 'starting',
-	Stopping = 'stopping',
-	Offline = 'stopped',
-	Error = 'errored',
+	Online = 'Online',
+	Starting = 'Starting',
+	Stopping = 'Stopping',
+	Offline = 'Offline',
+	Error = 'Error',
 }

@@ -6,16 +6,19 @@
 
 'use strict';
 
-import {File} from './../Filesystem';
+import {Entry, File} from './../Filesystem';
 import * as fs from 'fs';
 import {ExecutionMode, Instance} from './../Instance';
 import {INSTANCE_NAMESPACE} from './index';
 
 export class Script extends File {
-  public name: string;
-  public path: string;
-  public stats?: fs.Stats;
-  public content?: string;
-  public mime?: string;
-  public instance?: Instance;
+  constructor(
+      public path: string,
+      public name: string,
+      public stats?: fs.Stats,
+      public content?: string,
+      public instance?: Instance,
+  ) {
+    super(name, path, stats, content);
+  }
 }

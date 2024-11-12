@@ -12,5 +12,5 @@ import {Type} from './../Type';
 
 export class StopResponse extends AbstractMessage {
   public type: Type = Type.RuntimeStopResponse;
-  public body: null;
+  declare public body: null;
 }

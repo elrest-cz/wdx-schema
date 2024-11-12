@@ -1,52 +1,64 @@
 /**
  * Elrest eDesign Runtime IPC Typescript Model Data Meta Data Type Enumerations
- * 
+ *
  * @copyright 2024 Elrest Automations Systeme GMBH
  */
 'use strict';
 
 export enum MetaDataType {
 
-	EWEB = 'eweb',
+  EWEB = 'eweb',
 
-	EWEB_ADAPTER = 'eweb-adapter',
+  EWEB_ADAPTER = 'eweb-adapter',
 
-	EWEB_PROVIDER = 'eweb-provider',
+  EWEB_PROVIDER = 'eweb-provider',
 
-	MODBUS = 'modbus',
+  MODBUS = 'modbus',
 
-	MODBUS_ADAPTER = 'modbus-adapter',
+  MODBUS_ADAPTER = 'modbus-adapter',
 
-	MODBUS_PROVIDER = 'modbus-provider',
+  MODBUS_PROVIDER = 'modbus-provider',
 
-	BACNET = 'bacnet',
+  BACNET = 'bacnet',
 
-	BACNET_ADAPTER = 'bacnet-adapter',
+  BACNET_ADAPTER = 'bacnet-adapter',
 
-	BACNET_PROVIDER = 'bacnet-provider',
+  BACNET_PROVIDER = 'bacnet-provider',
 
-	BACNET_DEVICE = 'bacnet-device',
+  BACNET_DEVICE = 'bacnet-device',
 
-	VIRTUAL = 'virtual',
+  VIRTUAL = 'virtual',
 
-	VIRTUAL_ADAPTER = 'virtual-adapter',
+  VIRTUAL_ADAPTER = 'virtual-adapter',
 
-	VIRTUAL_PROVIDER = 'virtual-provider',
+  VIRTUAL_PROVIDER = 'virtual-provider',
 
-	CC100IO = 'cc100-io',
+  CC100IO = 'cc100-io',
 
-	CC100IO_ADAPTER = 'cc100-io-adapter',
+  CC100IO_ADAPTER = 'cc100-io-adapter',
 
-	CC100IO_PROVIDER = 'cc100-io-provider',
+  CC100IO_PROVIDER = 'cc100-io-provider',
 
-	MQTT = 'mqtt',
+  MQTT = 'mqtt',
 
-	MQTT_ADAPTER = 'mqtt-adapter',
+  MQTT_ADAPTER = 'mqtt-adapter',
 
-	MQTT_PROVIDER = 'mqtt-provider',
+  MQTT_PROVIDER = 'mqtt-provider',
 
-	ROOT = 'root',
+  ROOT = 'root',
 
-	ANY = 'any',
+  ALARM_ADAPTER = 'alarm-adapter',
+
+  ALARM_PROVIDER = 'alarm-provider',
+
+  ALARM = 'alarm',
+
+  ANY = 'any',
+
+  OPCUA = 'OPCUA',
+
+  OPCUA_ADAPTER = 'OPCUA_ADAPTER',
+
+  OPCUA_PROVIDER = 'OPCUA_PROVIDER',
 
 }

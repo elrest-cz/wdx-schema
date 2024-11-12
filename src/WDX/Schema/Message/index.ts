@@ -1,32 +1,34 @@
 /**
  * Elrest eDesign Runtime IPC Typescript Messages
- * 
+ *
  * @copyright 2024 Elrest Automations Systeme GMBH
  */
 'use strict';
 
-import { Type } from './Type';
-import { AbstractMessage } from './AbstractMessage';
-import { KeepAlive } from './KeepAlive';
-import { MessageError } from './MessageError';
+import {MESSAGE_SEPARATOR} from './Separator';
+import {MESSAGE_SEPARATOR_LENGTH} from './Separator';
+import {AbstractMessage} from './AbstractMessage';
+import {KeepAlive} from './KeepAlive';
+import {Type} from './Type';
 import * as Data from './Data';
 import * as Instance from './Instance';
-import * as Package from './Package';
-import * as Repository from './Repository';
 import * as Runtime from './Runtime';
 import * as Script from './Script';
-import * as Trending from './Trending';
+import * as Trend from './Trend';
+import * as Alarm from './Alarm';
+import * as Access from './Access';
 
 export {
-	AbstractMessage,
-	MessageError,
-	KeepAlive,
-	Data,
-	Instance,
-	Type,
-	Package,
-	Repository,
-	Runtime,
-	Script,
-	Trending,
+  MESSAGE_SEPARATOR,
+  MESSAGE_SEPARATOR_LENGTH,
+  AbstractMessage,
+  KeepAlive,
+  Data,
+  Instance,
+  Type,
+  Runtime,
+  Script,
+  Trend,
+  Alarm,
+  Access,
 };

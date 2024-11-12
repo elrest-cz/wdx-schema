@@ -5,6 +5,7 @@
  */
 'use strict';
 
+import { BACNetOptions } from '../../Instance/DataAdapter';
 import { MetaDataAbstractAdapter } from './MetaDataAbstractAdapter';
 import { MetaDataType } from './MetaDataType';
 
@@ -12,10 +13,5 @@ export class MetaDataBACNETAdapter extends MetaDataAbstractAdapter {
 
 	public type: MetaDataType = MetaDataType.BACNET_ADAPTER;
 
-	public interface: string;
-
-	public broadcastAddress: string;
-
-	public apduTimeout: number;
-
+	public bacnetOptions:BACNetOptions;
 }

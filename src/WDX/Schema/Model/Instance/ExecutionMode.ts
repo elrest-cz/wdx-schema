@@ -13,4 +13,6 @@ export enum ExecutionMode {
   // docker = 'docker',
   // libvirt = 'libvirt',
   worker = 'worker',
+
+  remote = 'remote',
 }

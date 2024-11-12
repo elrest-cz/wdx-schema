@@ -5,16 +5,16 @@
  */
 'use strict';
 
-import { MessageError } from '../MessageError';
+import { AbstractException } from '../../Model/Exception/AbstractException';
 import { Type } from '../Type';
 import { AbstractMessage } from './../AbstractMessage';
 
 
 export class RegisterSchemaChangesRequest extends AbstractMessage {
 	public type: Type = Type.DataRegisterSchemaChangesRequest;
-	public body: null;
+declare public body: null;
 
-	constructor(uuid?: string, error?: MessageError, from?: string) {
+	constructor(uuid?: string, error?: AbstractException, from?: string) {
 		super(null, uuid, error, from);
 	}
 }

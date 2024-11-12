@@ -12,5 +12,5 @@ import { Type } from './../Type';
 
 export class StopRequest extends AbstractMessage {
 	public type: Type = Type.RuntimeStopRequest;
-	public body: null;
+declare public body: null;
 }

@@ -5,14 +5,15 @@
  */
 'use strict'
 
-import{LogLevel} from './LogLevel';
-
+import{LogDate} from './LogDate';
+import {LogLevel} from './LogLevel';
 export class Log {
   constructor(
       public level: LogLevel,
-      public date: string,
+      public date: LogDate,
       public channel: string,
       public title: string,
       public messsage: string|any,
+      public instanceUuid: string = '',
   ) {}
 }

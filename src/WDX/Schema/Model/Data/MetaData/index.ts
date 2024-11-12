@@ -31,14 +31,22 @@ import {MetaDataCC100IO} from './MetaDataCC100-IO';
 import {MetaDataCC100IOAdapter} from './MetaDataCC100-IOAdapter';
 import {MetaDataCC100IOProvider} from './MetaDataCC100-IOProvider';
 import {MetaDataCC100IOType} from './MetaDataCC100-IOType';
-import {MetaDataMQTTProtocol} from './MetaDataMQTTProtocol';
 import {MetaDataMQTT} from './MetaDataMQTT';
 import {MetaDataMQTTAdapter} from './MetaDataMQTTAdapter';
 import {MetaDataMQTTProvider} from './MetaDataMQTTProvider';
 import {MetaDataROOT} from './MetaDataROOT';
+import {MetaDataAlarm} from './MetaDataAlarm';
+import {MetaDataAlarmAdapter} from './MetaDataAlarmAdapter';
+import {MetaDataAlarmProvider} from './MetaDataAlarmProvider';
+import {MetaDataOPCUA} from './MetaDataOPCUA';
+import {MetaDataOPCUAAdapter} from './MetaDataOPCUAAdapter';
+import {MetaDataOPCUAProvider} from './MetaDataOPCUAProvider';
 
 export {
   AbstractMetaData,
+  MetaDataOPCUA,
+  MetaDataOPCUAAdapter,
+  MetaDataOPCUAProvider,
   MetaDataType,
   MetaDataAbstractAdapter,
   MetaDataAbstractProvider,
@@ -62,9 +70,11 @@ export {
   MetaDataCC100IOAdapter,
   MetaDataCC100IOType,
   MetaDataCC100IOProvider,
-  MetaDataMQTTProtocol,
   MetaDataMQTT,
   MetaDataMQTTAdapter,
   MetaDataMQTTProvider,
   MetaDataROOT,
+  MetaDataAlarm,
+  MetaDataAlarmAdapter,
+  MetaDataAlarmProvider,
 };

@@ -20,3 +20,14 @@ export enum LogLevel {
 
   warn = 'warn',
 }
+
+/*
+export enum LogLevel {
+  fatal = 5,
+  error = 4,
+  warn = 3,
+  info = 2,
+  debug = 1,
+  TRACE = 0
+}
+*/
