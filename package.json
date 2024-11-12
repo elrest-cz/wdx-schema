@@ -18,7 +18,7 @@
 	],
 	"license": "MIT",
 	"author": "Slavomir Sidor <slavomir.sidor@elrest.cz>",
-	"version": "20.1.6",
+	"version": "23.1.0",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"scripts": {
