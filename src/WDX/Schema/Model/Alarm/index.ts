@@ -12,6 +12,8 @@ import {AlarmType} from './AlarmType';
 import {AlarmCondition} from './AlarmCondition';
 import {AlarmConditionExpression} from './AlarmConditionExpression';
 import {AlarmUpdate} from './AlarmUpdate';
+import {ListRequestBody} from './ListRequestBody';
+import {ListHistoryRequestBody} from './ListHistoryRequestBody';
 
 export {
   Alarm,
@@ -21,4 +23,6 @@ export {
   AlarmCondition,
   AlarmType,
   AlarmConditionExpression,
+  ListRequestBody,
+  ListHistoryRequestBody,
 };

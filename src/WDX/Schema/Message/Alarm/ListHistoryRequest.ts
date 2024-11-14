@@ -5,13 +5,14 @@
  */
 'use strict';
 
+import {ListHistoryRequestBody} from '../../Model/Alarm';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 export class ListHistoryRequest extends AbstractMessage {
   public type: Type = Type.AlarmingListHistoryRequest;
-  
+
   /**
-   * Alarm - UUID or undefined.
+   * Alarm - List History Request Body
    */
-  declare public body: string|undefined;
+  declare public body: ListHistoryRequestBody;  
 }

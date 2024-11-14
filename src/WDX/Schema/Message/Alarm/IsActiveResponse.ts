@@ -5,14 +5,16 @@
  */
 'use strict';
 
-import {Response} from '../../Model/Pagination/Response';
-import {Alarm} from '../../Model/Alarm';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
+import {AlarmStatus} from '../../Model/Alarm/AlarmStatus';
 
 
-export class ListResponse extends AbstractMessage {
-  public type: Type = Type.AlarmingListResponse;
+export class IsActiveResponse extends AbstractMessage {
+  public type: Type = Type.AlarmingIsActiveResponse;
 
-  declare public body: Response<Alarm>;
+  /**
+   * Alarm - Active
+   */
+  declare public body: AlarmStatus;
 }

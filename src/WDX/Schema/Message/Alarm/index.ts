@@ -22,6 +22,12 @@ import {SubscribeRequest} from './SubscribeRequest';
 import {SubscribeResponse} from './SubscribeResponse';
 import {UnsubscribeRequest} from './UnsubscribeRequest';
 import {UnsubscribeResponse} from './UnsubscribeResponse';
+import {IsActiveRequest} from './IsActiveRequest';
+import {IsActiveResponse} from './IsActiveResponse';
+import {SetActiveRequest} from './SetActiveRequest';
+import {SetActiveResponse} from './SetActiveResponse';
+import {SetInactiveRequest} from './SetInactiveRequest';
+import {SetInactiveResponse} from './SetInactiveResponse';
 
 export {
   DetailRequest,
@@ -41,4 +47,10 @@ export {
   UnsubscribeRequest,
   UnsubscribeResponse,
   Update,
+  IsActiveRequest,
+  IsActiveResponse,
+  SetActiveRequest,
+  SetActiveResponse,
+  SetInactiveRequest,
+  SetInactiveResponse,
 };

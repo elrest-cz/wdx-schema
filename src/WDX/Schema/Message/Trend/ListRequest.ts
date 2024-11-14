@@ -7,9 +7,10 @@
 
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
+import {Request} from './../../Model/Pagination/Request';
 
 
 export class ListRequest extends AbstractMessage {
   public type: Type = Type.TrendingListRequest;
-  declare public body: undefined;
+  declare public body: Request;
 }
