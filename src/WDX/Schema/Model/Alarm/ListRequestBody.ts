@@ -9,7 +9,7 @@ import {Request} from '../Pagination/Request';
 
 export class ListRequestBody extends Request {
   constructor(
-      public active: boolean,
+      public active: boolean|undefined,
       public offset: number,
       public limit: number,
   ) {
