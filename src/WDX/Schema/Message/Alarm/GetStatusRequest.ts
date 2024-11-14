@@ -9,8 +9,8 @@ import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
 
-export class IsActiveRequest extends AbstractMessage {
-  public type: Type = Type.AlarmingIsActiveRequest;
+export class GetStatusRequest extends AbstractMessage {
+  public type: Type = Type.AlarmingGetStatusRequest;
 
   /**
    * Alarm - Code Number

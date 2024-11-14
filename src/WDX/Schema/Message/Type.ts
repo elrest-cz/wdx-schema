@@ -212,8 +212,8 @@ export enum Type {
   AlarmingUnsubscribeRequest = 'AlarmingUnsubscribeRequest',
   AlarmingUnsubscribeResponse = 'AlarmingUnsubscribeResponse',
 
-  AlarmingIsActiveRequest = 'AlarmingIsActiveRequest',
-  AlarmingIsActiveResponse = 'AlarmingIsActiveResponse',
+  AlarmingGetStatusRequest = 'AlarmingGetStatusRequest',
+  AlarmingGetStatusResponse = 'AlarmingGetStatusResponse',
 
   AlarmingSetActiveRequest = 'AlarmingSetActiveRequest',
   AlarmingSetActiveResponse = 'AlarmingSetActiveResponse',

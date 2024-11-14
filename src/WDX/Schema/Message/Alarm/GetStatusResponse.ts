@@ -10,8 +10,8 @@ import {Type} from '../Type';
 import {AlarmStatus} from '../../Model/Alarm/AlarmStatus';
 
 
-export class IsActiveResponse extends AbstractMessage {
-  public type: Type = Type.AlarmingIsActiveResponse;
+export class GetStatusResponse extends AbstractMessage {
+  public type: Type = Type.AlarmingGetStatusResponse;
 
   /**
    * Alarm - Active
