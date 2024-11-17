@@ -22,7 +22,7 @@ export class Alarm {
       public messageOff?: string,
       public uuid: string = uuidv4(),
       public id?: number,
-      public status?: AlarmStatus,
+      public status: AlarmStatus = AlarmStatus.NONE,
       public history: AlarmHistory[] = [],
       public cause?: string,
       public reaction?: string,
