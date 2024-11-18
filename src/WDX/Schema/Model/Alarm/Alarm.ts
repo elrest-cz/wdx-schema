@@ -17,7 +17,7 @@ export class Alarm {
       public name: string,
       public active: boolean = true,
       public number: number,
-      //public classification: AlarmClassification,
+      public classification: AlarmClassification,
       public type: AlarmType,
       public conditions: AlarmCondition[] = [],
       public message?: string,
