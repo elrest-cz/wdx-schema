@@ -194,8 +194,14 @@ export enum Type {
   AlarmingListHistoryRequest = 'AlarmingListHistoryRequest',
   AlarmingListHistoryResponse = 'AlarmingListHistoryResponse',
 
+  AlarmingExportHistoryRequest = 'AlarmingExportHistoryRequest',
+  AlarmingExportHistoryResponse = 'AlarmingExportHistoryResponse',
+
   AlarmingDeleteHistoryRequest = 'AlarmingDeleteHistoryRequest',
   AlarmingDeleteHistoryResponse = 'AlarmingDeleteHistoryResponse',
+
+  AlarmingExportRequest = 'AlarmingExportRequest',
+  AlarmingExportResponse = 'AlarmingExportResponse',
 
   AlarmingSetRequest = 'AlarmingSetRequest',
   AlarmingSetResponse = 'AlarmingSetResponse',
