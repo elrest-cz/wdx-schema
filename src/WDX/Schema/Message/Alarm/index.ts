@@ -29,6 +29,9 @@ import {SetActiveResponse} from './SetActiveResponse';
 import {SetInactiveRequest} from './SetInactiveRequest';
 import {SetInactiveResponse} from './SetInactiveResponse';
 import {ExportRequest} from './ExportRequest';
+import {ExportResponse} from './ExportResponse';
+import {ExportHistoryRequest} from './ExportHistoryRequest';
+import {ExportHistoryResponse} from './ExportHistoryResponse';
 
 export {
   DetailRequest,
@@ -55,4 +58,7 @@ export {
   SetInactiveRequest,
   SetInactiveResponse,
   ExportRequest,
+  ExportResponse,
+  ExportHistoryRequest,
+  ExportHistoryResponse,
 };

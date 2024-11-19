@@ -7,7 +7,7 @@
 
 export enum AlarmType {
 
-  WITH_ACKNOWLEDGE = 'acknowledge',
+  WITH_ACKNOWLEDGE = 'with-acknowledge',
 
   WITHOUT_ACKNOWLEDGE = 'without-acknowledge',
 

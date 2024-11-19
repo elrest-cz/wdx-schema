@@ -8,11 +8,12 @@
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
-export class ExportResponse extends AbstractMessage {
-  public type: Type = Type.AlarmingExportResponse;
+
+export class ExportHistoryRequest extends AbstractMessage {
+  public type: Type = Type.AlarmingExportHistoryRequest;
 
   /**
-   * Export CSV file content.
+   * Alarm - Code or undefined.
    */
-  declare public body: string;
+  declare public body: number|undefined;
 }
