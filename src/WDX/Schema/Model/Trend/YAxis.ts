@@ -20,5 +20,6 @@ export class YAxis {
       public format?: string,
       public color?: string,
       public visible: boolean = true,
+      public grid: boolean = true,
   ) {}
 }

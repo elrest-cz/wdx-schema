@@ -7,10 +7,12 @@
 
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
-import {Request} from './../../Model/Pagination/Request';
 
+export class ExportHistoryResponse extends AbstractMessage {
+  public type: Type = Type.AlarmingExportHistoryResponse;
 
-export class ListRequest extends AbstractMessage {
-  public type: Type = Type.TrendingListRequest;
-  declare public body: Request;
+  /**
+   * Export CSV file content.
+   */
+  declare public body: string;
 }

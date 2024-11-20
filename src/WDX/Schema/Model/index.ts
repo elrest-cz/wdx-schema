@@ -10,6 +10,7 @@
 import * as Data from './Data';
 import * as Device from './Device';
 import * as Exception from './Exception';
+import * as Pagination from './Pagination';
 import * as Filesystem from './Filesystem';
 import * as Host from './Host';
 import * as Instance from './Instance';
@@ -24,6 +25,7 @@ import * as Translation from './Translation';
 
 export {
   Access,
+  Pagination,
   Data,
   Device,
   Exception,
