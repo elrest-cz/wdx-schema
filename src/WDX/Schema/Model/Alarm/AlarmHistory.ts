@@ -5,6 +5,7 @@
  */
 'use strict';
 
+import { AlarmClassification } from './AlarmClassification';
 import {AlarmCondition} from './AlarmCondition';
 import {AlarmStatus} from './AlarmStatus';
 import {AlarmType} from './AlarmType';
@@ -16,6 +17,7 @@ export class AlarmHistory {
       public name?: string,
       public active?: boolean,
       public number?: number,
+      public classification?: AlarmClassification,
       public type?: AlarmType,
       public status?: AlarmStatus,
       public cause?: string,

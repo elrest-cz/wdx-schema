@@ -8,10 +8,11 @@
 import {Trend} from '../../Model/Trend';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
+import {Response} from './../../Model/Pagination/Response';
 
 
 export class ListResponse extends AbstractMessage {
   public type: Type = Type.TrendingListResponse;
 
-  declare public body: Array<Trend>;
+  declare public body: Response<Trend>;
 }

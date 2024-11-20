@@ -5,6 +5,7 @@
  */
 'use strict';
 
+import { ListRequestBody } from '../../Model/Alarm';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
@@ -12,8 +13,5 @@ import {Type} from '../Type';
 export class ListRequest extends AbstractMessage {
   public type: Type = Type.AlarmingListRequest;
 
-  /**
-   * Indicates alarm active true|false or undefined
-   */
-  declare public body:boolean|undefined;
+  declare public body:ListRequestBody;
 }

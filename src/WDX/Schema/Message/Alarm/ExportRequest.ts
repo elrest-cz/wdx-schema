@@ -5,14 +5,15 @@
  */
 'use strict';
 
-import {Response} from '../../Model/Pagination/Response';
-import {Alarm} from '../../Model/Alarm';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
 
-export class ListResponse extends AbstractMessage {
-  public type: Type = Type.AlarmingListResponse;
+export class ExportRequest extends AbstractMessage {
+  public type: Type = Type.AlarmingExportRequest;
 
-  declare public body: Response<Alarm>;
+  /**
+   * Alarm - Active flag or undefined.
+   */
+  declare public body: boolean|undefined;
 }

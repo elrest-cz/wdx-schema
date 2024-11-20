@@ -194,8 +194,14 @@ export enum Type {
   AlarmingListHistoryRequest = 'AlarmingListHistoryRequest',
   AlarmingListHistoryResponse = 'AlarmingListHistoryResponse',
 
+  AlarmingExportHistoryRequest = 'AlarmingExportHistoryRequest',
+  AlarmingExportHistoryResponse = 'AlarmingExportHistoryResponse',
+
   AlarmingDeleteHistoryRequest = 'AlarmingDeleteHistoryRequest',
   AlarmingDeleteHistoryResponse = 'AlarmingDeleteHistoryResponse',
+
+  AlarmingExportRequest = 'AlarmingExportRequest',
+  AlarmingExportResponse = 'AlarmingExportResponse',
 
   AlarmingSetRequest = 'AlarmingSetRequest',
   AlarmingSetResponse = 'AlarmingSetResponse',
@@ -211,6 +217,15 @@ export enum Type {
 
   AlarmingUnsubscribeRequest = 'AlarmingUnsubscribeRequest',
   AlarmingUnsubscribeResponse = 'AlarmingUnsubscribeResponse',
+
+  AlarmingGetStatusRequest = 'AlarmingGetStatusRequest',
+  AlarmingGetStatusResponse = 'AlarmingGetStatusResponse',
+
+  AlarmingSetActiveRequest = 'AlarmingSetActiveRequest',
+  AlarmingSetActiveResponse = 'AlarmingSetActiveResponse',
+
+  AlarmingSetInactiveRequest = 'AlarmingSetInactiveRequest',
+  AlarmingSetInactiveResponse = 'AlarmingSetInactiveResponse',
 
   AlarmingUpdate = 'AlarmingUpdate',
 

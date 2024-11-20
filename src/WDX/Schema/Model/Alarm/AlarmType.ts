@@ -7,23 +7,10 @@
 
 export enum AlarmType {
 
-  INFO_WITH_ACK = 'info-ack',
+  WITH_ACKNOWLEDGE = 'with-acknowledge',
 
-  INFO_WITHOUT_ACK = 'info-no-ack',
+  WITHOUT_ACKNOWLEDGE = 'without-acknowledge',
 
-  INFO_GONE_WITH_ACK = 'info-gone-with-ack',
-
-  WARNING_WITH_ACK = 'warning-ack',
-
-  WARNING_WITHOUT_ACK = 'warning-no-ack',
-
-  WARNING_GONE_WITH_ACK = 'warning-gone-with-ack',
-
-  ERROR_WITH_ACK = 'error-ack',
-
-  ERROR_WITHOUT_ACK = 'error-no-ack',
-
-  ERROR_GONE_WITH_ACK = 'error-gone-with-ack',
-
+  GONE_WITH_ACKNOWLEDGE = 'gone-with-acknowledge',
 
 }

@@ -5,14 +5,15 @@
  */
 'use strict';
 
-import {Response} from '../../Model/Pagination/Response';
-import {Alarm} from '../../Model/Alarm';
 import {AbstractMessage} from '../AbstractMessage';
 import {Type} from '../Type';
 
 
-export class ListResponse extends AbstractMessage {
-  public type: Type = Type.AlarmingListResponse;
+export class SetInactiveRequest extends AbstractMessage {
+  public type: Type = Type.AlarmingSetInactiveRequest;
 
-  declare public body: Response<Alarm>;
+  /**
+   * Alarm - Code Number
+   */
+  declare public body: number;
 }
